@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 3,
+    "left": 0,
+    "width": 745,
+    "height": 993,
+    "isRotated": true,
+    "originalWidth": 745,
+    "originalHeight": 1000
+  },
+  "imagePath": "image-targets/SkyrimMap2-1000x745_luminance.jpg",
+  "metadata": null,
+  "name": "SkyrimMap2-1000x745",
+  "resources": {
+    "originalImage": "SkyrimMap2-1000x745_original.jpg",
+    "croppedImage": "SkyrimMap2-1000x745_cropped.jpg",
+    "thumbnailImage": "SkyrimMap2-1000x745_thumbnail.jpg",
+    "luminanceImage": "SkyrimMap2-1000x745_luminance.jpg"
+  },
+  "created": 1788629045096,
+  "updated": 1788629045096
+}

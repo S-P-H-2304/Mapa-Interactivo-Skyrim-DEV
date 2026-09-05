@@ -28,46 +28,6 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "order": 0.4038940050501252
     },
-    "729478ae-d067-4e0c-a753-66c2e9efb625": {
-      "components": {
-        "8fe14f4e-4311-4b03-807d-a34c9c11368d": {
-          "id": "8fe14f4e-4311-4b03-807d-a34c9c11368d",
-          "name": "example-component",
-          "parameters": {}
-        }
-      },
-      "geometry": {
-        "depth": 1,
-        "height": 1,
-        "type": "box",
-        "width": 1
-      },
-      "id": "729478ae-d067-4e0c-a753-66c2e9efb625",
-      "material": {
-        "color": "#7611b6",
-        "type": "basic",
-        "textureFiltering": "sharp"
-      },
-      "name": "Box",
-      "position": [
-        0,
-        0.5,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "order": 1.4038940050501252
-    },
     "a608ddd9-9379-464d-966f-5d8d8674c83c": {
       "camera": {
         "type": "perspective",
@@ -129,6 +89,381 @@
       ],
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "order": 0.6644431107322474
+    },
+    "26671229-0493-436f-86f8-a39fb7d7c26b": {
+      "id": "26671229-0493-436f-86f8-a39fb7d7c26b",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4fc58106-eb91-4549-9cb0-305d0f1dc5ac",
+      "components": {},
+      "name": "Image Target",
+      "imageTarget": {
+        "name": "SkyrimMap2-1000x745"
+      },
+      "order": 2.8480185637634277
+    },
+    "4fc58106-eb91-4549-9cb0-305d0f1dc5ac": {
+      "id": "4fc58106-eb91-4549-9cb0-305d0f1dc5ac",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        7,
+        7,
+        7
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Scaler",
+      "order": 4.02107873876559
+    },
+    "04ecd43e-9f81-422a-b431-e744dd8a071e": {
+      "id": "04ecd43e-9f81-422a-b431-e744dd8a071e",
+      "position": [
+        -2.624572126785362,
+        0.1288312366790097,
+        -0.19228305181760197
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Markath",
+      "order": 5.998987473974209
+    },
+    "1b3e6472-86a9-49c6-a9c5-8c221bbc8abc": {
+      "id": "1b3e6472-86a9-49c6-a9c5-8c221bbc8abc",
+      "position": [
+        -1.0574686393878103,
+        0.1288312366790097,
+        -1.6531566865248537
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Soledad",
+      "order": 7.385677047320426
+    },
+    "c6004493-1c0a-4e4e-b308-966d759868c8": {
+      "id": "c6004493-1c0a-4e4e-b308-966d759868c8",
+      "position": [
+        0.4419087587631889,
+        0.1288312366790097,
+        -1.6531566865248537
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Lucero Del Alba",
+      "order": 9.114934704996847
+    },
+    "63319c8e-89c4-46e0-b643-316cf9c53514": {
+      "id": "63319c8e-89c4-46e0-b643-316cf9c53514",
+      "position": [
+        -0.5881432148300192,
+        0.1288312366790097,
+        -1.0020370927468445
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Morthal",
+      "order": 11.042653642134045
+    },
+    "f6e97e74-4070-440c-8567-ec84ba8065b0": {
+      "id": "f6e97e74-4070-440c-8567-ec84ba8065b0",
+      "position": [
+        0.3545729797138365,
+        0.1288312366790097,
+        -0.026241749014020876
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Carrera Blanca",
+      "order": 12.619086024300591
+    },
+    "98e56b46-2634-4fac-9eb5-e672863b0688": {
+      "id": "98e56b46-2634-4fac-9eb5-e672863b0688",
+      "position": [
+        -0.46724079828957554,
+        0.1288312366790097,
+        1.255588902780842
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Falkreath",
+      "order": 13.930304026145686
+    },
+    "5b6e98e1-4050-4c5f-8cc2-347683bccc09": {
+      "id": "5b6e98e1-4050-4c5f-8cc2-347683bccc09",
+      "position": [
+        2.586481614857898,
+        0.1288312366790097,
+        1.3190081328555379
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Riften",
+      "order": 15.41502784307691
+    },
+    "f043bc57-b2d5-4cb7-956e-ba14d0ebd859": {
+      "id": "f043bc57-b2d5-4cb7-956e-ba14d0ebd859",
+      "position": [
+        1.8788641634938923,
+        0.1288312366790097,
+        -0.6520315839385716
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Ventalia",
+      "order": 17.154399091901116
+    },
+    "0b977dde-6458-499e-849f-5835280456f2": {
+      "id": "0b977dde-6458-499e-849f-5835280456f2",
+      "position": [
+        1.5598700817759372,
+        0.1288312366790097,
+        -1.5610126728726792
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Hibernalia",
+      "order": 18.658767214785623
+    },
+    "8e483345-01f6-4fd3-aeab-63a1461a9dce": {
+      "id": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.14285714285714285,
+        0.14285714285714285,
+        0.14285714285714285
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4fc58106-eb91-4549-9cb0-305d0f1dc5ac",
+      "components": {},
+      "name": "Marcadores",
+      "order": 0.03998212216283559
     }
   },
   "spaces": {
