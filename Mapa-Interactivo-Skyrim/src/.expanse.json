@@ -34,6 +34,11 @@
           "id": "8fe14f4e-4311-4b03-807d-a34c9c11368d",
           "name": "example-component",
           "parameters": {}
+        },
+        "ef804362-ff9c-4a6f-a8fa-b68104c7be13": {
+          "id": "ef804362-ff9c-4a6f-a8fa-b68104c7be13",
+          "name": "globalVolumeSync",
+          "parameters": {}
         }
       },
       "geometry": {
@@ -48,9 +53,9 @@
         "type": "basic",
         "textureFiltering": "sharp"
       },
-      "name": "Box",
+      "name": "MAPOTA",
       "position": [
-        0,
+        2.055112774599008,
         0.5,
         0
       ],
@@ -61,20 +66,31 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        5.875187877508779,
+        0.08979528966271218,
+        5.6170029479090395
       ],
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "order": 1.4038940050501252
+      "order": 1.4038940050501252,
+      "audio": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Hootie_Frutti_Choreography_Ver_KATSEYE_-_KATSEYE.mp3"
+        },
+        "loop": true
+      }
     },
     "a608ddd9-9379-464d-966f-5d8d8674c83c": {
       "camera": {
         "type": "perspective",
         "xr": {
-          "desktop": "3D",
-          "xrCameraType": "3dOnly",
-          "headset": "disabled"
+          "desktop": "disabled",
+          "xrCameraType": "world",
+          "headset": "disabled",
+          "phone": "AR",
+          "world": {
+            "disableWorldTracking": true
+          }
         }
       },
       "components": {},
@@ -83,12 +99,12 @@
       "material": null,
       "name": "Camera",
       "position": [
-        0,
-        2,
+        2.108157760272816,
+        2.4171180662455276,
         3
       ],
       "rotation": [
-        0.0004436887233141012,
+        0.00044368872331410124,
         0.9659425615285845,
         -0.25875089860082223,
         0.0016563336561801576
@@ -129,6 +145,366 @@
       ],
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "order": 0.6644431107322474
+    },
+    "52b40472-003e-4c99-bbc2-c95a85c7fd26": {
+      "id": "52b40472-003e-4c99-bbc2-c95a85c7fd26",
+      "position": [
+        1.9351492251819322,
+        1.7638801077874966,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 36,
+        "background": "#ad50ff",
+        "borderRadius": 18,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Button+",
+      "order": 3.3126613066215973
+    },
+    "4eb95818-41bf-49a8-958c-5a07e4bf8448": {
+      "id": "4eb95818-41bf-49a8-958c-5a07e4bf8448",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "52b40472-003e-4c99-bbc2-c95a85c7fd26",
+      "components": {},
+      "name": "Icono",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.26838655402103473
+    },
+    "c9c127b3-0ae1-4543-8b6e-2876e3d218df": {
+      "id": "c9c127b3-0ae1-4543-8b6e-2876e3d218df",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "52b40472-003e-4c99-bbc2-c95a85c7fd26",
+      "components": {},
+      "name": "Button+",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Plus\n",
+        "color": "#ffffff",
+        "fontSize": 16
+      },
+      "order": 1.38716940132909
+    },
+    "9f737a2e-3bf5-4724-a55a-0e1f696f8797": {
+      "id": "9f737a2e-3bf5-4724-a55a-0e1f696f8797",
+      "position": [
+        3.1636828461592623,
+        1.7638801077874966,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 36,
+        "background": "#ad50ff",
+        "borderRadius": 18,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Button-",
+      "order": 4.837039237541585
+    },
+    "9602ee0d-ada7-4de2-bfc2-b6783fe78301": {
+      "id": "9602ee0d-ada7-4de2-bfc2-b6783fe78301",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "9f737a2e-3bf5-4724-a55a-0e1f696f8797",
+      "components": {},
+      "name": "Icono (1)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.26838655402103473
+    },
+    "72c414cf-d93e-44ea-9da6-e9750fed2c73": {
+      "id": "72c414cf-d93e-44ea-9da6-e9750fed2c73",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "9f737a2e-3bf5-4724-a55a-0e1f696f8797",
+      "components": {},
+      "name": "Button+ (1)",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Minus",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "verticalTextAlign": "end"
+      },
+      "order": 1.38716940132909
+    },
+    "4a453138-9e23-493b-9e93-967de1971509": {
+      "id": "4a453138-9e23-493b-9e93-967de1971509",
+      "position": [
+        2.5676269029973127,
+        1.3133534411908168,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "ui": {
+        "width": 70,
+        "height": 10,
+        "text": "VOLUME %",
+        "color": "#ffffff",
+        "fontSize": 12,
+        "type": "3d"
+      },
+      "name": "VolumeText",
+      "order": 6.15934511322691
+    },
+    "1be3a36f-47b3-4cda-bfd4-a8dd44e6cad5": {
+      "id": "1be3a36f-47b3-4cda-bfd4-a8dd44e6cad5",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "978010ee-6fb5-4c2d-b397-0a67cd49c088": {
+          "id": "978010ee-6fb5-4c2d-b397-0a67cd49c088",
+          "name": "audioManager",
+          "parameters": {
+            "incButton": {
+              "type": "entity",
+              "id": "52b40472-003e-4c99-bbc2-c95a85c7fd26"
+            },
+            "decButton": {
+              "type": "entity",
+              "id": "9f737a2e-3bf5-4724-a55a-0e1f696f8797"
+            },
+            "muteButton": {
+              "type": "entity",
+              "id": "34de51b2-a509-4211-9dd3-fa3d8d954961"
+            },
+            "volumeText": {
+              "type": "entity",
+              "id": "4a453138-9e23-493b-9e93-967de1971509"
+            },
+            "mutedIcon": "assets/Mute.png",
+            "unmutedIcon": "assets/Sound.png"
+          }
+        }
+      },
+      "name": "AudioGlobalManager",
+      "order": 7.729914413534944
+    },
+    "34de51b2-a509-4211-9dd3-fa3d8d954961": {
+      "id": "34de51b2-a509-4211-9dd3-fa3d8d954961",
+      "position": [
+        2.5458216742366013,
+        2.315274544340119,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 70.8860759493671,
+        "height": 56,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Sound.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "name": "MuteButton",
+      "order": 9.208537408205691
+    },
+    "429f9699-97fb-4483-bc5a-69824ea88805": {
+      "id": "429f9699-97fb-4483-bc5a-69824ea88805",
+      "position": [
+        1.8100129033025523,
+        1.9210588779535287,
+        -0.6372436945928344
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        7.485805033044343,
+        2.8899886618368607,
+        2.8899886618368607
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Plano",
+      "order": 10.677746040137912
     }
   },
   "spaces": {
