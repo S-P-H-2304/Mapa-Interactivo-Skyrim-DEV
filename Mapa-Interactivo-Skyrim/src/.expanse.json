@@ -120,7 +120,8 @@
       "imageTarget": {
         "name": "SkyrimMap2-1000x745"
       },
-      "order": 2.8480185637634277
+      "order": 2.8480185637634277,
+      "hidden": false
     },
     "4fc58106-eb91-4549-9cb0-305d0f1dc5ac": {
       "id": "4fc58106-eb91-4549-9cb0-305d0f1dc5ac",
@@ -136,16 +137,17 @@
         1
       ],
       "scale": [
-        7,
-        7,
-        7
+        8.399999999999995,
+        8.399999999999995,
+        8.399999999999995
       ],
       "geometry": null,
       "material": null,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
       "name": "Scaler",
-      "order": 4.02107873876559
+      "order": 4.02107873876559,
+      "hidden": true
     },
     "04ecd43e-9f81-422a-b431-e744dd8a071e": {
       "id": "04ecd43e-9f81-422a-b431-e744dd8a071e",
@@ -467,7 +469,590 @@
       "parentId": "4fc58106-eb91-4549-9cb0-305d0f1dc5ac",
       "components": {},
       "name": "Marcadores",
-      "order": 0.03998212216283559
+      "order": 0.03998212216283559,
+      "hidden": false
+    },
+    "a54faf48-4607-4acc-b464-34879c8cac78": {
+      "id": "a54faf48-4607-4acc-b464-34879c8cac78",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "ui": {
+        "width": 660,
+        "height": 395,
+        "type": "overlay",
+        "background": "#000000",
+        "backgroundOpacity": 0,
+        "backgroundSize": "stretch",
+        "stackingOrder": -1
+      },
+      "name": "UI General",
+      "order": 8.033129879296864,
+      "hidden": false
+    },
+    "b858951f-6115-4bae-ad27-0f8576e06db1": {
+      "id": "b858951f-6115-4bae-ad27-0f8576e06db1",
+      "position": [
+        -3.037986414977357,
+        1.6897721471101992,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Volume Controls",
+      "order": 6.819050077709062
+    },
+    "183f13b7-8b87-4536-ba02-7b2fbed6d043": {
+      "id": "183f13b7-8b87-4536-ba02-7b2fbed6d043",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a54faf48-4607-4acc-b464-34879c8cac78",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 50,
+        "height": 50,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Sound.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "position": "absolute",
+        "top": 10,
+        "left": 10,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Sound Mute Toggle",
+      "order": 7.270665749648162,
+      "hidden": false
+    },
+    "95fc7680-5d6c-476c-b257-6b717281f50c": {
+      "id": "95fc7680-5d6c-476c-b257-6b717281f50c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a54faf48-4607-4acc-b464-34879c8cac78",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 50,
+        "height": 50,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Sound Up.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "position": "absolute",
+        "top": 50,
+        "left": 18,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Sound Up",
+      "order": 8.36874508489237,
+      "hidden": false
+    },
+    "35521828-d492-44d7-ac23-87e9e48ba2a1": {
+      "id": "35521828-d492-44d7-ac23-87e9e48ba2a1",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a54faf48-4607-4acc-b464-34879c8cac78",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 50,
+        "height": 50,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Sound Down.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "position": "absolute",
+        "top": 90,
+        "left": 18,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Sound Down",
+      "order": 9.909686824907864,
+      "hidden": false
+    },
+    "f851be6c-7f6b-4fc4-9cf5-7de203845568": {
+      "id": "f851be6c-7f6b-4fc4-9cf5-7de203845568",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "ui": {
+        "width": 660,
+        "height": 395,
+        "type": "overlay",
+        "background": "#000000",
+        "backgroundOpacity": 0.5000000000000002,
+        "backgroundSize": "stretch",
+        "stackingOrder": 0
+      },
+      "name": "UI Ubicación",
+      "order": 9.046109062124033,
+      "hidden": false
+    },
+    "04420913-2540-4d98-82c9-e22002bedf14": {
+      "id": "04420913-2540-4d98-82c9-e22002bedf14",
+      "position": [
+        -0.3730523928778491,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f851be6c-7f6b-4fc4-9cf5-7de203845568",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 75,
+        "height": 75,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/Ubicaciones/Carrera Blanca.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "position": "absolute",
+        "top": 275,
+        "left": 5,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Logo",
+      "order": 10.562824498767489
+    },
+    "2f5fbcb6-feee-4e38-ac90-d56d8161e95e": {
+      "id": "2f5fbcb6-feee-4e38-ac90-d56d8161e95e",
+      "position": [
+        -0.3730523928778491,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f851be6c-7f6b-4fc4-9cf5-7de203845568",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 75,
+        "height": 75,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Wiki.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "position": "absolute",
+        "top": 175,
+        "left": 20,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Wiki",
+      "order": 12.194703728228902
+    },
+    "80fdad01-603a-41fd-9db7-421466641d52": {
+      "id": "80fdad01-603a-41fd-9db7-421466641d52",
+      "position": [
+        -0.21769382646136082,
+        0.2902584352818147,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f851be6c-7f6b-4fc4-9cf5-7de203845568",
+      "components": {},
+      "ui": {
+        "width": 230,
+        "height": 40,
+        "text": "Carrera Blanca",
+        "color": "#ffffff",
+        "fontSize": 30,
+        "type": "3d",
+        "font": {
+          "type": "font",
+          "font": "Baskerville"
+        },
+        "verticalTextAlign": "center",
+        "position": "absolute",
+        "top": 35,
+        "left": 230,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Título",
+      "order": 7.98912039642944
+    },
+    "15e4fd51-c86d-4c6b-9c00-9dfb982d89dc": {
+      "id": "15e4fd51-c86d-4c6b-9c00-9dfb982d89dc",
+      "position": [
+        -0.21769382646136082,
+        0.2902584352818147,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f851be6c-7f6b-4fc4-9cf5-7de203845568",
+      "components": {},
+      "ui": {
+        "width": 375,
+        "height": 143,
+        "text": "Alguna vez considerada “La Ciudad Imperial de Skyrim”, Carrera Blanca es la capital de la Comarca de Carrera Blanca en la provincia de Skyrim. \nEs liderada por el jarl Balgruuf el Grande quien ha llevado a la ciudad a perder el prestigio que alguna vez tuvo, esto por culpa de La Guerra Civil entre los Capa de la Tormenta y el Imperio, los inviernos excesivamente duros y el acoso constante de bandidos. Carrera Blanca es hogar de dos importantes clanes: los Melena Gris y los Batallador.\nCarrera Blanca es también la sede de Los Compañeros situada en Jorrvaskr, un legendario salón de aguamiel.",
+        "color": "#ffffff",
+        "fontSize": 12,
+        "type": "3d",
+        "font": {
+          "type": "font",
+          "font": "Baskerville"
+        },
+        "verticalTextAlign": "center",
+        "position": "absolute",
+        "top": 83,
+        "left": 135,
+        "bottom": "",
+        "right": "",
+        "textAlign": "center"
+      },
+      "name": "Cuerpo",
+      "order": 8.702490159501009
+    },
+    "2f66bc36-93d2-4ae3-a8c4-63b23b4265ad": {
+      "id": "2f66bc36-93d2-4ae3-a8c4-63b23b4265ad",
+      "position": [
+        -0.21769382646136082,
+        0.2902584352818147,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f851be6c-7f6b-4fc4-9cf5-7de203845568",
+      "components": {},
+      "ui": {
+        "width": 375,
+        "height": 132,
+        "text": "- Es posible comprar una propiedad llamada “El hogar de la brisa” a Provencio Avenicci por 5000 septims.\n\n- Ten cuidado con tus ideologías políticas, Carrera Blanca es un territorio muy neutral pero con mucha tensión entre ambos bandos.\n\n- Si quieres tener las mejores armas y armaduras, no dudes en dirigirte a la Forja del Cielo donde Eorlund Melena Gris forja con el mejor acero de todo Skyrim.",
+        "color": "#ffffff",
+        "fontSize": 11,
+        "type": "3d",
+        "font": {
+          "type": "font",
+          "font": "Baskerville"
+        },
+        "verticalTextAlign": "center",
+        "position": "absolute",
+        "top": 230,
+        "left": 135,
+        "bottom": "",
+        "right": "",
+        "textAlign": "left"
+      },
+      "name": "Cuerpo (1)",
+      "order": 9.196716829900858
+    },
+    "2838d446-34cd-462a-a4f1-4da3d2df34ef": {
+      "id": "2838d446-34cd-462a-a4f1-4da3d2df34ef",
+      "position": [
+        -0.3730523928778491,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f851be6c-7f6b-4fc4-9cf5-7de203845568",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 60,
+        "height": 60,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Escucha.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "position": "absolute",
+        "top": 25,
+        "left": 565,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Logo (1)",
+      "order": 11.503599546775769
+    },
+    "9cac9308-6a2f-4ef0-990f-c12b4843a65e": {
+      "id": "9cac9308-6a2f-4ef0-990f-c12b4843a65e",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f851be6c-7f6b-4fc4-9cf5-7de203845568",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 36,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 309,
+        "left": 540,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Button",
+      "order": 13.287509151763638
+    },
+    "f28cbeb0-2a5d-47d9-8276-0a55437f3dd8": {
+      "id": "f28cbeb0-2a5d-47d9-8276-0a55437f3dd8",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "9cac9308-6a2f-4ef0-990f-c12b4843a65e",
+      "components": {},
+      "name": "Icon",
+      "ui": {
+        "width": 25,
+        "height": 25,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Arrow Back.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "order": 0.2460354233958394
+    },
+    "d9bd6180-22af-48c8-a063-e23314400b0d": {
+      "id": "d9bd6180-22af-48c8-a063-e23314400b0d",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "9cac9308-6a2f-4ef0-990f-c12b4843a65e",
+      "components": {},
+      "name": "Text",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Atras",
+        "color": "#ffffff",
+        "fontSize": 16
+      },
+      "order": -1.484248400351055
     }
   },
   "spaces": {
