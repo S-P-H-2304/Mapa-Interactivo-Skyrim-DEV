@@ -56,18 +56,13 @@ ecs.registerComponent({
             .listen(decButton, ecs.input.UI_CLICK, () => {
             const {volumeStep} = schemaAttribute.get(eid)
             const {volumePercent} = dataAttribute.get(eid)
+            const next = Math.max(0, volumePercent - volumeStep)
             dataAttribute.set(eid, {
-                volumePercent: Math.max(0, volumePercent - volumeStep),
-                isMuted: false,
-        })
-        broadcastAndRender()
-        })
-      .listen(decButton, ecs.input.UI_CLICK, () => {
-        const {volumeStep} = schemaAttribute.get(eid)
-        const {volumePercent} = dataAttribute.get(eid)
-        dataAttribute.set(eid, {volumePercent: Math.max(0, volumePercent - volumeStep)})
-        broadcastAndRender()
-      })
+              volumePercent: next,
+              isMuted: next <= 0, // si llega a 0, se muta solo
+            })
+            broadcastAndRender()
+          })
       .listen(muteButton, ecs.input.UI_CLICK, () => {
         const {isMuted} = dataAttribute.get(eid)
         dataAttribute.set(eid, {isMuted: !isMuted})
