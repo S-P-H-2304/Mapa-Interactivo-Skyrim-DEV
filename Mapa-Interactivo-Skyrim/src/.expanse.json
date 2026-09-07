@@ -433,9 +433,14 @@
             "mutedIcon": "assets/Mute.png",
             "unmutedIcon": "assets/Sound.png"
           }
+        },
+        "0cb29dfa-c800-40e2-8648-24a51a0f5605": {
+          "id": "0cb29dfa-c800-40e2-8648-24a51a0f5605",
+          "name": "unlockManager",
+          "parameters": {}
         }
       },
-      "name": "AudioGlobalManager",
+      "name": "GlobalManager",
       "order": 7.729914413534944
     },
     "34de51b2-a509-4211-9dd3-fa3d8d954961": {
@@ -505,6 +510,421 @@
       "components": {},
       "name": "Plano",
       "order": 10.677746040137912
+    },
+    "bb3da878-def6-49fc-b5da-3b1a94582e13": {
+      "id": "bb3da878-def6-49fc-b5da-3b1a94582e13",
+      "position": [
+        0.49414762574306414,
+        2.4585831443315778,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "e16d42be-901a-4b47-8d37-f2db66d7547d": {
+          "id": "e16d42be-901a-4b47-8d37-f2db66d7547d",
+          "name": "interactionTrigger",
+          "parameters": {
+            "unlockTextId": "text-prueba-p1"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 36,
+        "background": "#ad50ff",
+        "borderRadius": 18,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Botón",
+      "order": 12.62335993068965
+    },
+    "9869799d-9d1d-4d53-bc32-231a9221832f": {
+      "id": "9869799d-9d1d-4d53-bc32-231a9221832f",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "bb3da878-def6-49fc-b5da-3b1a94582e13",
+      "components": {},
+      "name": "Icono",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.01327913487586091
+    },
+    "0ae503ee-190a-49be-858d-03838df0a9d6": {
+      "id": "0ae503ee-190a-49be-858d-03838df0a9d6",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "bb3da878-def6-49fc-b5da-3b1a94582e13",
+      "components": {},
+      "name": "Texto",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "TRY",
+        "color": "#ffffff",
+        "fontSize": 16
+      },
+      "order": 1.3976379219746593
+    },
+    "0c96a1ae-b5c8-41f1-be19-8d7bd908f828": {
+      "id": "0c96a1ae-b5c8-41f1-be19-8d7bd908f828",
+      "position": [
+        0.49982300621426634,
+        1.9044962925836504,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "d3ea8678-6249-45db-8382-c19b6934a2af": {
+          "id": "d3ea8678-6249-45db-8382-c19b6934a2af",
+          "name": "unlockable",
+          "parameters": {
+            "unlockId": "text-prueba-p1"
+          }
+        }
+      },
+      "ui": {
+        "width": 90,
+        "height": 10,
+        "text": "",
+        "color": "#ffffff",
+        "fontSize": 20,
+        "type": "3d"
+      },
+      "name": "Texto",
+      "order": 13.845666143975995
+    },
+    "8c1f62b3-08de-4fa9-a3e9-51acbf4657da": {
+      "id": "8c1f62b3-08de-4fa9-a3e9-51acbf4657da",
+      "position": [
+        0,
+        1.9891099147514781,
+        -0.1422616807016377
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        2.536918782328665,
+        2.5415482158733744,
+        1
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#000000"
+      },
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "33a2908b-93e4-49f2-b9d1-71f3cf7d8a07": {
+          "id": "33a2908b-93e4-49f2-b9d1-71f3cf7d8a07",
+          "name": "narrativePanel",
+          "parameters": {
+            "page1": "PRUEBA",
+            "textUi": {
+              "type": "entity",
+              "id": "0c96a1ae-b5c8-41f1-be19-8d7bd908f828"
+            },
+            "page2UnlockId": "text-prueba-p1",
+            "page2": "soy gay",
+            "prevButton": {
+              "type": "entity",
+              "id": "fcb235fb-12b5-4c2b-ab70-da9c3d782631"
+            },
+            "nextButton": {
+              "type": "entity",
+              "id": "03a25dfa-4a55-4697-92e9-25bf9f04512b"
+            }
+          }
+        }
+      },
+      "name": "Plano (1)",
+      "order": 15.445380145029981
+    },
+    "fcb235fb-12b5-4c2b-ab70-da9c3d782631": {
+      "id": "fcb235fb-12b5-4c2b-ab70-da9c3d782631",
+      "position": [
+        -0.8234765911679408,
+        0.9618504884418607,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 66,
+        "height": 20,
+        "background": "#ad50ff",
+        "borderRadius": 18,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Botón",
+      "order": 16.514471521079265
+    },
+    "3c1e5aa5-97a1-4b26-b276-82051fafb33d": {
+      "id": "3c1e5aa5-97a1-4b26-b276-82051fafb33d",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "fcb235fb-12b5-4c2b-ab70-da9c3d782631",
+      "components": {},
+      "name": "Icono",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.030960960505764912
+    },
+    "b4e48f46-6e42-4f1b-bef0-e9381d188598": {
+      "id": "b4e48f46-6e42-4f1b-bef0-e9381d188598",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "fcb235fb-12b5-4c2b-ab70-da9c3d782631",
+      "components": {},
+      "name": "Texto",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Pre",
+        "color": "#ffffff",
+        "fontSize": 16
+      },
+      "order": 1.199686426023645
+    },
+    "03a25dfa-4a55-4697-92e9-25bf9f04512b": {
+      "id": "03a25dfa-4a55-4697-92e9-25bf9f04512b",
+      "position": [
+        -0.009550019595015002,
+        0.9618504884418607,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 66,
+        "height": 20,
+        "background": "#ad50ff",
+        "borderRadius": 18,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Botón (1)",
+      "order": 17.750701984985298
+    },
+    "7c05c495-3a03-4719-b6bd-6db6461ee6f3": {
+      "id": "7c05c495-3a03-4719-b6bd-6db6461ee6f3",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "03a25dfa-4a55-4697-92e9-25bf9f04512b",
+      "components": {},
+      "name": "Icono (2)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.030960960505764912
+    },
+    "9eb3ed83-07be-4189-9a68-7df5cc3dfd33": {
+      "id": "9eb3ed83-07be-4189-9a68-7df5cc3dfd33",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "03a25dfa-4a55-4697-92e9-25bf9f04512b",
+      "components": {},
+      "name": "Texto (1)",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Next",
+        "color": "#ffffff",
+        "fontSize": 16
+      },
+      "order": 1.199686426023645
     }
   },
   "spaces": {
