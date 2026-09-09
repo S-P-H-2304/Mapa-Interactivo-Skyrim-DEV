@@ -66,7 +66,7 @@
         1
       ],
       "scale": [
-        5.875187877508779,
+        9.117232150830958,
         0.08979528966271218,
         5.6170029479090395
       ],
@@ -166,7 +166,7 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "parentId": "ef283b49-9550-49db-96d0-0da1a9f8e484",
       "components": {},
       "ui": {
         "type": "3d",
@@ -270,7 +270,7 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "parentId": "ef283b49-9550-49db-96d0-0da1a9f8e484",
       "components": {},
       "ui": {
         "type": "3d",
@@ -375,7 +375,7 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "parentId": "ef283b49-9550-49db-96d0-0da1a9f8e484",
       "components": {},
       "ui": {
         "width": 70,
@@ -463,7 +463,7 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "parentId": "ef283b49-9550-49db-96d0-0da1a9f8e484",
       "components": {},
       "ui": {
         "type": "3d",
@@ -482,7 +482,7 @@
     "429f9699-97fb-4483-bc5a-69824ea88805": {
       "id": "429f9699-97fb-4483-bc5a-69824ea88805",
       "position": [
-        1.8100129033025523,
+        2.06048053817742,
         1.9210588779535287,
         -0.6372436945928344
       ],
@@ -511,11 +511,11 @@
       "name": "Plano",
       "order": 10.677746040137912
     },
-    "bb3da878-def6-49fc-b5da-3b1a94582e13": {
-      "id": "bb3da878-def6-49fc-b5da-3b1a94582e13",
+    "7dcda9cb-8a2e-484b-aebb-84569c76e4a3": {
+      "id": "7dcda9cb-8a2e-484b-aebb-84569c76e4a3",
       "position": [
-        0.49414762574306414,
-        2.4585831443315778,
+        0,
+        1.8509702255853675,
         0
       ],
       "rotation": [
@@ -532,19 +532,113 @@
       "geometry": null,
       "material": null,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Vista 1",
+      "order": 15.514279300783901
+    },
+    "6efffa69-e787-4b27-9a65-5628310f9b93": {
+      "id": "6efffa69-e787-4b27-9a65-5628310f9b93",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "7dcda9cb-8a2e-484b-aebb-84569c76e4a3",
+      "components": {},
+      "name": "Página 1",
+      "order": 1.4892541206376277
+    },
+    "b22b7726-99e7-4da9-a217-873fcade5b7e": {
+      "id": "b22b7726-99e7-4da9-a217-873fcade5b7e",
+      "position": [
+        -0.02055255648593801,
+        0.8390930370085874,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "6efffa69-e787-4b27-9a65-5628310f9b93",
+      "components": {},
+      "ui": {
+        "width": 271,
+        "height": 57,
+        "text": "Mientras caminabas a las afueras de Carrera Blanca escuchaste unos ruidos de lucha provenientes de una granja. Cuando te acercaste viste a un grupo de guerreros derribando a un gigante, ayudalos",
+        "color": "#ffffff",
+        "fontSize": 12,
+        "type": "3d",
+        "font": {
+          "type": "font",
+          "font": "Nunito"
+        }
+      },
+      "name": "TextoPágina1-1",
+      "order": 1.6444236472931264
+    },
+    "33f67f1b-7778-4541-8c3f-f33ae3fda93e": {
+      "id": "33f67f1b-7778-4541-8c3f-f33ae3fda93e",
+      "position": [
+        -0.07615657901450923,
+        0.3051273997614299,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "6efffa69-e787-4b27-9a65-5628310f9b93",
       "components": {
-        "e16d42be-901a-4b47-8d37-f2db66d7547d": {
-          "id": "e16d42be-901a-4b47-8d37-f2db66d7547d",
-          "name": "interactionTrigger",
+        "218054f4-8df5-497a-9e64-b6907199727e": {
+          "id": "218054f4-8df5-497a-9e64-b6907199727e",
+          "name": "toggleVisibilityOnClick",
           "parameters": {
-            "unlockTextId": "text-prueba-p1"
+            "showTarget1": {
+              "type": "entity",
+              "id": "6017d836-73cd-469e-9281-cf073fa0e659"
+            },
+            "showTarget2": {
+              "type": "entity",
+              "id": "55ea7fd2-d523-43c5-b5f2-754509f00dd9"
+            }
           }
         }
       },
       "ui": {
         "type": "3d",
         "width": 100,
-        "height": 36,
+        "height": 24,
         "background": "#ad50ff",
         "borderRadius": 18,
         "flexDirection": "row",
@@ -554,45 +648,11 @@
         "alignItems": "center",
         "justifyContent": "center"
       },
-      "name": "Botón",
-      "order": 12.62335993068965
+      "name": "interactionButtonPage1-1",
+      "order": 3.473697520386623
     },
-    "9869799d-9d1d-4d53-bc32-231a9221832f": {
-      "id": "9869799d-9d1d-4d53-bc32-231a9221832f",
-      "position": [
-        -0.323,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "bb3da878-def6-49fc-b5da-3b1a94582e13",
-      "components": {},
-      "name": "Icono",
-      "ui": {
-        "width": 16,
-        "height": 16,
-        "image": {
-          "type": "url",
-          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
-        },
-        "backgroundOpacity": 1
-      },
-      "order": 0.01327913487586091
-    },
-    "0ae503ee-190a-49be-858d-03838df0a9d6": {
-      "id": "0ae503ee-190a-49be-858d-03838df0a9d6",
+    "097e33f9-87c0-471f-bf9e-80c2a22abfbc": {
+      "id": "097e33f9-87c0-471f-bf9e-80c2a22abfbc",
       "position": [
         0,
         0,
@@ -611,23 +671,23 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "bb3da878-def6-49fc-b5da-3b1a94582e13",
+      "parentId": "33f67f1b-7778-4541-8c3f-f33ae3fda93e",
       "components": {},
-      "name": "Texto",
+      "name": "interactionButtonTextPage1-1",
       "ui": {
-        "width": 50,
+        "width": 79,
         "height": 14,
-        "text": "TRY",
+        "text": "AYUDALOS",
         "color": "#ffffff",
-        "fontSize": 16
+        "fontSize": 12
       },
-      "order": 1.3976379219746593
+      "order": 1.0564490329250986
     },
-    "0c96a1ae-b5c8-41f1-be19-8d7bd908f828": {
-      "id": "0c96a1ae-b5c8-41f1-be19-8d7bd908f828",
+    "6017d836-73cd-469e-9281-cf073fa0e659": {
+      "id": "6017d836-73cd-469e-9281-cf073fa0e659",
       "position": [
-        0.49982300621426634,
-        1.9044962925836504,
+        -0.02055255648593801,
+        -0.2033967707114006,
         0
       ],
       "rotation": [
@@ -643,86 +703,29 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "components": {
-        "d3ea8678-6249-45db-8382-c19b6934a2af": {
-          "id": "d3ea8678-6249-45db-8382-c19b6934a2af",
-          "name": "unlockable",
-          "parameters": {
-            "unlockId": "text-prueba-p1"
-          }
-        }
-      },
+      "parentId": "6efffa69-e787-4b27-9a65-5628310f9b93",
+      "components": {},
       "ui": {
-        "width": 90,
-        "height": 10,
-        "text": "",
+        "width": 271,
+        "height": 57,
+        "text": "El grupo de guerreros te elogia y te invita a formar parte de Los Companeros. Dirigete a Jorrvaskr para hablar con Kodlak Melena Blanca, pero ten cuidado, se rumorea que de alli provienen aullidos extranos en las noches con luna.\n",
         "color": "#ffffff",
-        "fontSize": 20,
-        "type": "3d"
-      },
-      "name": "Texto",
-      "order": 13.845666143975995
-    },
-    "8c1f62b3-08de-4fa9-a3e9-51acbf4657da": {
-      "id": "8c1f62b3-08de-4fa9-a3e9-51acbf4657da",
-      "position": [
-        0,
-        1.9891099147514781,
-        -0.1422616807016377
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        2.536918782328665,
-        2.5415482158733744,
-        1
-      ],
-      "geometry": {
-        "type": "plane",
-        "width": 1,
-        "height": 1
-      },
-      "material": {
-        "type": "basic",
-        "color": "#000000"
-      },
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "components": {
-        "33a2908b-93e4-49f2-b9d1-71f3cf7d8a07": {
-          "id": "33a2908b-93e4-49f2-b9d1-71f3cf7d8a07",
-          "name": "narrativePanel",
-          "parameters": {
-            "page1": "PRUEBA",
-            "textUi": {
-              "type": "entity",
-              "id": "0c96a1ae-b5c8-41f1-be19-8d7bd908f828"
-            },
-            "page2UnlockId": "text-prueba-p1",
-            "page2": "soy gay",
-            "prevButton": {
-              "type": "entity",
-              "id": "fcb235fb-12b5-4c2b-ab70-da9c3d782631"
-            },
-            "nextButton": {
-              "type": "entity",
-              "id": "03a25dfa-4a55-4697-92e9-25bf9f04512b"
-            }
-          }
+        "fontSize": 12,
+        "type": "3d",
+        "font": {
+          "type": "font",
+          "font": "Nunito"
         }
       },
-      "name": "Plano (1)",
-      "order": 15.445380145029981
+      "name": "TextoPágina1-2",
+      "order": 2.98564133543412,
+      "disabled": true
     },
-    "fcb235fb-12b5-4c2b-ab70-da9c3d782631": {
-      "id": "fcb235fb-12b5-4c2b-ab70-da9c3d782631",
+    "55ea7fd2-d523-43c5-b5f2-754509f00dd9": {
+      "id": "55ea7fd2-d523-43c5-b5f2-754509f00dd9",
       "position": [
-        -0.8234765911679408,
-        0.9618504884418607,
+        -0.07615657901450923,
+        -0.7729889849377136,
         0
       ],
       "rotation": [
@@ -738,12 +741,12 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "parentId": "6efffa69-e787-4b27-9a65-5628310f9b93",
       "components": {},
       "ui": {
         "type": "3d",
-        "width": 66,
-        "height": 20,
+        "width": 100,
+        "height": 24,
         "background": "#ad50ff",
         "borderRadius": 18,
         "flexDirection": "row",
@@ -753,45 +756,12 @@
         "alignItems": "center",
         "justifyContent": "center"
       },
-      "name": "Botón",
-      "order": 16.514471521079265
+      "name": "interactionButtonPage1-2",
+      "order": 5.296856527256232,
+      "disabled": true
     },
-    "3c1e5aa5-97a1-4b26-b276-82051fafb33d": {
-      "id": "3c1e5aa5-97a1-4b26-b276-82051fafb33d",
-      "position": [
-        -0.323,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "fcb235fb-12b5-4c2b-ab70-da9c3d782631",
-      "components": {},
-      "name": "Icono",
-      "ui": {
-        "width": 16,
-        "height": 16,
-        "image": {
-          "type": "url",
-          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
-        },
-        "backgroundOpacity": 1
-      },
-      "order": 0.030960960505764912
-    },
-    "b4e48f46-6e42-4f1b-bef0-e9381d188598": {
-      "id": "b4e48f46-6e42-4f1b-bef0-e9381d188598",
+    "b159dec5-24d0-489b-b2a1-f958e89f3f6b": {
+      "id": "b159dec5-24d0-489b-b2a1-f958e89f3f6b",
       "position": [
         0,
         0,
@@ -810,23 +780,23 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "fcb235fb-12b5-4c2b-ab70-da9c3d782631",
+      "parentId": "55ea7fd2-d523-43c5-b5f2-754509f00dd9",
       "components": {},
-      "name": "Texto",
+      "name": "interactionButtonTextPage1-2",
       "ui": {
-        "width": 50,
+        "width": 79,
         "height": 14,
-        "text": "Pre",
+        "text": "UNIRSE",
         "color": "#ffffff",
-        "fontSize": 16
+        "fontSize": 12
       },
-      "order": 1.199686426023645
+      "order": 1.0564490329250986
     },
-    "03a25dfa-4a55-4697-92e9-25bf9f04512b": {
-      "id": "03a25dfa-4a55-4697-92e9-25bf9f04512b",
+    "ef283b49-9550-49db-96d0-0da1a9f8e484": {
+      "id": "ef283b49-9550-49db-96d0-0da1a9f8e484",
       "position": [
-        -0.009550019595015002,
-        0.9618504884418607,
+        1.4477436565551616,
+        0,
         0
       ],
       "rotation": [
@@ -844,87 +814,8 @@
       "material": null,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
-      "ui": {
-        "type": "3d",
-        "width": 66,
-        "height": 20,
-        "background": "#ad50ff",
-        "borderRadius": 18,
-        "flexDirection": "row",
-        "backgroundOpacity": 1,
-        "padding": "10",
-        "gap": "6",
-        "alignItems": "center",
-        "justifyContent": "center"
-      },
-      "name": "Botón (1)",
-      "order": 17.750701984985298
-    },
-    "7c05c495-3a03-4719-b6bd-6db6461ee6f3": {
-      "id": "7c05c495-3a03-4719-b6bd-6db6461ee6f3",
-      "position": [
-        -0.323,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "03a25dfa-4a55-4697-92e9-25bf9f04512b",
-      "components": {},
-      "name": "Icono (2)",
-      "ui": {
-        "width": 16,
-        "height": 16,
-        "image": {
-          "type": "url",
-          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
-        },
-        "backgroundOpacity": 1
-      },
-      "order": 0.030960960505764912
-    },
-    "9eb3ed83-07be-4189-9a68-7df5cc3dfd33": {
-      "id": "9eb3ed83-07be-4189-9a68-7df5cc3dfd33",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "03a25dfa-4a55-4697-92e9-25bf9f04512b",
-      "components": {},
-      "name": "Texto (1)",
-      "ui": {
-        "width": 50,
-        "height": 14,
-        "text": "Next",
-        "color": "#ffffff",
-        "fontSize": 16
-      },
-      "order": 1.199686426023645
+      "name": "SonidoUI",
+      "order": 16.791873470092682
     }
   },
   "spaces": {
