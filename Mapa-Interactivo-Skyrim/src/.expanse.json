@@ -167,14 +167,12 @@
         1,
         1
       ],
-      "geometry": null,
-      "material": null,
       "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
       "components": {},
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Marker_Icon.glb"
+          "asset": "assets/Modelos/Marker_Icon.glb"
         },
         "animationClip": "",
         "loop": true
@@ -200,14 +198,12 @@
         1,
         1
       ],
-      "geometry": null,
-      "material": null,
       "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
       "components": {},
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Marker_Icon.glb"
+          "asset": "assets/Modelos/Marker_Icon.glb"
         },
         "animationClip": "",
         "loop": true
@@ -233,14 +229,12 @@
         1,
         1
       ],
-      "geometry": null,
-      "material": null,
       "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
       "components": {},
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Marker_Icon.glb"
+          "asset": "assets/Modelos/Marker_Icon.glb"
         },
         "animationClip": "",
         "loop": true
@@ -266,14 +260,12 @@
         1,
         1
       ],
-      "geometry": null,
-      "material": null,
       "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
       "components": {},
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Marker_Icon.glb"
+          "asset": "assets/Modelos/Marker_Icon.glb"
         },
         "animationClip": "",
         "loop": true
@@ -299,14 +291,12 @@
         1,
         1
       ],
-      "geometry": null,
-      "material": null,
       "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
       "components": {},
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Marker_Icon.glb"
+          "asset": "assets/Modelos/Marker_Icon.glb"
         },
         "animationClip": "",
         "loop": true
@@ -332,14 +322,12 @@
         1,
         1
       ],
-      "geometry": null,
-      "material": null,
       "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
       "components": {},
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Marker_Icon.glb"
+          "asset": "assets/Modelos/Marker_Icon.glb"
         },
         "animationClip": "",
         "loop": true
@@ -365,14 +353,12 @@
         1,
         1
       ],
-      "geometry": null,
-      "material": null,
       "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
       "components": {},
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Marker_Icon.glb"
+          "asset": "assets/Modelos/Marker_Icon.glb"
         },
         "animationClip": "",
         "loop": true
@@ -398,14 +384,12 @@
         1,
         1
       ],
-      "geometry": null,
-      "material": null,
       "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
       "components": {},
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Marker_Icon.glb"
+          "asset": "assets/Modelos/Marker_Icon.glb"
         },
         "animationClip": "",
         "loop": true
@@ -431,14 +415,12 @@
         1,
         1
       ],
-      "geometry": null,
-      "material": null,
       "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
       "components": {},
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Marker_Icon.glb"
+          "asset": "assets/Modelos/Marker_Icon.glb"
         },
         "animationClip": "",
         "loop": true
@@ -499,7 +481,7 @@
         "height": 395,
         "type": "overlay",
         "background": "#000000",
-        "backgroundOpacity": 0,
+        "backgroundOpacity": 0.75,
         "backgroundSize": "stretch",
         "stackingOrder": -1
       },
@@ -560,7 +542,7 @@
         "height": 50,
         "image": {
           "type": "asset",
-          "asset": "assets/Iconos/UI/Sound.png"
+          "asset": "assets/Iconos/UI/Unmute.png"
         },
         "backgroundOpacity": 1,
         "backgroundSize": "contain",
@@ -608,7 +590,7 @@
         "backgroundSize": "contain",
         "position": "absolute",
         "top": 50,
-        "left": 18,
+        "left": 20,
         "bottom": "",
         "right": ""
       },
@@ -650,7 +632,7 @@
         "backgroundSize": "contain",
         "position": "absolute",
         "top": 90,
-        "left": 18,
+        "left": 10,
         "bottom": "",
         "right": ""
       },
@@ -685,7 +667,7 @@
         "height": 395,
         "type": "overlay",
         "background": "#000000",
-        "backgroundOpacity": 0.5000000000000002,
+        "backgroundOpacity": 1,
         "backgroundSize": "stretch",
         "stackingOrder": 0
       },
@@ -806,7 +788,7 @@
         "type": "3d",
         "font": {
           "type": "font",
-          "font": "Baskerville"
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
         },
         "verticalTextAlign": "center",
         "position": "absolute",
@@ -841,7 +823,7 @@
       "parentId": "f851be6c-7f6b-4fc4-9cf5-7de203845568",
       "components": {},
       "ui": {
-        "width": 375,
+        "width": 380,
         "height": 143,
         "text": "Alguna vez considerada “La Ciudad Imperial de Skyrim”, Carrera Blanca es la capital de la Comarca de Carrera Blanca en la provincia de Skyrim. \nEs liderada por el jarl Balgruuf el Grande quien ha llevado a la ciudad a perder el prestigio que alguna vez tuvo, esto por culpa de La Guerra Civil entre los Capa de la Tormenta y el Imperio, los inviernos excesivamente duros y el acoso constante de bandidos. Carrera Blanca es hogar de dos importantes clanes: los Melena Gris y los Batallador.\nCarrera Blanca es también la sede de Los Compañeros situada en Jorrvaskr, un legendario salón de aguamiel.",
         "color": "#ffffff",
@@ -849,7 +831,7 @@
         "type": "3d",
         "font": {
           "type": "font",
-          "font": "Baskerville"
+          "font": "assets/Fuentes/Nova_Oval/NovaOval.json"
         },
         "verticalTextAlign": "center",
         "position": "absolute",
@@ -857,7 +839,7 @@
         "left": 135,
         "bottom": "",
         "right": "",
-        "textAlign": "center"
+        "textAlign": "justify-left"
       },
       "name": "Cuerpo",
       "order": 8.702490159501009
@@ -893,7 +875,7 @@
         "type": "3d",
         "font": {
           "type": "font",
-          "font": "Baskerville"
+          "font": "assets/Fuentes/Nova_Oval/NovaOval.json"
         },
         "verticalTextAlign": "center",
         "position": "absolute",
@@ -934,7 +916,7 @@
         "height": 60,
         "image": {
           "type": "asset",
-          "asset": "assets/Iconos/UI/Escucha.png"
+          "asset": "assets/Iconos/UI/Rumor.png"
         },
         "backgroundOpacity": 1,
         "backgroundSize": "contain",
