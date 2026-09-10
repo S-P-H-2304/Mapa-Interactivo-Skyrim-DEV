@@ -704,7 +704,15 @@
       "geometry": null,
       "material": null,
       "parentId": "6efffa69-e787-4b27-9a65-5628310f9b93",
-      "components": {},
+      "components": {
+        "72abf88a-8bb9-4d60-98de-e1082f84b2b6": {
+          "id": "72abf88a-8bb9-4d60-98de-e1082f84b2b6",
+          "name": "typewriterText",
+          "parameters": {
+            "charIntervalMs": 35
+          }
+        }
+      },
       "ui": {
         "width": 271,
         "height": 57,
@@ -719,7 +727,8 @@
       },
       "name": "TextoPágina1-2",
       "order": 2.98564133543412,
-      "disabled": true
+      "disabled": true,
+      "hidden": false
     },
     "55ea7fd2-d523-43c5-b5f2-754509f00dd9": {
       "id": "55ea7fd2-d523-43c5-b5f2-754509f00dd9",
@@ -816,6 +825,176 @@
       "components": {},
       "name": "SonidoUI",
       "order": 16.791873470092682
+    },
+    "9aefb515-fda4-4e7e-81fa-a681d7b436a3": {
+      "id": "9aefb515-fda4-4e7e-81fa-a681d7b436a3",
+      "position": [
+        2.2512119703042703,
+        2.6648344020881565,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 1,
+        "height": 1,
+        "width": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#881616"
+      },
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "01d0c356-cb60-4285-97d7-d6cc3ae95718": {
+          "id": "01d0c356-cb60-4285-97d7-d6cc3ae95718",
+          "name": "globalVolumeSync",
+          "parameters": {}
+        }
+      },
+      "name": "Caja",
+      "order": 18.15027334637506,
+      "audio": {
+        "paused": true,
+        "loop": true,
+        "src": {
+          "type": "asset",
+          "asset": "assets/Carrera_blanca.mp3"
+        }
+      }
+    },
+    "f8c3010f-cb47-4a0a-921a-ee4f06e84723": {
+      "id": "f8c3010f-cb47-4a0a-921a-ee4f06e84723",
+      "position": [
+        1.9141565958315292,
+        1.7192627614797713,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "86a03d0b-2ad9-4e97-81f8-d794fc88dcc8": {
+          "id": "86a03d0b-2ad9-4e97-81f8-d794fc88dcc8",
+          "name": "poiAudioTriggerTest",
+          "parameters": {
+            "testButton": {
+              "type": "entity",
+              "id": "f8c3010f-cb47-4a0a-921a-ee4f06e84723"
+            },
+            "ambientAudio": {
+              "type": "entity",
+              "id": "729478ae-d067-4e0c-a753-66c2e9efb625"
+            },
+            "poiAudio": {
+              "type": "entity",
+              "id": "9aefb515-fda4-4e7e-81fa-a681d7b436a3"
+            }
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 36,
+        "background": "#ad50ff",
+        "borderRadius": 18,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "TESTAUDIOPOI",
+      "order": 19.610351409182876
+    },
+    "ff9fcbb7-22a6-4fe8-97ec-f3f8a701e4b8": {
+      "id": "ff9fcbb7-22a6-4fe8-97ec-f3f8a701e4b8",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f8c3010f-cb47-4a0a-921a-ee4f06e84723",
+      "components": {},
+      "name": "Icono",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.041876807145707184
+    },
+    "7b783872-f68c-4360-b3cd-cf311ba98d50": {
+      "id": "7b783872-f68c-4360-b3cd-cf311ba98d50",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f8c3010f-cb47-4a0a-921a-ee4f06e84723",
+      "components": {},
+      "name": "Texto",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Button",
+        "color": "#ffffff",
+        "fontSize": 16
+      },
+      "order": 1.4455096959057405
     }
   },
   "spaces": {

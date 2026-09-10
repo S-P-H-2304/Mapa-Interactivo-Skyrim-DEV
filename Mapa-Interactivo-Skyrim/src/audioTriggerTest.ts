@@ -1,5 +1,5 @@
 import * as ecs from '@8thwall/ecs'
-import {openPoiAudio, closePoiAudio} from './poiAudioSwitch'
+import {openPoiAudio, closePoiAudio} from './audioSwitch'
 
 ecs.registerComponent({
   name: 'poiAudioTriggerTest',
