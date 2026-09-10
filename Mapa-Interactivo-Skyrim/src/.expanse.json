@@ -147,162 +147,7 @@
       "components": {},
       "name": "Scaler",
       "order": 4.02107873876559,
-      "hidden": true
-    },
-    "04ecd43e-9f81-422a-b431-e744dd8a071e": {
-      "id": "04ecd43e-9f81-422a-b431-e744dd8a071e",
-      "position": [
-        -2.624572126785362,
-        0.1288312366790097,
-        -0.19228305181760197
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/Modelos/Marker_Icon.glb"
-        },
-        "animationClip": "",
-        "loop": true
-      },
-      "name": "Markath",
-      "order": 5.998987473974209
-    },
-    "1b3e6472-86a9-49c6-a9c5-8c221bbc8abc": {
-      "id": "1b3e6472-86a9-49c6-a9c5-8c221bbc8abc",
-      "position": [
-        -1.0574686393878103,
-        0.1288312366790097,
-        -1.6531566865248537
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/Modelos/Marker_Icon.glb"
-        },
-        "animationClip": "",
-        "loop": true
-      },
-      "name": "Soledad",
-      "order": 7.385677047320426
-    },
-    "c6004493-1c0a-4e4e-b308-966d759868c8": {
-      "id": "c6004493-1c0a-4e4e-b308-966d759868c8",
-      "position": [
-        0.4419087587631889,
-        0.1288312366790097,
-        -1.6531566865248537
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/Modelos/Marker_Icon.glb"
-        },
-        "animationClip": "",
-        "loop": true
-      },
-      "name": "Lucero Del Alba",
-      "order": 9.114934704996847
-    },
-    "63319c8e-89c4-46e0-b643-316cf9c53514": {
-      "id": "63319c8e-89c4-46e0-b643-316cf9c53514",
-      "position": [
-        -0.5881432148300192,
-        0.1288312366790097,
-        -1.0020370927468445
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/Modelos/Marker_Icon.glb"
-        },
-        "animationClip": "",
-        "loop": true
-      },
-      "name": "Morthal",
-      "order": 11.042653642134045
-    },
-    "f6e97e74-4070-440c-8567-ec84ba8065b0": {
-      "id": "f6e97e74-4070-440c-8567-ec84ba8065b0",
-      "position": [
-        0.3545729797138365,
-        0.1288312366790097,
-        -0.026241749014020876
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/Modelos/Marker_Icon.glb"
-        },
-        "animationClip": "",
-        "loop": true
-      },
-      "name": "Carrera Blanca",
-      "order": 12.619086024300591
+      "hidden": false
     },
     "98e56b46-2634-4fac-9eb5-e672863b0688": {
       "id": "98e56b46-2634-4fac-9eb5-e672863b0688",
@@ -323,7 +168,16 @@
         1
       ],
       "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
-      "components": {},
+      "components": {
+        "4daa6951-c8db-4af6-977e-00fee6e537a7": {
+          "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
+          "name": "audioToggle",
+          "parameters": {
+            "songUrl": "assets/Sonido/Música/Falkreath.mp3",
+            "activationDelay": 2500
+          }
+        }
+      },
       "gltfModel": {
         "src": {
           "type": "asset",
@@ -333,100 +187,16 @@
         "loop": true
       },
       "name": "Falkreath",
-      "order": 13.930304026145686
-    },
-    "5b6e98e1-4050-4c5f-8cc2-347683bccc09": {
-      "id": "5b6e98e1-4050-4c5f-8cc2-347683bccc09",
-      "position": [
-        2.586481614857898,
-        0.1288312366790097,
-        1.3190081328555379
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/Modelos/Marker_Icon.glb"
+      "order": 13.930304026145686,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.75,
+          "height": 1,
+          "width": 0.75
         },
-        "animationClip": "",
-        "loop": true
-      },
-      "name": "Riften",
-      "order": 15.41502784307691
-    },
-    "f043bc57-b2d5-4cb7-956e-ba14d0ebd859": {
-      "id": "f043bc57-b2d5-4cb7-956e-ba14d0ebd859",
-      "position": [
-        1.8788641634938923,
-        0.1288312366790097,
-        -0.6520315839385716
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/Modelos/Marker_Icon.glb"
-        },
-        "animationClip": "",
-        "loop": true
-      },
-      "name": "Ventalia",
-      "order": 17.154399091901116
-    },
-    "0b977dde-6458-499e-849f-5835280456f2": {
-      "id": "0b977dde-6458-499e-849f-5835280456f2",
-      "position": [
-        1.5598700817759372,
-        0.1288312366790097,
-        -1.5610126728726792
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/Modelos/Marker_Icon.glb"
-        },
-        "animationClip": "",
-        "loop": true
-      },
-      "name": "Hibernalia",
-      "order": 18.658767214785623
+        "eventOnly": true
+      }
     },
     "8e483345-01f6-4fd3-aeab-63a1461a9dce": {
       "id": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
@@ -457,7 +227,7 @@
     "a54faf48-4607-4acc-b464-34879c8cac78": {
       "id": "a54faf48-4607-4acc-b464-34879c8cac78",
       "position": [
-        0,
+        -7.474572354737953,
         0,
         0
       ],
@@ -483,36 +253,12 @@
         "background": "#000000",
         "backgroundOpacity": 0.75,
         "backgroundSize": "stretch",
-        "stackingOrder": -1
+        "stackingOrder": -100,
+        "ignoreRaycast": true
       },
       "name": "UI General",
       "order": 8.033129879296864,
       "hidden": false
-    },
-    "b858951f-6115-4bae-ad27-0f8576e06db1": {
-      "id": "b858951f-6115-4bae-ad27-0f8576e06db1",
-      "position": [
-        -3.037986414977357,
-        1.6897721471101992,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "components": {},
-      "name": "Volume Controls",
-      "order": 6.819050077709062
     },
     "183f13b7-8b87-4536-ba02-7b2fbed6d043": {
       "id": "183f13b7-8b87-4536-ba02-7b2fbed6d043",
@@ -643,7 +389,7 @@
     "f851be6c-7f6b-4fc4-9cf5-7de203845568": {
       "id": "f851be6c-7f6b-4fc4-9cf5-7de203845568",
       "position": [
-        0,
+        -7.474572354737953,
         0,
         0
       ],
@@ -667,13 +413,13 @@
         "height": 395,
         "type": "overlay",
         "background": "#000000",
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0.75,
         "backgroundSize": "stretch",
         "stackingOrder": 0
       },
       "name": "UI Ubicación",
       "order": 9.046109062124033,
-      "hidden": false
+      "hidden": true
     },
     "04420913-2540-4d98-82c9-e22002bedf14": {
       "id": "04420913-2540-4d98-82c9-e22002bedf14",
@@ -1032,16 +778,509 @@
         "height": 14,
         "text": "Atras",
         "color": "#ffffff",
-        "fontSize": 16
+        "fontSize": 16,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
+        }
       },
       "order": -1.484248400351055
+    },
+    "70991734-3532-4493-b2e0-3e9bb372fa56": {
+      "id": "70991734-3532-4493-b2e0-3e9bb372fa56",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "ae46f8d8-0354-43ab-9bac-164dc6b4c1ce": {
+          "id": "ae46f8d8-0354-43ab-9bac-164dc6b4c1ce",
+          "name": "audioManager",
+          "parameters": {
+            "incButton": {
+              "type": "entity",
+              "id": "95fc7680-5d6c-476c-b257-6b717281f50c"
+            },
+            "decButton": {
+              "type": "entity",
+              "id": "35521828-d492-44d7-ac23-87e9e48ba2a1"
+            },
+            "muteButton": {
+              "type": "entity",
+              "id": "183f13b7-8b87-4536-ba02-7b2fbed6d043"
+            },
+            "mutedIcon": "assets/Iconos/UI/Mute.png",
+            "unmutedIcon": "assets/Iconos/UI/Unmute.png",
+            "mainAudioPlayer": {
+              "type": "entity",
+              "id": "70991734-3532-4493-b2e0-3e9bb372fa56"
+            },
+            "locationAudioPlayer": {
+              "type": "entity",
+              "id": "1069be19-c9a4-4a97-ba2d-b094dabd2ed7"
+            },
+            "fadeDuration": 2500
+          }
+        }
+      },
+      "name": "Audio Manager",
+      "order": 10.982692451031212,
+      "audio": {
+        "loop": true,
+        "src": {
+          "type": "asset",
+          "asset": "assets/Sonido/Música/Carrera blanca.mp3"
+        }
+      }
+    },
+    "1069be19-c9a4-4a97-ba2d-b094dabd2ed7": {
+      "id": "1069be19-c9a4-4a97-ba2d-b094dabd2ed7",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Location Speaker",
+      "order": 12.484812905237824,
+      "audio": {
+        "loop": true
+      }
+    },
+    "0f3a3eb0-58f6-417c-a080-0072c55c600f": {
+      "id": "0f3a3eb0-58f6-417c-a080-0072c55c600f",
+      "position": [
+        0.3601955304693141,
+        0.1288312366790097,
+        -0.028715241180972146
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {
+        "4daa6951-c8db-4af6-977e-00fee6e537a7": {
+          "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
+          "name": "audioToggle",
+          "parameters": {
+            "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
+            "activationDelay": 2500
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Modelos/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Carrera Blanca",
+      "order": 15.692955325400835,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.75,
+          "height": 1,
+          "width": 0.75
+        },
+        "eventOnly": true
+      }
+    },
+    "56318751-81d1-42c0-a55a-56aff65b9d12": {
+      "id": "56318751-81d1-42c0-a55a-56aff65b9d12",
+      "position": [
+        2.700259537768484,
+        0.1288312366790097,
+        1.3321805756668814
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {
+        "4daa6951-c8db-4af6-977e-00fee6e537a7": {
+          "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
+          "name": "audioToggle",
+          "parameters": {
+            "songUrl": "assets/Sonido/Música/Riften.mp3",
+            "activationDelay": 2500
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Modelos/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Riften",
+      "order": 17.32808546386416,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.75,
+          "height": 1,
+          "width": 0.75
+        },
+        "eventOnly": true
+      }
+    },
+    "fccc4bff-28c5-4b2e-ac5f-124138ebfca3": {
+      "id": "fccc4bff-28c5-4b2e-ac5f-124138ebfca3",
+      "position": [
+        1.9772162180348745,
+        0.1288312366790097,
+        -0.6742004781451897
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {
+        "4daa6951-c8db-4af6-977e-00fee6e537a7": {
+          "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
+          "name": "audioToggle",
+          "parameters": {
+            "songUrl": "assets/Sonido/Música/Ventalia.mp3",
+            "activationDelay": 2500
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Modelos/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Ventalia",
+      "order": 18.45413730497651,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.75,
+          "height": 1,
+          "width": 0.75
+        },
+        "eventOnly": true
+      }
+    },
+    "b841366d-90e4-4c30-a463-255db5a47a2d": {
+      "id": "b841366d-90e4-4c30-a463-255db5a47a2d",
+      "position": [
+        1.6296010317398764,
+        0.1288312366790097,
+        -1.628017610179043
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {
+        "4daa6951-c8db-4af6-977e-00fee6e537a7": {
+          "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
+          "name": "audioToggle",
+          "parameters": {
+            "songUrl": "assets/Sonido/Música/Hibernalia.mp3",
+            "activationDelay": 2500
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Modelos/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Hibernalia",
+      "order": 19.940442213573604,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.75,
+          "height": 1,
+          "width": 0.75
+        },
+        "eventOnly": true
+      }
+    },
+    "6e103936-c4d5-4388-a78c-37b69c3fc710": {
+      "id": "6e103936-c4d5-4388-a78c-37b69c3fc710",
+      "position": [
+        0.4633979880848244,
+        0.1288312366790097,
+        -1.628017610179043
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {
+        "4daa6951-c8db-4af6-977e-00fee6e537a7": {
+          "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
+          "name": "audioToggle",
+          "parameters": {
+            "songUrl": "assets/Sonido/Música/Hibernalia.mp3",
+            "activationDelay": 2500
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Modelos/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Lucero de Alba",
+      "order": 21.47537322113863,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.75,
+          "height": 1,
+          "width": 0.75
+        },
+        "eventOnly": true
+      }
+    },
+    "f8b2faeb-4287-4803-a207-0dd4a3f4ee0c": {
+      "id": "f8b2faeb-4287-4803-a207-0dd4a3f4ee0c",
+      "position": [
+        -0.5624072721057444,
+        0.1288312366790097,
+        -1.0205304027552053
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {
+        "4daa6951-c8db-4af6-977e-00fee6e537a7": {
+          "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
+          "name": "audioToggle",
+          "parameters": {
+            "songUrl": "assets/Sonido/Música/Morthal.mp3",
+            "activationDelay": 2500
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Modelos/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Morthal",
+      "order": 22.672698365440837,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.75,
+          "height": 1,
+          "width": 0.75
+        },
+        "eventOnly": true
+      }
+    },
+    "4781c856-53a7-4f0e-bb2b-c5c1435c6a5a": {
+      "id": "4781c856-53a7-4f0e-bb2b-c5c1435c6a5a",
+      "position": [
+        -1.0382733090191607,
+        0.1288312366790097,
+        -1.701446641131322
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {
+        "4daa6951-c8db-4af6-977e-00fee6e537a7": {
+          "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
+          "name": "audioToggle",
+          "parameters": {
+            "songUrl": "assets/Sonido/Música/Soledad.mp3",
+            "activationDelay": 2500
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Modelos/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Soledad",
+      "order": 24.021053843930517,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.75,
+          "height": 1,
+          "width": 0.75
+        },
+        "eventOnly": true
+      }
+    },
+    "38500266-2a0e-463c-bdd6-8084d10509ab": {
+      "id": "38500266-2a0e-463c-bdd6-8084d10509ab",
+      "position": [
+        -2.6456892851235905,
+        0.1288312366790097,
+        -0.1660708529249788
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {
+        "4daa6951-c8db-4af6-977e-00fee6e537a7": {
+          "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
+          "name": "audioToggle",
+          "parameters": {
+            "songUrl": "assets/Sonido/Música/Markath.mp3",
+            "activationDelay": 2500
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Modelos/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Markath",
+      "order": 25.701302101207297,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.75,
+          "height": 1,
+          "width": 0.75
+        },
+        "eventOnly": true
+      }
     }
   },
   "spaces": {
     "88453035-dc0f-486d-868a-8ff7c2fda864": {
       "id": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "name": "Default Space",
-      "activeCamera": "a608ddd9-9379-464d-966f-5d8d8674c83c"
+      "activeCamera": "a608ddd9-9379-464d-966f-5d8d8674c83c",
+      "sky": {
+        "type": "gradient",
+        "colors": [
+          "#163c39",
+          "#011818"
+        ]
+      }
     }
   },
   "entrySpaceId": "88453035-dc0f-486d-868a-8ff7c2fda864"
