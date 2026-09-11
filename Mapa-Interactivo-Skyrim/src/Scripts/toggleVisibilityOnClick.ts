@@ -22,6 +22,7 @@ ecs.registerComponent({
   },
   stateMachine: ({world, eid, schemaAttribute}) => {
     const handleToggle = () => {
+      console.log('[toggleVisibilityOnClick] ¡Click detectado en el botón!', eid)
       const {showTarget1, showTarget2, hideTarget1, hideTarget2} = schemaAttribute.get(eid)
 
       if (showTarget1) {

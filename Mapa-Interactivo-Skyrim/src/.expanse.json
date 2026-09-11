@@ -1,4 +1,4 @@
-﻿{
+{
   "objects": {
     "47699d9e-18a5-4f88-a4f9-b8be92e8f74a": {
       "components": {},
@@ -195,9 +195,9 @@
       "collider": {
         "geometry": {
           "type": "box",
-          "depth": 0.75,
+          "depth": 0.5,
           "height": 1,
-          "width": 0.75
+          "width": 0.5
         },
         "eventOnly": true
       }
@@ -258,11 +258,11 @@
         "backgroundOpacity": 0.75,
         "backgroundSize": "contain",
         "stackingOrder": 0,
-        "ignoreRaycast": false
+        "ignoreRaycast": true
       },
       "name": "UI General",
       "order": 8.033129879296864,
-      "hidden": true
+      "hidden": false
     },
     "183f13b7-8b87-4536-ba02-7b2fbed6d043": {
       "id": "183f13b7-8b87-4536-ba02-7b2fbed6d043",
@@ -327,7 +327,12 @@
       "geometry": null,
       "material": null,
       "parentId": "a54faf48-4607-4acc-b464-34879c8cac78",
-      "components": {},
+      "components": {
+        "c5fa815c-5737-4b74-8777-f860846d76d7": {
+          "id": "c5fa815c-5737-4b74-8777-f860846d76d7",
+          "name": "pressHoldFeedback"
+        }
+      },
       "ui": {
         "type": "overlay",
         "width": 50,
@@ -369,7 +374,12 @@
       "geometry": null,
       "material": null,
       "parentId": "a54faf48-4607-4acc-b464-34879c8cac78",
-      "components": {},
+      "components": {
+        "b6a3b4aa-c91e-49da-afdb-40521e8ce553": {
+          "id": "b6a3b4aa-c91e-49da-afdb-40521e8ce553",
+          "name": "pressHoldFeedback"
+        }
+      },
       "ui": {
         "type": "overlay",
         "width": 50,
@@ -423,8 +433,7 @@
       },
       "name": "UI Ubicación",
       "order": 9.046109062124033,
-      "hidden": false,
-      "disabled": true
+      "hidden": false
     },
     "04420913-2540-4d98-82c9-e22002bedf14": {
       "id": "04420913-2540-4d98-82c9-e22002bedf14",
@@ -889,9 +898,9 @@
     "0f3a3eb0-58f6-417c-a080-0072c55c600f": {
       "id": "0f3a3eb0-58f6-417c-a080-0072c55c600f",
       "position": [
-        0.3601955304693141,
+        -0.3802181951852244,
         0.1288312366790097,
-        -0.028715241180972146
+        -0.31919224794889983
       ],
       "rotation": [
         0,
@@ -927,14 +936,14 @@
         "animationClip": "",
         "loop": true
       },
-      "name": "Carrera Blanca Marcador",
+      "name": "Tumulo Marcador",
       "order": 15.692955325400835,
       "collider": {
         "geometry": {
           "type": "box",
-          "depth": 0.75,
+          "depth": 0.5,
           "height": 1,
-          "width": 0.75
+          "width": 0.5
         },
         "eventOnly": true
       }
@@ -985,9 +994,9 @@
       "collider": {
         "geometry": {
           "type": "box",
-          "depth": 0.75,
+          "depth": 0.5,
           "height": 1,
-          "width": 0.75
+          "width": 0.5
         },
         "eventOnly": true
       }
@@ -1038,9 +1047,9 @@
       "collider": {
         "geometry": {
           "type": "box",
-          "depth": 0.75,
+          "depth": 0.5,
           "height": 1,
-          "width": 0.75
+          "width": 0.5
         },
         "eventOnly": true
       }
@@ -1091,9 +1100,9 @@
       "collider": {
         "geometry": {
           "type": "box",
-          "depth": 0.75,
+          "depth": 0.5,
           "height": 1,
-          "width": 0.75
+          "width": 0.5
         },
         "eventOnly": true
       }
@@ -1144,9 +1153,9 @@
       "collider": {
         "geometry": {
           "type": "box",
-          "depth": 0.75,
+          "depth": 0.5,
           "height": 1,
-          "width": 0.75
+          "width": 0.5
         },
         "eventOnly": true
       }
@@ -1197,9 +1206,9 @@
       "collider": {
         "geometry": {
           "type": "box",
-          "depth": 0.75,
+          "depth": 0.5,
           "height": 1,
-          "width": 0.75
+          "width": 0.5
         },
         "eventOnly": true
       }
@@ -1250,9 +1259,9 @@
       "collider": {
         "geometry": {
           "type": "box",
-          "depth": 0.75,
+          "depth": 0.5,
           "height": 1,
-          "width": 0.75
+          "width": 0.5
         },
         "eventOnly": true
       }
@@ -1303,9 +1312,9 @@
       "collider": {
         "geometry": {
           "type": "box",
-          "depth": 0.75,
+          "depth": 0.5,
           "height": 1,
-          "width": 0.75
+          "width": 0.5
         },
         "eventOnly": true
       }
@@ -1361,15 +1370,13 @@
         "width": 660,
         "height": 395,
         "type": "overlay",
-        "background": "#000000",
-        "backgroundOpacity": 0,
-        "backgroundSize": "stretch",
-        "stackingOrder": -1,
+        "stackingOrder": 0,
         "ignoreRaycast": true
       },
       "name": "UI Rumor",
       "order": 10.770442593671289,
-      "hidden": false
+      "hidden": false,
+      "disabled": true
     },
     "3edd2714-dffb-4dd1-9ec6-3b502fcfbfc2": {
       "id": "3edd2714-dffb-4dd1-9ec6-3b502fcfbfc2",
@@ -1399,7 +1406,7 @@
         "text": "Rumor",
         "color": "#ffffff",
         "fontSize": 30,
-        "type": "3d",
+        "type": "overlay",
         "font": {
           "type": "font",
           "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
@@ -1437,7 +1444,7 @@
       "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
       "components": {},
       "ui": {
-        "type": "3d",
+        "type": "overlay",
         "width": 100,
         "height": 36,
         "flexDirection": "row",
@@ -1548,7 +1555,7 @@
       "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
       "components": {},
       "ui": {
-        "type": "3d",
+        "type": "overlay",
         "width": 435,
         "height": 450,
         "image": {
@@ -1562,10 +1569,12 @@
         "left": 100,
         "bottom": "",
         "right": "",
-        "ignoreRaycast": true
+        "ignoreRaycast": true,
+        "stackingOrder": -100
       },
       "name": "Libro",
-      "order": 5.552108197422722
+      "order": 5.552108197422722,
+      "hidden": false
     },
     "49dd2434-2fa2-4695-a2fd-8b23819a3a28": {
       "id": "49dd2434-2fa2-4695-a2fd-8b23819a3a28",
@@ -1591,11 +1600,11 @@
       "components": {},
       "ui": {
         "width": 158,
-        "height": 208,
+        "height": 138,
         "text": "Mientras caminabas a las afueras de Carrera Blanca escuchaste unos ruidos de lucha provenientes de una granja. \n\nCuando te acercaste viste a un grupo de guerreros derribando a un gigante, ¡ayúdalos!\n",
         "color": "#000000",
         "fontSize": 11,
-        "type": "3d",
+        "type": "overlay",
         "position": "absolute",
         "top": 120,
         "left": 150,
@@ -1606,7 +1615,7 @@
           "type": "font",
           "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
         },
-        "stackingOrder": 1,
+        "stackingOrder": 0,
         "ignoreRaycast": true
       },
       "name": "RumorText",
@@ -1652,7 +1661,7 @@
       "ui": {
         "background": "#ffffff",
         "backgroundOpacity": 1,
-        "type": "3d",
+        "type": "overlay",
         "width": 135,
         "height": 55,
         "flexDirection": "row",
@@ -1670,11 +1679,11 @@
           "asset": "assets/Iconos/UI/Boton.png"
         },
         "backgroundSize": "contain",
-        "stackingOrder": 10,
+        "stackingOrder": 0,
         "ignoreRaycast": false
       },
       "name": "Continuar Boton",
-      "order": 13.8284889674029
+      "order": 15.78795977362857
     },
     "f7d96494-aa56-4d9f-aeff-c3fdf48c0f72": {
       "id": "f7d96494-aa56-4d9f-aeff-c3fdf48c0f72",
@@ -1709,7 +1718,8 @@
           "type": "font",
           "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
         },
-        "ignoreRaycast": true
+        "ignoreRaycast": true,
+        "type": "overlay"
       },
       "order": -1.484248400351055
     },
@@ -1743,10 +1753,10 @@
       "ui": {
         "width": 158,
         "height": 208,
-        "text": "Mientras caminabas a las afueras de Carrera Blanca escuchaste unos ruidos de lucha provenientes de una granja. \n\nCuando te acercaste viste a un grupo de guerreros derribando a un gigante, ¡ayúdalos!\n",
+        "text": "El grupo de guerreros te elogia y te invita a formar parte de Los Compañeros. \n\nDirígete a Jorrvaskr para hablar con Kodlak Melena Blanca, pero ten cuidado, se rumorea que de allí provienen aullidos extraños en las noches con luna.\n",
         "color": "#000000",
         "fontSize": 11,
-        "type": "3d",
+        "type": "overlay",
         "position": "absolute",
         "top": 120,
         "left": 332,
@@ -1757,11 +1767,172 @@
           "type": "font",
           "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
         },
-        "ignoreRaycast": true
+        "ignoreRaycast": true,
+        "stackingOrder": 0
       },
       "name": "RumorText (1)",
-      "order": 16.963267947051577,
-      "disabled": true
+      "order": 15.878920111102634,
+      "disabled": true,
+      "hidden": false
+    },
+    "d8df7945-6bf4-4160-98fb-b36cbc56eb3f": {
+      "id": "d8df7945-6bf4-4160-98fb-b36cbc56eb3f",
+      "position": [
+        -1.2332822998301762,
+        0.1288312366790097,
+        0.20994475329229048
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {
+        "4daa6951-c8db-4af6-977e-00fee6e537a7": {
+          "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
+          "name": "playerInteraction",
+          "parameters": {
+            "generalUi": {
+              "type": "entity",
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
+            "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
+            "activationDelay": 2500
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Modelos/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Glenmoril Marcador",
+      "order": 16.60613345158069,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.5,
+          "height": 1,
+          "width": 0.5
+        },
+        "eventOnly": true
+      }
+    },
+    "26daa6ab-8949-416d-8c69-e6ee9977eaed": {
+      "id": "26daa6ab-8949-416d-8c69-e6ee9977eaed",
+      "position": [
+        1.045798042623297,
+        0.1288312366790097,
+        -1.7341337610848542
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {
+        "4daa6951-c8db-4af6-977e-00fee6e537a7": {
+          "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
+          "name": "playerInteraction",
+          "parameters": {
+            "generalUi": {
+              "type": "entity",
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
+            "songUrl": "assets/Sonido/Música/Hibernalia.mp3",
+            "activationDelay": 2500
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Modelos/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Ysgramor Marcador",
+      "order": 20.81826684143096,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.5,
+          "height": 1,
+          "width": 0.5
+        },
+        "eventOnly": true
+      }
+    },
+    "4a8454ed-6fbf-47d1-ae61-45889f692798": {
+      "id": "4a8454ed-6fbf-47d1-ae61-45889f692798",
+      "position": [
+        -0.6518257292774666,
+        0.1288312366790097,
+        0.6116409846933418
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {
+        "4daa6951-c8db-4af6-977e-00fee6e537a7": {
+          "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
+          "name": "playerInteraction",
+          "parameters": {
+            "generalUi": {
+              "type": "entity",
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
+            "songUrl": "assets/Sonido/Música/Falkreath.mp3",
+            "activationDelay": 2500
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Modelos/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Hinchado Marcador",
+      "order": 14.950408981778239,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.5,
+          "height": 1,
+          "width": 0.5
+        },
+        "eventOnly": true
+      }
     }
   },
   "spaces": {
