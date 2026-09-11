@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 125,
+    "width": 750,
+    "height": 1000,
+    "isRotated": false,
+    "originalWidth": 1000,
+    "originalHeight": 1000
+  },
+  "imagePath": "image-targets/Image Target Jugador_luminance.png",
+  "metadata": null,
+  "name": "Image Target Jugador",
+  "resources": {
+    "originalImage": "Image Target Jugador_original.png",
+    "croppedImage": "Image Target Jugador_cropped.png",
+    "thumbnailImage": "Image Target Jugador_thumbnail.png",
+    "luminanceImage": "Image Target Jugador_luminance.png"
+  },
+  "created": 1789098512852,
+  "updated": 1789098572855
+}

@@ -4,6 +4,7 @@ import { LOCATION_ENTER, LOCATION_EXIT, LocationPayload } from './audioManager'
 ecs.registerComponent({
   name: 'playerInteraction',
   schema: {
+    playerTarget: ecs.eid, // Referencia al Jugador (Image Target)
     uiPanel: ecs.eid,
     markerModel: ecs.eid,
     generalUi: ecs.eid,
@@ -95,9 +96,12 @@ ecs.registerComponent({
       .onEnter(() => {
         dataAttribute.set(eid, { timeoutId: 0, isActive: false })
       })
-      .listen(eid, ecs.physics.COLLISION_START_EVENT, () => {
+      .listen(eid, ecs.physics.COLLISION_START_EVENT, (event: any) => {
         const data = dataAttribute.cursor(eid)
         const schema = schemaAttribute.cursor(eid)
+
+        // Verificar que el objeto que colisiona es el jugador
+        if (schema.playerTarget && event.data.other !== schema.playerTarget) return
 
         if (data.isActive) return
 
@@ -120,8 +124,12 @@ ecs.registerComponent({
           data.timeoutId = newTimeoutId
         }
       })
-      .listen(eid, ecs.physics.COLLISION_END_EVENT, () => {
+      .listen(eid, ecs.physics.COLLISION_END_EVENT, (event: any) => {
         const data = dataAttribute.cursor(eid)
+        const schema = schemaAttribute.cursor(eid)
+
+        // Ignorar salidas si no es el jugador
+        if (schema.playerTarget && event.data.other !== schema.playerTarget) return
 
         if (data.timeoutId !== 0) {
           world.time.clearTimeout(data.timeoutId)
@@ -140,3 +148,4 @@ ecs.registerComponent({
       })
   },
 })
+

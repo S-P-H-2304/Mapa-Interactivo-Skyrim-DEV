@@ -200,7 +200,8 @@
           "width": 0.5
         },
         "eventOnly": true
-      }
+      },
+      "disabled": true
     },
     "8e483345-01f6-4fd3-aeab-63a1461a9dce": {
       "id": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
@@ -344,10 +345,11 @@
         "backgroundOpacity": 1,
         "backgroundSize": "contain",
         "position": "absolute",
-        "top": 50,
+        "top": 52,
         "left": 18,
         "bottom": "",
-        "right": ""
+        "right": "",
+        "background": "#ffffff"
       },
       "name": "Sound Up",
       "order": 6.077618087072497,
@@ -431,7 +433,7 @@
         "backgroundSize": "stretch",
         "stackingOrder": 0
       },
-      "name": "UI Ubicación",
+      "name": "UI Carrera Blanca",
       "order": 9.046109062124033,
       "hidden": false
     },
@@ -946,7 +948,8 @@
           "width": 0.5
         },
         "eventOnly": true
-      }
+      },
+      "disabled": true
     },
     "56318751-81d1-42c0-a55a-56aff65b9d12": {
       "id": "56318751-81d1-42c0-a55a-56aff65b9d12",
@@ -999,7 +1002,8 @@
           "width": 0.5
         },
         "eventOnly": true
-      }
+      },
+      "disabled": true
     },
     "fccc4bff-28c5-4b2e-ac5f-124138ebfca3": {
       "id": "fccc4bff-28c5-4b2e-ac5f-124138ebfca3",
@@ -1052,7 +1056,8 @@
           "width": 0.5
         },
         "eventOnly": true
-      }
+      },
+      "disabled": true
     },
     "b841366d-90e4-4c30-a463-255db5a47a2d": {
       "id": "b841366d-90e4-4c30-a463-255db5a47a2d",
@@ -1105,7 +1110,8 @@
           "width": 0.5
         },
         "eventOnly": true
-      }
+      },
+      "disabled": true
     },
     "6e103936-c4d5-4388-a78c-37b69c3fc710": {
       "id": "6e103936-c4d5-4388-a78c-37b69c3fc710",
@@ -1158,7 +1164,8 @@
           "width": 0.5
         },
         "eventOnly": true
-      }
+      },
+      "disabled": true
     },
     "f8b2faeb-4287-4803-a207-0dd4a3f4ee0c": {
       "id": "f8b2faeb-4287-4803-a207-0dd4a3f4ee0c",
@@ -1211,7 +1218,8 @@
           "width": 0.5
         },
         "eventOnly": true
-      }
+      },
+      "disabled": true
     },
     "4781c856-53a7-4f0e-bb2b-c5c1435c6a5a": {
       "id": "4781c856-53a7-4f0e-bb2b-c5c1435c6a5a",
@@ -1264,7 +1272,8 @@
           "width": 0.5
         },
         "eventOnly": true
-      }
+      },
+      "disabled": true
     },
     "38500266-2a0e-463c-bdd6-8084d10509ab": {
       "id": "38500266-2a0e-463c-bdd6-8084d10509ab",
@@ -1317,7 +1326,8 @@
           "width": 0.5
         },
         "eventOnly": true
-      }
+      },
+      "disabled": true
     },
     "728d62be-3b21-401f-a94b-3421d539bcd8": {
       "id": "728d62be-3b21-401f-a94b-3421d539bcd8",
@@ -1826,7 +1836,8 @@
           "width": 0.5
         },
         "eventOnly": true
-      }
+      },
+      "disabled": true
     },
     "26daa6ab-8949-416d-8c69-e6ee9977eaed": {
       "id": "26daa6ab-8949-416d-8c69-e6ee9977eaed",
@@ -1879,7 +1890,8 @@
           "width": 0.5
         },
         "eventOnly": true
-      }
+      },
+      "disabled": true
     },
     "4a8454ed-6fbf-47d1-ae61-45889f692798": {
       "id": "4a8454ed-6fbf-47d1-ae61-45889f692798",
@@ -1924,6 +1936,106 @@
       },
       "name": "Hinchado Marcador",
       "order": 14.950408981778239,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.5,
+          "height": 1,
+          "width": 0.5
+        },
+        "eventOnly": true
+      },
+      "disabled": true
+    },
+    "f8f97311-cde4-4832-a046-0d2c892f393d": {
+      "id": "f8f97311-cde4-4832-a046-0d2c892f393d",
+      "position": [
+        4.849733146034688,
+        0.06087136218856992,
+        0
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Image Target Jugador",
+      "imageTarget": {
+        "name": "Image Target Jugador"
+      },
+      "order": 12.042094080737106,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.20000000000000015,
+          "height": 1,
+          "width": 1
+        },
+        "mass": 0,
+        "type": "kinematic"
+      }
+    },
+    "d815eb8f-ec1c-4b4a-94fe-5351df1910ce": {
+      "id": "d815eb8f-ec1c-4b4a-94fe-5351df1910ce",
+      "position": [
+        0.3454465708123413,
+        0.1288312366790097,
+        -0.01870158489672194
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "parentId": "8e483345-01f6-4fd3-aeab-63a1461a9dce",
+      "components": {
+        "4daa6951-c8db-4af6-977e-00fee6e537a7": {
+          "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
+          "name": "playerInteraction",
+          "parameters": {
+            "generalUi": {
+              "type": "entity",
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
+            "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
+            "activationDelay": 2500,
+            "playerTarget": {
+              "type": "entity",
+              "id": "f8f97311-cde4-4832-a046-0d2c892f393d"
+            },
+            "uiPanel": {
+              "type": "entity",
+              "id": "f851be6c-7f6b-4fc4-9cf5-7de203845568"
+            }
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Modelos/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Carrera Blanca Marcador",
+      "order": 16.10107182972849,
       "collider": {
         "geometry": {
           "type": "box",
