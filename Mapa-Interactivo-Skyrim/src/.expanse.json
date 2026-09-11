@@ -30,11 +30,6 @@
     },
     "729478ae-d067-4e0c-a753-66c2e9efb625": {
       "components": {
-        "8fe14f4e-4311-4b03-807d-a34c9c11368d": {
-          "id": "8fe14f4e-4311-4b03-807d-a34c9c11368d",
-          "name": "example-component",
-          "parameters": {}
-        },
         "ef804362-ff9c-4a6f-a8fa-b68104c7be13": {
           "id": "ef804362-ff9c-4a6f-a8fa-b68104c7be13",
           "name": "globalVolumeSync",
@@ -71,13 +66,14 @@
         5.6170029479090395
       ],
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "order": 1.4038940050501252,
+      "order": 6.943565143482659,
       "audio": {
         "src": {
           "type": "asset",
           "asset": "assets/Hootie_Frutti_Choreography_Ver_KATSEYE_-_KATSEYE.mp3"
         },
-        "loop": true
+        "loop": true,
+        "paused": true
       }
     },
     "a608ddd9-9379-464d-966f-5d8d8674c83c": {
@@ -99,20 +95,20 @@
       "material": null,
       "name": "Camera",
       "position": [
-        2.108157760272816,
-        2.4171180662455276,
-        3
+        1.816268389834557,
+        3.9421740185731933,
+        4.529013336542224
       ],
       "rotation": [
-        0.00044368872331410124,
-        0.9659425615285845,
-        -0.25875089860082223,
-        0.0016563336561801576
+        0.00007467531187941379,
+        0.9990498105268568,
+        -0.04354923403904842,
+        0.0017131037509698363
       ],
       "scale": [
+        1.0000000000000009,
         1,
-        1,
-        1
+        1.0000000000000009
       ],
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "order": 1.0308214152219775
@@ -149,7 +145,7 @@
     "52b40472-003e-4c99-bbc2-c95a85c7fd26": {
       "id": "52b40472-003e-4c99-bbc2-c95a85c7fd26",
       "position": [
-        1.9351492251819322,
+        1.9351492251819324,
         1.7638801077874966,
         0
       ],
@@ -169,7 +165,7 @@
       "parentId": "ef283b49-9550-49db-96d0-0da1a9f8e484",
       "components": {},
       "ui": {
-        "type": "3d",
+        "type": "overlay",
         "width": 100,
         "height": 36,
         "background": "#ad50ff",
@@ -182,7 +178,7 @@
         "justifyContent": "center"
       },
       "name": "Button+",
-      "order": 3.3126613066215973
+      "order": 18.595713959935978
     },
     "4eb95818-41bf-49a8-958c-5a07e4bf8448": {
       "id": "4eb95818-41bf-49a8-958c-5a07e4bf8448",
@@ -273,7 +269,7 @@
       "parentId": "ef283b49-9550-49db-96d0-0da1a9f8e484",
       "components": {},
       "ui": {
-        "type": "3d",
+        "type": "overlay",
         "width": 100,
         "height": 36,
         "background": "#ad50ff",
@@ -286,7 +282,7 @@
         "justifyContent": "center"
       },
       "name": "Button-",
-      "order": 4.837039237541585
+      "order": 18.676135057794944
     },
     "9602ee0d-ada7-4de2-bfc2-b6783fe78301": {
       "id": "9602ee0d-ada7-4de2-bfc2-b6783fe78301",
@@ -358,7 +354,7 @@
     "4a453138-9e23-493b-9e93-967de1971509": {
       "id": "4a453138-9e23-493b-9e93-967de1971509",
       "position": [
-        2.5676269029973127,
+        2.567626902997313,
         1.3133534411908168,
         0
       ],
@@ -386,7 +382,7 @@
         "type": "3d"
       },
       "name": "VolumeText",
-      "order": 6.15934511322691
+      "order": 18.756556155653904
     },
     "1be3a36f-47b3-4cda-bfd4-a8dd44e6cad5": {
       "id": "1be3a36f-47b3-4cda-bfd4-a8dd44e6cad5",
@@ -433,20 +429,15 @@
             "mutedIcon": "assets/Mute.png",
             "unmutedIcon": "assets/Sound.png"
           }
-        },
-        "0cb29dfa-c800-40e2-8648-24a51a0f5605": {
-          "id": "0cb29dfa-c800-40e2-8648-24a51a0f5605",
-          "name": "unlockManager",
-          "parameters": {}
         }
       },
       "name": "GlobalManager",
-      "order": 7.729914413534944
+      "order": 7.454847389298515
     },
     "34de51b2-a509-4211-9dd3-fa3d8d954961": {
       "id": "34de51b2-a509-4211-9dd3-fa3d8d954961",
       "position": [
-        2.5458216742366013,
+        2.5458216742366018,
         2.315274544340119,
         0
       ],
@@ -464,9 +455,15 @@
       "geometry": null,
       "material": null,
       "parentId": "ef283b49-9550-49db-96d0-0da1a9f8e484",
-      "components": {},
+      "components": {
+        "8e8fb518-6e5a-492d-ae7b-6be5d2c1be40": {
+          "id": "8e8fb518-6e5a-492d-ae7b-6be5d2c1be40",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        }
+      },
       "ui": {
-        "type": "3d",
+        "type": "overlay",
         "width": 70.8860759493671,
         "height": 56,
         "image": {
@@ -477,7 +474,7 @@
         "backgroundSize": "contain"
       },
       "name": "MuteButton",
-      "order": 9.208537408205691
+      "order": 18.83697725351287
     },
     "429f9699-97fb-4483-bc5a-69824ea88805": {
       "id": "429f9699-97fb-4483-bc5a-69824ea88805",
@@ -509,7 +506,7 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
       "name": "Plano",
-      "order": 10.677746040137912
+      "order": 7.9661296351143704
     },
     "7dcda9cb-8a2e-484b-aebb-84569c76e4a3": {
       "id": "7dcda9cb-8a2e-484b-aebb-84569c76e4a3",
@@ -534,7 +531,7 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
       "name": "Vista 1",
-      "order": 15.514279300783901
+      "order": 8.477411880930227
     },
     "6efffa69-e787-4b27-9a65-5628310f9b93": {
       "id": "6efffa69-e787-4b27-9a65-5628310f9b93",
@@ -824,7 +821,7 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
       "name": "SonidoUI",
-      "order": 16.791873470092682
+      "order": 8.988694126746084
     },
     "9aefb515-fda4-4e7e-81fa-a681d7b436a3": {
       "id": "9aefb515-fda4-4e7e-81fa-a681d7b436a3",
@@ -863,7 +860,7 @@
         }
       },
       "name": "Caja",
-      "order": 18.15027334637506,
+      "order": 9.499976372561939,
       "audio": {
         "paused": true,
         "loop": true,
@@ -871,7 +868,8 @@
           "type": "asset",
           "asset": "assets/Carrera_blanca.mp3"
         }
-      }
+      },
+      "disabled": true
     },
     "f8c3010f-cb47-4a0a-921a-ee4f06e84723": {
       "id": "f8c3010f-cb47-4a0a-921a-ee4f06e84723",
@@ -928,7 +926,8 @@
         "justifyContent": "center"
       },
       "name": "TESTAUDIOPOI",
-      "order": 19.610351409182876
+      "order": 10.011258618377797,
+      "disabled": true
     },
     "ff9fcbb7-22a6-4fe8-97ec-f3f8a701e4b8": {
       "id": "ff9fcbb7-22a6-4fe8-97ec-f3f8a701e4b8",
@@ -995,6 +994,254 @@
         "fontSize": 16
       },
       "order": 1.4455096959057405
+    },
+    "df3ea1ed-6d0c-4719-af55-a4f4ac227f64": {
+      "id": "df3ea1ed-6d0c-4719-af55-a4f4ac227f64",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Objetivo de la imagen",
+      "imageTarget": {
+        "name": ""
+      },
+      "order": 22.636667345001282
+    },
+    "f815082a-5978-483c-8435-e9ba0e1c2403": {
+      "id": "f815082a-5978-483c-8435-e9ba0e1c2403",
+      "position": [
+        1.989942154682003,
+        4.8171066197342505,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "5055e716-f8ff-4311-93e8-c4cd8db4f34c": {
+          "id": "5055e716-f8ff-4311-93e8-c4cd8db4f34c",
+          "name": "rotateVideoOverlay",
+          "parameters": {
+            "videoSrc": "assets/GiraTelefono.mp4",
+            "continueButton": {
+              "type": "entity",
+              "id": "bae1e0a6-e94a-4fbe-9b96-e75446379aee"
+            },
+            "instructionsPanel": {
+              "type": "entity",
+              "id": "659ee84c-4c4a-4616-a9da-5c11b3f3b063"
+            }
+          }
+        }
+      },
+      "name": "video",
+      "order": 24.571411474193084
+    },
+    "bae1e0a6-e94a-4fbe-9b96-e75446379aee": {
+      "id": "bae1e0a6-e94a-4fbe-9b96-e75446379aee",
+      "position": [
+        1.962715319510516,
+        3.940568885281226,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "659ee84c-4c4a-4616-a9da-5c11b3f3b063",
+      "components": {
+        "f018d7b3-7b5e-433b-b1c5-c4a4fbc0e7ba": {
+          "id": "f018d7b3-7b5e-433b-b1c5-c4a4fbc0e7ba",
+          "name": "startExperience",
+          "parameters": {
+            "instructionsPanel": {
+              "type": "entity",
+              "id": "659ee84c-4c4a-4616-a9da-5c11b3f3b063"
+            },
+            "ambientAudio": {
+              "type": "entity",
+              "id": "729478ae-d067-4e0c-a753-66c2e9efb625"
+            }
+          }
+        }
+      },
+      "ui": {
+        "type": "overlay",
+        "width": 100,
+        "height": 36,
+        "background": "#ad50ff",
+        "borderRadius": 18,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "EMPEZAR EXPERIENCIA",
+      "order": 25.950476936485813
+    },
+    "d722a892-5f70-4c59-95b1-bb68b4aaba4e": {
+      "id": "d722a892-5f70-4c59-95b1-bb68b4aaba4e",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "bae1e0a6-e94a-4fbe-9b96-e75446379aee",
+      "components": {},
+      "name": "Icono",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.43470858138806306
+    },
+    "b6e35251-9ee7-4137-bd29-923f0d579c50": {
+      "id": "b6e35251-9ee7-4137-bd29-923f0d579c50",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "bae1e0a6-e94a-4fbe-9b96-e75446379aee",
+      "components": {},
+      "name": "Texto",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Button",
+        "color": "#ffffff",
+        "fontSize": 16
+      },
+      "order": 1.0904816075683728
+    },
+    "7ffce69f-685a-4c84-bf34-bc4ba8ad9e24": {
+      "id": "7ffce69f-685a-4c84-bf34-bc4ba8ad9e24",
+      "position": [
+        1.9877969077503335,
+        4.969446647334483,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "659ee84c-4c4a-4616-a9da-5c11b3f3b063",
+      "components": {},
+      "ui": {
+        "type": "overlay",
+        "width": 100,
+        "height": 100,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/white_gray_tiles-m8f52fip.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "name": "anyo",
+      "order": 27.12740452133885
+    },
+    "659ee84c-4c4a-4616-a9da-5c11b3f3b063": {
+      "id": "659ee84c-4c4a-4616-a9da-5c11b3f3b063",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "intrusione",
+      "order": 29.006175804909535
     }
   },
   "spaces": {
