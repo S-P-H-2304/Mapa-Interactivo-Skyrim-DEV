@@ -1,4 +1,4 @@
-{
+﻿{
   "objects": {
     "47699d9e-18a5-4f88-a4f9-b8be92e8f74a": {
       "components": {},
@@ -145,7 +145,7 @@
       "material": null,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
-      "name": "Scaler",
+      "name": "Mapa",
       "order": 4.02107873876559,
       "hidden": false
     },
@@ -171,8 +171,12 @@
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
-          "name": "audioToggle",
+          "name": "playerInteraction",
           "parameters": {
+            "generalUi": {
+              "type": "entity",
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
             "songUrl": "assets/Sonido/Música/Falkreath.mp3",
             "activationDelay": 2500
           }
@@ -186,7 +190,7 @@
         "animationClip": "",
         "loop": true
       },
-      "name": "Falkreath",
+      "name": "Falkreath Marcador",
       "order": 13.930304026145686,
       "collider": {
         "geometry": {
@@ -252,18 +256,18 @@
         "type": "overlay",
         "background": "#000000",
         "backgroundOpacity": 0.75,
-        "backgroundSize": "stretch",
-        "stackingOrder": -100,
-        "ignoreRaycast": true
+        "backgroundSize": "contain",
+        "stackingOrder": 0,
+        "ignoreRaycast": false
       },
       "name": "UI General",
       "order": 8.033129879296864,
-      "hidden": false
+      "hidden": true
     },
     "183f13b7-8b87-4536-ba02-7b2fbed6d043": {
       "id": "183f13b7-8b87-4536-ba02-7b2fbed6d043",
       "position": [
-        0,
+        -8.881784197001252e-16,
         0,
         0
       ],
@@ -283,7 +287,7 @@
       "parentId": "a54faf48-4607-4acc-b464-34879c8cac78",
       "components": {},
       "ui": {
-        "type": "3d",
+        "type": "overlay",
         "width": 50,
         "height": 50,
         "image": {
@@ -294,18 +298,18 @@
         "backgroundSize": "contain",
         "position": "absolute",
         "top": 10,
-        "left": 10,
+        "left": 7,
         "bottom": "",
         "right": ""
       },
       "name": "Sound Mute Toggle",
-      "order": 7.270665749648162,
+      "order": 4.782279548325472,
       "hidden": false
     },
     "95fc7680-5d6c-476c-b257-6b717281f50c": {
       "id": "95fc7680-5d6c-476c-b257-6b717281f50c",
       "position": [
-        0,
+        -0.0014276452620425317,
         0,
         0
       ],
@@ -325,7 +329,7 @@
       "parentId": "a54faf48-4607-4acc-b464-34879c8cac78",
       "components": {},
       "ui": {
-        "type": "3d",
+        "type": "overlay",
         "width": 50,
         "height": 50,
         "image": {
@@ -336,18 +340,18 @@
         "backgroundSize": "contain",
         "position": "absolute",
         "top": 50,
-        "left": 20,
+        "left": 18,
         "bottom": "",
         "right": ""
       },
       "name": "Sound Up",
-      "order": 8.36874508489237,
+      "order": 6.077618087072497,
       "hidden": false
     },
     "35521828-d492-44d7-ac23-87e9e48ba2a1": {
       "id": "35521828-d492-44d7-ac23-87e9e48ba2a1",
       "position": [
-        0,
+        -8.881784197001252e-16,
         0,
         0
       ],
@@ -367,7 +371,7 @@
       "parentId": "a54faf48-4607-4acc-b464-34879c8cac78",
       "components": {},
       "ui": {
-        "type": "3d",
+        "type": "overlay",
         "width": 50,
         "height": 50,
         "image": {
@@ -383,7 +387,7 @@
         "right": ""
       },
       "name": "Sound Down",
-      "order": 9.909686824907864,
+      "order": 6.372956625819522,
       "hidden": false
     },
     "f851be6c-7f6b-4fc4-9cf5-7de203845568": {
@@ -391,7 +395,7 @@
       "position": [
         -7.474572354737953,
         0,
-        0
+        -0.32215366481618135
       ],
       "rotation": [
         0,
@@ -413,13 +417,14 @@
         "height": 395,
         "type": "overlay",
         "background": "#000000",
-        "backgroundOpacity": 0.75,
+        "backgroundOpacity": 0,
         "backgroundSize": "stretch",
         "stackingOrder": 0
       },
       "name": "UI Ubicación",
       "order": 9.046109062124033,
-      "hidden": true
+      "hidden": false,
+      "disabled": true
     },
     "04420913-2540-4d98-82c9-e22002bedf14": {
       "id": "04420913-2540-4d98-82c9-e22002bedf14",
@@ -631,7 +636,7 @@
         "right": "",
         "textAlign": "left"
       },
-      "name": "Cuerpo (1)",
+      "name": "Notas",
       "order": 9.196716829900858
     },
     "2838d446-34cd-462a-a4f1-4da3d2df34ef": {
@@ -672,7 +677,7 @@
         "bottom": "",
         "right": ""
       },
-      "name": "Logo (1)",
+      "name": "Rumor",
       "order": 11.503599546775769
     },
     "9cac9308-6a2f-4ef0-990f-c12b4843a65e": {
@@ -712,7 +717,7 @@
         "bottom": "",
         "right": ""
       },
-      "name": "Button",
+      "name": "Salir",
       "order": 13.287509151763638
     },
     "f28cbeb0-2a5d-47d9-8276-0a55437f3dd8": {
@@ -776,7 +781,7 @@
       "ui": {
         "width": 50,
         "height": 14,
-        "text": "Atras",
+        "text": "Salir",
         "color": "#ffffff",
         "fontSize": 16,
         "font": {
@@ -806,7 +811,7 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "parentId": "728d62be-3b21-401f-a94b-3421d539bcd8",
       "components": {
         "ae46f8d8-0354-43ab-9bac-164dc6b4c1ce": {
           "id": "ae46f8d8-0354-43ab-9bac-164dc6b4c1ce",
@@ -834,7 +839,11 @@
               "type": "entity",
               "id": "1069be19-c9a4-4a97-ba2d-b094dabd2ed7"
             },
-            "fadeDuration": 2500
+            "fadeDuration": 2500,
+            "volumeText": {
+              "type": "entity",
+              "id": "a6403860-b3c8-4b0f-96e3-2ccca1ee8a2d"
+            }
           }
         }
       },
@@ -844,8 +853,9 @@
         "loop": true,
         "src": {
           "type": "asset",
-          "asset": "assets/Sonido/Música/Carrera blanca.mp3"
-        }
+          "asset": "assets/Sonido/Música/Soledad.mp3"
+        },
+        "volume": 1
       }
     },
     "1069be19-c9a4-4a97-ba2d-b094dabd2ed7": {
@@ -868,7 +878,7 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "parentId": "728d62be-3b21-401f-a94b-3421d539bcd8",
       "components": {},
       "name": "Location Speaker",
       "order": 12.484812905237824,
@@ -898,8 +908,12 @@
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
-          "name": "audioToggle",
+          "name": "playerInteraction",
           "parameters": {
+            "generalUi": {
+              "type": "entity",
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
             "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
             "activationDelay": 2500
           }
@@ -913,7 +927,7 @@
         "animationClip": "",
         "loop": true
       },
-      "name": "Carrera Blanca",
+      "name": "Carrera Blanca Marcador",
       "order": 15.692955325400835,
       "collider": {
         "geometry": {
@@ -947,8 +961,12 @@
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
-          "name": "audioToggle",
+          "name": "playerInteraction",
           "parameters": {
+            "generalUi": {
+              "type": "entity",
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
             "songUrl": "assets/Sonido/Música/Riften.mp3",
             "activationDelay": 2500
           }
@@ -962,7 +980,7 @@
         "animationClip": "",
         "loop": true
       },
-      "name": "Riften",
+      "name": "Riften Marcador",
       "order": 17.32808546386416,
       "collider": {
         "geometry": {
@@ -996,8 +1014,12 @@
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
-          "name": "audioToggle",
+          "name": "playerInteraction",
           "parameters": {
+            "generalUi": {
+              "type": "entity",
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
             "songUrl": "assets/Sonido/Música/Ventalia.mp3",
             "activationDelay": 2500
           }
@@ -1011,7 +1033,7 @@
         "animationClip": "",
         "loop": true
       },
-      "name": "Ventalia",
+      "name": "Ventalia Marcador",
       "order": 18.45413730497651,
       "collider": {
         "geometry": {
@@ -1045,8 +1067,12 @@
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
-          "name": "audioToggle",
+          "name": "playerInteraction",
           "parameters": {
+            "generalUi": {
+              "type": "entity",
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
             "songUrl": "assets/Sonido/Música/Hibernalia.mp3",
             "activationDelay": 2500
           }
@@ -1060,7 +1086,7 @@
         "animationClip": "",
         "loop": true
       },
-      "name": "Hibernalia",
+      "name": "Hibernalia Marcador",
       "order": 19.940442213573604,
       "collider": {
         "geometry": {
@@ -1094,8 +1120,12 @@
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
-          "name": "audioToggle",
+          "name": "playerInteraction",
           "parameters": {
+            "generalUi": {
+              "type": "entity",
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
             "songUrl": "assets/Sonido/Música/Hibernalia.mp3",
             "activationDelay": 2500
           }
@@ -1109,7 +1139,7 @@
         "animationClip": "",
         "loop": true
       },
-      "name": "Lucero de Alba",
+      "name": "Lucero de Alba Marcador",
       "order": 21.47537322113863,
       "collider": {
         "geometry": {
@@ -1143,8 +1173,12 @@
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
-          "name": "audioToggle",
+          "name": "playerInteraction",
           "parameters": {
+            "generalUi": {
+              "type": "entity",
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
             "songUrl": "assets/Sonido/Música/Morthal.mp3",
             "activationDelay": 2500
           }
@@ -1158,7 +1192,7 @@
         "animationClip": "",
         "loop": true
       },
-      "name": "Morthal",
+      "name": "Morthal Marcador",
       "order": 22.672698365440837,
       "collider": {
         "geometry": {
@@ -1192,8 +1226,12 @@
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
-          "name": "audioToggle",
+          "name": "playerInteraction",
           "parameters": {
+            "generalUi": {
+              "type": "entity",
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
             "songUrl": "assets/Sonido/Música/Soledad.mp3",
             "activationDelay": 2500
           }
@@ -1207,7 +1245,7 @@
         "animationClip": "",
         "loop": true
       },
-      "name": "Soledad",
+      "name": "Soledad Marcador",
       "order": 24.021053843930517,
       "collider": {
         "geometry": {
@@ -1241,8 +1279,12 @@
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
-          "name": "audioToggle",
+          "name": "playerInteraction",
           "parameters": {
+            "generalUi": {
+              "type": "entity",
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
             "songUrl": "assets/Sonido/Música/Markath.mp3",
             "activationDelay": 2500
           }
@@ -1256,7 +1298,7 @@
         "animationClip": "",
         "loop": true
       },
-      "name": "Markath",
+      "name": "Markath Marcador",
       "order": 25.701302101207297,
       "collider": {
         "geometry": {
@@ -1267,6 +1309,459 @@
         },
         "eventOnly": true
       }
+    },
+    "728d62be-3b21-401f-a94b-3421d539bcd8": {
+      "id": "728d62be-3b21-401f-a94b-3421d539bcd8",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Speakers",
+      "order": 2.60306372389172
+    },
+    "a3828348-7945-4330-9d8a-ba310a783670": {
+      "id": "a3828348-7945-4330-9d8a-ba310a783670",
+      "position": [
+        -7.474572354737953,
+        0,
+        0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "ui": {
+        "width": 660,
+        "height": 395,
+        "type": "overlay",
+        "background": "#000000",
+        "backgroundOpacity": 0,
+        "backgroundSize": "stretch",
+        "stackingOrder": -1,
+        "ignoreRaycast": true
+      },
+      "name": "UI Rumor",
+      "order": 10.770442593671289,
+      "hidden": false
+    },
+    "3edd2714-dffb-4dd1-9ec6-3b502fcfbfc2": {
+      "id": "3edd2714-dffb-4dd1-9ec6-3b502fcfbfc2",
+      "position": [
+        -0.21769382646136082,
+        0.2902584352818147,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
+      "components": {},
+      "ui": {
+        "width": 230,
+        "height": 40,
+        "text": "Rumor",
+        "color": "#ffffff",
+        "fontSize": 30,
+        "type": "3d",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
+        },
+        "verticalTextAlign": "center",
+        "position": "absolute",
+        "top": 35,
+        "left": 210,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Título (1)",
+      "order": 7.98912039642944
+    },
+    "04c1e772-df46-461e-81b7-8eb577342177": {
+      "id": "04c1e772-df46-461e-81b7-8eb577342177",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 36,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 309,
+        "left": 553,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Salir (1)",
+      "order": 13.287509151763638
+    },
+    "d399efd2-fb9d-4fc1-995e-35df3d5551ca": {
+      "id": "d399efd2-fb9d-4fc1-995e-35df3d5551ca",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "04c1e772-df46-461e-81b7-8eb577342177",
+      "components": {},
+      "name": "Icon (1)",
+      "ui": {
+        "width": 25,
+        "height": 25,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Arrow Back.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "order": 0.2460354233958394
+    },
+    "c72e40e5-bf4c-426c-b9eb-9a97ea027ce1": {
+      "id": "c72e40e5-bf4c-426c-b9eb-9a97ea027ce1",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "04c1e772-df46-461e-81b7-8eb577342177",
+      "components": {},
+      "name": "Text (1)",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Salir",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
+        }
+      },
+      "order": -1.484248400351055
+    },
+    "7ba78e76-a05a-4acf-8839-9d45293c051c": {
+      "id": "7ba78e76-a05a-4acf-8839-9d45293c051c",
+      "position": [
+        -0.5914883289482926,
+        0,
+        0.32215366481618135
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 435,
+        "height": 450,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Book.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "position": "absolute",
+        "top": 10,
+        "left": 100,
+        "bottom": "",
+        "right": "",
+        "ignoreRaycast": true
+      },
+      "name": "Libro",
+      "order": 5.552108197422722
+    },
+    "49dd2434-2fa2-4695-a2fd-8b23819a3a28": {
+      "id": "49dd2434-2fa2-4695-a2fd-8b23819a3a28",
+      "position": [
+        7.474572354737953,
+        0,
+        -0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
+      "components": {},
+      "ui": {
+        "width": 158,
+        "height": 208,
+        "text": "Mientras caminabas a las afueras de Carrera Blanca escuchaste unos ruidos de lucha provenientes de una granja. \n\nCuando te acercaste viste a un grupo de guerreros derribando a un gigante, ¡ayúdalos!\n",
+        "color": "#000000",
+        "fontSize": 11,
+        "type": "3d",
+        "position": "absolute",
+        "top": 120,
+        "left": 150,
+        "bottom": "",
+        "right": "",
+        "textAlign": "left",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "stackingOrder": 1,
+        "ignoreRaycast": true
+      },
+      "name": "RumorText",
+      "order": 15.717994353155069
+    },
+    "7299e1f7-25a8-462a-a42c-2af206a53531": {
+      "id": "7299e1f7-25a8-462a-a42c-2af206a53531",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
+      "components": {
+        "f4d575c1-69a5-492b-ad94-22f8a906521d": {
+          "id": "f4d575c1-69a5-492b-ad94-22f8a906521d",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "3e8d8759-4994-4d3d-9957-038af2212544"
+            },
+            "button": {
+              "type": "entity",
+              "id": "7299e1f7-25a8-462a-a42c-2af206a53531"
+            }
+          }
+        }
+      },
+      "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 1,
+        "type": "3d",
+        "width": 135,
+        "height": 55,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 272,
+        "left": 155,
+        "bottom": "",
+        "right": "",
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Boton.png"
+        },
+        "backgroundSize": "contain",
+        "stackingOrder": 10,
+        "ignoreRaycast": false
+      },
+      "name": "Continuar Boton",
+      "order": 13.8284889674029
+    },
+    "f7d96494-aa56-4d9f-aeff-c3fdf48c0f72": {
+      "id": "f7d96494-aa56-4d9f-aeff-c3fdf48c0f72",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "7299e1f7-25a8-462a-a42c-2af206a53531",
+      "components": {},
+      "name": "Boton Texto",
+      "ui": {
+        "width": 75,
+        "height": 14,
+        "text": "Continuar",
+        "color": "#000000",
+        "fontSize": 11,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "ignoreRaycast": true
+      },
+      "order": -1.484248400351055
+    },
+    "3e8d8759-4994-4d3d-9957-038af2212544": {
+      "id": "3e8d8759-4994-4d3d-9957-038af2212544",
+      "position": [
+        7.474572354737953,
+        0,
+        -0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
+      "components": {
+        "e64e513b-10d3-40c6-bd3b-f5620afe3fdf": {
+          "id": "e64e513b-10d3-40c6-bd3b-f5620afe3fdf",
+          "name": "typewriterText"
+        }
+      },
+      "ui": {
+        "width": 158,
+        "height": 208,
+        "text": "Mientras caminabas a las afueras de Carrera Blanca escuchaste unos ruidos de lucha provenientes de una granja. \n\nCuando te acercaste viste a un grupo de guerreros derribando a un gigante, ¡ayúdalos!\n",
+        "color": "#000000",
+        "fontSize": 11,
+        "type": "3d",
+        "position": "absolute",
+        "top": 120,
+        "left": 332,
+        "bottom": "",
+        "right": "",
+        "textAlign": "left",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "ignoreRaycast": true
+      },
+      "name": "RumorText (1)",
+      "order": 16.963267947051577,
+      "disabled": true
     }
   },
   "spaces": {

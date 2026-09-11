@@ -4,41 +4,63 @@ const notifyDescendants = (world: any, targetEid: any, eventName: string) => {
   if (!targetEid) return
   if (ecs.Disabled.has(world, targetEid)) return
   world.events.dispatch(targetEid, eventName, {})
-  for (const child of world.getChildren(targetEid)) {
-    notifyDescendants(world, child, eventName)
-  }
+  try {
+    for (const child of world.getChildren(targetEid)) {
+      notifyDescendants(world, child, eventName)
+    }
+  } catch (e) {}
 }
 
 ecs.registerComponent({
   name: 'toggleVisibilityOnClick',
   schema: {
+    button: ecs.eid,
     showTarget1: ecs.eid,
     showTarget2: ecs.eid,
     hideTarget1: ecs.eid,
     hideTarget2: ecs.eid,
   },
   stateMachine: ({world, eid, schemaAttribute}) => {
-    ecs.defineState('default')
-      .initial()
-      .listen(eid, ecs.input.UI_CLICK, () => {
-        const {showTarget1, showTarget2, hideTarget1, hideTarget2} = schemaAttribute.get(eid)
+    const handleToggle = () => {
+      const {showTarget1, showTarget2, hideTarget1, hideTarget2} = schemaAttribute.get(eid)
 
-        if (showTarget1) {
-          ecs.Disabled.remove(world, showTarget1)
-          notifyDescendants(world, showTarget1, 'start-typing')
+      if (showTarget1) {
+        ecs.Disabled.remove(world, showTarget1)
+        notifyDescendants(world, showTarget1, 'start-typing')
+      }
+      if (showTarget2) {
+        ecs.Disabled.remove(world, showTarget2)
+        notifyDescendants(world, showTarget2, 'start-typing')
+      }
+      if (hideTarget1) {
+        ecs.Disabled.set(world, hideTarget1, {})
+      }
+      if (hideTarget2) {
+        ecs.Disabled.set(world, hideTarget2, {})
+      }
+    }
+
+    const state = ecs.defineState('default')
+      .initial()
+
+    // Escucha recursiva en la entidad y todos sus hijos (textos, iconos, marcos)
+    const attachRecursiveClickListener = (targetEid: any) => {
+      if (!targetEid) return
+      state.listen(targetEid, ecs.input.UI_CLICK, handleToggle)
+      try {
+        for (const child of world.getChildren(targetEid)) {
+          attachRecursiveClickListener(child)
         }
-        if (showTarget2) {
-          ecs.Disabled.remove(world, showTarget2)
-          notifyDescendants(world, showTarget2, 'start-typing')
-        }
-        if (hideTarget1) {
-          console.log('OCULTANDO', hideTarget1, '— disparado por el botón', eid) // temporal
-          ecs.Disabled.set(world, hideTarget1, {})
-        }
-        if (hideTarget2) {
-          console.log('OCULTANDO', hideTarget2, '— disparado por el botón', eid) // temporal
-          ecs.Disabled.set(world, hideTarget2, {})
-        }
-      })
+      } catch (e) {}
+    }
+
+    // 1. Escuchar en el propio eid y en todos sus hijos
+    attachRecursiveClickListener(eid)
+
+    // 2. Si se especificó una entidad botón diferente en el inspector, escuchar también en ella y sus hijos
+    const {button} = schemaAttribute.get(eid)
+    if (button && button !== eid) {
+      attachRecursiveClickListener(button)
+    }
   },
 })

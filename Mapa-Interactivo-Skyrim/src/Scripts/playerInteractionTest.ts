@@ -2,22 +2,20 @@ import * as ecs from '@8thwall/ecs'
 import { LOCATION_ENTER, LOCATION_EXIT, LocationPayload } from './audioManager'
 
 ecs.registerComponent({
-  name: 'playerInteraction',
+  name: 'playerInteractionTest',
   schema: {
+    button: ecs.eid,
     uiPanel: ecs.eid,
     markerModel: ecs.eid,
     generalUi: ecs.eid,
     // @asset
     songUrl: ecs.string,
-    activationDelay: ecs.f32,
     dimOpacity: ecs.f32,
   },
   schemaDefaults: {
-    activationDelay: 1000, // 1 segundo de retraso
-    dimOpacity: 0.75,      // Opacidad del fondo negro al abrir el panel
+    dimOpacity: 0.75,
   },
   data: {
-    timeoutId: ecs.i32,
     isActive: ecs.boolean,
   },
   stateMachine: ({world, eid, schemaAttribute, dataAttribute}) => {
@@ -26,21 +24,20 @@ ecs.registerComponent({
       const data = dataAttribute.cursor(eid)
 
       data.isActive = true
-      data.timeoutId = 0
 
-      // 1. Mostrar Panel de UI de la ciudad
+      // 1. Mostrar Panel de UI
       if (schema.uiPanel) {
         ecs.Disabled.remove(world, schema.uiPanel)
       }
 
-      // 2. Oscurecer el fondo de UI General
+      // 2. Oscurecer fondo de UI General
       if (schema.generalUi) {
         const targetDim = schema.dimOpacity ?? 0.75
         ecs.Ui.set(world, schema.generalUi, { backgroundOpacity: targetDim })
       }
 
-      // 3. Animación del marcador a "Selected" (usa eid si está puesto directo en el GLB)
-      const modelEid = schema.markerModel || eid
+      // 3. Animación del marcador a "Selected"
+      const modelEid = schema.markerModel
       if (modelEid) {
         ecs.GltfModel.set(world, modelEid, {
           animationClip: 'Selected',
@@ -49,9 +46,10 @@ ecs.registerComponent({
         })
       }
 
-      // 4. Audio Manager: Crossfade (el GLB actúa de speaker)
+      // 4. Audio Manager: Crossfade
+      const speaker = schema.markerModel || eid
       const payload: LocationPayload = {
-        speakerEid: eid,
+        speakerEid: speaker,
         songUrl: schema.songUrl || undefined,
       }
       world.events.dispatch(world.events.globalId, LOCATION_ENTER, payload)
@@ -63,7 +61,7 @@ ecs.registerComponent({
 
       data.isActive = false
 
-      // 1. Ocultar Panel de UI de la ciudad
+      // 1. Ocultar Panel de UI
       if (schema.uiPanel) {
         ecs.Disabled.set(world, schema.uiPanel, {})
       }
@@ -74,7 +72,7 @@ ecs.registerComponent({
       }
 
       // 3. Animación inversa del marcador
-      const modelEid = schema.markerModel || eid
+      const modelEid = schema.markerModel
       if (modelEid) {
         ecs.GltfModel.set(world, modelEid, {
           animationClip: 'Selected Inverse',
@@ -84,59 +82,46 @@ ecs.registerComponent({
       }
 
       // 4. Audio Manager: Retornar a música principal
+      const speaker = schema.markerModel || eid
       const payload: LocationPayload = {
-        speakerEid: eid,
+        speakerEid: speaker,
       }
       world.events.dispatch(world.events.globalId, LOCATION_EXIT, payload)
     }
 
-    ecs.defineState('default')
+    const handleToggle = () => {
+      const { isActive } = dataAttribute.get(eid)
+      if (!isActive) {
+        triggerActivation()
+      } else {
+        triggerDeactivation()
+      }
+    }
+
+    const state = ecs.defineState('default')
       .initial()
       .onEnter(() => {
-        dataAttribute.set(eid, { timeoutId: 0, isActive: false })
+        dataAttribute.set(eid, { isActive: false })
       })
-      .listen(eid, ecs.physics.COLLISION_START_EVENT, () => {
-        const data = dataAttribute.cursor(eid)
-        const schema = schemaAttribute.cursor(eid)
 
-        if (data.isActive) return
-
-        if (data.timeoutId !== 0) {
-          world.time.clearTimeout(data.timeoutId)
-          data.timeoutId = 0
+    // Detección recursiva de clics en el botón y todos sus hijos (textos, iconos)
+    const attachRecursiveClickListener = (targetEid: any) => {
+      if (!targetEid) return
+      state.listen(targetEid, ecs.input.UI_CLICK, handleToggle)
+      try {
+        for (const child of world.getChildren(targetEid)) {
+          attachRecursiveClickListener(child)
         }
+      } catch (e) {}
+    }
 
-        const delay = schema.activationDelay ?? 0
+    // Escuchar en el propio eid
+    attachRecursiveClickListener(eid)
 
-        if (delay <= 0) {
-          triggerActivation()
-        } else {
-          const newTimeoutId = world.time.setTimeout(() => {
-            const d = dataAttribute.cursor(eid)
-            if (d.timeoutId !== 0) {
-              triggerActivation()
-            }
-          }, delay)
-          data.timeoutId = newTimeoutId
-        }
-      })
-      .listen(eid, ecs.physics.COLLISION_END_EVENT, () => {
-        const data = dataAttribute.cursor(eid)
-
-        if (data.timeoutId !== 0) {
-          world.time.clearTimeout(data.timeoutId)
-          data.timeoutId = 0
-        }
-
-        if (data.isActive) {
-          triggerDeactivation()
-        }
-      })
-      .onExit(() => {
-        const data = dataAttribute.get(eid)
-        if (data.timeoutId !== 0) {
-          world.time.clearTimeout(data.timeoutId)
-        }
-      })
+    // Y si se asignó una entidad botón diferente en el inspector, escuchar también en ella
+    const { button } = schemaAttribute.get(eid)
+    if (button && button !== eid) {
+      attachRecursiveClickListener(button)
+    }
   },
 })
