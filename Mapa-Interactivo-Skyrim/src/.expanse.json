@@ -211,19 +211,19 @@
         0
       ],
       "rotation": [
+        0.7071067811865475,
         0,
         0,
-        0,
-        1
+        0.7071067811865476
       ],
       "scale": [
-        0.14285714285714285,
-        0.14285714285714285,
-        0.14285714285714285
+        0.14285714285714288,
+        0.14285714285714288,
+        0.14285714285714288
       ],
       "geometry": null,
       "material": null,
-      "parentId": "4fc58106-eb91-4549-9cb0-305d0f1dc5ac",
+      "parentId": "26671229-0493-436f-86f8-a39fb7d7c26b",
       "components": {},
       "name": "Marcadores",
       "order": 0.03998212216283559,
@@ -252,18 +252,19 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
       "ui": {
-        "width": 660,
-        "height": 395,
+        "width": 784,
+        "height": 412,
         "type": "overlay",
         "background": "#000000",
-        "backgroundOpacity": 0.75,
+        "backgroundOpacity": 0,
         "backgroundSize": "contain",
         "stackingOrder": 0,
         "ignoreRaycast": true
       },
       "name": "UI General",
       "order": 8.033129879296864,
-      "hidden": false
+      "hidden": false,
+      "disabled": true
     },
     "183f13b7-8b87-4536-ba02-7b2fbed6d043": {
       "id": "183f13b7-8b87-4536-ba02-7b2fbed6d043",
@@ -299,7 +300,7 @@
         "backgroundSize": "contain",
         "position": "absolute",
         "top": 10,
-        "left": 7,
+        "left": 45,
         "bottom": "",
         "right": ""
       },
@@ -346,7 +347,7 @@
         "backgroundSize": "contain",
         "position": "absolute",
         "top": 52,
-        "left": 18,
+        "left": 57,
         "bottom": "",
         "right": "",
         "background": "#ffffff"
@@ -393,8 +394,8 @@
         "backgroundOpacity": 1,
         "backgroundSize": "contain",
         "position": "absolute",
-        "top": 90,
-        "left": 10,
+        "top": 95,
+        "left": 49,
         "bottom": "",
         "right": ""
       },
@@ -435,7 +436,8 @@
       },
       "name": "UI Carrera Blanca",
       "order": 9.046109062124033,
-      "hidden": false
+      "hidden": false,
+      "disabled": true
     },
     "04420913-2540-4d98-82c9-e22002bedf14": {
       "id": "04420913-2540-4d98-82c9-e22002bedf14",
@@ -471,7 +473,7 @@
         "backgroundSize": "contain",
         "position": "absolute",
         "top": 275,
-        "left": 5,
+        "left": 38,
         "bottom": "",
         "right": ""
       },
@@ -512,7 +514,7 @@
         "backgroundSize": "contain",
         "position": "absolute",
         "top": 175,
-        "left": 20,
+        "left": 55,
         "bottom": "",
         "right": ""
       },
@@ -555,7 +557,7 @@
         "verticalTextAlign": "center",
         "position": "absolute",
         "top": 35,
-        "left": 230,
+        "left": 296,
         "bottom": "",
         "right": ""
       },
@@ -598,7 +600,7 @@
         "verticalTextAlign": "center",
         "position": "absolute",
         "top": 83,
-        "left": 135,
+        "left": 213,
         "bottom": "",
         "right": "",
         "textAlign": "justify-left"
@@ -642,7 +644,7 @@
         "verticalTextAlign": "center",
         "position": "absolute",
         "top": 230,
-        "left": 135,
+        "left": 212,
         "bottom": "",
         "right": "",
         "textAlign": "left"
@@ -684,7 +686,7 @@
         "backgroundSize": "contain",
         "position": "absolute",
         "top": 25,
-        "left": 565,
+        "left": 665,
         "bottom": "",
         "right": ""
       },
@@ -724,7 +726,7 @@
         "justifyContent": "center",
         "position": "absolute",
         "top": 309,
-        "left": 540,
+        "left": 648,
         "bottom": "",
         "right": ""
       },
@@ -864,9 +866,10 @@
         "loop": true,
         "src": {
           "type": "asset",
-          "asset": "assets/Sonido/Música/Soledad.mp3"
+          "asset": "assets/Sonido/Música/MapaGeneral.mp3"
         },
-        "volume": 1
+        "volume": 1,
+        "paused": true
       }
     },
     "1069be19-c9a4-4a97-ba2d-b094dabd2ed7": {
@@ -1950,7 +1953,7 @@
     "f8f97311-cde4-4832-a046-0d2c892f393d": {
       "id": "f8f97311-cde4-4832-a046-0d2c892f393d",
       "position": [
-        4.849733146034688,
+        4.899490900559366,
         0.06087136218856992,
         0
       ],
@@ -1971,7 +1974,7 @@
       "components": {},
       "name": "Image Target Jugador",
       "imageTarget": {
-        "name": "Image Target Jugador"
+        "name": "Image Target Jugador-1"
       },
       "order": 12.042094080737106,
       "collider": {
@@ -2022,6 +2025,10 @@
             "uiPanel": {
               "type": "entity",
               "id": "f851be6c-7f6b-4fc4-9cf5-7de203845568"
+            },
+            "markerModel": {
+              "type": "entity",
+              "id": "d815eb8f-ec1c-4b4a-94fe-5351df1910ce"
             }
           }
         }
@@ -2045,6 +2052,301 @@
         },
         "eventOnly": true
       }
+    },
+    "3c4b401e-1ba9-4f63-9c68-7c50ab1400bf": {
+      "id": "3c4b401e-1ba9-4f63-9c68-7c50ab1400bf",
+      "position": [
+        0.018059084244085533,
+        0.004081987576156174,
+        -0.06087136218856992
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        2.3000000000000007,
+        2.3000000000000007,
+        2.3000000000000007
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f8f97311-cde4-4832-a046-0d2c892f393d",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Modelos/Marker_Icon.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Marker_Icon.glb",
+      "order": 13.45379859642859
+    },
+    "e2fcf0b9-7dae-4384-be9c-bdef58877cb8": {
+      "id": "e2fcf0b9-7dae-4384-be9c-bdef58877cb8",
+      "position": [
+        7.066776238744133,
+        1.3852938988549912,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Instrucciones",
+      "order": 13.71182719217018,
+      "ui": {
+        "type": "overlay",
+        "position": "absolute",
+        "top": "",
+        "left": 210,
+        "bottom": "",
+        "right": ""
+      },
+      "disabled": true
+    },
+    "b07de859-6687-4aed-a626-311daa21298d": {
+      "id": "b07de859-6687-4aed-a626-311daa21298d",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "e2fcf0b9-7dae-4384-be9c-bdef58877cb8",
+      "components": {},
+      "ui": {
+        "width": 266,
+        "height": 345,
+        "text": "Dovahkiin... te damos la bienvenida al mapa interactivo de Skyrim.\n\nQue este mapa sea tu brújula mientras recorres las inhóspitas tierras del norte. Atraviesa las praderas y cordilleras de la provincia más indómita de Tamriel; desde los majestuosos baluartes de piedra y las grandiosas comarcas, hasta los antros de mala muerte y los rincones más lúgubres envueltos en la bruma. Habla con los lugareños, desentraña antiguos misterios y forja tu propio destino como el verdadero Sangre de Dragón.\n\nPara desplazarte por la región, toma tu tarjeta de personaje y deslízala sobre el mapa hacia las marcas de interés. Cada ubicación revelará valiosa información para tu travesía.\n\nMantente alerta. Si explorando te cruzas con un símbolo como este acércate... podrías escuchar rumores, secretos e información de lo más interesante para tus misiones.",
+        "color": "#000000",
+        "fontSize": 10,
+        "type": "3d",
+        "position": "absolute",
+        "top": 32,
+        "left": 74,
+        "bottom": "",
+        "right": "",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "textAlign": "left"
+      },
+      "name": "Text",
+      "order": 14.796088745885163
+    },
+    "5cdbeefc-5eb7-4258-b7e0-43e8ce8121e2": {
+      "id": "5cdbeefc-5eb7-4258-b7e0-43e8ce8121e2",
+      "position": [
+        -7.066776238744133,
+        -1.3852938988549912,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "e2fcf0b9-7dae-4384-be9c-bdef58877cb8",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 411,
+        "height": 411,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Note.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "position": "absolute",
+        "top": "",
+        "left": "",
+        "bottom": "",
+        "right": "",
+        "stackingOrder": 0
+      },
+      "name": "Image",
+      "order": 12.596002780703527
+    },
+    "1a197704-9380-49fe-8f05-1b77ee4605dd": {
+      "id": "1a197704-9380-49fe-8f05-1b77ee4605dd",
+      "position": [
+        -7.066776238744133,
+        -1.3852938988549912,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "e01d69d5-0689-4f07-8522-1f1a4aa9b0ac": {
+          "id": "e01d69d5-0689-4f07-8522-1f1a4aa9b0ac",
+          "name": "startExperience",
+          "parameters": {
+            "instructionsPanel": {
+              "type": "entity",
+              "id": "e2fcf0b9-7dae-4384-be9c-bdef58877cb8"
+            },
+            "generalUiPanel": {
+              "type": "entity",
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
+            "ambientAudio": {
+              "type": "entity",
+              "id": "70991734-3532-4493-b2e0-3e9bb372fa56"
+            }
+          }
+        }
+      },
+      "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 1,
+        "type": "overlay",
+        "width": 135,
+        "height": 36,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 334,
+        "left": 213,
+        "bottom": "",
+        "right": "",
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Boton.png"
+        },
+        "backgroundSize": "contain",
+        "stackingOrder": 0,
+        "ignoreRaycast": false
+      },
+      "name": "Continuar Boton (1)",
+      "order": 16.126919181938455,
+      "parentId": "e2fcf0b9-7dae-4384-be9c-bdef58877cb8"
+    },
+    "5addf7ff-7f14-4ae8-9246-97c07942a060": {
+      "id": "5addf7ff-7f14-4ae8-9246-97c07942a060",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "1a197704-9380-49fe-8f05-1b77ee4605dd",
+      "components": {},
+      "name": "Boton Texto (1)",
+      "ui": {
+        "width": 75,
+        "height": 14,
+        "text": "Empezar",
+        "color": "#000000",
+        "fontSize": 11,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "ignoreRaycast": true,
+        "type": "overlay"
+      },
+      "order": 1
+    },
+    "a68fc8ed-3188-474e-8fa2-d0b365b1f6fd": {
+      "id": "a68fc8ed-3188-474e-8fa2-d0b365b1f6fd",
+      "position": [
+        0,
+        2.113477829605454,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "57af94b1-a553-4072-8bf0-5f9877b85fa8": {
+          "id": "57af94b1-a553-4072-8bf0-5f9877b85fa8",
+          "name": "rotateVideoOverlay",
+          "parameters": {
+            "videoSrc": "assets/Videos/Splash_Screen.mp4",
+            "instructionsPanel": {
+              "type": "entity",
+              "id": "e2fcf0b9-7dae-4384-be9c-bdef58877cb8"
+            }
+          }
+        }
+      },
+      "name": "Empty Object",
+      "order": 15.586782233108634
     }
   },
   "spaces": {

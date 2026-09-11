@@ -1,5 +1,5 @@
 import * as ecs from '@8thwall/ecs'
-import { AUDIO_SETTINGS_CHANGED, AudioSettingsPayload } from './audioEvents'
+import { AUDIO_SETTINGS_CHANGED, START_EXPERIENCE, AudioSettingsPayload } from './audioEvents'
 
 export const LOCATION_ENTER = 'location-enter'
 export const LOCATION_EXIT = 'location-exit'
@@ -38,6 +38,7 @@ ecs.registerComponent({
     activePlayerType: ecs.string,
     fadeIntervalId: ecs.i32,
     activeSpeakerEid: ecs.eid,
+    hasStarted: ecs.boolean,
   },
   stateMachine: ({ world, eid, schemaAttribute, dataAttribute }) => {
     const { incButton, decButton, muteButton, volumeText } = schemaAttribute.get(eid)
@@ -71,9 +72,23 @@ ecs.registerComponent({
       const currentSpeaker = data.activeSpeakerEid || schema.locationAudioPlayer
 
       if (data.activePlayerType === 'main' && mainPlayer) {
-        ecs.Audio.set(world, mainPlayer, { volume: masterVol })
+        if (ecs.Audio.has(world, mainPlayer)) {
+          ecs.Audio.mutate(world, mainPlayer, (cursor) => {
+            cursor.volume = masterVol
+            if (!data.hasStarted) {
+              cursor.paused = true
+            }
+          })
+        }
       } else if (data.activePlayerType === 'location' && currentSpeaker) {
-        ecs.Audio.set(world, currentSpeaker, { volume: masterVol })
+        if (ecs.Audio.has(world, currentSpeaker)) {
+          ecs.Audio.mutate(world, currentSpeaker, (cursor) => {
+            cursor.volume = masterVol
+            if (!data.hasStarted) {
+              cursor.paused = true
+            }
+          })
+        }
       }
     }
 
@@ -124,10 +139,20 @@ ecs.registerComponent({
             positional: false,
           })
         } else if (ecs.Audio.has(world, targetSpeaker)) {
-          ecs.Audio.set(world, targetSpeaker, { paused: false })
+          ecs.Audio.mutate(world, targetSpeaker, (cursor) => {
+            if (data.hasStarted) {
+              cursor.paused = false
+            }
+          })
         }
       } else if (targetPlayerType === 'main') {
-        ecs.Audio.set(world, mainPlayer, { paused: false })
+        if (ecs.Audio.has(world, mainPlayer)) {
+          ecs.Audio.mutate(world, mainPlayer, (cursor) => {
+            if (data.hasStarted) {
+              cursor.paused = false
+            }
+          })
+        }
       }
 
       const tickMs = 50
@@ -191,11 +216,21 @@ ecs.registerComponent({
       .onEnter(() => {
         const schema = schemaAttribute.get(eid)
         const startingVol = schema.initialVolume !== undefined && schema.initialVolume !== null ? schema.initialVolume : 50
-        dataAttribute.set(eid, { volumePercent: startingVol, isMuted: false, activePlayerType: 'main', fadeIntervalId: 0 })
+        dataAttribute.set(eid, {
+          volumePercent: startingVol,
+          isMuted: false,
+          activePlayerType: 'main',
+          fadeIntervalId: 0,
+          hasStarted: false,
+        })
         broadcastAndRender()
 
         const initialMainPlayer = getMainPlayerEid(schema)
-        if (initialMainPlayer) ecs.Audio.set(world, initialMainPlayer, { paused: false })
+        if (initialMainPlayer && ecs.Audio.has(world, initialMainPlayer)) {
+          ecs.Audio.mutate(world, initialMainPlayer, (cursor) => {
+            cursor.paused = true
+          })
+        }
       })
 
     const attachRecursiveClickListener = (targetEid: any, onClick: () => void) => {
@@ -247,6 +282,17 @@ ecs.registerComponent({
       .listen(world.events.globalId, LOCATION_EXIT, (event) => {
         const payload = event.data as LocationPayload
         startFade('main', undefined, payload?.speakerEid)
+      })
+      .listen(world.events.globalId, START_EXPERIENCE, () => {
+        const data = dataAttribute.cursor(eid)
+        data.hasStarted = true
+        const schema = schemaAttribute.cursor(eid)
+        const mainPlayer = getMainPlayerEid(schema)
+        if (mainPlayer && ecs.Audio.has(world, mainPlayer)) {
+          ecs.Audio.mutate(world, mainPlayer, (cursor) => {
+            cursor.paused = false
+          })
+        }
       })
       .onExit(() => {
         const { fadeIntervalId } = dataAttribute.get(eid)
