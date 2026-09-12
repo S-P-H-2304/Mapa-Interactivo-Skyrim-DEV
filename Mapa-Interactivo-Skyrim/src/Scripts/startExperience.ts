@@ -39,8 +39,6 @@ ecs.registerComponent({
 
       // Disparar evento para iniciar el video
       if (schema.videoOverlayEntity) {
-        console.log('[startExperience] Removing disabled from videoOverlayEntity')
-        ecs.Disabled.remove(world, schema.videoOverlayEntity)
         
         // Esperamos 1 frame para asegurar que el componente del video se haya inicializado
         world.time.setTimeout(() => {
