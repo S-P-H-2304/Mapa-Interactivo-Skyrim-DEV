@@ -2003,7 +2003,7 @@
       "components": {},
       "name": "Image Target Jugador",
       "imageTarget": {
-        "name": "Image Target Jugador-1"
+        "name": "Image Target Jugador"
       },
       "order": 2.9867414563758095,
       "collider": {
@@ -2014,7 +2014,8 @@
           "width": 1
         },
         "mass": 0,
-        "type": "kinematic"
+        "type": "kinematic",
+        "eventOnly": true
       }
     },
     "d815eb8f-ec1c-4b4a-94fe-5351df1910ce": {
@@ -2859,6 +2860,37 @@
         "width": 412,
         "height": 784
       }
+    },
+    "f8ea43b0-7449-4cfc-980b-ab5a0c986fb8": {
+      "id": "f8ea43b0-7449-4cfc-980b-ab5a0c986fb8",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "32799993-d520-4cf2-aa90-adf38c65eb36": {
+          "id": "32799993-d520-4cf2-aa90-adf38c65eb36",
+          "name": "debugOverlay",
+          "parameters": {}
+        }
+      },
+      "name": "Debug",
+      "order": 18.866150184993643
     }
   },
   "spaces": {

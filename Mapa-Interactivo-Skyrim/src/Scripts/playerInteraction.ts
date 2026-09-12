@@ -97,11 +97,14 @@ ecs.registerComponent({
         dataAttribute.set(eid, { timeoutId: 0, isActive: false })
       })
       .listen(eid, ecs.physics.COLLISION_START_EVENT, (event: any) => {
-        const data = dataAttribute.cursor(eid)
-        const schema = schemaAttribute.cursor(eid)
+  (window as any).debugLog?.(`COLLISION_START other=${event.data.other}`)
+  const data = dataAttribute.cursor(eid)
+  const schema = schemaAttribute.cursor(eid)
 
-        // Verificar que el objeto que colisiona es el jugador
-        if (schema.playerTarget && event.data.other !== schema.playerTarget) return
+  if (schema.playerTarget && event.data.other !== schema.playerTarget) {
+    (window as any).debugLog?.(`Descartado: playerTarget=${schema.playerTarget} != other`)
+    return
+  }
 
         if (data.isActive) return
 
