@@ -7,7 +7,7 @@ ecs.registerComponent({
     button: ecs.eid,
     uiPanel: ecs.eid,
     markerModel: ecs.eid,
-    generalUi: ecs.eid,
+    backgroundFrame: ecs.eid,
     // @asset
     songUrl: ecs.string,
     dimOpacity: ecs.f32,
@@ -31,9 +31,9 @@ ecs.registerComponent({
       }
 
       // 2. Oscurecer fondo de UI General
-      if (schema.generalUi) {
+      if (schema.backgroundFrame) {
         const targetDim = schema.dimOpacity ?? 0.75
-        ecs.Ui.set(world, schema.generalUi, { backgroundOpacity: targetDim })
+        ecs.Ui.set(world, schema.backgroundFrame, { backgroundOpacity: targetDim })
       }
 
       // 3. Animación del marcador a "Selected"
@@ -63,12 +63,12 @@ ecs.registerComponent({
 
       // 1. Ocultar Panel de UI
       if (schema.uiPanel) {
-        ecs.Disabled.set(world, schema.uiPanel, {})
+        ecs.Disabled.set(world, schema.uiPanel)
       }
 
       // 2. Restaurar transparencia del fondo de UI General
-      if (schema.generalUi) {
-        ecs.Ui.set(world, schema.generalUi, { backgroundOpacity: 0 })
+      if (schema.backgroundFrame) {
+        ecs.Ui.set(world, schema.backgroundFrame, { backgroundOpacity: 0 })
       }
 
       // 3. Animación inversa del marcador
