@@ -11,10 +11,12 @@ ecs.registerComponent({
     // @asset
     imageSrc: ecs.string,
     locationName: ecs.string,
-    // @label Duración Fade (ms)
+    // @label Duracin Fade (ms)
     fadeDuration: ecs.f32,
-    // @label Duración Espera (ms)
+    // @label Duracin Espera (ms)
     holdDuration: ecs.f32,
+    // @label Marcador a desbloquear
+    markerToUnlock: ecs.eid,
   },
   schemaDefaults: {
     fadeDuration: 1000,
@@ -22,13 +24,12 @@ ecs.registerComponent({
   },
   stateMachine: ({world, eid, schemaAttribute}) => {
     
-    // Función auxiliar para animar opacidad usando requestAnimationFrame (súper fluido y global)
     const startFade = (uiEntity: any, startOp: number, endOp: number, duration: number, onComplete: () => void) => {
       if (!uiEntity) {
         if (onComplete) onComplete()
         return
       }
-      if (duration <= 0) duration = 1 // Evitar división por 0
+      if (duration <= 0) duration = 1
       
       let start: number | null = null
       const step = (timestamp: number) => {
@@ -37,7 +38,6 @@ ecs.registerComponent({
         const progress = Math.min(elapsed / duration, 1)
         
         const currentOp = startOp + (endOp - startOp) * progress
-        // Nota: uiEntity es un eid numérico, totalmente seguro dentro de callbacks asíncronos
         ecs.Ui.set(world, uiEntity, { opacity: currentOp })
         
         if (progress < 1) {
@@ -57,16 +57,13 @@ ecs.registerComponent({
       state.listen(targetEid, ecs.input.UI_CLICK, () => {
         const {
           panelToHide, backgroundFrame, uiNuevaUbicacion, imageElement, nameElement, 
-          imageSrc, locationName, fadeDuration, holdDuration
+          imageSrc, locationName, fadeDuration, holdDuration, markerToUnlock
         } = schemaAttribute.get(eid)
 
-        // 1. Ocultar Rumor
         if (panelToHide) ecs.Disabled.set(world, panelToHide)
         
-        // 2. Fondo general a 0
         if (backgroundFrame) ecs.Ui.set(world, backgroundFrame, { backgroundOpacity: 0 })
 
-        // 3. Modificar Textos e Imágenes del nuevo panel
         if (nameElement && locationName) {
           ecs.Ui.set(world, nameElement, { text: locationName })
         }
@@ -78,22 +75,21 @@ ecs.registerComponent({
           }
         }
 
-        // 4. Mostrar panel de Nueva Ubicación e iniciar cadena de Fades
+        // DESBLOQUEAR EL MARCADOR (Habilitarlo para que aparezca en el mapa 3D)
+        if (markerToUnlock) {
+          ecs.Disabled.remove(world, markerToUnlock)
+        }
+
         if (uiNuevaUbicacion) {
-          // Aseguramos que inicie en 0 y lo activamos
           ecs.Ui.set(world, uiNuevaUbicacion, { opacity: 0 })
           ecs.Disabled.remove(world, uiNuevaUbicacion)
 
           const fDur = fadeDuration || 1000
           const hDur = holdDuration || 2000
 
-          // Fase 1: Fade IN
           startFade(uiNuevaUbicacion, 0, 1, fDur, () => {
-            // Fase 2: Espera (Hold)
             world.time.setTimeout(() => {
-              // Fase 3: Fade OUT
               startFade(uiNuevaUbicacion, 1, 0, fDur, () => {
-                // Al terminar, desactivamos el panel completamente
                 ecs.Disabled.set(world, uiNuevaUbicacion)
               })
             }, hDur)
