@@ -1,8 +1,7 @@
-import * as ecs from '@8thwall/ecs'
+﻿import * as ecs from '@8thwall/ecs'
 
 const notifyDescendants = (world: any, targetEid: any, eventName: string) => {
   if (!targetEid) return
-  if (ecs.Disabled.has(world, targetEid)) return
   world.events.dispatch(targetEid, eventName, {})
   try {
     for (const child of world.getChildren(targetEid)) {
@@ -19,11 +18,12 @@ ecs.registerComponent({
     showTarget2: ecs.eid,
     hideTarget1: ecs.eid,
     hideTarget2: ecs.eid,
+    backgroundFrame: ecs.eid,
   },
   stateMachine: ({world, eid, schemaAttribute}) => {
     const handleToggle = () => {
-      console.log('[toggleVisibilityOnClick] ¡Click detectado en el botón!', eid)
-      const {showTarget1, showTarget2, hideTarget1, hideTarget2} = schemaAttribute.get(eid)
+      console.log('[toggleVisibilityOnClick] Click detectado en el botón!', eid)
+      const {showTarget1, showTarget2, hideTarget1, hideTarget2, backgroundFrame} = schemaAttribute.get(eid)
 
       if (showTarget1) {
         ecs.Disabled.remove(world, showTarget1)
@@ -34,17 +34,19 @@ ecs.registerComponent({
         notifyDescendants(world, showTarget2, 'start-typing')
       }
       if (hideTarget1) {
-        ecs.Disabled.set(world, hideTarget1, {})
+        ecs.Disabled.set(world, hideTarget1)
       }
       if (hideTarget2) {
-        ecs.Disabled.set(world, hideTarget2, {})
+        ecs.Disabled.set(world, hideTarget2)
+      }
+      if (backgroundFrame) {
+        ecs.Ui.set(world, backgroundFrame, { backgroundOpacity: 0 })
       }
     }
 
     const state = ecs.defineState('default')
       .initial()
 
-    // Escucha recursiva en la entidad y todos sus hijos (textos, iconos, marcos)
     const attachRecursiveClickListener = (targetEid: any) => {
       if (!targetEid) return
       state.listen(targetEid, ecs.input.UI_CLICK, handleToggle)
@@ -55,10 +57,8 @@ ecs.registerComponent({
       } catch (e) {}
     }
 
-    // 1. Escuchar en el propio eid y en todos sus hijos
     attachRecursiveClickListener(eid)
 
-    // 2. Si se especificó una entidad botón diferente en el inspector, escuchar también en ella y sus hijos
     const {button} = schemaAttribute.get(eid)
     if (button && button !== eid) {
       attachRecursiveClickListener(button)

@@ -126,7 +126,7 @@
     "4fc58106-eb91-4549-9cb0-305d0f1dc5ac": {
       "id": "4fc58106-eb91-4549-9cb0-305d0f1dc5ac",
       "position": [
-        1.2399668548159914,
+        0,
         0,
         0
       ],
@@ -143,10 +143,10 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "bc41e37b-7c08-4da5-8383-59c86233ebe8",
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
       "name": "Mapa",
-      "order": 19.630805832623423,
+      "order": 4.02107873876559,
       "hidden": false
     },
     "98e56b46-2634-4fac-9eb5-e672863b0688": {
@@ -173,12 +173,12 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Falkreath.mp3",
-            "activationDelay": 2500,
-            "backgroundFrame": {
+            "generalUi": {
               "type": "entity",
-              "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            }
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
+            "songUrl": "assets/Sonido/Música/Falkreath.mp3",
+            "activationDelay": 2500
           }
         }
       },
@@ -255,8 +255,11 @@
         "width": 784,
         "height": 412,
         "type": "overlay",
+        "background": "#000000",
+        "backgroundOpacity": 0,
+        "backgroundSize": "contain",
         "stackingOrder": 0,
-        "ignoreRaycast": false
+        "ignoreRaycast": true
       },
       "name": "UI General",
       "order": 8.033129879296864,
@@ -284,13 +287,7 @@
       "geometry": null,
       "material": null,
       "parentId": "a54faf48-4607-4acc-b464-34879c8cac78",
-      "components": {
-        "5f2cda33-3d69-484d-a697-87b0402d8be0": {
-          "id": "5f2cda33-3d69-484d-a697-87b0402d8be0",
-          "name": "pressHoldFeedback",
-          "parameters": {}
-        }
-      },
+      "components": {},
       "ui": {
         "type": "overlay",
         "width": 50,
@@ -303,10 +300,9 @@
         "backgroundSize": "contain",
         "position": "absolute",
         "top": 10,
-        "left": 20,
+        "left": 45,
         "bottom": "",
-        "right": "",
-        "stackingOrder": 100
+        "right": ""
       },
       "name": "Sound Mute Toggle",
       "order": 4.782279548325472,
@@ -351,11 +347,10 @@
         "backgroundSize": "contain",
         "position": "absolute",
         "top": 52,
-        "left": 32,
+        "left": 57,
         "bottom": "",
         "right": "",
-        "background": "#ffffff",
-        "stackingOrder": 100
+        "background": "#ffffff"
       },
       "name": "Sound Up",
       "order": 6.077618087072497,
@@ -400,10 +395,9 @@
         "backgroundSize": "contain",
         "position": "absolute",
         "top": 95,
-        "left": 25,
+        "left": 49,
         "bottom": "",
-        "right": "",
-        "stackingOrder": 100
+        "right": ""
       },
       "name": "Sound Down",
       "order": 6.372956625819522,
@@ -412,9 +406,9 @@
     "f851be6c-7f6b-4fc4-9cf5-7de203845568": {
       "id": "f851be6c-7f6b-4fc4-9cf5-7de203845568",
       "position": [
-        -7.480727630364656,
+        -15.479239701581683,
         0,
-        0.12439684738069379
+        -0.32215366481618135
       ],
       "rotation": [
         0,
@@ -432,8 +426,8 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
       "ui": {
-        "width": 784,
-        "height": 412,
+        "width": 660,
+        "height": 395,
         "type": "overlay",
         "background": "#000000",
         "backgroundOpacity": 0,
@@ -514,11 +508,6 @@
           "parameters": {
             "url": "https://elderscrolls.fandom.com/es/wiki/Carrera_Blanca_(Skyrim)"
           }
-        },
-        "d0d2feef-8216-4b2a-8788-c154fb2ff4e4": {
-          "id": "d0d2feef-8216-4b2a-8788-c154fb2ff4e4",
-          "name": "pressHoldFeedback",
-          "parameters": {}
         }
       },
       "ui": {
@@ -692,27 +681,7 @@
       "geometry": null,
       "material": null,
       "parentId": "f851be6c-7f6b-4fc4-9cf5-7de203845568",
-      "components": {
-        "68911322-a828-4a06-8784-590a87dfee6d": {
-          "id": "68911322-a828-4a06-8784-590a87dfee6d",
-          "name": "toggleVisibilityOnClick",
-          "parameters": {
-            "showTarget1": {
-              "type": "entity",
-              "id": "a3828348-7945-4330-9d8a-ba310a783670"
-            },
-            "hideTarget1": {
-              "type": "entity",
-              "id": "f851be6c-7f6b-4fc4-9cf5-7de203845568"
-            }
-          }
-        },
-        "13c33c00-fdcc-4206-832e-08073b9fd184": {
-          "id": "13c33c00-fdcc-4206-832e-08073b9fd184",
-          "name": "pressHoldFeedback",
-          "parameters": {}
-        }
-      },
+      "components": {},
       "ui": {
         "type": "3d",
         "width": 60,
@@ -753,27 +722,7 @@
       "geometry": null,
       "material": null,
       "parentId": "f851be6c-7f6b-4fc4-9cf5-7de203845568",
-      "components": {
-        "300ba12b-23f5-4e58-9fc5-797e2c795902": {
-          "id": "300ba12b-23f5-4e58-9fc5-797e2c795902",
-          "name": "toggleVisibilityOnClick",
-          "parameters": {
-            "hideTarget1": {
-              "type": "entity",
-              "id": "f851be6c-7f6b-4fc4-9cf5-7de203845568"
-            },
-            "backgroundFrame": {
-              "type": "entity",
-              "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            }
-          }
-        },
-        "a7e9d9cf-d440-4f59-910a-3a5c438fc04b": {
-          "id": "a7e9d9cf-d440-4f59-910a-3a5c438fc04b",
-          "name": "pressHoldFeedback",
-          "parameters": {}
-        }
-      },
+      "components": {},
       "ui": {
         "type": "3d",
         "width": 100,
@@ -983,12 +932,12 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
-            "activationDelay": 2500,
-            "backgroundFrame": {
+            "generalUi": {
               "type": "entity",
-              "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            }
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
+            "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
+            "activationDelay": 2500
           }
         }
       },
@@ -1037,12 +986,12 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Riften.mp3",
-            "activationDelay": 2500,
-            "backgroundFrame": {
+            "generalUi": {
               "type": "entity",
-              "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            }
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
+            "songUrl": "assets/Sonido/Música/Riften.mp3",
+            "activationDelay": 2500
           }
         }
       },
@@ -1091,12 +1040,12 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Ventalia.mp3",
-            "activationDelay": 2500,
-            "backgroundFrame": {
+            "generalUi": {
               "type": "entity",
-              "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            }
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
+            "songUrl": "assets/Sonido/Música/Ventalia.mp3",
+            "activationDelay": 2500
           }
         }
       },
@@ -1145,12 +1094,12 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Hibernalia.mp3",
-            "activationDelay": 2500,
-            "backgroundFrame": {
+            "generalUi": {
               "type": "entity",
-              "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            }
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
+            "songUrl": "assets/Sonido/Música/Hibernalia.mp3",
+            "activationDelay": 2500
           }
         }
       },
@@ -1199,12 +1148,12 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Hibernalia.mp3",
-            "activationDelay": 2500,
-            "backgroundFrame": {
+            "generalUi": {
               "type": "entity",
-              "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            }
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
+            "songUrl": "assets/Sonido/Música/Hibernalia.mp3",
+            "activationDelay": 2500
           }
         }
       },
@@ -1253,12 +1202,12 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Morthal.mp3",
-            "activationDelay": 2500,
-            "backgroundFrame": {
+            "generalUi": {
               "type": "entity",
-              "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            }
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
+            "songUrl": "assets/Sonido/Música/Morthal.mp3",
+            "activationDelay": 2500
           }
         }
       },
@@ -1307,12 +1256,12 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Soledad.mp3",
-            "activationDelay": 2500,
-            "backgroundFrame": {
+            "generalUi": {
               "type": "entity",
-              "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            }
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
+            "songUrl": "assets/Sonido/Música/Soledad.mp3",
+            "activationDelay": 2500
           }
         }
       },
@@ -1361,12 +1310,12 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Markath.mp3",
-            "activationDelay": 2500,
-            "backgroundFrame": {
+            "generalUi": {
               "type": "entity",
-              "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            }
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
+            "songUrl": "assets/Sonido/Música/Markath.mp3",
+            "activationDelay": 2500
           }
         }
       },
@@ -1439,14 +1388,13 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
       "ui": {
-        "width": 784,
-        "height": 412,
+        "width": 660,
+        "height": 395,
         "type": "overlay",
         "stackingOrder": 0,
-        "ignoreRaycast": true,
-        "opacity": 1
+        "ignoreRaycast": true
       },
-      "name": "UI Rumor Carrera Blanca",
+      "name": "UI Rumor",
       "order": 10.770442593671289,
       "hidden": false,
       "disabled": true
@@ -1487,7 +1435,7 @@
         "verticalTextAlign": "center",
         "position": "absolute",
         "top": 35,
-        "left": 290,
+        "left": 210,
         "bottom": "",
         "right": ""
       },
@@ -1515,27 +1463,7 @@
       "geometry": null,
       "material": null,
       "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
-      "components": {
-        "df55c0d1-0804-4e45-968e-1e94bac9e1b5": {
-          "id": "df55c0d1-0804-4e45-968e-1e94bac9e1b5",
-          "name": "toggleVisibilityOnClick",
-          "parameters": {
-            "showTarget1": {
-              "type": "entity",
-              "id": "f851be6c-7f6b-4fc4-9cf5-7de203845568"
-            },
-            "hideTarget1": {
-              "type": "entity",
-              "id": "a3828348-7945-4330-9d8a-ba310a783670"
-            }
-          }
-        },
-        "e95a8d3c-b9b5-46cb-9057-e47b55c0124e": {
-          "id": "e95a8d3c-b9b5-46cb-9057-e47b55c0124e",
-          "name": "pressHoldFeedback",
-          "parameters": {}
-        }
-      },
+      "components": {},
       "ui": {
         "type": "overlay",
         "width": 100,
@@ -1547,7 +1475,7 @@
         "justifyContent": "center",
         "position": "absolute",
         "top": 309,
-        "left": 635,
+        "left": 553,
         "bottom": "",
         "right": ""
       },
@@ -1615,7 +1543,7 @@
       "ui": {
         "width": 50,
         "height": 14,
-        "text": "Atrás",
+        "text": "Salir",
         "color": "#ffffff",
         "fontSize": 16,
         "font": {
@@ -1650,7 +1578,7 @@
       "ui": {
         "type": "overlay",
         "width": 435,
-        "height": 273,
+        "height": 450,
         "image": {
           "type": "asset",
           "asset": "assets/Iconos/UI/Book.png"
@@ -1658,12 +1586,12 @@
         "backgroundOpacity": 1,
         "backgroundSize": "contain",
         "position": "absolute",
-        "top": 90,
-        "left": 156,
+        "top": 10,
+        "left": 100,
         "bottom": "",
         "right": "",
         "ignoreRaycast": true,
-        "stackingOrder": -1
+        "stackingOrder": -100
       },
       "name": "Libro",
       "order": 5.552108197422722,
@@ -1700,7 +1628,7 @@
         "type": "overlay",
         "position": "absolute",
         "top": 120,
-        "left": 205,
+        "left": 150,
         "bottom": "",
         "right": "",
         "textAlign": "left",
@@ -1708,11 +1636,11 @@
           "type": "font",
           "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
         },
-        "stackingOrder": 1,
+        "stackingOrder": 0,
         "ignoreRaycast": true
       },
       "name": "RumorText",
-      "order": 4.7835484516204065
+      "order": 15.717994353155069
     },
     "7299e1f7-25a8-462a-a42c-2af206a53531": {
       "id": "7299e1f7-25a8-462a-a42c-2af206a53531",
@@ -1736,20 +1664,19 @@
       "material": null,
       "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
       "components": {
-        "e2c104f6-4e2e-4e43-b181-50ec9af90001": {
-          "id": "e2c104f6-4e2e-4e43-b181-50ec9af90001",
+        "f4d575c1-69a5-492b-ad94-22f8a906521d": {
+          "id": "f4d575c1-69a5-492b-ad94-22f8a906521d",
           "name": "toggleVisibilityOnClick",
           "parameters": {
             "showTarget1": {
               "type": "entity",
-              "id": "b94261b4-e70c-4b2d-b1dd-aa98c1c2ab90"
+              "id": "3e8d8759-4994-4d3d-9957-038af2212544"
+            },
+            "button": {
+              "type": "entity",
+              "id": "7299e1f7-25a8-462a-a42c-2af206a53531"
             }
           }
-        },
-        "4ca15de1-8b0c-4851-8dfe-299668c9ad22": {
-          "id": "4ca15de1-8b0c-4851-8dfe-299668c9ad22",
-          "name": "pressHoldFeedback",
-          "parameters": {}
         }
       },
       "ui": {
@@ -1757,15 +1684,15 @@
         "backgroundOpacity": 1,
         "type": "overlay",
         "width": 135,
-        "height": 33,
+        "height": 55,
         "flexDirection": "row",
         "padding": "10",
         "gap": 4,
         "alignItems": "center",
         "justifyContent": "center",
         "position": "absolute",
-        "top": 278,
-        "left": 211,
+        "top": 272,
+        "left": 155,
         "bottom": "",
         "right": "",
         "image": {
@@ -1817,6 +1744,58 @@
       },
       "order": -1.484248400351055
     },
+    "3e8d8759-4994-4d3d-9957-038af2212544": {
+      "id": "3e8d8759-4994-4d3d-9957-038af2212544",
+      "position": [
+        7.474572354737953,
+        0,
+        -0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
+      "components": {
+        "e64e513b-10d3-40c6-bd3b-f5620afe3fdf": {
+          "id": "e64e513b-10d3-40c6-bd3b-f5620afe3fdf",
+          "name": "typewriterText"
+        }
+      },
+      "ui": {
+        "width": 158,
+        "height": 208,
+        "text": "El grupo de guerreros te elogia y te invita a formar parte de Los Compañeros. \n\nDirígete a Jorrvaskr para hablar con Kodlak Melena Blanca, pero ten cuidado, se rumorea que de allí provienen aullidos extraños en las noches con luna.\n",
+        "color": "#000000",
+        "fontSize": 11,
+        "type": "overlay",
+        "position": "absolute",
+        "top": 120,
+        "left": 332,
+        "bottom": "",
+        "right": "",
+        "textAlign": "left",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "ignoreRaycast": true,
+        "stackingOrder": 0
+      },
+      "name": "RumorText (1)",
+      "order": 15.878920111102634,
+      "disabled": true,
+      "hidden": false
+    },
     "d8df7945-6bf4-4160-98fb-b36cbc56eb3f": {
       "id": "d8df7945-6bf4-4160-98fb-b36cbc56eb3f",
       "position": [
@@ -1841,12 +1820,12 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
-            "activationDelay": 2500,
-            "backgroundFrame": {
+            "generalUi": {
               "type": "entity",
-              "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            }
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
+            "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
+            "activationDelay": 2500
           }
         }
       },
@@ -1895,12 +1874,12 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Hibernalia.mp3",
-            "activationDelay": 2500,
-            "backgroundFrame": {
+            "generalUi": {
               "type": "entity",
-              "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            }
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
+            "songUrl": "assets/Sonido/Música/Hibernalia.mp3",
+            "activationDelay": 2500
           }
         }
       },
@@ -1949,12 +1928,12 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Falkreath.mp3",
-            "activationDelay": 2500,
-            "backgroundFrame": {
+            "generalUi": {
               "type": "entity",
-              "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            }
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
+            "songUrl": "assets/Sonido/Música/Falkreath.mp3",
+            "activationDelay": 2500
           }
         }
       },
@@ -1999,13 +1978,13 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "786c7d71-ac07-4a68-8ab7-36c5f24f4960",
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
       "name": "Image Target Jugador",
       "imageTarget": {
         "name": "Image Target Jugador-1"
       },
-      "order": 2.9867414563758095,
+      "order": 12.042094080737106,
       "collider": {
         "geometry": {
           "type": "box",
@@ -2041,6 +2020,10 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
+            "generalUi": {
+              "type": "entity",
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
+            },
             "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
             "activationDelay": 2500,
             "playerTarget": {
@@ -2054,10 +2037,6 @@
             "markerModel": {
               "type": "entity",
               "id": "d815eb8f-ec1c-4b4a-94fe-5351df1910ce"
-            },
-            "backgroundFrame": {
-              "type": "entity",
-              "id": "473c7055-07c6-433b-b166-03684ad7a490"
             }
           }
         }
@@ -2118,7 +2097,7 @@
     "e2fcf0b9-7dae-4384-be9c-bdef58877cb8": {
       "id": "e2fcf0b9-7dae-4384-be9c-bdef58877cb8",
       "position": [
-        -9.354397511239425,
+        7.066776238744133,
         1.3852938988549912,
         0
       ],
@@ -2135,18 +2114,19 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "979ed10b-4e87-4608-a7f3-b9932f8ad82e",
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
       "name": "Instrucciones",
       "order": 13.71182719217018,
       "ui": {
         "type": "overlay",
         "position": "absolute",
-        "top": 160,
-        "left": 0,
+        "top": "",
+        "left": 210,
         "bottom": "",
         "right": ""
-      }
+      },
+      "disabled": true
     },
     "b07de859-6687-4aed-a626-311daa21298d": {
       "id": "b07de859-6687-4aed-a626-311daa21298d",
@@ -2260,7 +2240,7 @@
           "parameters": {
             "instructionsPanel": {
               "type": "entity",
-              "id": "979ed10b-4e87-4608-a7f3-b9932f8ad82e"
+              "id": "e2fcf0b9-7dae-4384-be9c-bdef58877cb8"
             },
             "generalUiPanel": {
               "type": "entity",
@@ -2269,17 +2249,8 @@
             "ambientAudio": {
               "type": "entity",
               "id": "70991734-3532-4493-b2e0-3e9bb372fa56"
-            },
-            "videoOverlayEntity": {
-              "type": "entity",
-              "id": "a68fc8ed-3188-474e-8fa2-d0b365b1f6fd"
             }
           }
-        },
-        "6de5d1b2-1a68-4fbd-9de5-d48dc16ba9dd": {
-          "id": "6de5d1b2-1a68-4fbd-9de5-d48dc16ba9dd",
-          "name": "pressHoldFeedback",
-          "parameters": {}
         }
       },
       "ui": {
@@ -2378,25 +2349,12 @@
             "instructionsPanel": {
               "type": "entity",
               "id": "e2fcf0b9-7dae-4384-be9c-bdef58877cb8"
-            },
-            "generalUiPanel": {
-              "type": "entity",
-              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
-            },
-            "ambientAudio": {
-              "type": "entity",
-              "id": "70991734-3532-4493-b2e0-3e9bb372fa56"
-            },
-            "backgroundFrame": {
-              "type": "entity",
-              "id": "473c7055-07c6-433b-b166-03684ad7a490"
             }
           }
         }
       },
       "name": "Splash Screen",
-      "order": 15.586782233108634,
-      "disabled": true
+      "order": 15.586782233108634
     },
     "57300f21-0ba5-4056-bd67-6fd11acbc745": {
       "id": "57300f21-0ba5-4056-bd67-6fd11acbc745",
@@ -2427,13 +2385,11 @@
         "background": "#000000",
         "backgroundOpacity": 0,
         "backgroundSize": "stretch",
-        "stackingOrder": 0,
-        "opacity": 1
+        "stackingOrder": 0
       },
       "name": "UI Nueva Ubicación",
       "order": 9.685990281930964,
-      "hidden": false,
-      "disabled": true
+      "hidden": false
     },
     "00dcd921-eff0-463b-89f0-3ea9f9e4ffa7": {
       "id": "00dcd921-eff0-463b-89f0-3ea9f9e4ffa7",
@@ -2561,304 +2517,6 @@
       },
       "name": "Titulo Ciudad Carrera Blanca",
       "order": 8.931083522153346
-    },
-    "27f7418d-0db6-446f-bc3a-3589cd615c3f": {
-      "id": "27f7418d-0db6-446f-bc3a-3589cd615c3f",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
-      "components": {
-        "f1ced98c-85f8-4669-9345-ce5990b0eab3": {
-          "id": "f1ced98c-85f8-4669-9345-ce5990b0eab3",
-          "name": "unlockLocationOnClick",
-          "parameters": {
-            "panelToHide": {
-              "type": "entity",
-              "id": "a3828348-7945-4330-9d8a-ba310a783670"
-            },
-            "uiNuevaUbicacion": {
-              "type": "entity",
-              "id": "57300f21-0ba5-4056-bd67-6fd11acbc745"
-            },
-            "imageElement": {
-              "type": "entity",
-              "id": "00dcd921-eff0-463b-89f0-3ea9f9e4ffa7"
-            },
-            "nameElement": {
-              "type": "entity",
-              "id": "02257a0f-f15f-4661-ad15-2f6ea61b47a9"
-            },
-            "imageSrc": "assets/Iconos/Ubicaciones/Cueva.png",
-            "locationName": "Ubicación de Prueba",
-            "fadeDuration": 1000,
-            "backgroundFrame": {
-              "type": "entity",
-              "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            }
-          }
-        },
-        "140ffbff-3074-4074-a58b-0b716ba63213": {
-          "id": "140ffbff-3074-4074-a58b-0b716ba63213",
-          "name": "pressHoldFeedback",
-          "parameters": {}
-        }
-      },
-      "ui": {
-        "background": "#ffffff",
-        "backgroundOpacity": 1,
-        "type": "overlay",
-        "width": 135,
-        "height": 55,
-        "flexDirection": "row",
-        "padding": "10",
-        "gap": 4,
-        "alignItems": "center",
-        "justifyContent": "center",
-        "position": "absolute",
-        "top": 272,
-        "left": 408,
-        "bottom": "",
-        "right": "",
-        "image": {
-          "type": "asset",
-          "asset": "assets/Iconos/UI/Boton.png"
-        },
-        "backgroundSize": "contain",
-        "stackingOrder": 0,
-        "ignoreRaycast": false
-      },
-      "name": "Continuar Boton 2",
-      "order": 15.78795977362857,
-      "disabled": true
-    },
-    "cd94b452-327d-4cbd-8ec7-772d624b334f": {
-      "id": "cd94b452-327d-4cbd-8ec7-772d624b334f",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "27f7418d-0db6-446f-bc3a-3589cd615c3f",
-      "components": {},
-      "name": "Boton Texto",
-      "ui": {
-        "width": 75,
-        "height": 14,
-        "text": "Unirse",
-        "color": "#000000",
-        "fontSize": 11,
-        "font": {
-          "type": "font",
-          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
-        },
-        "ignoreRaycast": true,
-        "type": "overlay"
-      },
-      "order": -1.484248400351055
-    },
-    "bc41e37b-7c08-4da5-8383-59c86233ebe8": {
-      "id": "bc41e37b-7c08-4da5-8383-59c86233ebe8",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "components": {},
-      "name": "Image Targets",
-      "order": 1.8098275742890175
-    },
-    "786c7d71-ac07-4a68-8ab7-36c5f24f4960": {
-      "id": "786c7d71-ac07-4a68-8ab7-36c5f24f4960",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "bc41e37b-7c08-4da5-8383-59c86233ebe8",
-      "components": {},
-      "name": "Jugador",
-      "order": 17.870906103573944
-    },
-    "b94261b4-e70c-4b2d-b1dd-aa98c1c2ab90": {
-      "id": "b94261b4-e70c-4b2d-b1dd-aa98c1c2ab90",
-      "position": [
-        7.474572354737953,
-        0,
-        -0.1
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
-      "components": {
-        "28a4b2f8-50d7-4271-ad6d-8b7046bcc83a": {
-          "id": "28a4b2f8-50d7-4271-ad6d-8b7046bcc83a",
-          "name": "typewriterText",
-          "parameters": {
-            "enableTarget": {
-              "type": "entity",
-              "id": "27f7418d-0db6-446f-bc3a-3589cd615c3f"
-            }
-          }
-        }
-      },
-      "ui": {
-        "width": 158,
-        "height": 138,
-        "text": "El grupo de guerreros te elogia y te invita a formar parte de Los Compañeros. \n\nDirígete a Jorrvaskr para hablar con Kodlak Melena Blanca, pero ten cuidado, se rumorea que de allí provienen aullidos extraños en las noches con luna.\n",
-        "color": "#000000",
-        "fontSize": 11,
-        "type": "overlay",
-        "position": "absolute",
-        "top": 120,
-        "left": 391,
-        "bottom": "",
-        "right": "",
-        "textAlign": "left",
-        "font": {
-          "type": "font",
-          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
-        },
-        "stackingOrder": 1,
-        "ignoreRaycast": true
-      },
-      "name": "RumorText 2",
-      "order": 5.119847914992695,
-      "disabled": true
-    },
-    "473c7055-07c6-433b-b166-03684ad7a490": {
-      "id": "473c7055-07c6-433b-b166-03684ad7a490",
-      "position": [
-        -7.516523679745661,
-        -0.07593792314308168,
-        -0.20198277612923632
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "components": {},
-      "ui": {
-        "width": 784,
-        "height": 784,
-        "type": "overlay",
-        "background": "#000000",
-        "backgroundOpacity": 0.75,
-        "position": "absolute",
-        "top": "",
-        "left": "",
-        "bottom": "",
-        "right": "",
-        "stackingOrder": -5
-      },
-      "name": "Background Frame",
-      "order": 3.96525563347084
-    },
-    "979ed10b-4e87-4608-a7f3-b9932f8ad82e": {
-      "id": "979ed10b-4e87-4608-a7f3-b9932f8ad82e",
-      "position": [
-        -14.082941358875386,
-        -0.22482050095471906,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "components": {},
-      "name": "Instrucciones Panel",
-      "order": 17.107118051735636,
-      "ui": {
-        "type": "overlay",
-        "width": 412,
-        "height": 784
-      }
     }
   },
   "spaces": {
