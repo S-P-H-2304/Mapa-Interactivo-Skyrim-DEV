@@ -80,6 +80,12 @@ class DataManager {
   public isTextCompleted(textId: string): boolean {
     return this.data.completedTexts.includes(textId)
   }
+
+  // Testing utility — borra todo el progreso y ajustes
+  public clearAll() {
+    this.data = { ...defaultData, settings: { ...defaultData.settings } }
+    this.save()
+  }
 }
 
 export const dataManager = new DataManager()
