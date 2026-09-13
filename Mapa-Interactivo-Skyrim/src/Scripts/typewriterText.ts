@@ -1,4 +1,4 @@
-﻿import * as ecs from '@8thwall/ecs'
+import * as ecs from '@8thwall/ecs'
 
 ecs.registerComponent({
   name: 'typewriterText',
@@ -6,15 +6,23 @@ ecs.registerComponent({
     charIntervalMs: ecs.f32,
     // @label Activar al terminar
     enableTarget: ecs.eid,
+    // @label Audio de Escritura
+    // @asset
+    typingAudio: ecs.string,
+    // @label Volumen del Audio
+    audioVolume: ecs.f32,
   },
   schemaDefaults: {
     charIntervalMs: 40,
+    typingAudio: 'assets/Sonido/Efectos de Sonido/Writing.mp3',
+    audioVolume: 0.8,
   },
   data: {
     fullText: ecs.string,
     visibleChars: ecs.ui32,
     msSinceLastChar: ecs.f32,
     hasPlayedOnce: ecs.boolean,
+    isTyping: ecs.boolean,
   },
   stateMachine: ({world, eid, schemaAttribute, dataAttribute}) => {
     
@@ -38,42 +46,134 @@ ecs.registerComponent({
       requestAnimationFrame(step)
     }
 
+    const startAudio = () => {
+      const { typingAudio, audioVolume } = schemaAttribute.get(eid)
+      const audioUrl = typingAudio || 'assets/Sonido/Efectos de Sonido/Writing.mp3'
+      const volume = audioVolume !== undefined && audioVolume !== null ? audioVolume : 0.8
+
+      if (ecs.Audio.has(world, eid)) {
+        ecs.Audio.mutate(world, eid, (cursor) => {
+          cursor.url = audioUrl
+          cursor.volume = volume
+          cursor.loop = true
+          cursor.paused = false
+        })
+      } else {
+        ecs.Audio.set(world, eid, {
+          url: audioUrl,
+          volume,
+          loop: true,
+          paused: false,
+          positional: false,
+        })
+      }
+    }
+
+    const stopAudio = () => {
+      if (ecs.Audio.has(world, eid)) {
+        ecs.Audio.mutate(world, eid, (cursor) => {
+          cursor.paused = true
+        })
+      }
+    }
+
     ecs.defineState('default')
       .initial()
       .onEnter(() => {
-        const fullText = ecs.Ui.get(world, eid).text
-        dataAttribute.set(eid, {fullText, visibleChars: 0, msSinceLastChar: 0, hasPlayedOnce: false})
+        const currentData = dataAttribute.get(eid)
+        const uiText = ecs.Ui.get(world, eid).text || ''
+        const fullText = (currentData.fullText && currentData.fullText.length >= uiText.length)
+          ? currentData.fullText
+          : uiText
+
+        dataAttribute.set(eid, {
+          fullText,
+          visibleChars: 0,
+          msSinceLastChar: 0,
+          hasPlayedOnce: false,
+          isTyping: false,
+        })
       })
       .listen(eid, 'start-typing', () => {
-        const {hasPlayedOnce} = dataAttribute.get(eid)
+        const {hasPlayedOnce, fullText} = dataAttribute.get(eid)
         if (hasPlayedOnce) return
-        dataAttribute.set(eid, {visibleChars: 0, msSinceLastChar: 0, hasPlayedOnce: true})
+        const shouldType = fullText.length > 0
+        dataAttribute.set(eid, {
+          fullText,
+          visibleChars: 0,
+          msSinceLastChar: 0,
+          hasPlayedOnce: true,
+          isTyping: shouldType,
+        })
         ecs.Ui.set(world, eid, {text: ''})
+        if (shouldType) {
+          startAudio()
+        }
       })
       .onTick(() => {
-        const {fullText, visibleChars, msSinceLastChar} = dataAttribute.get(eid)
-        if (visibleChars >= fullText.length) return
+        const {fullText, visibleChars, msSinceLastChar, isTyping} = dataAttribute.get(eid)
+        if (visibleChars >= fullText.length) {
+          if (isTyping) {
+            dataAttribute.set(eid, {
+              fullText,
+              visibleChars,
+              msSinceLastChar,
+              hasPlayedOnce: true,
+              isTyping: false,
+            })
+            stopAudio()
+          }
+          return
+        }
+
+        // Si comienza a escribir
+        if (!isTyping) {
+          dataAttribute.set(eid, {
+            fullText,
+            visibleChars,
+            msSinceLastChar,
+            hasPlayedOnce: true,
+            isTyping: true,
+          })
+          startAudio()
+        }
 
         const {charIntervalMs, enableTarget} = schemaAttribute.get(eid)
         let newMs = msSinceLastChar + world.time.delta
         let newVisible = visibleChars
 
         while (newMs >= charIntervalMs && newVisible < fullText.length) {
-            newMs -= charIntervalMs
-            newVisible += 1
+          newMs -= charIntervalMs
+          newVisible += 1
         }
 
-        ecs.Ui.set(world, eid, {text: fullText.slice(0, newVisible)}) 
-        dataAttribute.set(eid, {msSinceLastChar: newMs, visibleChars: newVisible})
+        ecs.Ui.set(world, eid, {text: fullText.slice(0, newVisible)})
+        
+        const finished = newVisible >= fullText.length
+
+        dataAttribute.set(eid, {
+          fullText,
+          msSinceLastChar: newMs,
+          visibleChars: newVisible,
+          hasPlayedOnce: true,
+          isTyping: !finished,
+        })
 
         // Cuando recién terminamos de escribir todo el texto:
-        if (newVisible >= fullText.length && enableTarget) {
-          // Quitamos el disabled del botón/objetivo
-          ecs.Disabled.remove(world, enableTarget)
-          // Nos aseguramos de iniciar su opacidad en 0 para hacerle un pequeño fade in
-          ecs.Ui.set(world, enableTarget, { opacity: 0 })
-          startFadeIn(enableTarget)
+        if (finished) {
+          stopAudio()
+
+          if (enableTarget) {
+            // Quitamos el disabled del botón/objetivo
+            ecs.Disabled.remove(world, enableTarget)
+            // Nos aseguramos de iniciar su opacidad en 0 para hacerle un pequeño fade in
+            ecs.Ui.set(world, enableTarget, { opacity: 0 })
+            startFadeIn(enableTarget)
+          }
         }
+      })
+      .onExit(() => {
+        stopAudio()
       })
   },
 })

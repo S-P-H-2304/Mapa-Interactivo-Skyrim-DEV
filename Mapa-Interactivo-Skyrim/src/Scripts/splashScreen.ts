@@ -17,7 +17,7 @@ ecs.registerComponent({
     ecs.defineState('default')
       .initial()
       .listen(eid, 'start-video', () => {
-        // Regla crAtica: Adquirir cursor fresco
+        // Regla critica: Adquirir cursor fresco
         const schema = schemaAttribute.get(eid)
         const { videoSrc, generalUiPanel, backgroundFrame, ambientAudio } = schema
 
@@ -39,32 +39,32 @@ ecs.registerComponent({
           video.style.objectFit = 'cover'
 
           document.body.appendChild(video)
-          video.play().catch((err) => console.warn('Autoplay fallA3:', err))
+          video.play().catch((err) => console.warn('Autoplay falló:', err))
 
           video.addEventListener('ended', () => {
-  video.remove()
+            video.remove()
 
-  const freshSchema = schemaAttribute.get(eid)
+            // Ya que el video ha terminado, necesitamos volver a leer el schema fresco 
+            // porque estamos dentro de OTRO callback asíncrono!
+            const freshSchema = schemaAttribute.get(eid)
 
-  if (freshSchema.generalUiPanel) {
-    ecs.Disabled.remove(world, freshSchema.generalUiPanel)
-    try { ecs.Hidden.remove(world, freshSchema.generalUiPanel) } catch(e) {}
-  }
+            if (freshSchema.generalUiPanel) {
+              ecs.Disabled.remove(world, freshSchema.generalUiPanel)
+              try { ecs.Hidden.remove(world, freshSchema.generalUiPanel) } catch(e) {}
+            }
 
-  if (freshSchema.backgroundFrame) {
-    ecs.Ui.set(world, freshSchema.backgroundFrame, { backgroundOpacity: 0 })
-  }
+            if (freshSchema.backgroundFrame) {
+              ecs.Ui.set(world, freshSchema.backgroundFrame, { backgroundOpacity: 0 })
+            }
 
-  if (freshSchema.ambientAudio && ecs.Audio.has(world, freshSchema.ambientAudio)) {
-    ecs.Audio.mutate(world, freshSchema.ambientAudio, (cursor) => {
-      cursor.paused = false
-    })
-  }
-
-  world.events.dispatch(world.events.globalId, START_EXPERIENCE, {})
-
-  ecs.Disabled.set(world, eid, {}) // se desactiva a sí misma, al final de todo
-})
+            if (freshSchema.ambientAudio && ecs.Audio.has(world, freshSchema.ambientAudio)) {
+              ecs.Audio.mutate(world, freshSchema.ambientAudio, (cursor) => {
+                cursor.paused = false
+              })
+            }
+            
+            world.events.dispatch(world.events.globalId, START_EXPERIENCE, {})
+          })
         })
       })
   },
