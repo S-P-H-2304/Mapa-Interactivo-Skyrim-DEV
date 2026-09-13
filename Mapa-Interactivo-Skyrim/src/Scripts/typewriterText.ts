@@ -1,5 +1,5 @@
 import * as ecs from '@8thwall/ecs'
-import { dataManager } from './dataManager'
+
 ecs.registerComponent({
   name: 'typewriterText',
   schema: {
@@ -86,49 +86,13 @@ ecs.registerComponent({
           ? currentData.fullText
           : uiText
 
-        const textId = fullText.slice(0, 30).trim()
-        const isCompleted = textId ? dataManager.isTextCompleted(textId) : false
-
-        if (isCompleted) {
-           dataAttribute.set(eid, {
-             fullText,
-             visibleChars: fullText.length,
-             msSinceLastChar: 0,
-             hasPlayedOnce: true,
-             isTyping: false,
-           })
-           ecs.Ui.set(world, eid, { text: fullText })
-
-           const { enableTarget } = schemaAttribute.get(eid)
-           if (enableTarget) {
-              // Habilitarlo temporalmente para que pueda escuchar el evento
-              ecs.Disabled.remove(world, enableTarget)
-              try { ecs.Ui.set(world, enableTarget, { opacity: 0 }) } catch(e) {}
-              
-              // Simular el clic en el botón de continuar para desencadenar que aparezca la siguiente página
-              world.time.setTimeout(() => {
-                  world.events.dispatch(enableTarget, ecs.input.UI_CLICK, {})
-                  // Ahora sí lo deshabilitamos para que no interfiera más
-                  ecs.Disabled.set(world, enableTarget)
-              }, 50)
-           }
-        } else {
-           dataAttribute.set(eid, {
-             fullText,
-             visibleChars: 0,
-             msSinceLastChar: 0,
-             hasPlayedOnce: false,
-             isTyping: false,
-           })
-
-           const { enableTarget } = schemaAttribute.get(eid)
-           if (enableTarget && textId) {
-              // Si el usuario hace clic en continuar, guardamos que terminó este texto
-              world.events.addListener(enableTarget, ecs.input.UI_CLICK, () => {
-                 dataManager.markTextCompleted(textId)
-              })
-           }
-        }
+        dataAttribute.set(eid, {
+          fullText,
+          visibleChars: 0,
+          msSinceLastChar: 0,
+          hasPlayedOnce: false,
+          isTyping: false,
+        })
       })
       .listen(eid, 'start-typing', () => {
         const {hasPlayedOnce, fullText} = dataAttribute.get(eid)

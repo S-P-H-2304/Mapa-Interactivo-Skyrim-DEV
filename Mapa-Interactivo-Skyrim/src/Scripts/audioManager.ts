@@ -1,6 +1,5 @@
 import * as ecs from '@8thwall/ecs'
 import { AUDIO_SETTINGS_CHANGED, START_EXPERIENCE, AudioSettingsPayload } from './audioEvents'
-import { dataManager } from './dataManager'
 
 export const LOCATION_ENTER = 'location-enter'
 export const LOCATION_EXIT = 'location-exit'
@@ -18,7 +17,7 @@ ecs.registerComponent({
     muteButton: ecs.eid,
     volumeText: ecs.eid,
     volumeStep: ecs.ui8,
-    initialVolume: ecs.ui8, // Will be overridden by dataManager if set
+    initialVolume: ecs.ui8,
     // @asset
     mutedIcon: ecs.string,
     // @asset
@@ -100,9 +99,6 @@ ecs.registerComponent({
       }
       applyMuteIcon()
       syncMasterVolume()
-      
-      // Guardar en la base de datos local
-      dataManager.updateSettings(isMuted, volumePercent)
 
       const payload: AudioSettingsPayload = { volumePercent, isMuted }
       world.events.dispatch(world.events.globalId, AUDIO_SETTINGS_CHANGED, payload)
@@ -219,11 +215,10 @@ ecs.registerComponent({
       .initial()
       .onEnter(() => {
         const schema = schemaAttribute.get(eid)
-        const savedSettings = dataManager.getData().settings
-        
+        const startingVol = schema.initialVolume !== undefined && schema.initialVolume !== null ? schema.initialVolume : 50
         dataAttribute.set(eid, {
-          volumePercent: savedSettings.volumePercent,
-          isMuted: savedSettings.muted,
+          volumePercent: startingVol,
+          isMuted: false,
           activePlayerType: 'main',
           fadeIntervalId: 0,
           hasStarted: false,

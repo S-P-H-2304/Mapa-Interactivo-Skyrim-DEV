@@ -1,4 +1,4 @@
-import * as ecs from '@8thwall/ecs'
+﻿import * as ecs from '@8thwall/ecs'
 
 ecs.registerComponent({
   name: 'startExperience',
@@ -40,10 +40,6 @@ ecs.registerComponent({
       // Disparar evento para iniciar el video
       if (schema.videoOverlayEntity) {
         
-        // MUY IMPORTANTE: Asegurarnos de que la entidad del video esté habilitada
-        // Si el usuario la deshabilitó en el inspector, el componente no escuchará eventos.
-        ecs.Disabled.remove(world, schema.videoOverlayEntity)
-
         // Esperamos 1 frame para asegurar que el componente del video se haya inicializado
         world.time.setTimeout(() => {
            console.log('[startExperience] Dispatching start-video')

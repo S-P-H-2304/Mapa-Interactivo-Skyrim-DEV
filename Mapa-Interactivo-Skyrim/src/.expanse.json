@@ -37,7 +37,7 @@
           "headset": "disabled",
           "phone": "AR",
           "world": {
-            "disableWorldTracking": false
+            "disableWorldTracking": true
           }
         }
       },
@@ -126,7 +126,7 @@
     "4fc58106-eb91-4549-9cb0-305d0f1dc5ac": {
       "id": "4fc58106-eb91-4549-9cb0-305d0f1dc5ac",
       "position": [
-        0,
+        1.2399668548159914,
         0,
         0
       ],
@@ -1029,15 +1029,11 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Cueva.mp3",
+            "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
             "activationDelay": 2500,
             "backgroundFrame": {
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            },
-            "uiPanel": {
-              "type": "entity",
-              "id": "7bde7cc5-a221-4120-b748-55364731abcc"
             }
           }
         }
@@ -1047,7 +1043,7 @@
           "type": "asset",
           "asset": "assets/Modelos/Marker_Icon.glb"
         },
-        "animationClip": "Idle",
+        "animationClip": "",
         "loop": true
       },
       "name": "Marcador Túmulo",
@@ -1258,7 +1254,7 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Lucero del alba.mp3",
+            "songUrl": "assets/Sonido/Música/Hibernalia.mp3",
             "activationDelay": 2500,
             "backgroundFrame": {
               "type": "entity",
@@ -1434,10 +1430,6 @@
             "backgroundFrame": {
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            },
-            "uiPanel": {
-              "type": "entity",
-              "id": "c8c18f74-e04c-4a5e-9ecc-5fb02f8a3306"
             }
           }
         }
@@ -1511,7 +1503,7 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Cueva.mp3",
+            "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
             "activationDelay": 2500,
             "backgroundFrame": {
               "type": "entity",
@@ -1529,7 +1521,7 @@
           "type": "asset",
           "asset": "assets/Modelos/Marker_Icon.glb"
         },
-        "animationClip": "Idle",
+        "animationClip": "",
         "loop": true
       },
       "name": "Marcador Aquelarre",
@@ -1569,7 +1561,7 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Tumba.mp3",
+            "songUrl": "assets/Sonido/Música/Hibernalia.mp3",
             "activationDelay": 2500,
             "backgroundFrame": {
               "type": "entity",
@@ -1587,7 +1579,7 @@
           "type": "asset",
           "asset": "assets/Modelos/Marker_Icon.glb"
         },
-        "animationClip": "Idle",
+        "animationClip": "",
         "loop": true
       },
       "name": "Marcador Tumba",
@@ -1627,7 +1619,7 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Cueva.mp3",
+            "songUrl": "assets/Sonido/Música/Falkreath.mp3",
             "activationDelay": 2500,
             "backgroundFrame": {
               "type": "entity",
@@ -1645,7 +1637,7 @@
           "type": "asset",
           "asset": "assets/Modelos/Marker_Icon.glb"
         },
-        "animationClip": "Idle",
+        "animationClip": "",
         "loop": true
       },
       "name": "Marcador Gruta",
@@ -1664,8 +1656,8 @@
     "f8f97311-cde4-4832-a046-0d2c892f393d": {
       "id": "f8f97311-cde4-4832-a046-0d2c892f393d",
       "position": [
-        5,
-        0,
+        6.604049760296374,
+        0.06087136218856992,
         0
       ],
       "rotation": [
@@ -1685,9 +1677,19 @@
       "components": {},
       "name": "Image Target Jugador",
       "imageTarget": {
-        "name": "Image Target Jugador"
+        "name": "Image Target Jugador-1"
       },
-      "order": 2.9867414563758095
+      "order": 2.9867414563758095,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.20000000000000015,
+          "height": 1,
+          "width": 1
+        },
+        "mass": 0,
+        "type": "kinematic"
+      }
     },
     "d815eb8f-ec1c-4b4a-94fe-5351df1910ce": {
       "id": "d815eb8f-ec1c-4b4a-94fe-5351df1910ce",
@@ -1715,6 +1717,10 @@
           "parameters": {
             "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
             "activationDelay": 2500,
+            "playerTarget": {
+              "type": "entity",
+              "id": "f8f97311-cde4-4832-a046-0d2c892f393d"
+            },
             "uiPanel": {
               "type": "entity",
               "id": "f851be6c-7f6b-4fc4-9cf5-7de203845568"
@@ -1753,9 +1759,9 @@
     "3c4b401e-1ba9-4f63-9c68-7c50ab1400bf": {
       "id": "3c4b401e-1ba9-4f63-9c68-7c50ab1400bf",
       "position": [
-        0,
-        0,
-        0
+        0.018059084244085533,
+        0.004081987576156174,
+        -0.06087136218856992
       ],
       "rotation": [
         0.7071067811865475,
@@ -1764,9 +1770,9 @@
         0.7071067811865476
       ],
       "scale": [
-        1,
-        1,
-        1
+        2.3000000000000007,
+        2.3000000000000007,
+        2.3000000000000007
       ],
       "geometry": null,
       "material": null,
@@ -1781,24 +1787,7 @@
         "loop": true
       },
       "name": "Marker_Icon.glb",
-      "order": 13.45379859642859,
-      "collider": {
-        "geometry": {
-          "type": "box",
-          "depth": 0.5,
-          "height": 1,
-          "width": 0.5
-        },
-        "mass": 0,
-        "type": "kinematic",
-        "gravityFactor": 0,
-        "eventOnly": true,
-        "highPrecision": false,
-        "lockXAxis": true,
-        "lockYAxis": true,
-        "lockZAxis": true,
-        "lockYPosition": true
-      }
+      "order": 13.45379859642859
     },
     "e2fcf0b9-7dae-4384-be9c-bdef58877cb8": {
       "id": "e2fcf0b9-7dae-4384-be9c-bdef58877cb8",
@@ -1858,9 +1847,9 @@
       "ui": {
         "width": 266,
         "height": 345,
-        "text": "Dovahkiin, el cartograma de Skyrim se despliega ante ti.\n\nQue este mapa sea tu guía por las agrestes tierras del norte. Atraviesa las tundras y cordilleras de la provincia más indómita de Tamriel: desde sus soberbios baluartes de piedra hasta los rincones más lúgubres envueltos en bruma. \nPresta oído a los lugareños, desentraña misterios arcanos y forja tu destino como el verdadero Sangre de Dragón.\n\nToma tu tarjeta de personaje y deslízala físicamente sobre el mapa hacia las marcas de interés. Al acercarte, cada lugar revelará conocimientos vitales para tu travesía.\n\nMantén los sentidos alerta. Si ves manifestarse este símbolo, acércate. Podrías escuchar secretos y pistas que abrirán nuevas sendas en tu aventura.",
+        "text": "Dovahkiin... te damos la bienvenida al mapa interactivo de Skyrim.\n\nQue este mapa sea tu brújula mientras recorres las inhóspitas tierras del norte. Atraviesa las praderas y cordilleras de la provincia más indómita de Tamriel; desde los majestuosos baluartes de piedra y las grandiosas comarcas, hasta los antros de mala muerte y los rincones más lúgubres envueltos en la bruma. Habla con los lugareños, desentraña antiguos misterios y forja tu propio destino como el verdadero Sangre de Dragón.\n\nPara desplazarte por la región, toma tu tarjeta de personaje y deslízala sobre el mapa hacia las marcas de interés. Cada ubicación revelará valiosa información para tu travesía.\n\nMantente alerta. Si explorando te cruzas con un símbolo como este acércate... podrías escuchar rumores, secretos e información de lo más interesante para tus misiones.",
         "color": "#000000",
-        "fontSize": 11,
+        "fontSize": 10,
         "type": "3d",
         "position": "absolute",
         "top": 32,
@@ -2324,8 +2313,8 @@
       "parentId": "6b7f7c30-44aa-4c21-b7fe-7f13fbcdecf0",
       "components": {},
       "ui": {
-        "width": 1000,
-        "height": 1000,
+        "width": 784,
+        "height": 784,
         "type": "overlay",
         "background": "#000000",
         "backgroundOpacity": 0.75,
@@ -2342,7 +2331,7 @@
     "979ed10b-4e87-4608-a7f3-b9932f8ad82e": {
       "id": "979ed10b-4e87-4608-a7f3-b9932f8ad82e",
       "position": [
-        -16.144446708151353,
+        -14.082941358875386,
         -0.22482050095471906,
         0
       ],
@@ -2367,8 +2356,7 @@
         "type": "overlay",
         "width": 412,
         "height": 784
-      },
-      "disabled": true
+      }
     },
     "1019c8fd-6cc1-45a7-877d-19bb4f800b87": {
       "id": "1019c8fd-6cc1-45a7-877d-19bb4f800b87",
@@ -5362,7 +5350,7 @@
         "verticalTextAlign": "center",
         "position": "absolute",
         "top": 35,
-        "left": 260,
+        "left": 290,
         "bottom": "",
         "right": ""
       },
@@ -8284,11 +8272,155 @@
       "name": "Rumores",
       "order": 22.07433591368988
     },
+<<<<<<< HEAD
     "4f0a18c4-f060-4ce4-b4d9-76fa82e46325": {
       "id": "4f0a18c4-f060-4ce4-b4d9-76fa82e46325",
       "position": [
         14.082941358875386,
         0.22482050095471906,
+=======
+    "47f9e2e3-4b36-41a4-9a60-49272e02beb1": {
+      "id": "47f9e2e3-4b36-41a4-9a60-49272e02beb1",
+      "position": [
+        7.474572354737953,
+        0,
+        -0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
+      "components": {},
+      "name": "Hoja 1 Túmulo",
+      "order": 17.1902407589226,
+      "hidden": false,
+      "ui": {
+        "type": "3d"
+      }
+    },
+    "390e3186-e7e3-4d9d-b6d6-13bbeacdaa82": {
+      "id": "390e3186-e7e3-4d9d-b6d6-13bbeacdaa82",
+      "parentId": "535aff49-b614-4229-85e5-251b2d7df5a3",
+      "name": "Hoja 1 Falkreath",
+      "components": {},
+      "ui": {
+        "type": "3d"
+      },
+      "disabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "70c3d62c-bd34-45a2-ba41-4551b6e75aa2": {
+      "id": "70c3d62c-bd34-45a2-ba41-4551b6e75aa2",
+      "parentId": "535aff49-b614-4229-85e5-251b2d7df5a3",
+      "name": "Hoja 2 Falkreath",
+      "components": {},
+      "ui": {
+        "type": "3d"
+      },
+      "disabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "894f5910-1f39-4c7f-9396-2b1d2774b869": {
+      "id": "894f5910-1f39-4c7f-9396-2b1d2774b869",
+      "position": [
+        7.474572354737953,
+        0,
+        -0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "390e3186-e7e3-4d9d-b6d6-13bbeacdaa82",
+      "components": {
+        "typewriterText_039219d0-346a-42ac-856a-49c4e590a111": {
+          "id": "typewriterText_039219d0-346a-42ac-856a-49c4e590a111",
+          "name": "typewriterText",
+          "parameters": {
+            "enableTarget": {
+              "type": "entity",
+              "id": "89e0090c-5979-4a21-a437-924a97c3b7cd"
+            }
+          }
+        }
+      },
+      "ui": {
+        "width": 158,
+        "height": 138,
+        "text": "Al entrar a Falkreath escuchas recitar unos ritos funerarios. Al acercarte, ves a una afligida pareja llorando frente a una tumba. Preguntas qué pasó y te hablan del asesinato de su pequeña hija, Lavinia a manos de Sinding que está encerrado en los cuarteles.",
+        "color": "#000000",
+        "fontSize": 11,
+        "type": "overlay",
+        "position": "absolute",
+        "top": 120,
+        "left": 205,
+        "bottom": "",
+        "right": "",
+        "textAlign": "left",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "stackingOrder": 1,
+        "ignoreRaycast": true
+      },
+      "name": "RumorText Falkreath",
+      "order": 4.7835484516204065,
+      "disabled": false
+    },
+    "89e0090c-5979-4a21-a437-924a97c3b7cd": {
+      "id": "89e0090c-5979-4a21-a437-924a97c3b7cd",
+      "position": [
+        0,
+        0,
+>>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
         0
       ],
       "rotation": [
@@ -8304,6 +8436,7 @@
       ],
       "geometry": null,
       "material": null,
+<<<<<<< HEAD
       "parentId": "979ed10b-4e87-4608-a7f3-b9932f8ad82e",
       "components": {},
       "ui": {
@@ -8327,6 +8460,67 @@
     },
     "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38": {
       "id": "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38",
+=======
+      "parentId": "390e3186-e7e3-4d9d-b6d6-13bbeacdaa82",
+      "components": {
+        "toggleVisibilityOnClick_fd558fa9-1a55-41c9-ac4e-ed538f66c61a": {
+          "id": "toggleVisibilityOnClick_fd558fa9-1a55-41c9-ac4e-ed538f66c61a",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "7fbac952-ef91-47a0-8c64-02c5346e4aba"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "89e0090c-5979-4a21-a437-924a97c3b7cd"
+            }
+          }
+        },
+        "pressHoldFeedback_826262d3-8732-412c-bd83-ff6656c27292": {
+          "id": "pressHoldFeedback_826262d3-8732-412c-bd83-ff6656c27292",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "uiSoundOnClick_c9c498e0-c8ce-4522-ac92-a13b3e4ab60f": {
+          "id": "uiSoundOnClick_c9c498e0-c8ce-4522-ac92-a13b3e4ab60f",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
+        }
+      },
+      "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 1,
+        "type": "overlay",
+        "width": 135,
+        "height": 33,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 278,
+        "left": 211,
+        "bottom": "",
+        "right": "",
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Boton.png"
+        },
+        "backgroundSize": "contain",
+        "stackingOrder": 0,
+        "ignoreRaycast": false
+      },
+      "name": "Continuar Boton Falkreath",
+      "order": 15.78795977362857,
+      "disabled": true
+    },
+    "7412a4f8-eaf7-4eef-9e52-e89089c0ed38": {
+      "id": "7412a4f8-eaf7-4eef-9e52-e89089c0ed38",
+>>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
       "position": [
         0,
         0,
@@ -8345,6 +8539,7 @@
       ],
       "geometry": null,
       "material": null,
+<<<<<<< HEAD
       "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
       "components": {
         "e95a8d3c-b9b5-46cb-9057-e47b55c0124e": {
@@ -8357,19 +8552,151 @@
           "name": "uiSoundOnClick",
           "parameters": {
             "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
+=======
+      "parentId": "89e0090c-5979-4a21-a437-924a97c3b7cd",
+      "components": {},
+      "name": "Text Continuar Boton Falkreath",
+      "ui": {
+        "width": 75,
+        "height": 14,
+        "text": "Continuar",
+        "color": "#000000",
+        "fontSize": 11,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "ignoreRaycast": true,
+        "type": "overlay"
+      },
+      "order": -1.484248400351055
+    },
+    "7fbac952-ef91-47a0-8c64-02c5346e4aba": {
+      "id": "7fbac952-ef91-47a0-8c64-02c5346e4aba",
+      "position": [
+        7.474572354737953,
+        0,
+        -0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "390e3186-e7e3-4d9d-b6d6-13bbeacdaa82",
+      "components": {
+        "typewriterText_12f1d2c8-c28a-40be-b782-733a8630307c": {
+          "id": "typewriterText_12f1d2c8-c28a-40be-b782-733a8630307c",
+          "name": "typewriterText",
+          "parameters": {
+            "enableTarget": {
+              "type": "entity",
+              "id": "5be45b01-118c-4798-9269-a913dcb406a9"
+            }
+>>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
           }
         }
       },
       "ui": {
+<<<<<<< HEAD
         "type": "overlay",
         "width": 100,
         "height": 36,
+=======
+        "width": 158,
+        "height": 138,
+        "text": "Decides ir a la celda a escuchar a Sinding. Cuando hablas con él sobre el ataque, te menciona un anillo maldito que lo obligó a cometer el crimen. Sinding te entrega el anillo y te pide que lo ayudes a eliminar la maldición...",
+        "color": "#000000",
+        "fontSize": 11,
+        "type": "overlay",
+        "position": "absolute",
+        "top": 120,
+        "left": 395,
+        "bottom": "",
+        "right": "",
+        "textAlign": "left",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "stackingOrder": 1,
+        "ignoreRaycast": true
+      },
+      "name": "RumorText 2 Falkreath",
+      "order": 4.7835484516204065,
+      "disabled": true
+    },
+    "5be45b01-118c-4798-9269-a913dcb406a9": {
+      "id": "5be45b01-118c-4798-9269-a913dcb406a9",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "390e3186-e7e3-4d9d-b6d6-13bbeacdaa82",
+      "components": {
+        "toggleVisibilityOnClick_e9fd7cbf-2307-43c4-af35-17d6a8098a8a": {
+          "id": "toggleVisibilityOnClick_e9fd7cbf-2307-43c4-af35-17d6a8098a8a",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "70c3d62c-bd34-45a2-ba41-4551b6e75aa2"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "390e3186-e7e3-4d9d-b6d6-13bbeacdaa82"
+            }
+          }
+        },
+        "pressHoldFeedback_f4da7fcb-7119-43d0-bef2-318a44cf1138": {
+          "id": "pressHoldFeedback_f4da7fcb-7119-43d0-bef2-318a44cf1138",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "uiSoundOnClick_0a2ab3ce-315b-4581-bfd8-1f7796ee4587": {
+          "id": "uiSoundOnClick_0a2ab3ce-315b-4581-bfd8-1f7796ee4587",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroPagina.mp3"
+          }
+        }
+      },
+      "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 1,
+        "type": "overlay",
+        "width": 135,
+        "height": 33,
+>>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
         "flexDirection": "row",
         "padding": "10",
         "gap": 4,
         "alignItems": "center",
         "justifyContent": "center",
         "position": "absolute",
+<<<<<<< HEAD
         "top": 365,
         "left": 470,
         "bottom": "",
@@ -8416,6 +8743,26 @@
     },
     "d7148543-8b9a-4a37-83a0-e1d14f9c3311": {
       "id": "d7148543-8b9a-4a37-83a0-e1d14f9c3311",
+=======
+        "top": 278,
+        "left": 406,
+        "bottom": "",
+        "right": "",
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Boton.png"
+        },
+        "backgroundSize": "contain",
+        "stackingOrder": 0,
+        "ignoreRaycast": false
+      },
+      "name": "Continuar Boton 2 Falkreath",
+      "order": 15.78795977362857,
+      "disabled": true
+    },
+    "9921ec87-1134-4a3c-b9c0-523cf2ef68db": {
+      "id": "9921ec87-1134-4a3c-b9c0-523cf2ef68db",
+>>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
       "position": [
         0,
         0,
@@ -8434,6 +8781,7 @@
       ],
       "geometry": null,
       "material": null,
+<<<<<<< HEAD
       "parentId": "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38",
       "components": {},
       "name": "Text (1) Túmulo (1)",
@@ -8456,6 +8804,32 @@
         0,
         0,
         0
+=======
+      "parentId": "5be45b01-118c-4798-9269-a913dcb406a9",
+      "components": {},
+      "name": "Text Continuar Boton 2 Falkreath",
+      "ui": {
+        "width": 75,
+        "height": 14,
+        "text": "Continuar",
+        "color": "#000000",
+        "fontSize": 11,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "ignoreRaycast": true,
+        "type": "overlay"
+      },
+      "order": -1.484248400351055
+    },
+    "7143d3bb-1d43-4b35-8f72-e454f25dc042": {
+      "id": "7143d3bb-1d43-4b35-8f72-e454f25dc042",
+      "position": [
+        7.474572354737953,
+        0,
+        -0.1
+>>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
       ],
       "rotation": [
         0,
@@ -8470,6 +8844,7 @@
       ],
       "geometry": null,
       "material": null,
+<<<<<<< HEAD
       "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
       "components": {
         "e95a8d3c-b9b5-46cb-9057-e47b55c0124e": {
@@ -8482,19 +8857,112 @@
           "name": "uiSoundOnClick",
           "parameters": {
             "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
+=======
+      "parentId": "70c3d62c-bd34-45a2-ba41-4551b6e75aa2",
+      "components": {
+        "typewriterText_65824526-b667-414e-aacf-2d834e0f020a": {
+          "id": "typewriterText_65824526-b667-414e-aacf-2d834e0f020a",
+          "name": "typewriterText",
+          "parameters": {
+            "enableTarget": {
+              "type": "entity",
+              "id": "33de456e-174a-496a-bc18-8ef49f373d86"
+            }
+>>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
           }
         }
       },
       "ui": {
+<<<<<<< HEAD
         "type": "overlay",
         "width": 100,
         "height": 36,
+=======
+        "width": 158,
+        "height": 138,
+        "text": "...pero ten cuidado, ¡el anillo está maldito y podrías transformarte en una bestia en cualquier momento! Al salir de los cuarteles ves un ciervo blanco. Un instinto te pide que lo caces.",
+        "color": "#000000",
+        "fontSize": 11,
+        "type": "overlay",
+        "position": "absolute",
+        "top": 120,
+        "left": 205,
+        "bottom": "",
+        "right": "",
+        "textAlign": "left",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "stackingOrder": 1,
+        "ignoreRaycast": true
+      },
+      "name": "RumorText 3 Falkreath",
+      "order": 4.7835484516204065
+    },
+    "33de456e-174a-496a-bc18-8ef49f373d86": {
+      "id": "33de456e-174a-496a-bc18-8ef49f373d86",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "70c3d62c-bd34-45a2-ba41-4551b6e75aa2",
+      "components": {
+        "toggleVisibilityOnClick_344c6a71-54a2-421f-908e-7711199181b4": {
+          "id": "toggleVisibilityOnClick_344c6a71-54a2-421f-908e-7711199181b4",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "e6662d5b-17cb-4123-9d5c-9dbe339baec5"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "33de456e-174a-496a-bc18-8ef49f373d86"
+            }
+          }
+        },
+        "pressHoldFeedback_c99888e7-6b04-4cde-b12c-acc70a035e11": {
+          "id": "pressHoldFeedback_c99888e7-6b04-4cde-b12c-acc70a035e11",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "uiSoundOnClick_011970ea-b93a-4449-9f54-b3413ca3947a": {
+          "id": "uiSoundOnClick_011970ea-b93a-4449-9f54-b3413ca3947a",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
+        }
+      },
+      "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 1,
+        "type": "overlay",
+        "width": 135,
+        "height": 33,
+>>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
         "flexDirection": "row",
         "padding": "10",
         "gap": 4,
         "alignItems": "center",
         "justifyContent": "center",
         "position": "absolute",
+<<<<<<< HEAD
         "top": 365,
         "left": 183,
         "bottom": "",
@@ -8541,6 +9009,26 @@
     },
     "468a770f-e259-489d-9d33-a45800aa2a15": {
       "id": "468a770f-e259-489d-9d33-a45800aa2a15",
+=======
+        "top": 278,
+        "left": 211,
+        "bottom": "",
+        "right": "",
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Boton.png"
+        },
+        "backgroundSize": "contain",
+        "stackingOrder": 0,
+        "ignoreRaycast": false
+      },
+      "name": "Continuar Boton 3 Falkreath",
+      "order": 15.78795977362857,
+      "disabled": true
+    },
+    "b4339c5f-7537-4c3f-bd7e-21728232fdbd": {
+      "id": "b4339c5f-7537-4c3f-bd7e-21728232fdbd",
+>>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
       "position": [
         0,
         0,
@@ -8559,6 +9047,7 @@
       ],
       "geometry": null,
       "material": null,
+<<<<<<< HEAD
       "parentId": "8b6aa4a8-1876-48e0-8715-c533df3ca1e8",
       "components": {},
       "name": "Text (1) Túmulo (2)",
@@ -8577,6 +9066,85 @@
     },
     "c31147f6-7dcf-4d7c-8ac5-a74be256140b": {
       "id": "c31147f6-7dcf-4d7c-8ac5-a74be256140b",
+=======
+      "parentId": "33de456e-174a-496a-bc18-8ef49f373d86",
+      "components": {},
+      "name": "Text Continuar Boton 3 Falkreath",
+      "ui": {
+        "width": 75,
+        "height": 14,
+        "text": "Continuar",
+        "color": "#000000",
+        "fontSize": 11,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "ignoreRaycast": true,
+        "type": "overlay"
+      },
+      "order": -1.484248400351055
+    },
+    "e6662d5b-17cb-4123-9d5c-9dbe339baec5": {
+      "id": "e6662d5b-17cb-4123-9d5c-9dbe339baec5",
+      "position": [
+        7.474572354737953,
+        0,
+        -0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "70c3d62c-bd34-45a2-ba41-4551b6e75aa2",
+      "components": {
+        "typewriterText_cfc80d24-709a-4ecd-9852-49de4431b71e": {
+          "id": "typewriterText_cfc80d24-709a-4ecd-9852-49de4431b71e",
+          "name": "typewriterText",
+          "parameters": {
+            "enableTarget": {
+              "type": "entity",
+              "id": "8af5f878-fa65-4313-84d9-b333695b42d9"
+            }
+          }
+        }
+      },
+      "ui": {
+        "width": 158,
+        "height": 138,
+        "text": "Cuando lo mates, el espíritu de Hircine se manifestará y te pedirá que cumplas una cacería por él.",
+        "color": "#000000",
+        "fontSize": 11,
+        "type": "overlay",
+        "position": "absolute",
+        "top": 120,
+        "left": 391,
+        "bottom": "",
+        "right": "",
+        "textAlign": "left",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "stackingOrder": 1,
+        "ignoreRaycast": true
+      },
+      "name": "RumorText 4 Falkreath",
+      "order": 4.7835484516204065,
+      "disabled": true
+    },
+    "8af5f878-fa65-4313-84d9-b333695b42d9": {
+      "id": "8af5f878-fa65-4313-84d9-b333695b42d9",
+>>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
       "position": [
         0,
         0,
@@ -8595,6 +9163,7 @@
       ],
       "geometry": null,
       "material": null,
+<<<<<<< HEAD
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {
         "bf6cd447-4c19-47c4-bb89-0ee1be1ed120": {
@@ -8605,6 +9174,124 @@
       },
       "name": "Cachemanager",
       "order": 6.662426627639241
+=======
+      "parentId": "70c3d62c-bd34-45a2-ba41-4551b6e75aa2",
+      "components": {
+        "unlockLocationOnClick_cfcedc6e-a324-437b-92b2-3c7776c91125": {
+          "id": "unlockLocationOnClick_cfcedc6e-a324-437b-92b2-3c7776c91125",
+          "name": "unlockLocationOnClick",
+          "parameters": {
+            "panelToHide": {
+              "type": "entity",
+              "id": "535aff49-b614-4229-85e5-251b2d7df5a3"
+            },
+            "backgroundFrame": {
+              "type": "entity",
+              "id": "473c7055-07c6-433b-b166-03684ad7a490"
+            },
+            "uiNuevaUbicacion": {
+              "type": "entity",
+              "id": "57300f21-0ba5-4056-bd67-6fd11acbc745"
+            },
+            "imageElement": {
+              "type": "entity",
+              "id": "00dcd921-eff0-463b-89f0-3ea9f9e4ffa7"
+            },
+            "nameElement": {
+              "type": "entity",
+              "id": "02257a0f-f15f-4661-ad15-2f6ea61b47a9"
+            },
+            "imageSrc": "assets/Iconos/Ubicaciones/Cueva.png",
+            "locationName": "Gruta del Hombre Hinchado",
+            "markerToUnlock": {
+              "type": "entity",
+              "id": "4a8454ed-6fbf-47d1-ae61-45889f692798"
+            },
+            "titleElement": {
+              "type": "entity",
+              "id": "1bfb98b8-d613-4732-b4c2-1fd6e8df9c60"
+            }
+          }
+        },
+        "pressHoldFeedback_0dabf4c0-64b2-41e2-baaf-edd69b145985": {
+          "id": "pressHoldFeedback_0dabf4c0-64b2-41e2-baaf-edd69b145985",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "uiSoundOnClick_9be67d8e-e7f5-439d-bcb9-fe811760711a": {
+          "id": "uiSoundOnClick_9be67d8e-e7f5-439d-bcb9-fe811760711a",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LocalizacionNueva.mp3"
+          }
+        }
+      },
+      "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 1,
+        "type": "overlay",
+        "width": 135,
+        "height": 33,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 278,
+        "left": 410,
+        "bottom": "",
+        "right": "",
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Boton.png"
+        },
+        "backgroundSize": "contain",
+        "stackingOrder": 0,
+        "ignoreRaycast": false
+      },
+      "name": "Continuar Boton 4 Falkreath",
+      "order": 15.78795977362857,
+      "disabled": true
+    },
+    "f149f2d0-2f68-447f-bfdf-7529612fd697": {
+      "id": "f149f2d0-2f68-447f-bfdf-7529612fd697",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8af5f878-fa65-4313-84d9-b333695b42d9",
+      "components": {},
+      "name": "Text Continuar Boton 4 Falkreath",
+      "ui": {
+        "width": 75,
+        "height": 12,
+        "text": "Cazar",
+        "color": "#000000",
+        "fontSize": 11,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "ignoreRaycast": true,
+        "type": "overlay"
+      },
+      "order": -1.484248400351055
+>>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
     }
   },
   "spaces": {
