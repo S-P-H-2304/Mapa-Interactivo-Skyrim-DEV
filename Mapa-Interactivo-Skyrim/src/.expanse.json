@@ -37,7 +37,7 @@
           "headset": "disabled",
           "phone": "AR",
           "world": {
-            "disableWorldTracking": true
+            "disableWorldTracking": false
           }
         }
       },
@@ -102,10 +102,10 @@
         0
       ],
       "rotation": [
-        -0.7071067811865475,
         0,
         0,
-        0.7071067811865476
+        0,
+        1
       ],
       "scale": [
         1,
@@ -114,39 +114,13 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "4fc58106-eb91-4549-9cb0-305d0f1dc5ac",
+      "parentId": "73fda644-b121-4457-99bb-021ecf1c7071",
       "components": {},
-      "name": "Image Target",
+      "name": "Image Target Mapa",
       "imageTarget": {
         "name": "SkyrimMap2-1000x745"
       },
-      "order": 2.8480185637634277,
-      "hidden": false
-    },
-    "4fc58106-eb91-4549-9cb0-305d0f1dc5ac": {
-      "id": "4fc58106-eb91-4549-9cb0-305d0f1dc5ac",
-      "position": [
-        1.2399668548159914,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        8.399999999999995,
-        8.399999999999995,
-        8.399999999999995
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "bc41e37b-7c08-4da5-8383-59c86233ebe8",
-      "components": {},
-      "name": "Mapa",
-      "order": 19.630805832623423,
+      "order": 13.819986276723988,
       "hidden": false
     },
     "98e56b46-2634-4fac-9eb5-e672863b0688": {
@@ -988,6 +962,22 @@
             "backgroundFrame": {
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
+            },
+            "playerTarget": {
+              "type": "entity",
+              "id": "3c4b401e-1ba9-4f63-9c68-7c50ab1400bf"
+            },
+            "uiPanel": {
+              "type": "entity",
+              "id": "a3828348-7945-4330-9d8a-ba310a783670"
+            },
+            "markerModel": {
+              "type": "entity",
+              "id": "0f3a3eb0-58f6-417c-a080-0072c55c600f"
+            },
+            "generalUi": {
+              "type": "entity",
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
             }
           }
         }
@@ -1982,15 +1972,15 @@
     "f8f97311-cde4-4832-a046-0d2c892f393d": {
       "id": "f8f97311-cde4-4832-a046-0d2c892f393d",
       "position": [
-        4.899490900559366,
-        0.06087136218856992,
+        5,
+        0,
         0
       ],
       "rotation": [
-        -0.7071067811865475,
         0,
         0,
-        0.7071067811865476
+        0,
+        1
       ],
       "scale": [
         1,
@@ -1999,24 +1989,13 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "786c7d71-ac07-4a68-8ab7-36c5f24f4960",
+      "parentId": "bc41e37b-7c08-4da5-8383-59c86233ebe8",
       "components": {},
       "name": "Image Target Jugador",
       "imageTarget": {
         "name": "Image Target Jugador"
       },
-      "order": 2.9867414563758095,
-      "collider": {
-        "geometry": {
-          "type": "box",
-          "depth": 0.20000000000000015,
-          "height": 1,
-          "width": 1
-        },
-        "mass": 0,
-        "type": "kinematic",
-        "eventOnly": true
-      }
+      "order": 16.376316755866103
     },
     "d815eb8f-ec1c-4b4a-94fe-5351df1910ce": {
       "id": "d815eb8f-ec1c-4b4a-94fe-5351df1910ce",
@@ -2046,7 +2025,7 @@
             "activationDelay": 2500,
             "playerTarget": {
               "type": "entity",
-              "id": "f8f97311-cde4-4832-a046-0d2c892f393d"
+              "id": "3c4b401e-1ba9-4f63-9c68-7c50ab1400bf"
             },
             "uiPanel": {
               "type": "entity",
@@ -2059,6 +2038,10 @@
             "backgroundFrame": {
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
+            },
+            "generalUi": {
+              "type": "entity",
+              "id": "a54faf48-4607-4acc-b464-34879c8cac78"
             }
           }
         }
@@ -2080,15 +2063,17 @@
           "height": 1,
           "width": 0.5
         },
-        "eventOnly": true
+        "eventOnly": true,
+        "mass": 0,
+        "type": "kinematic"
       }
     },
     "3c4b401e-1ba9-4f63-9c68-7c50ab1400bf": {
       "id": "3c4b401e-1ba9-4f63-9c68-7c50ab1400bf",
       "position": [
-        0.018059084244085533,
-        0.004081987576156174,
-        -0.06087136218856992
+        0,
+        0,
+        0
       ],
       "rotation": [
         0.7071067811865475,
@@ -2097,9 +2082,9 @@
         0.7071067811865476
       ],
       "scale": [
-        2.3000000000000007,
-        2.3000000000000007,
-        2.3000000000000007
+        1,
+        1,
+        1
       ],
       "geometry": null,
       "material": null,
@@ -2114,7 +2099,19 @@
         "loop": true
       },
       "name": "Marker_Icon.glb",
-      "order": 13.45379859642859
+      "order": 13.45379859642859,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.5,
+          "height": 0.5,
+          "width": 0.6
+        },
+        "mass": 1,
+        "type": "dynamic",
+        "gravityFactor": 0,
+        "eventOnly": true
+      }
     },
     "e2fcf0b9-7dae-4384-be9c-bdef58877cb8": {
       "id": "e2fcf0b9-7dae-4384-be9c-bdef58877cb8",
@@ -2610,6 +2607,10 @@
             "backgroundFrame": {
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
+            },
+            "markerToUnlock": {
+              "type": "entity",
+              "id": "0f3a3eb0-58f6-417c-a080-0072c55c600f"
             }
           }
         },
@@ -2709,31 +2710,6 @@
       "components": {},
       "name": "Image Targets",
       "order": 1.8098275742890175
-    },
-    "786c7d71-ac07-4a68-8ab7-36c5f24f4960": {
-      "id": "786c7d71-ac07-4a68-8ab7-36c5f24f4960",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "bc41e37b-7c08-4da5-8383-59c86233ebe8",
-      "components": {},
-      "name": "Jugador",
-      "order": 17.870906103573944
     },
     "b94261b4-e70c-4b2d-b1dd-aa98c1c2ab90": {
       "id": "b94261b4-e70c-4b2d-b1dd-aa98c1c2ab90",
@@ -2890,6 +2866,31 @@
       },
       "name": "Debug",
       "order": 18.866150184993643
+    },
+    "73fda644-b121-4457-99bb-021ecf1c7071": {
+      "id": "73fda644-b121-4457-99bb-021ecf1c7071",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        8.4,
+        8.4,
+        8.4
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Mapa",
+      "order": 20.595591602775848
     }
   },
   "spaces": {

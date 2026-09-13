@@ -1,13 +1,17 @@
 import * as ecs from '@8thwall/ecs'
 import { LOCATION_ENTER, LOCATION_EXIT, LocationPayload } from './audioManager'
 
+// Flag compartido entre todas las instancias de playerInteraction.
+// true = hay un panel de ciudad visible → bloquea nuevas activaciones.
+let anyPanelOpen = false
+
 ecs.registerComponent({
   name: 'playerInteraction',
   schema: {
     playerTarget: ecs.eid, // Referencia al Jugador (Image Target)
     uiPanel: ecs.eid,
     markerModel: ecs.eid,
-    backgroundFrame: ecs.eid,
+    generalUi: ecs.eid,
     // @asset
     songUrl: ecs.string,
     activationDelay: ecs.f32,
@@ -28,6 +32,7 @@ ecs.registerComponent({
 
       data.isActive = true
       data.timeoutId = 0
+      anyPanelOpen = true
 
       // 1. Mostrar Panel de UI de la ciudad
       if (schema.uiPanel) {
@@ -35,12 +40,12 @@ ecs.registerComponent({
       }
 
       // 2. Oscurecer el fondo de UI General
-      if (schema.backgroundFrame) {
+      if (schema.generalUi) {
         const targetDim = schema.dimOpacity ?? 0.75
-        ecs.Ui.set(world, schema.backgroundFrame, { backgroundOpacity: targetDim })
+        ecs.Ui.set(world, schema.generalUi, { backgroundOpacity: targetDim })
       }
 
-      // 3. Animación del marcador a "Selected" (usa eid si está puesto directo en el GLB)
+      // 3. Animación del marcador a "Selected"
       const modelEid = schema.markerModel || eid
       if (modelEid) {
         ecs.GltfModel.set(world, modelEid, {
@@ -50,7 +55,7 @@ ecs.registerComponent({
         })
       }
 
-      // 4. Audio Manager: Crossfade (el GLB actúa de speaker)
+      // 4. Audio Manager: Crossfade
       const payload: LocationPayload = {
         speakerEid: eid,
         songUrl: schema.songUrl || undefined,
@@ -63,15 +68,16 @@ ecs.registerComponent({
       const data = dataAttribute.cursor(eid)
 
       data.isActive = false
+      anyPanelOpen = false
 
       // 1. Ocultar Panel de UI de la ciudad
       if (schema.uiPanel) {
-        ecs.Disabled.set(world, schema.uiPanel)
+        ecs.Disabled.set(world, schema.uiPanel, {})
       }
 
       // 2. Restaurar transparencia del fondo de UI General
-      if (schema.backgroundFrame) {
-        ecs.Ui.set(world, schema.backgroundFrame, { backgroundOpacity: 0 })
+      if (schema.generalUi) {
+        ecs.Ui.set(world, schema.generalUi, { backgroundOpacity: 0 })
       }
 
       // 3. Animación inversa del marcador
@@ -96,15 +102,26 @@ ecs.registerComponent({
       .onEnter(() => {
         dataAttribute.set(eid, { timeoutId: 0, isActive: false })
       })
-      .listen(eid, ecs.physics.COLLISION_START_EVENT, (event: any) => {
-  (window as any).debugLog?.(`COLLISION_START other=${event.data.other}`)
-  const data = dataAttribute.cursor(eid)
-  const schema = schemaAttribute.cursor(eid)
+      .onTick(() => {
+        const data = dataAttribute.cursor(eid)
+        const schema = schemaAttribute.cursor(eid)
 
-  if (schema.playerTarget && event.data.other !== schema.playerTarget) {
-    (window as any).debugLog?.(`Descartado: playerTarget=${schema.playerTarget} != other`)
-    return
-  }
+        // Si este marcador está activo pero su panel fue cerrado manualmente
+        // (ej. el usuario presionó "Salir" sin alejar la tarjeta del marcador),
+        // desactivar para liberar el bloqueo y permitir nuevas interacciones.
+        if (data.isActive && schema.uiPanel && ecs.Disabled.has(world, schema.uiPanel)) {
+          triggerDeactivation()
+        }
+      })
+      .listen(eid, ecs.physics.COLLISION_START_EVENT, (event: any) => {
+        const data = dataAttribute.cursor(eid)
+        const schema = schemaAttribute.cursor(eid)
+
+        // Verificar que el objeto que colisiona es el jugador
+        if (schema.playerTarget && event.data.other !== schema.playerTarget) return
+
+        // Si hay algún panel de ciudad abierto, no activar otro
+        if (anyPanelOpen) return
 
         if (data.isActive) return
 
@@ -120,7 +137,8 @@ ecs.registerComponent({
         } else {
           const newTimeoutId = world.time.setTimeout(() => {
             const d = dataAttribute.cursor(eid)
-            if (d.timeoutId !== 0) {
+            // Verificar por si un panel se abrió durante el delay
+            if (d.timeoutId !== 0 && !anyPanelOpen) {
               triggerActivation()
             }
           }, delay)
@@ -151,4 +169,3 @@ ecs.registerComponent({
       })
   },
 })
-

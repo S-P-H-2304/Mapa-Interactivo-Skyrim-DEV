@@ -1,4 +1,4 @@
-﻿import * as ecs from '@8thwall/ecs'
+import * as ecs from '@8thwall/ecs'
 
 const notifyDescendants = (world: any, targetEid: any, eventName: string) => {
   if (!targetEid) return
