@@ -68,6 +68,11 @@ ecs.registerComponent({
           imageSrc, locationName, titleText, fadeDuration, holdDuration, markerToUnlock
         } = schemaAttribute.get(eid)
 
+        // Si la ubicación ya fue desbloqueada previamente, no volver a mostrar el banner ni cerrar el panel
+        if (locationName && dataManager.isLocationUnlocked(locationName)) {
+          return
+        }
+
         if (panelToHide) ecs.Disabled.set(world, panelToHide)
         
         if (backgroundFrame) ecs.Ui.set(world, backgroundFrame, { backgroundOpacity: 0 })

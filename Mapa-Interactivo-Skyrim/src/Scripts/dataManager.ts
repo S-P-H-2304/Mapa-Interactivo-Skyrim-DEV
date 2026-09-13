@@ -80,6 +80,24 @@ class DataManager {
   public isTextCompleted(textId: string): boolean {
     return this.data.completedTexts.includes(textId)
   }
+
+  public clearData() {
+    this.data = {
+      settings: {
+        muted: false,
+        volumePercent: 50,
+      },
+      unlockedLocations: [],
+      completedTexts: [],
+    }
+    try {
+      localStorage.removeItem(STORAGE_KEY)
+      localStorage.clear()
+      console.log('[dataManager] Cache cleared successfully (in-memory + localStorage)')
+    } catch (e) {
+      console.warn('Error clearing localStorage', e)
+    }
+  }
 }
 
 export const dataManager = new DataManager()

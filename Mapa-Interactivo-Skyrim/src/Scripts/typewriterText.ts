@@ -101,16 +101,8 @@ ecs.registerComponent({
 
            const { enableTarget } = schemaAttribute.get(eid)
            if (enableTarget) {
-              // Habilitarlo temporalmente para que pueda escuchar el evento
-              ecs.Disabled.remove(world, enableTarget)
-              try { ecs.Ui.set(world, enableTarget, { opacity: 0 }) } catch(e) {}
-              
-              // Simular el clic en el botón de continuar para desencadenar que aparezca la siguiente página
-              world.time.setTimeout(() => {
-                  world.events.dispatch(enableTarget, ecs.input.UI_CLICK, {})
-                  // Ahora sí lo deshabilitamos para que no interfiera más
-                  ecs.Disabled.set(world, enableTarget)
-              }, 50)
+              // Si el texto ya fue leído y completado, el botón de continuar correspondiente permanece deshabilitado
+              ecs.Disabled.set(world, enableTarget)
            }
         } else {
            dataAttribute.set(eid, {
