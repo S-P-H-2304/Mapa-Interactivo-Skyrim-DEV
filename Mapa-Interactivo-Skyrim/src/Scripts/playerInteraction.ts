@@ -11,7 +11,7 @@ ecs.registerComponent({
     playerTarget: ecs.eid, // Referencia al Jugador (Image Target)
     uiPanel: ecs.eid,
     markerModel: ecs.eid,
-    generalUi: ecs.eid,
+    backgroundFrame: ecs.eid,
     // @asset
     songUrl: ecs.string,
     activationDelay: ecs.f32,
@@ -40,9 +40,9 @@ ecs.registerComponent({
       }
 
       // 2. Oscurecer el fondo de UI General
-      if (schema.generalUi) {
+      if (schema.backgroundFrame) {
         const targetDim = schema.dimOpacity ?? 0.75
-        ecs.Ui.set(world, schema.generalUi, { backgroundOpacity: targetDim })
+        ecs.Ui.set(world, schema.backgroundFrame, { backgroundOpacity: targetDim })
       }
 
       // 3. Animación del marcador a "Selected"
@@ -76,8 +76,8 @@ ecs.registerComponent({
       }
 
       // 2. Restaurar transparencia del fondo de UI General
-      if (schema.generalUi) {
-        ecs.Ui.set(world, schema.generalUi, { backgroundOpacity: 0 })
+      if (schema.backgroundFrame) {
+        ecs.Ui.set(world, schema.backgroundFrame, { backgroundOpacity: 0 })
       }
 
       // 3. Animación inversa del marcador

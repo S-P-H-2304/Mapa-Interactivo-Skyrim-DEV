@@ -1,4 +1,4 @@
-﻿const fs = require('fs')
+const fs = require('fs')
 const crypto = require('crypto')
 const uuid = () => crypto.randomUUID()
 
@@ -92,7 +92,7 @@ function rebuildFalkreath() {
   btn1Text.name = 'Text Continuar Boton Falkreath'
   btn1Text.ui.text = falkData.rumors[0].btnText
   
-  addComponent(rt1, 'typewriterText', { enableTarget: { type: 'entity', id: btn1.id } })
+  addComponent(rt1, 'typewriterText', { enableTarget: { type: 'entity', id: btn1.id }, rumorId: 'Falkreath', pageIndex: 0 })
 
   // PAGE 2
   const rt2 = cloneNodeFlat(tplText)
@@ -113,7 +113,7 @@ function rebuildFalkreath() {
   btn2Text.name = 'Text Continuar Boton 2 Falkreath'
   btn2Text.ui.text = falkData.rumors[1].btnText
 
-  addComponent(rt2, 'typewriterText', { enableTarget: { type: 'entity', id: btn2.id } })
+  addComponent(rt2, 'typewriterText', { enableTarget: { type: 'entity', id: btn2.id }, rumorId: 'Falkreath', pageIndex: 1 })
   addComponent(btn1, 'toggleVisibilityOnClick', {
     showTarget1: { type: 'entity', id: rt2.id },
     hideTarget1: { type: 'entity', id: btn1.id }
@@ -137,7 +137,7 @@ function rebuildFalkreath() {
   btn3Text.name = 'Text Continuar Boton 3 Falkreath'
   btn3Text.ui.text = falkData.rumors[2].btnText
 
-  addComponent(rt3, 'typewriterText', { enableTarget: { type: 'entity', id: btn3.id } })
+  addComponent(rt3, 'typewriterText', { enableTarget: { type: 'entity', id: btn3.id }, rumorId: 'Falkreath', pageIndex: 2 })
   addComponent(btn2, 'toggleVisibilityOnClick', {
     showTarget1: { type: 'entity', id: hoja2.id },
     hideTarget1: { type: 'entity', id: hoja1.id }
@@ -162,7 +162,7 @@ function rebuildFalkreath() {
   btn4Text.name = 'Text Continuar Boton 4 Falkreath'
   btn4Text.ui.text = falkData.rumors[3].btnText
 
-  addComponent(rt4, 'typewriterText', { enableTarget: { type: 'entity', id: btn4.id } })
+  addComponent(rt4, 'typewriterText', { enableTarget: { type: 'entity', id: btn4.id }, rumorId: 'Falkreath', pageIndex: 3 })
   addComponent(btn3, 'toggleVisibilityOnClick', {
     showTarget1: { type: 'entity', id: rt4.id },
     hideTarget1: { type: 'entity', id: btn3.id }

@@ -37,7 +37,7 @@
           "headset": "disabled",
           "phone": "AR",
           "world": {
-            "disableWorldTracking": true
+            "disableWorldTracking": false
           }
         }
       },
@@ -126,7 +126,7 @@
     "4fc58106-eb91-4549-9cb0-305d0f1dc5ac": {
       "id": "4fc58106-eb91-4549-9cb0-305d0f1dc5ac",
       "position": [
-        1.2399668548159914,
+        0,
         0,
         0
       ],
@@ -1028,11 +1028,15 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
+            "songUrl": "assets/Sonido/Música/Cueva.mp3",
             "activationDelay": 2500,
             "backgroundFrame": {
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
+            },
+            "uiPanel": {
+              "type": "entity",
+              "id": "7bde7cc5-a221-4120-b748-55364731abcc"
             }
           }
         }
@@ -1042,7 +1046,7 @@
           "type": "asset",
           "asset": "assets/Modelos/Marker_Icon.glb"
         },
-        "animationClip": "",
+        "animationClip": "Idle",
         "loop": true
       },
       "name": "Marcador Túmulo",
@@ -1253,7 +1257,7 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Hibernalia.mp3",
+            "songUrl": "assets/Sonido/Música/Lucero del alba.mp3",
             "activationDelay": 2500,
             "backgroundFrame": {
               "type": "entity",
@@ -1429,6 +1433,10 @@
             "backgroundFrame": {
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
+            },
+            "uiPanel": {
+              "type": "entity",
+              "id": "c8c18f74-e04c-4a5e-9ecc-5fb02f8a3306"
             }
           }
         }
@@ -1933,7 +1941,7 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
+            "songUrl": "assets/Sonido/Música/Cueva.mp3",
             "activationDelay": 2500,
             "backgroundFrame": {
               "type": "entity",
@@ -1951,7 +1959,7 @@
           "type": "asset",
           "asset": "assets/Modelos/Marker_Icon.glb"
         },
-        "animationClip": "",
+        "animationClip": "Idle",
         "loop": true
       },
       "name": "Marcador Aquelarre",
@@ -1991,7 +1999,7 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Hibernalia.mp3",
+            "songUrl": "assets/Sonido/Música/Tumba.mp3",
             "activationDelay": 2500,
             "backgroundFrame": {
               "type": "entity",
@@ -2009,7 +2017,7 @@
           "type": "asset",
           "asset": "assets/Modelos/Marker_Icon.glb"
         },
-        "animationClip": "",
+        "animationClip": "Idle",
         "loop": true
       },
       "name": "Marcador Tumba",
@@ -2049,7 +2057,7 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Falkreath.mp3",
+            "songUrl": "assets/Sonido/Música/Cueva.mp3",
             "activationDelay": 2500,
             "backgroundFrame": {
               "type": "entity",
@@ -2067,7 +2075,7 @@
           "type": "asset",
           "asset": "assets/Modelos/Marker_Icon.glb"
         },
-        "animationClip": "",
+        "animationClip": "Idle",
         "loop": true
       },
       "name": "Marcador Gruta",
@@ -2086,8 +2094,8 @@
     "f8f97311-cde4-4832-a046-0d2c892f393d": {
       "id": "f8f97311-cde4-4832-a046-0d2c892f393d",
       "position": [
-        6.604049760296374,
-        0.06087136218856992,
+        5,
+        0,
         0
       ],
       "rotation": [
@@ -2107,19 +2115,9 @@
       "components": {},
       "name": "Image Target Jugador",
       "imageTarget": {
-        "name": "Image Target Jugador-1"
+        "name": "Image Target Jugador"
       },
-      "order": 2.9867414563758095,
-      "collider": {
-        "geometry": {
-          "type": "box",
-          "depth": 0.20000000000000015,
-          "height": 1,
-          "width": 1
-        },
-        "mass": 0,
-        "type": "kinematic"
-      }
+      "order": 2.9867414563758095
     },
     "d815eb8f-ec1c-4b4a-94fe-5351df1910ce": {
       "id": "d815eb8f-ec1c-4b4a-94fe-5351df1910ce",
@@ -2147,10 +2145,6 @@
           "parameters": {
             "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
             "activationDelay": 2500,
-            "playerTarget": {
-              "type": "entity",
-              "id": "f8f97311-cde4-4832-a046-0d2c892f393d"
-            },
             "uiPanel": {
               "type": "entity",
               "id": "f851be6c-7f6b-4fc4-9cf5-7de203845568"
@@ -2189,9 +2183,9 @@
     "3c4b401e-1ba9-4f63-9c68-7c50ab1400bf": {
       "id": "3c4b401e-1ba9-4f63-9c68-7c50ab1400bf",
       "position": [
-        0.018059084244085533,
-        0.004081987576156174,
-        -0.06087136218856992
+        0,
+        0,
+        0
       ],
       "rotation": [
         0.7071067811865475,
@@ -2200,9 +2194,9 @@
         0.7071067811865476
       ],
       "scale": [
-        2.3000000000000007,
-        2.3000000000000007,
-        2.3000000000000007
+        1,
+        1,
+        1
       ],
       "geometry": null,
       "material": null,
@@ -2217,7 +2211,24 @@
         "loop": true
       },
       "name": "Marker_Icon.glb",
-      "order": 13.45379859642859
+      "order": 13.45379859642859,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.5,
+          "height": 1,
+          "width": 0.5
+        },
+        "mass": 0,
+        "type": "kinematic",
+        "gravityFactor": 0,
+        "eventOnly": true,
+        "highPrecision": false,
+        "lockXAxis": true,
+        "lockYAxis": true,
+        "lockZAxis": true,
+        "lockYPosition": true
+      }
     },
     "e2fcf0b9-7dae-4384-be9c-bdef58877cb8": {
       "id": "e2fcf0b9-7dae-4384-be9c-bdef58877cb8",
@@ -2277,9 +2288,9 @@
       "ui": {
         "width": 266,
         "height": 345,
-        "text": "Dovahkiin... te damos la bienvenida al mapa interactivo de Skyrim.\n\nQue este mapa sea tu brújula mientras recorres las inhóspitas tierras del norte. Atraviesa las praderas y cordilleras de la provincia más indómita de Tamriel; desde los majestuosos baluartes de piedra y las grandiosas comarcas, hasta los antros de mala muerte y los rincones más lúgubres envueltos en la bruma. Habla con los lugareños, desentraña antiguos misterios y forja tu propio destino como el verdadero Sangre de Dragón.\n\nPara desplazarte por la región, toma tu tarjeta de personaje y deslízala sobre el mapa hacia las marcas de interés. Cada ubicación revelará valiosa información para tu travesía.\n\nMantente alerta. Si explorando te cruzas con un símbolo como este acércate... podrías escuchar rumores, secretos e información de lo más interesante para tus misiones.",
+        "text": "Dovahkiin, el cartograma de Skyrim se despliega ante ti.\n\nQue este mapa sea tu guía por las agrestes tierras del norte. Atraviesa las tundras y cordilleras de la provincia más indómita de Tamriel: desde sus soberbios baluartes de piedra hasta los rincones más lúgubres envueltos en bruma. \nPresta oído a los lugareños, desentraña misterios arcanos y forja tu destino como el verdadero Sangre de Dragón.\n\nToma tu tarjeta de personaje y deslízala físicamente sobre el mapa hacia las marcas de interés. Al acercarte, cada lugar revelará conocimientos vitales para tu travesía.\n\nMantén los sentidos alerta. Si ves manifestarse este símbolo, acércate. Podrías escuchar secretos y pistas que abrirán nuevas sendas en tu aventura.",
         "color": "#000000",
-        "fontSize": 10,
+        "fontSize": 11,
         "type": "3d",
         "position": "absolute",
         "top": 32,
@@ -2937,8 +2948,8 @@
       "parentId": "6b7f7c30-44aa-4c21-b7fe-7f13fbcdecf0",
       "components": {},
       "ui": {
-        "width": 784,
-        "height": 784,
+        "width": 1000,
+        "height": 1000,
         "type": "overlay",
         "background": "#000000",
         "backgroundOpacity": 0.75,
@@ -2955,7 +2966,7 @@
     "979ed10b-4e87-4608-a7f3-b9932f8ad82e": {
       "id": "979ed10b-4e87-4608-a7f3-b9932f8ad82e",
       "position": [
-        -14.082941358875386,
+        -16.144446708151353,
         -0.22482050095471906,
         0
       ],
@@ -2980,7 +2991,8 @@
         "type": "overlay",
         "width": 412,
         "height": 784
-      }
+      },
+      "disabled": true
     },
     "1019c8fd-6cc1-45a7-877d-19bb4f800b87": {
       "id": "1019c8fd-6cc1-45a7-877d-19bb4f800b87",
@@ -5867,8 +5879,7 @@
       },
       "name": "UI Rumor Túmulo",
       "order": 10.770442593671289,
-      "hidden": false,
-      "disabled": true
+      "hidden": false
     },
     "e4eb7c40-048c-4a25-9d29-011c87ee1340": {
       "id": "e4eb7c40-048c-4a25-9d29-011c87ee1340",
@@ -5906,7 +5917,7 @@
         "verticalTextAlign": "center",
         "position": "absolute",
         "top": 35,
-        "left": 290,
+        "left": 260,
         "bottom": "",
         "right": ""
       },
@@ -11248,7 +11259,6 @@
       "ui": {
         "type": "3d"
       },
-      "disabled": true,
       "position": [
         0,
         0,
@@ -11996,6 +12006,324 @@
         },
         "ignoreRaycast": true,
         "type": "overlay"
+      },
+      "order": -1.484248400351055
+    },
+    "4f0a18c4-f060-4ce4-b4d9-76fa82e46325": {
+      "id": "4f0a18c4-f060-4ce4-b4d9-76fa82e46325",
+      "position": [
+        14.082941358875386,
+        0.22482050095471906,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "979ed10b-4e87-4608-a7f3-b9932f8ad82e",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 50,
+        "height": 50,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Rumor.png"
+        },
+        "backgroundOpacity": 0.75,
+        "backgroundSize": "contain",
+        "position": "absolute",
+        "top": 475,
+        "left": 70,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Imagen",
+      "order": 14.742065888965795
+    },
+    "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38": {
+      "id": "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
+      "components": {
+        "e95a8d3c-b9b5-46cb-9057-e47b55c0124e": {
+          "id": "e95a8d3c-b9b5-46cb-9057-e47b55c0124e",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "toggleVisibilityOnClick_c4fffd70-e3a3-45af-aebc-2100f871f268": {
+          "id": "toggleVisibilityOnClick_c4fffd70-e3a3-45af-aebc-2100f871f268",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "7bde7cc5-a221-4120-b748-55364731abcc"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "17f5fc13-2d5a-4289-be68-7d457fa8dd58"
+            }
+          }
+        },
+        "uiSoundOnClick_4285b2a4-6c24-45e9-ac22-0fe759ae2e60": {
+          "id": "uiSoundOnClick_4285b2a4-6c24-45e9-ac22-0fe759ae2e60",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
+          }
+        }
+      },
+      "ui": {
+        "type": "overlay",
+        "width": 100,
+        "height": 36,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 365,
+        "left": 470,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Sig pag Tumulo",
+      "order": 14.277300937547567
+    },
+    "239674c6-411b-456f-a24e-079c0f293d94": {
+      "id": "239674c6-411b-456f-a24e-079c0f293d94",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38",
+      "components": {},
+      "name": "Icon (1) Túmulo (1)",
+      "ui": {
+        "width": 25,
+        "height": 25,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Arrow Back.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "order": 0.2460354233958394
+    },
+    "d7148543-8b9a-4a37-83a0-e1d14f9c3311": {
+      "id": "d7148543-8b9a-4a37-83a0-e1d14f9c3311",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38",
+      "components": {},
+      "name": "Text (1) Túmulo (1)",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Página",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
+        }
+      },
+      "order": -1.484248400351055
+    },
+    "8b6aa4a8-1876-48e0-8715-c533df3ca1e8": {
+      "id": "8b6aa4a8-1876-48e0-8715-c533df3ca1e8",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
+      "components": {
+        "e95a8d3c-b9b5-46cb-9057-e47b55c0124e": {
+          "id": "e95a8d3c-b9b5-46cb-9057-e47b55c0124e",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "toggleVisibilityOnClick_c4fffd70-e3a3-45af-aebc-2100f871f268": {
+          "id": "toggleVisibilityOnClick_c4fffd70-e3a3-45af-aebc-2100f871f268",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "7bde7cc5-a221-4120-b748-55364731abcc"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "17f5fc13-2d5a-4289-be68-7d457fa8dd58"
+            }
+          }
+        },
+        "uiSoundOnClick_4285b2a4-6c24-45e9-ac22-0fe759ae2e60": {
+          "id": "uiSoundOnClick_4285b2a4-6c24-45e9-ac22-0fe759ae2e60",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
+          }
+        }
+      },
+      "ui": {
+        "type": "overlay",
+        "width": 100,
+        "height": 36,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 365,
+        "left": 183,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Ant pag Tumulo",
+      "order": 15.825519146792006,
+      "disabled": true
+    },
+    "c9a1116b-d171-43e8-a72e-3173fc3da98a": {
+      "id": "c9a1116b-d171-43e8-a72e-3173fc3da98a",
+      "position": [
+        -0.3230000000000004,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        1,
+        -6.123233995736766e-17
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8b6aa4a8-1876-48e0-8715-c533df3ca1e8",
+      "components": {},
+      "name": "Icon (1) Túmulo (2)",
+      "ui": {
+        "width": 25,
+        "height": 25,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Arrow Back Inverse.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "order": -3.433700892402304
+    },
+    "468a770f-e259-489d-9d33-a45800aa2a15": {
+      "id": "468a770f-e259-489d-9d33-a45800aa2a15",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8b6aa4a8-1876-48e0-8715-c533df3ca1e8",
+      "components": {},
+      "name": "Text (1) Túmulo (2)",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Página",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
+        }
       },
       "order": -1.484248400351055
     }
