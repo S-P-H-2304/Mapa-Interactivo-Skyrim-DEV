@@ -292,6 +292,13 @@
           "id": "5f2cda33-3d69-484d-a697-87b0402d8be0",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_7db5c438-30fe-4414-9f92-14e70fbfc071": {
+          "id": "uiSoundOnClick_7db5c438-30fe-4414-9f92-14e70fbfc071",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UISonido.mp3"
+          }
         }
       },
       "ui": {
@@ -340,6 +347,13 @@
         "c5fa815c-5737-4b74-8777-f860846d76d7": {
           "id": "c5fa815c-5737-4b74-8777-f860846d76d7",
           "name": "pressHoldFeedback"
+        },
+        "uiSoundOnClick_e7977813-05e0-4c8e-b18d-a2a55817483f": {
+          "id": "uiSoundOnClick_e7977813-05e0-4c8e-b18d-a2a55817483f",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UISonido.mp3"
+          }
         }
       },
       "ui": {
@@ -389,6 +403,13 @@
         "b6a3b4aa-c91e-49da-afdb-40521e8ce553": {
           "id": "b6a3b4aa-c91e-49da-afdb-40521e8ce553",
           "name": "pressHoldFeedback"
+        },
+        "uiSoundOnClick_51183c72-8af3-4404-a9ba-81298a182fbd": {
+          "id": "uiSoundOnClick_51183c72-8af3-4404-a9ba-81298a182fbd",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UISonido.mp3"
+          }
         }
       },
       "ui": {
@@ -522,6 +543,13 @@
           "id": "d0d2feef-8216-4b2a-8788-c154fb2ff4e4",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_5305fb6c-9fe4-4f46-9d39-3bf07cb7ad45": {
+          "id": "uiSoundOnClick_5305fb6c-9fe4-4f46-9d39-3bf07cb7ad45",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -714,6 +742,13 @@
               "id": "f851be6c-7f6b-4fc4-9cf5-7de203845568"
             }
           }
+        },
+        "uiSoundOnClick_acfb0d14-6d10-4f3e-8996-af4381fe7fcb": {
+          "id": "uiSoundOnClick_acfb0d14-6d10-4f3e-8996-af4381fe7fcb",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroAbrir.mp3"
+          }
         }
       },
       "ui": {
@@ -774,6 +809,13 @@
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
             }
+          }
+        },
+        "uiSoundOnClick_bffef96a-8af6-41ea-a160-a569b3e62bc0": {
+          "id": "uiSoundOnClick_bffef96a-8af6-41ea-a160-a569b3e62bc0",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UISalir.mp3"
           }
         }
       },
@@ -1554,6 +1596,13 @@
               "id": "a3828348-7945-4330-9d8a-ba310a783670"
             }
           }
+        },
+        "uiSoundOnClick_1094cc56-07a4-448c-be23-a1a039ac0271": {
+          "id": "uiSoundOnClick_1094cc56-07a4-448c-be23-a1a039ac0271",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
+          }
         }
       },
       "ui": {
@@ -1784,6 +1833,13 @@
               "type": "entity",
               "id": "7299e1f7-25a8-462a-a42c-2af206a53531"
             }
+          }
+        },
+        "uiSoundOnClick_77f45b20-c22f-44e3-82f4-cf916d336323": {
+          "id": "uiSoundOnClick_77f45b20-c22f-44e3-82f4-cf916d336323",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
           }
         }
       },
@@ -2263,8 +2319,8 @@
       "components": {},
       "ui": {
         "type": "3d",
-        "width": 411,
-        "height": 411,
+        "width": 424,
+        "height": 424,
         "image": {
           "type": "asset",
           "asset": "assets/Iconos/UI/Note.png"
@@ -2273,8 +2329,8 @@
         "backgroundSize": "contain",
         "position": "absolute",
         "top": "",
-        "left": "",
-        "bottom": "",
+        "left": -9,
+        "bottom": -312,
         "right": "",
         "stackingOrder": 0
       },
@@ -2328,6 +2384,13 @@
           "id": "6de5d1b2-1a68-4fbd-9de5-d48dc16ba9dd",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "124627f9-be2a-4c25-9c98-036ab512f065": {
+          "id": "124627f9-be2a-4c25-9c98-036ab512f065",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -2472,9 +2535,6 @@
         "width": 784,
         "height": 412,
         "type": "overlay",
-        "background": "#000000",
-        "backgroundOpacity": 0,
-        "backgroundSize": "stretch",
         "stackingOrder": 0,
         "opacity": 1
       },
@@ -2665,8 +2725,19 @@
             "locationName": "Túmulo del Hombre de Polvo",
             "markerToUnlock": {
               "type": "entity",
-              "id": "98e56b46-2634-4fac-9eb5-e672863b0688"
+              "id": "0f3a3eb0-58f6-417c-a080-0072c55c600f"
+            },
+            "titleElement": {
+              "type": "entity",
+              "id": "1bfb98b8-d613-4732-b4c2-1fd6e8df9c60"
             }
+          }
+        },
+        "uiSoundOnClick_3e264ec6-dd2d-44e0-93a1-d94b11367036": {
+          "id": "uiSoundOnClick_3e264ec6-dd2d-44e0-93a1-d94b11367036",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LocalizacionNueva.mp3"
           }
         }
       },
@@ -2909,8 +2980,7 @@
         "type": "overlay",
         "width": 412,
         "height": 784
-      },
-      "disabled": true
+      }
     },
     "1019c8fd-6cc1-45a7-877d-19bb4f800b87": {
       "id": "1019c8fd-6cc1-45a7-877d-19bb4f800b87",
@@ -3022,6 +3092,13 @@
           "id": "d0d2feef-8216-4b2a-8788-c154fb2ff4e4",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_b06f92b3-825e-4a20-8a8f-31836ff0df5d": {
+          "id": "uiSoundOnClick_b06f92b3-825e-4a20-8a8f-31836ff0df5d",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -3213,6 +3290,13 @@
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
             }
+          }
+        },
+        "uiSoundOnClick_96809ad9-abfd-4539-a2bb-5d8ba34ae08b": {
+          "id": "uiSoundOnClick_96809ad9-abfd-4539-a2bb-5d8ba34ae08b",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UISalir.mp3"
           }
         }
       },
@@ -3415,6 +3499,13 @@
           "id": "d0d2feef-8216-4b2a-8788-c154fb2ff4e4",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_a6c97e88-3259-4c26-87cc-733d974d3f1e": {
+          "id": "uiSoundOnClick_a6c97e88-3259-4c26-87cc-733d974d3f1e",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -3606,6 +3697,13 @@
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
             }
+          }
+        },
+        "uiSoundOnClick_817d1fa1-cb36-4b7b-9f1c-3ef8c34907a2": {
+          "id": "uiSoundOnClick_817d1fa1-cb36-4b7b-9f1c-3ef8c34907a2",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UISalir.mp3"
           }
         }
       },
@@ -3812,6 +3910,13 @@
           "id": "d0d2feef-8216-4b2a-8788-c154fb2ff4e4",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_506d978b-42b6-4bfa-b4f4-9eb389d191b2": {
+          "id": "uiSoundOnClick_506d978b-42b6-4bfa-b4f4-9eb389d191b2",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -4003,6 +4108,13 @@
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
             }
+          }
+        },
+        "uiSoundOnClick_9b787888-6d35-4e19-9843-8a2ea5a41044": {
+          "id": "uiSoundOnClick_9b787888-6d35-4e19-9843-8a2ea5a41044",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UISalir.mp3"
           }
         }
       },
@@ -4205,6 +4317,13 @@
           "id": "d0d2feef-8216-4b2a-8788-c154fb2ff4e4",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_ab8f60a5-cf26-4bb6-917a-9852bcc2aa32": {
+          "id": "uiSoundOnClick_ab8f60a5-cf26-4bb6-917a-9852bcc2aa32",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -4396,6 +4515,13 @@
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
             }
+          }
+        },
+        "uiSoundOnClick_11f3ae84-babf-4c4a-bf1e-e973ba0a2403": {
+          "id": "uiSoundOnClick_11f3ae84-babf-4c4a-bf1e-e973ba0a2403",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UISalir.mp3"
           }
         }
       },
@@ -4598,6 +4724,13 @@
           "id": "d0d2feef-8216-4b2a-8788-c154fb2ff4e4",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_f576e734-4922-4df0-8864-906c6d929d50": {
+          "id": "uiSoundOnClick_f576e734-4922-4df0-8864-906c6d929d50",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -4789,6 +4922,13 @@
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
             }
+          }
+        },
+        "uiSoundOnClick_35b3d204-7f41-4e49-bdcb-bca76892867a": {
+          "id": "uiSoundOnClick_35b3d204-7f41-4e49-bdcb-bca76892867a",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UISalir.mp3"
           }
         }
       },
@@ -4991,6 +5131,13 @@
           "id": "d0d2feef-8216-4b2a-8788-c154fb2ff4e4",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_5de95ace-880a-4594-8aec-dc257f54a24f": {
+          "id": "uiSoundOnClick_5de95ace-880a-4594-8aec-dc257f54a24f",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -5182,6 +5329,13 @@
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
             }
+          }
+        },
+        "uiSoundOnClick_e9adadf5-f328-4274-b052-d641a6659959": {
+          "id": "uiSoundOnClick_e9adadf5-f328-4274-b052-d641a6659959",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UISalir.mp3"
           }
         }
       },
@@ -5384,6 +5538,13 @@
           "id": "d0d2feef-8216-4b2a-8788-c154fb2ff4e4",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_93599478-1897-4805-b922-725ad0043d80": {
+          "id": "uiSoundOnClick_93599478-1897-4805-b922-725ad0043d80",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -5575,6 +5736,13 @@
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
             }
+          }
+        },
+        "uiSoundOnClick_8c3405f8-eb61-4e88-99d9-a86b3f52da9b": {
+          "id": "uiSoundOnClick_8c3405f8-eb61-4e88-99d9-a86b3f52da9b",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UISalir.mp3"
           }
         }
       },
@@ -5784,6 +5952,13 @@
               "type": "entity",
               "id": "17f5fc13-2d5a-4289-be68-7d457fa8dd58"
             }
+          }
+        },
+        "uiSoundOnClick_4285b2a4-6c24-45e9-ac22-0fe759ae2e60": {
+          "id": "uiSoundOnClick_4285b2a4-6c24-45e9-ac22-0fe759ae2e60",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
           }
         }
       },
@@ -6016,6 +6191,13 @@
               "id": "98332f69-8468-43b4-8f1d-7758ef349921"
             }
           }
+        },
+        "uiSoundOnClick_15a75ff8-3810-40fc-828e-c4ffd866a5a1": {
+          "id": "uiSoundOnClick_15a75ff8-3810-40fc-828e-c4ffd866a5a1",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -6123,6 +6305,13 @@
               "type": "entity",
               "id": "47f9e2e3-4b36-41a4-9a60-49272e02beb1"
             }
+          }
+        },
+        "uiSoundOnClick_28552e70-da5f-41ac-8c6e-f0020bb21025": {
+          "id": "uiSoundOnClick_28552e70-da5f-41ac-8c6e-f0020bb21025",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroPagina.mp3"
           }
         }
       },
@@ -6361,8 +6550,19 @@
             "locationName": "Aquelarre de Glenmoril",
             "markerToUnlock": {
               "type": "entity",
-              "id": "98e56b46-2634-4fac-9eb5-e672863b0688"
+              "id": "d8df7945-6bf4-4160-98fb-b36cbc56eb3f"
+            },
+            "titleElement": {
+              "type": "entity",
+              "id": "1bfb98b8-d613-4732-b4c2-1fd6e8df9c60"
             }
+          }
+        },
+        "uiSoundOnClick_88d9e559-4fc2-459c-833c-7dee69d9f745": {
+          "id": "uiSoundOnClick_88d9e559-4fc2-459c-833c-7dee69d9f745",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LocalizacionNueva.mp3"
           }
         }
       },
@@ -6542,6 +6742,13 @@
           "id": "d0d2feef-8216-4b2a-8788-c154fb2ff4e4",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_44266748-a828-4fdd-9182-26083a73a5e0": {
+          "id": "uiSoundOnClick_44266748-a828-4fdd-9182-26083a73a5e0",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -6734,6 +6941,13 @@
               "id": "7bde7cc5-a221-4120-b748-55364731abcc"
             }
           }
+        },
+        "uiSoundOnClick_f9f69ee4-fd34-4dda-b10e-28f261b26cef": {
+          "id": "uiSoundOnClick_f9f69ee4-fd34-4dda-b10e-28f261b26cef",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroAbrir.mp3"
+          }
         }
       },
       "ui": {
@@ -6794,6 +7008,13 @@
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
             }
+          }
+        },
+        "uiSoundOnClick_9e40647a-d7ae-42cc-8484-6bceba6509e1": {
+          "id": "uiSoundOnClick_9e40647a-d7ae-42cc-8484-6bceba6509e1",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UISalir.mp3"
           }
         }
       },
@@ -7003,6 +7224,13 @@
               "type": "entity",
               "id": "69f250f7-aea0-4fce-907a-00a8cf5ef657"
             }
+          }
+        },
+        "uiSoundOnClick_3d9bb321-5346-4e62-9554-556816ea7d0c": {
+          "id": "uiSoundOnClick_3d9bb321-5346-4e62-9554-556816ea7d0c",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
           }
         }
       },
@@ -7235,6 +7463,13 @@
               "id": "0c1ed59c-36fb-4c8d-9006-95e3f71ac40c"
             }
           }
+        },
+        "uiSoundOnClick_609fcc38-357e-4d51-91b2-c356e0215810": {
+          "id": "uiSoundOnClick_609fcc38-357e-4d51-91b2-c356e0215810",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -7358,8 +7593,19 @@
             "locationName": "Tumba de Ysgramor",
             "markerToUnlock": {
               "type": "entity",
-              "id": "98e56b46-2634-4fac-9eb5-e672863b0688"
+              "id": "26daa6ab-8949-416d-8c69-e6ee9977eaed"
+            },
+            "titleElement": {
+              "type": "entity",
+              "id": "1bfb98b8-d613-4732-b4c2-1fd6e8df9c60"
             }
+          }
+        },
+        "uiSoundOnClick_5affb9e0-24e8-4a16-a75b-d8fc32a0087d": {
+          "id": "uiSoundOnClick_5affb9e0-24e8-4a16-a75b-d8fc32a0087d",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LocalizacionNueva.mp3"
           }
         }
       },
@@ -7596,6 +7842,13 @@
           "id": "d0d2feef-8216-4b2a-8788-c154fb2ff4e4",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_2630d6f7-1e9a-4f14-9051-bec30ed47949": {
+          "id": "uiSoundOnClick_2630d6f7-1e9a-4f14-9051-bec30ed47949",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -7788,6 +8041,13 @@
               "id": "cdeb5aea-cea5-4c6f-a544-5ccfbb748161"
             }
           }
+        },
+        "uiSoundOnClick_ffe7479e-181b-49d5-a2f7-4599a16bc2bd": {
+          "id": "uiSoundOnClick_ffe7479e-181b-49d5-a2f7-4599a16bc2bd",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroAbrir.mp3"
+          }
         }
       },
       "ui": {
@@ -7848,6 +8108,13 @@
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
             }
+          }
+        },
+        "uiSoundOnClick_721b7ae9-b858-4118-9baa-ef947f6d5b4d": {
+          "id": "uiSoundOnClick_721b7ae9-b858-4118-9baa-ef947f6d5b4d",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UISalir.mp3"
           }
         }
       },
@@ -8057,6 +8324,13 @@
               "type": "entity",
               "id": "d2f4b63a-6150-4fb9-bba7-26a520955969"
             }
+          }
+        },
+        "uiSoundOnClick_1f1ccab8-a4a9-493e-bd56-c690b7a24ce6": {
+          "id": "uiSoundOnClick_1f1ccab8-a4a9-493e-bd56-c690b7a24ce6",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
           }
         }
       },
@@ -8289,6 +8563,13 @@
               "id": "457628ff-d7b1-41f1-8b30-c1981cf5e48c"
             }
           }
+        },
+        "uiSoundOnClick_f5d71778-7534-4229-8736-1c8ac3b4e801": {
+          "id": "uiSoundOnClick_f5d71778-7534-4229-8736-1c8ac3b4e801",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -8384,18 +8665,44 @@
           "name": "pressHoldFeedback",
           "parameters": {}
         },
-        "toggleVisibilityOnClick_2435f0eb-b95e-4193-b9bc-fbe0e1b52544": {
-          "id": "toggleVisibilityOnClick_2435f0eb-b95e-4193-b9bc-fbe0e1b52544",
-          "name": "toggleVisibilityOnClick",
+        "unlockLocationOnClick_b5d42903-0198-4c1a-9c7f-8f4e545e585d": {
+          "id": "unlockLocationOnClick_b5d42903-0198-4c1a-9c7f-8f4e545e585d",
+          "name": "unlockLocationOnClick",
           "parameters": {
-            "hideTarget1": {
+            "panelToHide": {
               "type": "entity",
               "id": "d2f4b63a-6150-4fb9-bba7-26a520955969"
             },
             "backgroundFrame": {
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            }
+            },
+            "uiNuevaUbicacion": {
+              "type": "entity",
+              "id": "57300f21-0ba5-4056-bd67-6fd11acbc745"
+            },
+            "imageElement": {
+              "type": "entity",
+              "id": "00dcd921-eff0-463b-89f0-3ea9f9e4ffa7"
+            },
+            "nameElement": {
+              "type": "entity",
+              "id": "02257a0f-f15f-4661-ad15-2f6ea61b47a9"
+            },
+            "titleElement": {
+              "type": "entity",
+              "id": "1bfb98b8-d613-4732-b4c2-1fd6e8df9c60"
+            },
+            "titleText": "Misiones Completadas",
+            "locationName": "Senda de Los Compañeros",
+            "imageSrc": "assets/Iconos/UI/Wolf.png"
+          }
+        },
+        "uiSoundOnClick_36e6d37f-67fe-42b4-9af9-d5df7a07dc85": {
+          "id": "uiSoundOnClick_36e6d37f-67fe-42b4-9af9-d5df7a07dc85",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/MisionCompletada.mp3"
           }
         }
       },
@@ -8632,6 +8939,13 @@
           "id": "d0d2feef-8216-4b2a-8788-c154fb2ff4e4",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_979f16f3-ebca-488d-8ba0-cb2b55df2370": {
+          "id": "uiSoundOnClick_979f16f3-ebca-488d-8ba0-cb2b55df2370",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -8824,6 +9138,13 @@
               "id": "3dc108e0-b73f-4f78-96b6-076a59c3d397"
             }
           }
+        },
+        "uiSoundOnClick_168328f4-09a7-4009-940b-778424c93dca": {
+          "id": "uiSoundOnClick_168328f4-09a7-4009-940b-778424c93dca",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroAbrir.mp3"
+          }
         }
       },
       "ui": {
@@ -8884,6 +9205,13 @@
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
             }
+          }
+        },
+        "uiSoundOnClick_37bb9324-b4af-463a-bb03-824260ba1667": {
+          "id": "uiSoundOnClick_37bb9324-b4af-463a-bb03-824260ba1667",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UISalir.mp3"
           }
         }
       },
@@ -9093,6 +9421,13 @@
               "type": "entity",
               "id": "535aff49-b614-4229-85e5-251b2d7df5a3"
             }
+          }
+        },
+        "uiSoundOnClick_20c852b7-5491-4354-babc-3d2b13edd0d5": {
+          "id": "uiSoundOnClick_20c852b7-5491-4354-babc-3d2b13edd0d5",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
           }
         }
       },
@@ -9339,6 +9674,13 @@
           "id": "d0d2feef-8216-4b2a-8788-c154fb2ff4e4",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_27a1a896-ca88-4e1a-a4c1-5efa4edb9e4e": {
+          "id": "uiSoundOnClick_27a1a896-ca88-4e1a-a4c1-5efa4edb9e4e",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -9531,6 +9873,13 @@
               "id": "1b515230-1adf-48c0-b5be-d369965154cf"
             }
           }
+        },
+        "uiSoundOnClick_80a85d5b-a897-4408-9b0b-47b1358322a4": {
+          "id": "uiSoundOnClick_80a85d5b-a897-4408-9b0b-47b1358322a4",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroAbrir.mp3"
+          }
         }
       },
       "ui": {
@@ -9591,6 +9940,13 @@
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
             }
+          }
+        },
+        "uiSoundOnClick_69fa5220-eb33-44c2-8e57-2c4168255458": {
+          "id": "uiSoundOnClick_69fa5220-eb33-44c2-8e57-2c4168255458",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UISalir.mp3"
           }
         }
       },
@@ -9800,6 +10156,13 @@
               "type": "entity",
               "id": "002636fc-4b45-4a39-ab45-31cc2a7fb2c9"
             }
+          }
+        },
+        "uiSoundOnClick_58326b9d-9786-483b-a8e6-6ccc8d053424": {
+          "id": "uiSoundOnClick_58326b9d-9786-483b-a8e6-6ccc8d053424",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
           }
         }
       },
@@ -10032,6 +10395,13 @@
               "id": "66d91871-4c99-4d97-b26a-5ef46dfd755f"
             }
           }
+        },
+        "uiSoundOnClick_bb4a7bcf-0eaf-46f9-b6c0-1fdd9a2a25f8": {
+          "id": "uiSoundOnClick_bb4a7bcf-0eaf-46f9-b6c0-1fdd9a2a25f8",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -10127,18 +10497,44 @@
           "name": "pressHoldFeedback",
           "parameters": {}
         },
-        "toggleVisibilityOnClick_8884d09f-986b-48ef-b834-7589ca0cc6ef": {
-          "id": "toggleVisibilityOnClick_8884d09f-986b-48ef-b834-7589ca0cc6ef",
-          "name": "toggleVisibilityOnClick",
+        "unlockLocationOnClick_53902851-c981-4b23-8312-a59efe7dab85": {
+          "id": "unlockLocationOnClick_53902851-c981-4b23-8312-a59efe7dab85",
+          "name": "unlockLocationOnClick",
           "parameters": {
-            "hideTarget1": {
+            "panelToHide": {
               "type": "entity",
               "id": "002636fc-4b45-4a39-ab45-31cc2a7fb2c9"
             },
             "backgroundFrame": {
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
-            }
+            },
+            "uiNuevaUbicacion": {
+              "type": "entity",
+              "id": "57300f21-0ba5-4056-bd67-6fd11acbc745"
+            },
+            "imageElement": {
+              "type": "entity",
+              "id": "00dcd921-eff0-463b-89f0-3ea9f9e4ffa7"
+            },
+            "nameElement": {
+              "type": "entity",
+              "id": "02257a0f-f15f-4661-ad15-2f6ea61b47a9"
+            },
+            "titleElement": {
+              "type": "entity",
+              "id": "1bfb98b8-d613-4732-b4c2-1fd6e8df9c60"
+            },
+            "titleText": "Misiones Completadas",
+            "locationName": "Senda de La Licantropía Daedrica",
+            "imageSrc": "assets/Iconos/UI/Wolf.png"
+          }
+        },
+        "uiSoundOnClick_e70adf48-1269-466a-85be-dcb78d87a5b7": {
+          "id": "uiSoundOnClick_e70adf48-1269-466a-85be-dcb78d87a5b7",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/MisionCompletada.mp3"
           }
         }
       },
@@ -10375,6 +10771,13 @@
           "id": "d0d2feef-8216-4b2a-8788-c154fb2ff4e4",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_6b463e94-a58f-4322-879b-2b3bc724d672": {
+          "id": "uiSoundOnClick_6b463e94-a58f-4322-879b-2b3bc724d672",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -10567,6 +10970,13 @@
               "id": "6a29e75a-e21e-4cc4-9e29-e0f554237656"
             }
           }
+        },
+        "uiSoundOnClick_0ada38f4-a32b-4764-ab78-f1ac9e6f2ba8": {
+          "id": "uiSoundOnClick_0ada38f4-a32b-4764-ab78-f1ac9e6f2ba8",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroAbrir.mp3"
+          }
         }
       },
       "ui": {
@@ -10627,6 +11037,13 @@
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
             }
+          }
+        },
+        "uiSoundOnClick_0a1e9ab8-f948-417d-a244-e16e1ac504f3": {
+          "id": "uiSoundOnClick_0a1e9ab8-f948-417d-a244-e16e1ac504f3",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UISalir.mp3"
           }
         }
       },
@@ -10831,24 +11248,22 @@
       "ui": {
         "type": "3d"
       },
-      "transform": {
-        "position": [
-          0,
-          0,
-          0
-        ],
-        "rotation": [
-          0,
-          0,
-          0
-        ],
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "disabled": true
+      "disabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
     },
     "70c3d62c-bd34-45a2-ba41-4551b6e75aa2": {
       "id": "70c3d62c-bd34-45a2-ba41-4551b6e75aa2",
@@ -10858,24 +11273,22 @@
       "ui": {
         "type": "3d"
       },
-      "transform": {
-        "position": [
-          0,
-          0,
-          0
-        ],
-        "rotation": [
-          0,
-          0,
-          0
-        ],
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "disabled": true
+      "disabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
     },
     "894f5910-1f39-4c7f-9396-2b1d2774b869": {
       "id": "894f5910-1f39-4c7f-9396-2b1d2774b869",
@@ -10974,6 +11387,13 @@
           "id": "pressHoldFeedback_826262d3-8732-412c-bd83-ff6656c27292",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_c9c498e0-c8ce-4522-ac92-a13b3e4ab60f": {
+          "id": "uiSoundOnClick_c9c498e0-c8ce-4522-ac92-a13b3e4ab60f",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -11139,6 +11559,13 @@
           "id": "pressHoldFeedback_f4da7fcb-7119-43d0-bef2-318a44cf1138",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_0a2ab3ce-315b-4581-bfd8-1f7796ee4587": {
+          "id": "uiSoundOnClick_0a2ab3ce-315b-4581-bfd8-1f7796ee4587",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroPagina.mp3"
+          }
         }
       },
       "ui": {
@@ -11303,6 +11730,13 @@
           "id": "pressHoldFeedback_c99888e7-6b04-4cde-b12c-acc70a035e11",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_011970ea-b93a-4449-9f54-b3413ca3947a": {
+          "id": "uiSoundOnClick_011970ea-b93a-4449-9f54-b3413ca3947a",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
         }
       },
       "ui": {
@@ -11479,6 +11913,10 @@
             "markerToUnlock": {
               "type": "entity",
               "id": "4a8454ed-6fbf-47d1-ae61-45889f692798"
+            },
+            "titleElement": {
+              "type": "entity",
+              "id": "1bfb98b8-d613-4732-b4c2-1fd6e8df9c60"
             }
           }
         },
@@ -11486,6 +11924,13 @@
           "id": "pressHoldFeedback_0dabf4c0-64b2-41e2-baaf-edd69b145985",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "uiSoundOnClick_9be67d8e-e7f5-439d-bcb9-fe811760711a": {
+          "id": "uiSoundOnClick_9be67d8e-e7f5-439d-bcb9-fe811760711a",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LocalizacionNueva.mp3"
+          }
         }
       },
       "ui": {

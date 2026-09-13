@@ -8,12 +8,14 @@ ecs.registerComponent({
     uiNuevaUbicacion: ecs.eid,
     imageElement: ecs.eid,
     nameElement: ecs.eid,
+    titleElement: ecs.eid,
     // @asset
     imageSrc: ecs.string,
     locationName: ecs.string,
-    // @label Duracin Fade (ms)
+    titleText: ecs.string,
+    // @label Duracion Fade (ms)
     fadeDuration: ecs.f32,
-    // @label Duracin Espera (ms)
+    // @label Duracion Espera (ms)
     holdDuration: ecs.f32,
     // @label Marcador a desbloquear
     markerToUnlock: ecs.eid,
@@ -56,8 +58,8 @@ ecs.registerComponent({
       
       state.listen(targetEid, ecs.input.UI_CLICK, () => {
         const {
-          panelToHide, backgroundFrame, uiNuevaUbicacion, imageElement, nameElement, 
-          imageSrc, locationName, fadeDuration, holdDuration, markerToUnlock
+          panelToHide, backgroundFrame, uiNuevaUbicacion, imageElement, nameElement, titleElement,
+          imageSrc, locationName, titleText, fadeDuration, holdDuration, markerToUnlock
         } = schemaAttribute.get(eid)
 
         if (panelToHide) ecs.Disabled.set(world, panelToHide)
@@ -67,6 +69,12 @@ ecs.registerComponent({
         if (nameElement && locationName) {
           ecs.Ui.set(world, nameElement, { text: locationName })
         }
+        if (titleElement && titleText) {
+          ecs.Ui.set(world, titleElement, { text: titleText })
+        } else if (titleElement) {
+          ecs.Ui.set(world, titleElement, { text: "NUEVA UBICACIÓN" })
+        }
+        
         if (imageElement && imageSrc) {
           try {
             ecs.Ui.set(world, imageElement, { image: imageSrc })

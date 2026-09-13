@@ -17,7 +17,7 @@ ecs.registerComponent({
     ecs.defineState('default')
       .initial()
       .listen(eid, 'start-video', () => {
-        // Regla crAtica: Adquirir cursor fresco
+        // Regla critica: Adquirir cursor fresco
         const schema = schemaAttribute.get(eid)
         const { videoSrc, generalUiPanel, backgroundFrame, ambientAudio } = schema
 
@@ -39,13 +39,13 @@ ecs.registerComponent({
           video.style.objectFit = 'cover'
 
           document.body.appendChild(video)
-          video.play().catch((err) => console.warn('Autoplay fallA3:', err))
+          video.play().catch((err) => console.warn('Autoplay falló:', err))
 
           video.addEventListener('ended', () => {
             video.remove()
 
             // Ya que el video ha terminado, necesitamos volver a leer el schema fresco 
-            // porque estamos dentro de OTRO callback asAncrono!
+            // porque estamos dentro de OTRO callback asíncrono!
             const freshSchema = schemaAttribute.get(eid)
 
             if (freshSchema.generalUiPanel) {
