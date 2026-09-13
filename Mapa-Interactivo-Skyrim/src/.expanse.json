@@ -37,7 +37,7 @@
           "headset": "disabled",
           "phone": "AR",
           "world": {
-            "disableWorldTracking": true
+            "disableWorldTracking": false
           }
         }
       },
@@ -126,7 +126,7 @@
     "4fc58106-eb91-4549-9cb0-305d0f1dc5ac": {
       "id": "4fc58106-eb91-4549-9cb0-305d0f1dc5ac",
       "position": [
-        1.2399668548159914,
+        0,
         0,
         0
       ],
@@ -729,16 +729,15 @@
           "name": "pressHoldFeedback",
           "parameters": {}
         },
-        "openRumorBtn_6e07fb6f-3a65-4b9e-ab7e-2c6f2a12469c": {
-          "id": "openRumorBtn_6e07fb6f-3a65-4b9e-ab7e-2c6f2a12469c",
-          "name": "openRumorBtn",
+        "toggleVisibilityOnClick_03d64824-7975-4422-8daf-0929e3e68638": {
+          "id": "toggleVisibilityOnClick_03d64824-7975-4422-8daf-0929e3e68638",
+          "name": "toggleVisibilityOnClick",
           "parameters": {
-            "rumorId": "Carrera Blanca",
-            "universalPanel": {
+            "showTarget1": {
               "type": "entity",
-              "id": "17f5fc13-2d5a-4289-be68-7d457fa8dd58"
+              "id": "a3828348-7945-4330-9d8a-ba310a783670"
             },
-            "cityPanelToHide": {
+            "hideTarget1": {
               "type": "entity",
               "id": "f851be6c-7f6b-4fc4-9cf5-7de203845568"
             }
@@ -1029,11 +1028,15 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
+            "songUrl": "assets/Sonido/Música/Cueva.mp3",
             "activationDelay": 2500,
             "backgroundFrame": {
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
+            },
+            "uiPanel": {
+              "type": "entity",
+              "id": "7bde7cc5-a221-4120-b748-55364731abcc"
             }
           }
         }
@@ -1043,7 +1046,7 @@
           "type": "asset",
           "asset": "assets/Modelos/Marker_Icon.glb"
         },
-        "animationClip": "",
+        "animationClip": "Idle",
         "loop": true
       },
       "name": "Marcador Túmulo",
@@ -1254,7 +1257,7 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Hibernalia.mp3",
+            "songUrl": "assets/Sonido/Música/Lucero del alba.mp3",
             "activationDelay": 2500,
             "backgroundFrame": {
               "type": "entity",
@@ -1430,6 +1433,10 @@
             "backgroundFrame": {
               "type": "entity",
               "id": "473c7055-07c6-433b-b166-03684ad7a490"
+            },
+            "uiPanel": {
+              "type": "entity",
+              "id": "c8c18f74-e04c-4a5e-9ecc-5fb02f8a3306"
             }
           }
         }
@@ -1479,6 +1486,437 @@
       "name": "Speakers",
       "order": 2.60306372389172
     },
+    "a3828348-7945-4330-9d8a-ba310a783670": {
+      "id": "a3828348-7945-4330-9d8a-ba310a783670",
+      "position": [
+        -7.474572354737953,
+        0,
+        0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "c73ff058-f645-469a-bb35-a14ec4229d53",
+      "components": {},
+      "ui": {
+        "width": 784,
+        "height": 412,
+        "type": "overlay",
+        "stackingOrder": 0,
+        "ignoreRaycast": true,
+        "opacity": 1
+      },
+      "name": "UI Rumor Carrera Blanca",
+      "order": 10.770442593671289,
+      "hidden": false,
+      "disabled": true
+    },
+    "3edd2714-dffb-4dd1-9ec6-3b502fcfbfc2": {
+      "id": "3edd2714-dffb-4dd1-9ec6-3b502fcfbfc2",
+      "position": [
+        -0.21769382646136082,
+        0.2902584352818147,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
+      "components": {},
+      "ui": {
+        "width": 230,
+        "height": 40,
+        "text": "Rumor",
+        "color": "#ffffff",
+        "fontSize": 30,
+        "type": "overlay",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
+        },
+        "verticalTextAlign": "center",
+        "position": "absolute",
+        "top": 35,
+        "left": 290,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Título (1) Carrera Blanca",
+      "order": 7.98912039642944
+    },
+    "04c1e772-df46-461e-81b7-8eb577342177": {
+      "id": "04c1e772-df46-461e-81b7-8eb577342177",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
+      "components": {
+        "e95a8d3c-b9b5-46cb-9057-e47b55c0124e": {
+          "id": "e95a8d3c-b9b5-46cb-9057-e47b55c0124e",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "toggleVisibilityOnClick_63bc5f88-17b0-4fd7-8184-6e9e8a707343": {
+          "id": "toggleVisibilityOnClick_63bc5f88-17b0-4fd7-8184-6e9e8a707343",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "f851be6c-7f6b-4fc4-9cf5-7de203845568"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "a3828348-7945-4330-9d8a-ba310a783670"
+            }
+          }
+        },
+        "uiSoundOnClick_1094cc56-07a4-448c-be23-a1a039ac0271": {
+          "id": "uiSoundOnClick_1094cc56-07a4-448c-be23-a1a039ac0271",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
+          }
+        }
+      },
+      "ui": {
+        "type": "overlay",
+        "width": 100,
+        "height": 36,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 309,
+        "left": 635,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Salir (1) Carrera Blanca",
+      "order": 13.287509151763638
+    },
+    "d399efd2-fb9d-4fc1-995e-35df3d5551ca": {
+      "id": "d399efd2-fb9d-4fc1-995e-35df3d5551ca",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "04c1e772-df46-461e-81b7-8eb577342177",
+      "components": {},
+      "name": "Icon (1) Carrera Blanca",
+      "ui": {
+        "width": 25,
+        "height": 25,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Arrow Back.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "order": 0.2460354233958394
+    },
+    "c72e40e5-bf4c-426c-b9eb-9a97ea027ce1": {
+      "id": "c72e40e5-bf4c-426c-b9eb-9a97ea027ce1",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "04c1e772-df46-461e-81b7-8eb577342177",
+      "components": {},
+      "name": "Text (1) Carrera Blanca",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Atrás",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
+        }
+      },
+      "order": -1.484248400351055
+    },
+    "7ba78e76-a05a-4acf-8839-9d45293c051c": {
+      "id": "7ba78e76-a05a-4acf-8839-9d45293c051c",
+      "position": [
+        -0.5914883289482926,
+        0,
+        0.32215366481618135
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
+      "components": {},
+      "ui": {
+        "type": "overlay",
+        "width": 435,
+        "height": 273,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Book.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "position": "absolute",
+        "top": 90,
+        "left": 156,
+        "bottom": "",
+        "right": "",
+        "ignoreRaycast": true,
+        "stackingOrder": -1
+      },
+      "name": "Libro Carrera Blanca",
+      "order": 5.552108197422722,
+      "hidden": false
+    },
+    "49dd2434-2fa2-4695-a2fd-8b23819a3a28": {
+      "id": "49dd2434-2fa2-4695-a2fd-8b23819a3a28",
+      "position": [
+        7.474572354737953,
+        0,
+        -0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
+      "components": {
+        "typewriterText_175dfe94-b5a6-469d-ae7e-4a970c1da327": {
+          "id": "typewriterText_175dfe94-b5a6-469d-ae7e-4a970c1da327",
+          "name": "typewriterText",
+          "parameters": {
+            "enableTarget": {
+              "type": "entity",
+              "id": "7299e1f7-25a8-462a-a42c-2af206a53531"
+            }
+          }
+        }
+      },
+      "ui": {
+        "width": 158,
+        "height": 138,
+        "text": "Mientras caminabas a las afueras de Carrera Blanca escuchaste unos ruidos de lucha provenientes de una granja. \n\nCuando te acercaste viste a un grupo de guerreros derribando a un gigante, ¡ayúdalos!\n",
+        "color": "#000000",
+        "fontSize": 11,
+        "type": "overlay",
+        "position": "absolute",
+        "top": 120,
+        "left": 205,
+        "bottom": "",
+        "right": "",
+        "textAlign": "left",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "stackingOrder": 1,
+        "ignoreRaycast": true
+      },
+      "name": "RumorText Carrera Blanca",
+      "order": 4.7835484516204065
+    },
+    "7299e1f7-25a8-462a-a42c-2af206a53531": {
+      "id": "7299e1f7-25a8-462a-a42c-2af206a53531",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
+      "components": {
+        "4ca15de1-8b0c-4851-8dfe-299668c9ad22": {
+          "id": "4ca15de1-8b0c-4851-8dfe-299668c9ad22",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "toggleVisibilityOnClick_004f69e9-692f-4c59-ada0-a7fe1309c6f5": {
+          "id": "toggleVisibilityOnClick_004f69e9-692f-4c59-ada0-a7fe1309c6f5",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "b94261b4-e70c-4b2d-b1dd-aa98c1c2ab90"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "7299e1f7-25a8-462a-a42c-2af206a53531"
+            }
+          }
+        },
+        "uiSoundOnClick_77f45b20-c22f-44e3-82f4-cf916d336323": {
+          "id": "uiSoundOnClick_77f45b20-c22f-44e3-82f4-cf916d336323",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
+        }
+      },
+      "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 1,
+        "type": "overlay",
+        "width": 135,
+        "height": 33,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 278,
+        "left": 211,
+        "bottom": "",
+        "right": "",
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Boton.png"
+        },
+        "backgroundSize": "contain",
+        "stackingOrder": 0,
+        "ignoreRaycast": false
+      },
+      "name": "Continuar Boton Carrera Blanca",
+      "order": 15.78795977362857,
+      "disabled": true
+    },
+    "f7d96494-aa56-4d9f-aeff-c3fdf48c0f72": {
+      "id": "f7d96494-aa56-4d9f-aeff-c3fdf48c0f72",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "7299e1f7-25a8-462a-a42c-2af206a53531",
+      "components": {},
+      "name": "Text Continuar Boton Carrera Blanca",
+      "ui": {
+        "width": 75,
+        "height": 14,
+        "text": "Ayudar",
+        "color": "#000000",
+        "fontSize": 11,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "ignoreRaycast": true,
+        "type": "overlay"
+      },
+      "order": -1.484248400351055
+    },
     "d8df7945-6bf4-4160-98fb-b36cbc56eb3f": {
       "id": "d8df7945-6bf4-4160-98fb-b36cbc56eb3f",
       "position": [
@@ -1503,7 +1941,7 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
+            "songUrl": "assets/Sonido/Música/Cueva.mp3",
             "activationDelay": 2500,
             "backgroundFrame": {
               "type": "entity",
@@ -1521,7 +1959,7 @@
           "type": "asset",
           "asset": "assets/Modelos/Marker_Icon.glb"
         },
-        "animationClip": "",
+        "animationClip": "Idle",
         "loop": true
       },
       "name": "Marcador Aquelarre",
@@ -1561,7 +1999,7 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Hibernalia.mp3",
+            "songUrl": "assets/Sonido/Música/Tumba.mp3",
             "activationDelay": 2500,
             "backgroundFrame": {
               "type": "entity",
@@ -1579,7 +2017,7 @@
           "type": "asset",
           "asset": "assets/Modelos/Marker_Icon.glb"
         },
-        "animationClip": "",
+        "animationClip": "Idle",
         "loop": true
       },
       "name": "Marcador Tumba",
@@ -1619,7 +2057,7 @@
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "songUrl": "assets/Sonido/Música/Falkreath.mp3",
+            "songUrl": "assets/Sonido/Música/Cueva.mp3",
             "activationDelay": 2500,
             "backgroundFrame": {
               "type": "entity",
@@ -1637,7 +2075,7 @@
           "type": "asset",
           "asset": "assets/Modelos/Marker_Icon.glb"
         },
-        "animationClip": "",
+        "animationClip": "Idle",
         "loop": true
       },
       "name": "Marcador Gruta",
@@ -1656,8 +2094,8 @@
     "f8f97311-cde4-4832-a046-0d2c892f393d": {
       "id": "f8f97311-cde4-4832-a046-0d2c892f393d",
       "position": [
-        6.604049760296374,
-        0.06087136218856992,
+        5,
+        0,
         0
       ],
       "rotation": [
@@ -1677,19 +2115,9 @@
       "components": {},
       "name": "Image Target Jugador",
       "imageTarget": {
-        "name": "Image Target Jugador-1"
+        "name": "Image Target Jugador"
       },
-      "order": 2.9867414563758095,
-      "collider": {
-        "geometry": {
-          "type": "box",
-          "depth": 0.20000000000000015,
-          "height": 1,
-          "width": 1
-        },
-        "mass": 0,
-        "type": "kinematic"
-      }
+      "order": 2.9867414563758095
     },
     "d815eb8f-ec1c-4b4a-94fe-5351df1910ce": {
       "id": "d815eb8f-ec1c-4b4a-94fe-5351df1910ce",
@@ -1717,10 +2145,6 @@
           "parameters": {
             "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
             "activationDelay": 2500,
-            "playerTarget": {
-              "type": "entity",
-              "id": "f8f97311-cde4-4832-a046-0d2c892f393d"
-            },
             "uiPanel": {
               "type": "entity",
               "id": "f851be6c-7f6b-4fc4-9cf5-7de203845568"
@@ -1759,9 +2183,9 @@
     "3c4b401e-1ba9-4f63-9c68-7c50ab1400bf": {
       "id": "3c4b401e-1ba9-4f63-9c68-7c50ab1400bf",
       "position": [
-        0.018059084244085533,
-        0.004081987576156174,
-        -0.06087136218856992
+        0,
+        0,
+        0
       ],
       "rotation": [
         0.7071067811865475,
@@ -1770,9 +2194,9 @@
         0.7071067811865476
       ],
       "scale": [
-        2.3000000000000007,
-        2.3000000000000007,
-        2.3000000000000007
+        1,
+        1,
+        1
       ],
       "geometry": null,
       "material": null,
@@ -1787,7 +2211,24 @@
         "loop": true
       },
       "name": "Marker_Icon.glb",
-      "order": 13.45379859642859
+      "order": 13.45379859642859,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.5,
+          "height": 1,
+          "width": 0.5
+        },
+        "mass": 0,
+        "type": "kinematic",
+        "gravityFactor": 0,
+        "eventOnly": true,
+        "highPrecision": false,
+        "lockXAxis": true,
+        "lockYAxis": true,
+        "lockZAxis": true,
+        "lockYPosition": true
+      }
     },
     "e2fcf0b9-7dae-4384-be9c-bdef58877cb8": {
       "id": "e2fcf0b9-7dae-4384-be9c-bdef58877cb8",
@@ -1847,9 +2288,9 @@
       "ui": {
         "width": 266,
         "height": 345,
-        "text": "Dovahkiin... te damos la bienvenida al mapa interactivo de Skyrim.\n\nQue este mapa sea tu brújula mientras recorres las inhóspitas tierras del norte. Atraviesa las praderas y cordilleras de la provincia más indómita de Tamriel; desde los majestuosos baluartes de piedra y las grandiosas comarcas, hasta los antros de mala muerte y los rincones más lúgubres envueltos en la bruma. Habla con los lugareños, desentraña antiguos misterios y forja tu propio destino como el verdadero Sangre de Dragón.\n\nPara desplazarte por la región, toma tu tarjeta de personaje y deslízala sobre el mapa hacia las marcas de interés. Cada ubicación revelará valiosa información para tu travesía.\n\nMantente alerta. Si explorando te cruzas con un símbolo como este acércate... podrías escuchar rumores, secretos e información de lo más interesante para tus misiones.",
+        "text": "Dovahkiin, el cartograma de Skyrim se despliega ante ti.\n\nQue este mapa sea tu guía por las agrestes tierras del norte. Atraviesa las tundras y cordilleras de la provincia más indómita de Tamriel: desde sus soberbios baluartes de piedra hasta los rincones más lúgubres envueltos en bruma. \nPresta oído a los lugareños, desentraña misterios arcanos y forja tu destino como el verdadero Sangre de Dragón.\n\nToma tu tarjeta de personaje y deslízala físicamente sobre el mapa hacia las marcas de interés. Al acercarte, cada lugar revelará conocimientos vitales para tu travesía.\n\nMantén los sentidos alerta. Si ves manifestarse este símbolo, acércate. Podrías escuchar secretos y pistas que abrirán nuevas sendas en tu aventura.",
         "color": "#000000",
-        "fontSize": 10,
+        "fontSize": 11,
         "type": "3d",
         "position": "absolute",
         "top": 32,
@@ -2240,6 +2681,143 @@
       "name": "Nombre Ciudad Desbloqueo",
       "order": 8.931083522153346
     },
+    "27f7418d-0db6-446f-bc3a-3589cd615c3f": {
+      "id": "27f7418d-0db6-446f-bc3a-3589cd615c3f",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
+      "components": {
+        "140ffbff-3074-4074-a58b-0b716ba63213": {
+          "id": "140ffbff-3074-4074-a58b-0b716ba63213",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "unlockLocationOnClick_fb9626f7-1879-41ef-8db1-76e144d4d82d": {
+          "id": "unlockLocationOnClick_fb9626f7-1879-41ef-8db1-76e144d4d82d",
+          "name": "unlockLocationOnClick",
+          "parameters": {
+            "panelToHide": {
+              "type": "entity",
+              "id": "a3828348-7945-4330-9d8a-ba310a783670"
+            },
+            "backgroundFrame": {
+              "type": "entity",
+              "id": "473c7055-07c6-433b-b166-03684ad7a490"
+            },
+            "uiNuevaUbicacion": {
+              "type": "entity",
+              "id": "57300f21-0ba5-4056-bd67-6fd11acbc745"
+            },
+            "imageElement": {
+              "type": "entity",
+              "id": "00dcd921-eff0-463b-89f0-3ea9f9e4ffa7"
+            },
+            "nameElement": {
+              "type": "entity",
+              "id": "02257a0f-f15f-4661-ad15-2f6ea61b47a9"
+            },
+            "imageSrc": "assets/Iconos/Ubicaciones/Cueva.png",
+            "locationName": "Túmulo del Hombre de Polvo",
+            "markerToUnlock": {
+              "type": "entity",
+              "id": "0f3a3eb0-58f6-417c-a080-0072c55c600f"
+            },
+            "titleElement": {
+              "type": "entity",
+              "id": "1bfb98b8-d613-4732-b4c2-1fd6e8df9c60"
+            }
+          }
+        },
+        "uiSoundOnClick_3e264ec6-dd2d-44e0-93a1-d94b11367036": {
+          "id": "uiSoundOnClick_3e264ec6-dd2d-44e0-93a1-d94b11367036",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LocalizacionNueva.mp3"
+          }
+        }
+      },
+      "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 1,
+        "type": "overlay",
+        "width": 135,
+        "height": 55,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 272,
+        "left": 408,
+        "bottom": "",
+        "right": "",
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Boton.png"
+        },
+        "backgroundSize": "contain",
+        "stackingOrder": 0,
+        "ignoreRaycast": false
+      },
+      "name": "Continuar Boton 2 Carrera Blanca",
+      "order": 15.78795977362857,
+      "disabled": true
+    },
+    "cd94b452-327d-4cbd-8ec7-772d624b334f": {
+      "id": "cd94b452-327d-4cbd-8ec7-772d624b334f",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "27f7418d-0db6-446f-bc3a-3589cd615c3f",
+      "components": {},
+      "name": "Text Continuar Boton 2 Carrera Blanca",
+      "ui": {
+        "width": 75,
+        "height": 14,
+        "text": "Unirse",
+        "color": "#000000",
+        "fontSize": 11,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "ignoreRaycast": true,
+        "type": "overlay"
+      },
+      "order": -1.484248400351055
+    },
     "bc41e37b-7c08-4da5-8383-59c86233ebe8": {
       "id": "bc41e37b-7c08-4da5-8383-59c86233ebe8",
       "position": [
@@ -2290,6 +2868,63 @@
       "name": "Jugador",
       "order": 17.870906103573944
     },
+    "b94261b4-e70c-4b2d-b1dd-aa98c1c2ab90": {
+      "id": "b94261b4-e70c-4b2d-b1dd-aa98c1c2ab90",
+      "position": [
+        7.474572354737953,
+        0,
+        -0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a3828348-7945-4330-9d8a-ba310a783670",
+      "components": {
+        "28a4b2f8-50d7-4271-ad6d-8b7046bcc83a": {
+          "id": "28a4b2f8-50d7-4271-ad6d-8b7046bcc83a",
+          "name": "typewriterText",
+          "parameters": {
+            "enableTarget": {
+              "type": "entity",
+              "id": "27f7418d-0db6-446f-bc3a-3589cd615c3f"
+            }
+          }
+        }
+      },
+      "ui": {
+        "width": 158,
+        "height": 138,
+        "text": "El grupo de guerreros te elogia y te invita a formar parte de Los Compañeros. \n\nDirígete a Jorrvaskr para hablar con Kodlak Melena Blanca, pero ten cuidado, se rumorea que de allí provienen aullidos extraños en las noches con luna.\n",
+        "color": "#000000",
+        "fontSize": 11,
+        "type": "overlay",
+        "position": "absolute",
+        "top": 120,
+        "left": 391,
+        "bottom": "",
+        "right": "",
+        "textAlign": "left",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "stackingOrder": 1,
+        "ignoreRaycast": true
+      },
+      "name": "RumorText 2 Carrera Blanca",
+      "order": 5.119847914992695,
+      "disabled": true
+    },
     "473c7055-07c6-433b-b166-03684ad7a490": {
       "id": "473c7055-07c6-433b-b166-03684ad7a490",
       "position": [
@@ -2313,8 +2948,8 @@
       "parentId": "6b7f7c30-44aa-4c21-b7fe-7f13fbcdecf0",
       "components": {},
       "ui": {
-        "width": 784,
-        "height": 784,
+        "width": 1000,
+        "height": 1000,
         "type": "overlay",
         "background": "#000000",
         "backgroundOpacity": 0.75,
@@ -2331,7 +2966,7 @@
     "979ed10b-4e87-4608-a7f3-b9932f8ad82e": {
       "id": "979ed10b-4e87-4608-a7f3-b9932f8ad82e",
       "position": [
-        -14.082941358875386,
+        -16.144446708151353,
         -0.22482050095471906,
         0
       ],
@@ -2356,7 +2991,8 @@
         "type": "overlay",
         "width": 412,
         "height": 784
-      }
+      },
+      "disabled": true
     },
     "1019c8fd-6cc1-45a7-877d-19bb4f800b87": {
       "id": "1019c8fd-6cc1-45a7-877d-19bb4f800b87",
@@ -5232,75 +5868,7 @@
       "geometry": null,
       "material": null,
       "parentId": "c73ff058-f645-469a-bb35-a14ec4229d53",
-      "components": {
-        "rumorBookManager_ea9703a9-de92-4947-88de-5f702b747444": {
-          "id": "rumorBookManager_ea9703a9-de92-4947-88de-5f702b747444",
-          "name": "rumorBookManager",
-          "parameters": {
-            "leftText": {
-              "type": "entity",
-              "id": "4a108548-215b-4eda-91e0-9e7aa4751b46"
-            },
-            "rightText": {
-              "type": "entity",
-              "id": "c0cd9611-1fbd-41ef-98af-298b1cd41382"
-            },
-            "leftButton": {
-              "type": "entity",
-              "id": "98332f69-8468-43b4-8f1d-7758ef349921"
-            },
-            "rightButton": {
-              "type": "entity",
-              "id": "eec94ae1-1cd0-4b1f-8d70-bb26ccc882c1"
-            },
-            "nextSpreadBtn": {
-              "type": "entity",
-              "id": "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38"
-            },
-            "prevSpreadBtn": {
-              "type": "entity",
-              "id": "8b6aa4a8-1876-48e0-8715-c533df3ca1e8"
-            },
-            "closeBtn": {
-              "type": "entity",
-              "id": "b5eb8b03-e50b-4e9c-aa63-4065736fa920"
-            },
-            "uiNuevaUbicacion": {
-              "type": "entity",
-              "id": "57300f21-0ba5-4056-bd67-6fd11acbc745"
-            },
-            "imageElement": {
-              "type": "entity",
-              "id": "00dcd921-eff0-463b-89f0-3ea9f9e4ffa7"
-            },
-            "nameElement": {
-              "type": "entity",
-              "id": "02257a0f-f15f-4661-ad15-2f6ea61b47a9"
-            },
-            "titleElement": {
-              "type": "entity",
-              "id": "1bfb98b8-d613-4732-b4c2-1fd6e8df9c60"
-            },
-            "markerCarreraBlanca": {
-              "type": "entity",
-              "id": "0f3a3eb0-58f6-417c-a080-0072c55c600f"
-            },
-            "markerTumulo": {
-              "type": "entity",
-              "id": "d8df7945-6bf4-4160-98fb-b36cbc56eb3f"
-            },
-            "markerAquelarre": {
-              "type": "entity",
-              "id": "26daa6ab-8949-416d-8c69-e6ee9977eaed"
-            },
-            "markerFalkreath": {
-              "type": "entity",
-              "id": "4a8454ed-6fbf-47d1-ae61-45889f692798"
-            },
-            "charIntervalMs": 25
-          }
-        }
-      },
+      "components": {},
       "ui": {
         "width": 784,
         "height": 412,
@@ -5309,10 +5877,9 @@
         "ignoreRaycast": true,
         "opacity": 1
       },
-      "name": "UI Rumor Universal",
+      "name": "UI Rumor Túmulo",
       "order": 10.770442593671289,
-      "hidden": false,
-      "disabled": true
+      "hidden": false
     },
     "e4eb7c40-048c-4a25-9d29-011c87ee1340": {
       "id": "e4eb7c40-048c-4a25-9d29-011c87ee1340",
@@ -5350,7 +5917,7 @@
         "verticalTextAlign": "center",
         "position": "absolute",
         "top": 35,
-        "left": 290,
+        "left": 260,
         "bottom": "",
         "right": ""
       },
@@ -5383,6 +5950,20 @@
           "id": "e95a8d3c-b9b5-46cb-9057-e47b55c0124e",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "toggleVisibilityOnClick_c4fffd70-e3a3-45af-aebc-2100f871f268": {
+          "id": "toggleVisibilityOnClick_c4fffd70-e3a3-45af-aebc-2100f871f268",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "7bde7cc5-a221-4120-b748-55364731abcc"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "17f5fc13-2d5a-4289-be68-7d457fa8dd58"
+            }
+          }
         },
         "uiSoundOnClick_4285b2a4-6c24-45e9-ac22-0fe759ae2e60": {
           "id": "uiSoundOnClick_4285b2a4-6c24-45e9-ac22-0fe759ae2e60",
@@ -5545,8 +6126,19 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
-      "components": {},
+      "parentId": "47f9e2e3-4b36-41a4-9a60-49272e02beb1",
+      "components": {
+        "typewriterText_0b590499-f7e0-470e-90ab-568789070d0a": {
+          "id": "typewriterText_0b590499-f7e0-470e-90ab-568789070d0a",
+          "name": "typewriterText",
+          "parameters": {
+            "enableTarget": {
+              "type": "entity",
+              "id": "98332f69-8468-43b4-8f1d-7758ef349921"
+            }
+          }
+        }
+      },
       "ui": {
         "width": 158,
         "height": 138,
@@ -5590,12 +6182,26 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
+      "parentId": "47f9e2e3-4b36-41a4-9a60-49272e02beb1",
       "components": {
         "4ca15de1-8b0c-4851-8dfe-299668c9ad22": {
           "id": "4ca15de1-8b0c-4851-8dfe-299668c9ad22",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "toggleVisibilityOnClick_68e7cbe5-74d7-4717-9afc-3b5c44eed8f1": {
+          "id": "toggleVisibilityOnClick_68e7cbe5-74d7-4717-9afc-3b5c44eed8f1",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "c0cd9611-1fbd-41ef-98af-298b1cd41382"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "98332f69-8468-43b4-8f1d-7758ef349921"
+            }
+          }
         },
         "uiSoundOnClick_15a75ff8-3810-40fc-828e-c4ffd866a5a1": {
           "id": "uiSoundOnClick_15a75ff8-3810-40fc-828e-c4ffd866a5a1",
@@ -5691,12 +6297,26 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
+      "parentId": "47f9e2e3-4b36-41a4-9a60-49272e02beb1",
       "components": {
         "140ffbff-3074-4074-a58b-0b716ba63213": {
           "id": "140ffbff-3074-4074-a58b-0b716ba63213",
           "name": "pressHoldFeedback",
           "parameters": {}
+        },
+        "toggleVisibilityOnClick_c283a990-fb86-4dea-a756-5a8513c2c56f": {
+          "id": "toggleVisibilityOnClick_c283a990-fb86-4dea-a756-5a8513c2c56f",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "3b474ece-9cef-4d28-842d-87f6358f47a5"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "47f9e2e3-4b36-41a4-9a60-49272e02beb1"
+            }
+          }
         },
         "uiSoundOnClick_28552e70-da5f-41ac-8c6e-f0020bb21025": {
           "id": "uiSoundOnClick_28552e70-da5f-41ac-8c6e-f0020bb21025",
@@ -5792,8 +6412,19 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
-      "components": {},
+      "parentId": "47f9e2e3-4b36-41a4-9a60-49272e02beb1",
+      "components": {
+        "28a4b2f8-50d7-4271-ad6d-8b7046bcc83a": {
+          "id": "28a4b2f8-50d7-4271-ad6d-8b7046bcc83a",
+          "name": "typewriterText",
+          "parameters": {
+            "enableTarget": {
+              "type": "entity",
+              "id": "eec94ae1-1cd0-4b1f-8d70-bb26ccc882c1"
+            }
+          }
+        }
+      },
       "ui": {
         "width": 158,
         "height": 138,
@@ -5817,6 +6448,200 @@
       "name": "RumorText 2 Túmulo",
       "order": 5.119847914992695,
       "disabled": true
+    },
+    "3b474ece-9cef-4d28-842d-87f6358f47a5": {
+      "id": "3b474ece-9cef-4d28-842d-87f6358f47a5",
+      "position": [
+        7.474572354737953,
+        0,
+        -0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
+      "components": {
+        "typewriterText_166f6217-1696-473a-9ad5-d0a95357ff64": {
+          "id": "typewriterText_166f6217-1696-473a-9ad5-d0a95357ff64",
+          "name": "typewriterText",
+          "parameters": {
+            "enableTarget": {
+              "type": "entity",
+              "id": "3b928223-8e7b-4d98-8041-04b9e9e82b38"
+            }
+          }
+        }
+      },
+      "ui": {
+        "width": 158,
+        "height": 138,
+        "text": "Tras el descubrimiento sobre Farkas y los compañeros, te adentras más en la tumba hasta que obtienes el fragmento de la legendaria Wuuthrad.",
+        "color": "#000000",
+        "fontSize": 11,
+        "type": "overlay",
+        "position": "absolute",
+        "top": 120,
+        "left": 205,
+        "bottom": "",
+        "right": "",
+        "textAlign": "left",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "stackingOrder": 1,
+        "ignoreRaycast": true
+      },
+      "name": "RumorText 3 Túmulo",
+      "order": 4.7835484516204065,
+      "disabled": true
+    },
+    "3b928223-8e7b-4d98-8041-04b9e9e82b38": {
+      "id": "3b928223-8e7b-4d98-8041-04b9e9e82b38",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
+      "components": {
+        "4ca15de1-8b0c-4851-8dfe-299668c9ad22": {
+          "id": "4ca15de1-8b0c-4851-8dfe-299668c9ad22",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "unlockLocationOnClick_e9143240-f4c4-4aee-a281-1a8e69abb230": {
+          "id": "unlockLocationOnClick_e9143240-f4c4-4aee-a281-1a8e69abb230",
+          "name": "unlockLocationOnClick",
+          "parameters": {
+            "panelToHide": {
+              "type": "entity",
+              "id": "17f5fc13-2d5a-4289-be68-7d457fa8dd58"
+            },
+            "backgroundFrame": {
+              "type": "entity",
+              "id": "473c7055-07c6-433b-b166-03684ad7a490"
+            },
+            "uiNuevaUbicacion": {
+              "type": "entity",
+              "id": "57300f21-0ba5-4056-bd67-6fd11acbc745"
+            },
+            "imageElement": {
+              "type": "entity",
+              "id": "00dcd921-eff0-463b-89f0-3ea9f9e4ffa7"
+            },
+            "nameElement": {
+              "type": "entity",
+              "id": "02257a0f-f15f-4661-ad15-2f6ea61b47a9"
+            },
+            "imageSrc": "assets/Iconos/Ubicaciones/Cueva.png",
+            "locationName": "Aquelarre de Glenmoril",
+            "markerToUnlock": {
+              "type": "entity",
+              "id": "d8df7945-6bf4-4160-98fb-b36cbc56eb3f"
+            },
+            "titleElement": {
+              "type": "entity",
+              "id": "1bfb98b8-d613-4732-b4c2-1fd6e8df9c60"
+            }
+          }
+        },
+        "uiSoundOnClick_88d9e559-4fc2-459c-833c-7dee69d9f745": {
+          "id": "uiSoundOnClick_88d9e559-4fc2-459c-833c-7dee69d9f745",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LocalizacionNueva.mp3"
+          }
+        }
+      },
+      "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 1,
+        "type": "overlay",
+        "width": 135,
+        "height": 33,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 278,
+        "left": 208,
+        "bottom": "",
+        "right": "",
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Boton.png"
+        },
+        "backgroundSize": "contain",
+        "stackingOrder": 0,
+        "ignoreRaycast": false
+      },
+      "name": "Continuar Boton 3 Túmulo",
+      "order": 4.995365630962669,
+      "disabled": true
+    },
+    "406e2a67-1cfe-4ece-bb4e-100dd028fb23": {
+      "id": "406e2a67-1cfe-4ece-bb4e-100dd028fb23",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3b928223-8e7b-4d98-8041-04b9e9e82b38",
+      "components": {},
+      "name": "Text Continuar Boton 3 Túmulo",
+      "ui": {
+        "width": 75,
+        "height": 14,
+        "text": "Obtener",
+        "color": "#000000",
+        "fontSize": 11,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "ignoreRaycast": true,
+        "type": "overlay"
+      },
+      "order": -1.484248400351055
     },
     "7bde7cc5-a221-4120-b748-55364731abcc": {
       "id": "7bde7cc5-a221-4120-b748-55364731abcc",
@@ -5851,7 +6676,8 @@
       },
       "name": "UI Ubicación Túmulo",
       "order": 9.046109062124033,
-      "hidden": false
+      "hidden": false,
+      "disabled": true
     },
     "8972fb3e-0ceb-4334-9ba5-9816194a669b": {
       "id": "8972fb3e-0ceb-4334-9ba5-9816194a669b",
@@ -6113,16 +6939,15 @@
           "name": "pressHoldFeedback",
           "parameters": {}
         },
-        "openRumorBtn_c4fb1fef-5e52-4973-b3ed-88d49b4485d4": {
-          "id": "openRumorBtn_c4fb1fef-5e52-4973-b3ed-88d49b4485d4",
-          "name": "openRumorBtn",
+        "toggleVisibilityOnClick_75f2ea47-51ec-4038-8870-89beee2a917e": {
+          "id": "toggleVisibilityOnClick_75f2ea47-51ec-4038-8870-89beee2a917e",
+          "name": "toggleVisibilityOnClick",
           "parameters": {
-            "rumorId": "Túmulo",
-            "universalPanel": {
+            "showTarget1": {
               "type": "entity",
               "id": "17f5fc13-2d5a-4289-be68-7d457fa8dd58"
             },
-            "cityPanelToHide": {
+            "hideTarget1": {
               "type": "entity",
               "id": "7bde7cc5-a221-4120-b748-55364731abcc"
             }
@@ -6292,6 +7117,631 @@
         }
       },
       "order": -1.484248400351055
+    },
+    "69f250f7-aea0-4fce-907a-00a8cf5ef657": {
+      "id": "69f250f7-aea0-4fce-907a-00a8cf5ef657",
+      "position": [
+        -7.474572354737953,
+        0,
+        0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "c73ff058-f645-469a-bb35-a14ec4229d53",
+      "components": {},
+      "ui": {
+        "width": 784,
+        "height": 412,
+        "type": "overlay",
+        "stackingOrder": 0,
+        "ignoreRaycast": true,
+        "opacity": 1
+      },
+      "name": "UI Rumor Aquelarre",
+      "order": 10.770442593671289,
+      "hidden": false,
+      "disabled": true
+    },
+    "638fe5ea-0106-4d81-9e96-4d78e5c458c0": {
+      "id": "638fe5ea-0106-4d81-9e96-4d78e5c458c0",
+      "position": [
+        -0.21769382646136082,
+        0.2902584352818147,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "69f250f7-aea0-4fce-907a-00a8cf5ef657",
+      "components": {},
+      "ui": {
+        "width": 230,
+        "height": 40,
+        "text": "Rumor",
+        "color": "#ffffff",
+        "fontSize": 30,
+        "type": "overlay",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
+        },
+        "verticalTextAlign": "center",
+        "position": "absolute",
+        "top": 35,
+        "left": 290,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Título (1) Aquelarre",
+      "order": 7.98912039642944
+    },
+    "b02c8b73-a87b-4426-ab76-29ac48bba5d2": {
+      "id": "b02c8b73-a87b-4426-ab76-29ac48bba5d2",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "69f250f7-aea0-4fce-907a-00a8cf5ef657",
+      "components": {
+        "e95a8d3c-b9b5-46cb-9057-e47b55c0124e": {
+          "id": "e95a8d3c-b9b5-46cb-9057-e47b55c0124e",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "toggleVisibilityOnClick_6d950af0-9e21-4e60-af89-a2e408303d09": {
+          "id": "toggleVisibilityOnClick_6d950af0-9e21-4e60-af89-a2e408303d09",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "cdeb5aea-cea5-4c6f-a544-5ccfbb748161"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "69f250f7-aea0-4fce-907a-00a8cf5ef657"
+            }
+          }
+        },
+        "uiSoundOnClick_3d9bb321-5346-4e62-9554-556816ea7d0c": {
+          "id": "uiSoundOnClick_3d9bb321-5346-4e62-9554-556816ea7d0c",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
+          }
+        }
+      },
+      "ui": {
+        "type": "overlay",
+        "width": 100,
+        "height": 36,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 309,
+        "left": 635,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Atrás Aquelarre",
+      "order": 13.287509151763638
+    },
+    "30ce80d3-0f1f-4598-b2e2-a982136c4fcb": {
+      "id": "30ce80d3-0f1f-4598-b2e2-a982136c4fcb",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b02c8b73-a87b-4426-ab76-29ac48bba5d2",
+      "components": {},
+      "name": "Icon (1) Aquelarre",
+      "ui": {
+        "width": 25,
+        "height": 25,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Arrow Back.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "order": 0.2460354233958394
+    },
+    "0d573d81-58af-48a9-b7c9-0f5a72c9ff04": {
+      "id": "0d573d81-58af-48a9-b7c9-0f5a72c9ff04",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b02c8b73-a87b-4426-ab76-29ac48bba5d2",
+      "components": {},
+      "name": "Text (1) Aquelarre",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Atrás",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
+        }
+      },
+      "order": -1.484248400351055
+    },
+    "9f003962-bf22-4c3a-8e64-10fa4e3e580c": {
+      "id": "9f003962-bf22-4c3a-8e64-10fa4e3e580c",
+      "position": [
+        -0.5914883289482926,
+        0,
+        0.32215366481618135
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "69f250f7-aea0-4fce-907a-00a8cf5ef657",
+      "components": {},
+      "ui": {
+        "type": "overlay",
+        "width": 435,
+        "height": 273,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Book.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "position": "absolute",
+        "top": 90,
+        "left": 156,
+        "bottom": "",
+        "right": "",
+        "ignoreRaycast": true,
+        "stackingOrder": -1
+      },
+      "name": "Libro Aquelarre",
+      "order": 5.552108197422722,
+      "hidden": false
+    },
+    "eccad6bc-5288-4479-b898-b5d9fc541a45": {
+      "id": "eccad6bc-5288-4479-b898-b5d9fc541a45",
+      "position": [
+        7.474572354737953,
+        0,
+        -0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "69f250f7-aea0-4fce-907a-00a8cf5ef657",
+      "components": {
+        "typewriterText_6a1144e7-62d1-43a5-9057-8c81c68508b4": {
+          "id": "typewriterText_6a1144e7-62d1-43a5-9057-8c81c68508b4",
+          "name": "typewriterText",
+          "parameters": {
+            "enableTarget": {
+              "type": "entity",
+              "id": "0c1ed59c-36fb-4c8d-9006-95e3f71ac40c"
+            }
+          }
+        }
+      },
+      "ui": {
+        "width": 158,
+        "height": 138,
+        "text": "Tras unirte al Círculo y contraer la licantropía, Kodlak Melena Blanca acude a ti en busca de ayuda. \nTe cuenta que ha descubierto cómo curar la licantropía. \nTodo se reduce al origen de la maldición. \nDebes encontrar a las Brujas de Glenmoril y tomar sus cabezas.",
+        "color": "#000000",
+        "fontSize": 11,
+        "type": "overlay",
+        "position": "absolute",
+        "top": 120,
+        "left": 205,
+        "bottom": "",
+        "right": "",
+        "textAlign": "left",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "stackingOrder": 1,
+        "ignoreRaycast": true
+      },
+      "name": "RumorText Aquelarre",
+      "order": 4.7835484516204065
+    },
+    "0c1ed59c-36fb-4c8d-9006-95e3f71ac40c": {
+      "id": "0c1ed59c-36fb-4c8d-9006-95e3f71ac40c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "69f250f7-aea0-4fce-907a-00a8cf5ef657",
+      "components": {
+        "4ca15de1-8b0c-4851-8dfe-299668c9ad22": {
+          "id": "4ca15de1-8b0c-4851-8dfe-299668c9ad22",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "toggleVisibilityOnClick_e7d7c12f-1f52-49f8-84d9-5f3b35ef89f2": {
+          "id": "toggleVisibilityOnClick_e7d7c12f-1f52-49f8-84d9-5f3b35ef89f2",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "8ec9df65-4526-44cd-8164-84096ed01e55"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "0c1ed59c-36fb-4c8d-9006-95e3f71ac40c"
+            }
+          }
+        },
+        "uiSoundOnClick_609fcc38-357e-4d51-91b2-c356e0215810": {
+          "id": "uiSoundOnClick_609fcc38-357e-4d51-91b2-c356e0215810",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
+        }
+      },
+      "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 1,
+        "type": "overlay",
+        "width": 135,
+        "height": 33,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 278,
+        "left": 211,
+        "bottom": "",
+        "right": "",
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Boton.png"
+        },
+        "backgroundSize": "contain",
+        "stackingOrder": 0,
+        "ignoreRaycast": false
+      },
+      "name": "Continuar Boton Aquelarre",
+      "order": 15.78795977362857,
+      "disabled": true
+    },
+    "110ab055-b9d7-4fdc-b26c-0e6d91e7cc7d": {
+      "id": "110ab055-b9d7-4fdc-b26c-0e6d91e7cc7d",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "0c1ed59c-36fb-4c8d-9006-95e3f71ac40c",
+      "components": {},
+      "name": "Text Continuar Boton Aquelarre",
+      "ui": {
+        "width": 75,
+        "height": 12,
+        "text": "Cazar",
+        "color": "#000000",
+        "fontSize": 11,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "ignoreRaycast": true,
+        "type": "overlay"
+      },
+      "order": -1.484248400351055
+    },
+    "6c49c3fa-93a5-4be6-8f11-f079a899920c": {
+      "id": "6c49c3fa-93a5-4be6-8f11-f079a899920c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "69f250f7-aea0-4fce-907a-00a8cf5ef657",
+      "components": {
+        "140ffbff-3074-4074-a58b-0b716ba63213": {
+          "id": "140ffbff-3074-4074-a58b-0b716ba63213",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "unlockLocationOnClick_1ed2281e-d507-43dc-914d-62280c9ed354": {
+          "id": "unlockLocationOnClick_1ed2281e-d507-43dc-914d-62280c9ed354",
+          "name": "unlockLocationOnClick",
+          "parameters": {
+            "panelToHide": {
+              "type": "entity",
+              "id": "69f250f7-aea0-4fce-907a-00a8cf5ef657"
+            },
+            "backgroundFrame": {
+              "type": "entity",
+              "id": "473c7055-07c6-433b-b166-03684ad7a490"
+            },
+            "uiNuevaUbicacion": {
+              "type": "entity",
+              "id": "57300f21-0ba5-4056-bd67-6fd11acbc745"
+            },
+            "imageElement": {
+              "type": "entity",
+              "id": "00dcd921-eff0-463b-89f0-3ea9f9e4ffa7"
+            },
+            "nameElement": {
+              "type": "entity",
+              "id": "02257a0f-f15f-4661-ad15-2f6ea61b47a9"
+            },
+            "imageSrc": "assets/Iconos/Ubicaciones/Cueva.png",
+            "locationName": "Tumba de Ysgramor",
+            "markerToUnlock": {
+              "type": "entity",
+              "id": "26daa6ab-8949-416d-8c69-e6ee9977eaed"
+            },
+            "titleElement": {
+              "type": "entity",
+              "id": "1bfb98b8-d613-4732-b4c2-1fd6e8df9c60"
+            }
+          }
+        },
+        "uiSoundOnClick_5affb9e0-24e8-4a16-a75b-d8fc32a0087d": {
+          "id": "uiSoundOnClick_5affb9e0-24e8-4a16-a75b-d8fc32a0087d",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LocalizacionNueva.mp3"
+          }
+        }
+      },
+      "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 1,
+        "type": "overlay",
+        "width": 135,
+        "height": 55,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 272,
+        "left": 408,
+        "bottom": "",
+        "right": "",
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Boton.png"
+        },
+        "backgroundSize": "contain",
+        "stackingOrder": 0,
+        "ignoreRaycast": false
+      },
+      "name": "Continuar Boton 2 Aquelarre",
+      "order": 15.78795977362857,
+      "disabled": true
+    },
+    "2273f7f5-5aff-47bd-a95a-67254e7be70b": {
+      "id": "2273f7f5-5aff-47bd-a95a-67254e7be70b",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "6c49c3fa-93a5-4be6-8f11-f079a899920c",
+      "components": {},
+      "name": "Text Continuar Boton 2 Aquelarre",
+      "ui": {
+        "width": 75,
+        "height": 14,
+        "text": "Continuar",
+        "color": "#000000",
+        "fontSize": 11,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "ignoreRaycast": true,
+        "type": "overlay"
+      },
+      "order": -1.484248400351055
+    },
+    "8ec9df65-4526-44cd-8164-84096ed01e55": {
+      "id": "8ec9df65-4526-44cd-8164-84096ed01e55",
+      "position": [
+        7.474572354737953,
+        0,
+        -0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "69f250f7-aea0-4fce-907a-00a8cf5ef657",
+      "components": {
+        "28a4b2f8-50d7-4271-ad6d-8b7046bcc83a": {
+          "id": "28a4b2f8-50d7-4271-ad6d-8b7046bcc83a",
+          "name": "typewriterText",
+          "parameters": {
+            "enableTarget": {
+              "type": "entity",
+              "id": "6c49c3fa-93a5-4be6-8f11-f079a899920c"
+            }
+          }
+        }
+      },
+      "ui": {
+        "width": 158,
+        "height": 138,
+        "text": "Lograste sobrevivir a la magia oscura de las brujas. \n\nUsaste tu propia maldición en su contra y las devoraste hasta que solo quedaron sus cabezas. \n\nEs momento de que vuelvas a Jorrvaskr.",
+        "color": "#000000",
+        "fontSize": 11,
+        "type": "overlay",
+        "position": "absolute",
+        "top": 120,
+        "left": 391,
+        "bottom": "",
+        "right": "",
+        "textAlign": "left",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "stackingOrder": 1,
+        "ignoreRaycast": true
+      },
+      "name": "RumorText 2 Aquelarre",
+      "order": 5.119847914992695,
+      "disabled": true
     },
     "cdeb5aea-cea5-4c6f-a544-5ccfbb748161": {
       "id": "cdeb5aea-cea5-4c6f-a544-5ccfbb748161",
@@ -6589,16 +8039,15 @@
           "name": "pressHoldFeedback",
           "parameters": {}
         },
-        "openRumorBtn_5133d4ba-27f1-4a70-b446-f199942fcae5": {
-          "id": "openRumorBtn_5133d4ba-27f1-4a70-b446-f199942fcae5",
-          "name": "openRumorBtn",
+        "toggleVisibilityOnClick_93d4ef67-9704-41fc-9cfa-9ff18ae0433b": {
+          "id": "toggleVisibilityOnClick_93d4ef67-9704-41fc-9cfa-9ff18ae0433b",
+          "name": "toggleVisibilityOnClick",
           "parameters": {
-            "rumorId": "Aquelarre",
-            "universalPanel": {
+            "showTarget1": {
               "type": "entity",
-              "id": "17f5fc13-2d5a-4289-be68-7d457fa8dd58"
+              "id": "69f250f7-aea0-4fce-907a-00a8cf5ef657"
             },
-            "cityPanelToHide": {
+            "hideTarget1": {
               "type": "entity",
               "id": "cdeb5aea-cea5-4c6f-a544-5ccfbb748161"
             }
@@ -6768,6 +8217,628 @@
         }
       },
       "order": -1.484248400351055
+    },
+    "d2f4b63a-6150-4fb9-bba7-26a520955969": {
+      "id": "d2f4b63a-6150-4fb9-bba7-26a520955969",
+      "position": [
+        -7.474572354737953,
+        0,
+        0.17080774443099267
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "c73ff058-f645-469a-bb35-a14ec4229d53",
+      "components": {},
+      "ui": {
+        "width": 784,
+        "height": 412,
+        "type": "overlay",
+        "stackingOrder": 0,
+        "ignoreRaycast": true,
+        "opacity": 1
+      },
+      "name": "UI Rumor Tumba",
+      "order": 10.770442593671289,
+      "hidden": false,
+      "disabled": true
+    },
+    "ded669e2-fabc-41a3-a571-7bf30be1f485": {
+      "id": "ded669e2-fabc-41a3-a571-7bf30be1f485",
+      "position": [
+        -0.21769382646136082,
+        0.2902584352818147,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "d2f4b63a-6150-4fb9-bba7-26a520955969",
+      "components": {},
+      "ui": {
+        "width": 230,
+        "height": 40,
+        "text": "Rumor",
+        "color": "#ffffff",
+        "fontSize": 30,
+        "type": "overlay",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
+        },
+        "verticalTextAlign": "center",
+        "position": "absolute",
+        "top": 35,
+        "left": 290,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Título (1) Tumba",
+      "order": 7.98912039642944
+    },
+    "4625c0a4-a6e7-4881-8fbe-4821305e723e": {
+      "id": "4625c0a4-a6e7-4881-8fbe-4821305e723e",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "d2f4b63a-6150-4fb9-bba7-26a520955969",
+      "components": {
+        "e95a8d3c-b9b5-46cb-9057-e47b55c0124e": {
+          "id": "e95a8d3c-b9b5-46cb-9057-e47b55c0124e",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "toggleVisibilityOnClick_83b16649-7900-4d46-99b4-9b8c698098d8": {
+          "id": "toggleVisibilityOnClick_83b16649-7900-4d46-99b4-9b8c698098d8",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "3dc108e0-b73f-4f78-96b6-076a59c3d397"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "d2f4b63a-6150-4fb9-bba7-26a520955969"
+            }
+          }
+        },
+        "uiSoundOnClick_1f1ccab8-a4a9-493e-bd56-c690b7a24ce6": {
+          "id": "uiSoundOnClick_1f1ccab8-a4a9-493e-bd56-c690b7a24ce6",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
+          }
+        }
+      },
+      "ui": {
+        "type": "overlay",
+        "width": 100,
+        "height": 36,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 309,
+        "left": 635,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Atrás Tumba",
+      "order": 13.287509151763638
+    },
+    "331a8c41-079d-4572-acc3-97e988870e5e": {
+      "id": "331a8c41-079d-4572-acc3-97e988870e5e",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4625c0a4-a6e7-4881-8fbe-4821305e723e",
+      "components": {},
+      "name": "Icon (1) Tumba",
+      "ui": {
+        "width": 25,
+        "height": 25,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Arrow Back.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "order": 0.2460354233958394
+    },
+    "8d140fbc-881a-4664-9fb3-f0e41d4bcb16": {
+      "id": "8d140fbc-881a-4664-9fb3-f0e41d4bcb16",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4625c0a4-a6e7-4881-8fbe-4821305e723e",
+      "components": {},
+      "name": "Text (1) Tumba",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Atrás",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
+        }
+      },
+      "order": -1.484248400351055
+    },
+    "50d185bc-5249-44ce-8332-6e505f19a617": {
+      "id": "50d185bc-5249-44ce-8332-6e505f19a617",
+      "position": [
+        -0.5914883289482926,
+        0,
+        0.32215366481618135
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "d2f4b63a-6150-4fb9-bba7-26a520955969",
+      "components": {},
+      "ui": {
+        "type": "overlay",
+        "width": 435,
+        "height": 273,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Book.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "position": "absolute",
+        "top": 90,
+        "left": 156,
+        "bottom": "",
+        "right": "",
+        "ignoreRaycast": true,
+        "stackingOrder": -1
+      },
+      "name": "Libro Tumba",
+      "order": 5.552108197422722,
+      "hidden": false
+    },
+    "8260b88a-eb70-4f26-80d0-303f0f5d103f": {
+      "id": "8260b88a-eb70-4f26-80d0-303f0f5d103f",
+      "position": [
+        7.474572354737953,
+        0,
+        -0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "d2f4b63a-6150-4fb9-bba7-26a520955969",
+      "components": {
+        "typewriterText_5ada8b76-3264-4866-a0c7-be091c933294": {
+          "id": "typewriterText_5ada8b76-3264-4866-a0c7-be091c933294",
+          "name": "typewriterText",
+          "parameters": {
+            "enableTarget": {
+              "type": "entity",
+              "id": "457628ff-d7b1-41f1-8b30-c1981cf5e48c"
+            }
+          }
+        }
+      },
+      "ui": {
+        "width": 158,
+        "height": 138,
+        "text": "Al regresar descubres que la Mano de Plata ha asesinado a Kodlak, lo que desata un ataque vengativo. \nTras aniquilar a la facción y recuperar el último fragmento de la Wuuthrad, te diriges al lugar de descanso de Ysgramor para cumplir la voluntad final de tu líder y curar su espíritu de la maldición.",
+        "color": "#000000",
+        "fontSize": 11,
+        "type": "overlay",
+        "position": "absolute",
+        "top": 120,
+        "left": 205,
+        "bottom": "",
+        "right": "",
+        "textAlign": "left",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "stackingOrder": 1,
+        "ignoreRaycast": true
+      },
+      "name": "RumorText Tumba",
+      "order": 4.7835484516204065
+    },
+    "457628ff-d7b1-41f1-8b30-c1981cf5e48c": {
+      "id": "457628ff-d7b1-41f1-8b30-c1981cf5e48c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "d2f4b63a-6150-4fb9-bba7-26a520955969",
+      "components": {
+        "4ca15de1-8b0c-4851-8dfe-299668c9ad22": {
+          "id": "4ca15de1-8b0c-4851-8dfe-299668c9ad22",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "toggleVisibilityOnClick_851cb335-a4f3-4249-9ea3-6a0f4cef19b4": {
+          "id": "toggleVisibilityOnClick_851cb335-a4f3-4249-9ea3-6a0f4cef19b4",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "336cca6b-d49b-465b-ae4e-e8953bc501b0"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "457628ff-d7b1-41f1-8b30-c1981cf5e48c"
+            }
+          }
+        },
+        "uiSoundOnClick_f5d71778-7534-4229-8736-1c8ac3b4e801": {
+          "id": "uiSoundOnClick_f5d71778-7534-4229-8736-1c8ac3b4e801",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
+        }
+      },
+      "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 1,
+        "type": "overlay",
+        "width": 145,
+        "height": 35.44444444444444,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 296,
+        "left": 208,
+        "bottom": "",
+        "right": "",
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Boton.png"
+        },
+        "backgroundSize": "contain",
+        "stackingOrder": 0,
+        "ignoreRaycast": false
+      },
+      "name": "Continuar Boton Tumba",
+      "order": 15.78795977362857,
+      "disabled": true
+    },
+    "8f3898d9-00d2-499d-b801-1c1fafcf534c": {
+      "id": "8f3898d9-00d2-499d-b801-1c1fafcf534c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "457628ff-d7b1-41f1-8b30-c1981cf5e48c",
+      "components": {},
+      "name": "Text Continuar Boton Tumba",
+      "ui": {
+        "width": 81,
+        "height": 14,
+        "text": "¡Por Kodlak!",
+        "color": "#000000",
+        "fontSize": 11,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "ignoreRaycast": true,
+        "type": "overlay"
+      },
+      "order": -1.484248400351055
+    },
+    "fe9f381b-023d-4308-a927-5e2d2e2301ef": {
+      "id": "fe9f381b-023d-4308-a927-5e2d2e2301ef",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "d2f4b63a-6150-4fb9-bba7-26a520955969",
+      "components": {
+        "140ffbff-3074-4074-a58b-0b716ba63213": {
+          "id": "140ffbff-3074-4074-a58b-0b716ba63213",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "unlockLocationOnClick_b5d42903-0198-4c1a-9c7f-8f4e545e585d": {
+          "id": "unlockLocationOnClick_b5d42903-0198-4c1a-9c7f-8f4e545e585d",
+          "name": "unlockLocationOnClick",
+          "parameters": {
+            "panelToHide": {
+              "type": "entity",
+              "id": "d2f4b63a-6150-4fb9-bba7-26a520955969"
+            },
+            "backgroundFrame": {
+              "type": "entity",
+              "id": "473c7055-07c6-433b-b166-03684ad7a490"
+            },
+            "uiNuevaUbicacion": {
+              "type": "entity",
+              "id": "57300f21-0ba5-4056-bd67-6fd11acbc745"
+            },
+            "imageElement": {
+              "type": "entity",
+              "id": "00dcd921-eff0-463b-89f0-3ea9f9e4ffa7"
+            },
+            "nameElement": {
+              "type": "entity",
+              "id": "02257a0f-f15f-4661-ad15-2f6ea61b47a9"
+            },
+            "titleElement": {
+              "type": "entity",
+              "id": "1bfb98b8-d613-4732-b4c2-1fd6e8df9c60"
+            },
+            "titleText": "Misiones Completadas",
+            "locationName": "Senda de Los Compañeros",
+            "imageSrc": "assets/Iconos/UI/Wolf.png"
+          }
+        },
+        "uiSoundOnClick_36e6d37f-67fe-42b4-9af9-d5df7a07dc85": {
+          "id": "uiSoundOnClick_36e6d37f-67fe-42b4-9af9-d5df7a07dc85",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/MisionCompletada.mp3"
+          }
+        }
+      },
+      "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 1,
+        "type": "overlay",
+        "width": 135,
+        "height": 55,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 286,
+        "left": 408,
+        "bottom": "",
+        "right": "",
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Boton.png"
+        },
+        "backgroundSize": "contain",
+        "stackingOrder": 0,
+        "ignoreRaycast": false
+      },
+      "name": "Continuar Boton 2 Tumba",
+      "order": 15.78795977362857,
+      "disabled": true
+    },
+    "86a6a45e-6d7a-4170-b646-8f7dda8becfc": {
+      "id": "86a6a45e-6d7a-4170-b646-8f7dda8becfc",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "fe9f381b-023d-4308-a927-5e2d2e2301ef",
+      "components": {},
+      "name": "Text Continuar Boton 2 Tumba",
+      "ui": {
+        "width": 75,
+        "height": 14,
+        "text": "Terminar",
+        "color": "#000000",
+        "fontSize": 11,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "ignoreRaycast": true,
+        "type": "overlay"
+      },
+      "order": -1.484248400351055
+    },
+    "336cca6b-d49b-465b-ae4e-e8953bc501b0": {
+      "id": "336cca6b-d49b-465b-ae4e-e8953bc501b0",
+      "position": [
+        7.474572354737953,
+        0,
+        -0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "d2f4b63a-6150-4fb9-bba7-26a520955969",
+      "components": {
+        "28a4b2f8-50d7-4271-ad6d-8b7046bcc83a": {
+          "id": "28a4b2f8-50d7-4271-ad6d-8b7046bcc83a",
+          "name": "typewriterText",
+          "parameters": {
+            "enableTarget": {
+              "type": "entity",
+              "id": "fe9f381b-023d-4308-a927-5e2d2e2301ef"
+            }
+          }
+        }
+      },
+      "ui": {
+        "width": 158,
+        "height": 138,
+        "text": "En las profundidades del salón funerario, invocas al espíritu de Kodlak para cumplir su última voluntad. \nAl quemar la cabeza de una Bruja de Glenmoril en el pedestal, se manifiesta el espíritu de la bestia; derrótalo para curar la maldición y permitir que tu líder descanse al fin en Sovngarde.",
+        "color": "#000000",
+        "fontSize": 11,
+        "type": "overlay",
+        "position": "absolute",
+        "top": 120,
+        "left": 391,
+        "bottom": "",
+        "right": "",
+        "textAlign": "left",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "stackingOrder": 1,
+        "ignoreRaycast": true
+      },
+      "name": "RumorText 2 Tumba",
+      "order": 5.119847914992695,
+      "disabled": true
     },
     "3dc108e0-b73f-4f78-96b6-076a59c3d397": {
       "id": "3dc108e0-b73f-4f78-96b6-076a59c3d397",
@@ -7065,16 +9136,15 @@
           "name": "pressHoldFeedback",
           "parameters": {}
         },
-        "openRumorBtn_27893864-2d8f-44a9-90b9-87ba58b2bc0a": {
-          "id": "openRumorBtn_27893864-2d8f-44a9-90b9-87ba58b2bc0a",
-          "name": "openRumorBtn",
+        "toggleVisibilityOnClick_e34116f8-a7dc-43ed-837e-651b58629896": {
+          "id": "toggleVisibilityOnClick_e34116f8-a7dc-43ed-837e-651b58629896",
+          "name": "toggleVisibilityOnClick",
           "parameters": {
-            "rumorId": "Tumba",
-            "universalPanel": {
+            "showTarget1": {
               "type": "entity",
-              "id": "17f5fc13-2d5a-4289-be68-7d457fa8dd58"
+              "id": "d2f4b63a-6150-4fb9-bba7-26a520955969"
             },
-            "cityPanelToHide": {
+            "hideTarget1": {
               "type": "entity",
               "id": "3dc108e0-b73f-4f78-96b6-076a59c3d397"
             }
@@ -7244,6 +9314,266 @@
         }
       },
       "order": -1.484248400351055
+    },
+    "535aff49-b614-4229-85e5-251b2d7df5a3": {
+      "id": "535aff49-b614-4229-85e5-251b2d7df5a3",
+      "position": [
+        -7.474572354737953,
+        0,
+        0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "c73ff058-f645-469a-bb35-a14ec4229d53",
+      "components": {},
+      "ui": {
+        "width": 784,
+        "height": 412,
+        "type": "overlay",
+        "stackingOrder": 0,
+        "ignoreRaycast": true,
+        "opacity": 1
+      },
+      "name": "UI Rumor Falkreath",
+      "order": 10.770442593671289,
+      "hidden": false,
+      "disabled": true
+    },
+    "0a187d51-91b9-4454-84c8-c7bb1e76d292": {
+      "id": "0a187d51-91b9-4454-84c8-c7bb1e76d292",
+      "position": [
+        -0.21769382646136082,
+        0.2902584352818147,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "535aff49-b614-4229-85e5-251b2d7df5a3",
+      "components": {},
+      "ui": {
+        "width": 230,
+        "height": 40,
+        "text": "Rumor",
+        "color": "#ffffff",
+        "fontSize": 30,
+        "type": "overlay",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
+        },
+        "verticalTextAlign": "center",
+        "position": "absolute",
+        "top": 35,
+        "left": 290,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Título (1) Falkreath",
+      "order": 7.98912039642944
+    },
+    "70293bad-6dc1-4fbf-bc48-c9491561a768": {
+      "id": "70293bad-6dc1-4fbf-bc48-c9491561a768",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "535aff49-b614-4229-85e5-251b2d7df5a3",
+      "components": {
+        "e95a8d3c-b9b5-46cb-9057-e47b55c0124e": {
+          "id": "e95a8d3c-b9b5-46cb-9057-e47b55c0124e",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "toggleVisibilityOnClick_55454cee-19b3-49e3-ac97-2b1501e62b7b": {
+          "id": "toggleVisibilityOnClick_55454cee-19b3-49e3-ac97-2b1501e62b7b",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "1b515230-1adf-48c0-b5be-d369965154cf"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "535aff49-b614-4229-85e5-251b2d7df5a3"
+            }
+          }
+        },
+        "uiSoundOnClick_20c852b7-5491-4354-babc-3d2b13edd0d5": {
+          "id": "uiSoundOnClick_20c852b7-5491-4354-babc-3d2b13edd0d5",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
+          }
+        }
+      },
+      "ui": {
+        "type": "overlay",
+        "width": 100,
+        "height": 36,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 309,
+        "left": 635,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Atrás Falkreath",
+      "order": 13.287509151763638
+    },
+    "3c0d92df-38de-4f5f-a626-d47d0040c7a3": {
+      "id": "3c0d92df-38de-4f5f-a626-d47d0040c7a3",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "70293bad-6dc1-4fbf-bc48-c9491561a768",
+      "components": {},
+      "name": "Icon (1) Falkreath",
+      "ui": {
+        "width": 25,
+        "height": 25,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Arrow Back.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "order": 0.2460354233958394
+    },
+    "dca2edb9-b80f-4626-8b39-1c4b6495822b": {
+      "id": "dca2edb9-b80f-4626-8b39-1c4b6495822b",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "70293bad-6dc1-4fbf-bc48-c9491561a768",
+      "components": {},
+      "name": "Text (1) Falkreath",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Atrás",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
+        }
+      },
+      "order": -1.484248400351055
+    },
+    "b70541ca-834c-4c4d-b19b-ab3853bc66fa": {
+      "id": "b70541ca-834c-4c4d-b19b-ab3853bc66fa",
+      "position": [
+        -0.5914883289482926,
+        0,
+        0.32215366481618135
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "535aff49-b614-4229-85e5-251b2d7df5a3",
+      "components": {},
+      "ui": {
+        "type": "overlay",
+        "width": 435,
+        "height": 273,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Book.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "position": "absolute",
+        "top": 90,
+        "left": 156,
+        "bottom": "",
+        "right": "",
+        "ignoreRaycast": true,
+        "stackingOrder": -1
+      },
+      "name": "Libro Falkreath",
+      "order": 5.552108197422722,
+      "hidden": false
     },
     "1b515230-1adf-48c0-b5be-d369965154cf": {
       "id": "1b515230-1adf-48c0-b5be-d369965154cf",
@@ -7541,16 +9871,15 @@
           "name": "pressHoldFeedback",
           "parameters": {}
         },
-        "openRumorBtn_38fa5904-d3af-4de7-9beb-a253065d938b": {
-          "id": "openRumorBtn_38fa5904-d3af-4de7-9beb-a253065d938b",
-          "name": "openRumorBtn",
+        "toggleVisibilityOnClick_ac3c906d-a86b-4f6f-8286-29db9468dbaf": {
+          "id": "toggleVisibilityOnClick_ac3c906d-a86b-4f6f-8286-29db9468dbaf",
+          "name": "toggleVisibilityOnClick",
           "parameters": {
-            "rumorId": "Falkreath",
-            "universalPanel": {
+            "showTarget1": {
               "type": "entity",
-              "id": "17f5fc13-2d5a-4289-be68-7d457fa8dd58"
+              "id": "535aff49-b614-4229-85e5-251b2d7df5a3"
             },
-            "cityPanelToHide": {
+            "hideTarget1": {
               "type": "entity",
               "id": "1b515230-1adf-48c0-b5be-d369965154cf"
             }
@@ -7720,6 +10049,628 @@
         }
       },
       "order": -1.484248400351055
+    },
+    "002636fc-4b45-4a39-ab45-31cc2a7fb2c9": {
+      "id": "002636fc-4b45-4a39-ab45-31cc2a7fb2c9",
+      "position": [
+        -7.474572354737953,
+        0,
+        0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "c73ff058-f645-469a-bb35-a14ec4229d53",
+      "components": {},
+      "ui": {
+        "width": 784,
+        "height": 412,
+        "type": "overlay",
+        "stackingOrder": 0,
+        "ignoreRaycast": true,
+        "opacity": 1
+      },
+      "name": "UI Rumor Gruta",
+      "order": 10.770442593671289,
+      "hidden": false,
+      "disabled": true
+    },
+    "9b6e9157-a630-4e44-8b10-5c8651e7b7b2": {
+      "id": "9b6e9157-a630-4e44-8b10-5c8651e7b7b2",
+      "position": [
+        -0.21769382646136082,
+        0.2902584352818147,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "002636fc-4b45-4a39-ab45-31cc2a7fb2c9",
+      "components": {},
+      "ui": {
+        "width": 230,
+        "height": 40,
+        "text": "Rumor",
+        "color": "#ffffff",
+        "fontSize": 30,
+        "type": "overlay",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
+        },
+        "verticalTextAlign": "center",
+        "position": "absolute",
+        "top": 35,
+        "left": 290,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Título (1) Gruta",
+      "order": 7.98912039642944
+    },
+    "29ba3ad8-c5b6-4912-a6a8-b4d7295ec0e1": {
+      "id": "29ba3ad8-c5b6-4912-a6a8-b4d7295ec0e1",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "002636fc-4b45-4a39-ab45-31cc2a7fb2c9",
+      "components": {
+        "e95a8d3c-b9b5-46cb-9057-e47b55c0124e": {
+          "id": "e95a8d3c-b9b5-46cb-9057-e47b55c0124e",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "toggleVisibilityOnClick_2ca01c30-4fad-4004-ae27-4decab747c53": {
+          "id": "toggleVisibilityOnClick_2ca01c30-4fad-4004-ae27-4decab747c53",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "6a29e75a-e21e-4cc4-9e29-e0f554237656"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "002636fc-4b45-4a39-ab45-31cc2a7fb2c9"
+            }
+          }
+        },
+        "uiSoundOnClick_58326b9d-9786-483b-a8e6-6ccc8d053424": {
+          "id": "uiSoundOnClick_58326b9d-9786-483b-a8e6-6ccc8d053424",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
+          }
+        }
+      },
+      "ui": {
+        "type": "overlay",
+        "width": 100,
+        "height": 36,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 309,
+        "left": 635,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Atrás Gruta",
+      "order": 13.287509151763638
+    },
+    "172ca0b3-f084-42a3-8b80-2aa71cc3f7f2": {
+      "id": "172ca0b3-f084-42a3-8b80-2aa71cc3f7f2",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "29ba3ad8-c5b6-4912-a6a8-b4d7295ec0e1",
+      "components": {},
+      "name": "Icon (1) Gruta",
+      "ui": {
+        "width": 25,
+        "height": 25,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Arrow Back.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "order": 0.2460354233958394
+    },
+    "c85661d1-c3dc-4a20-88ff-637db2f61c5c": {
+      "id": "c85661d1-c3dc-4a20-88ff-637db2f61c5c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "29ba3ad8-c5b6-4912-a6a8-b4d7295ec0e1",
+      "components": {},
+      "name": "Text (1) Gruta",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Atrás",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
+        }
+      },
+      "order": -1.484248400351055
+    },
+    "eb50d058-5456-4e0b-8480-a3ab10598684": {
+      "id": "eb50d058-5456-4e0b-8480-a3ab10598684",
+      "position": [
+        -0.5914883289482926,
+        0,
+        0.32215366481618135
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "002636fc-4b45-4a39-ab45-31cc2a7fb2c9",
+      "components": {},
+      "ui": {
+        "type": "overlay",
+        "width": 435,
+        "height": 273,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Book.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "position": "absolute",
+        "top": 90,
+        "left": 156,
+        "bottom": "",
+        "right": "",
+        "ignoreRaycast": true,
+        "stackingOrder": -1
+      },
+      "name": "Libro Gruta",
+      "order": 5.552108197422722,
+      "hidden": false
+    },
+    "0b6f4fff-3d85-40e5-b57b-49d57f663a58": {
+      "id": "0b6f4fff-3d85-40e5-b57b-49d57f663a58",
+      "position": [
+        7.474572354737953,
+        0,
+        -0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "002636fc-4b45-4a39-ab45-31cc2a7fb2c9",
+      "components": {
+        "typewriterText_0d58e035-7dcd-48b0-806f-567ac07e541a": {
+          "id": "typewriterText_0d58e035-7dcd-48b0-806f-567ac07e541a",
+          "name": "typewriterText",
+          "parameters": {
+            "enableTarget": {
+              "type": "entity",
+              "id": "66d91871-4c99-4d97-b26a-5ef46dfd755f"
+            }
+          }
+        }
+      },
+      "ui": {
+        "width": 158,
+        "height": 138,
+        "text": "Al llegar a la gruta, un aullido y un grito de auxilio te hace estremecer. Al interior de la gruta te espera una cacería de vida o muerte. Te verás cara a cara contra la bestia asesina de Lavinia.",
+        "color": "#000000",
+        "fontSize": 11,
+        "type": "overlay",
+        "position": "absolute",
+        "top": 120,
+        "left": 205,
+        "bottom": "",
+        "right": "",
+        "textAlign": "left",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "stackingOrder": 1,
+        "ignoreRaycast": true
+      },
+      "name": "RumorText Gruta",
+      "order": 4.7835484516204065
+    },
+    "66d91871-4c99-4d97-b26a-5ef46dfd755f": {
+      "id": "66d91871-4c99-4d97-b26a-5ef46dfd755f",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "002636fc-4b45-4a39-ab45-31cc2a7fb2c9",
+      "components": {
+        "4ca15de1-8b0c-4851-8dfe-299668c9ad22": {
+          "id": "4ca15de1-8b0c-4851-8dfe-299668c9ad22",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "toggleVisibilityOnClick_e83f2122-ba7e-4ed9-9695-088b616b7523": {
+          "id": "toggleVisibilityOnClick_e83f2122-ba7e-4ed9-9695-088b616b7523",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "75f5ff34-5b38-49b6-9872-95386d8b323d"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "66d91871-4c99-4d97-b26a-5ef46dfd755f"
+            }
+          }
+        },
+        "uiSoundOnClick_bb4a7bcf-0eaf-46f9-b6c0-1fdd9a2a25f8": {
+          "id": "uiSoundOnClick_bb4a7bcf-0eaf-46f9-b6c0-1fdd9a2a25f8",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UIEntrar.mp3"
+          }
+        }
+      },
+      "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 1,
+        "type": "overlay",
+        "width": 135,
+        "height": 33,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 278,
+        "left": 211,
+        "bottom": "",
+        "right": "",
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Boton.png"
+        },
+        "backgroundSize": "contain",
+        "stackingOrder": 0,
+        "ignoreRaycast": false
+      },
+      "name": "Continuar Boton Gruta",
+      "order": 15.78795977362857,
+      "disabled": true
+    },
+    "f740db7b-56b8-4807-a88c-059a5943abc1": {
+      "id": "f740db7b-56b8-4807-a88c-059a5943abc1",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "66d91871-4c99-4d97-b26a-5ef46dfd755f",
+      "components": {},
+      "name": "Text Continuar Boton Gruta",
+      "ui": {
+        "width": 75,
+        "height": 14,
+        "text": "Adentrarse",
+        "color": "#000000",
+        "fontSize": 11,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "ignoreRaycast": true,
+        "type": "overlay"
+      },
+      "order": -1.484248400351055
+    },
+    "c16525ef-cfd9-4891-b0d9-07cee62b0bc5": {
+      "id": "c16525ef-cfd9-4891-b0d9-07cee62b0bc5",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "002636fc-4b45-4a39-ab45-31cc2a7fb2c9",
+      "components": {
+        "140ffbff-3074-4074-a58b-0b716ba63213": {
+          "id": "140ffbff-3074-4074-a58b-0b716ba63213",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "unlockLocationOnClick_53902851-c981-4b23-8312-a59efe7dab85": {
+          "id": "unlockLocationOnClick_53902851-c981-4b23-8312-a59efe7dab85",
+          "name": "unlockLocationOnClick",
+          "parameters": {
+            "panelToHide": {
+              "type": "entity",
+              "id": "002636fc-4b45-4a39-ab45-31cc2a7fb2c9"
+            },
+            "backgroundFrame": {
+              "type": "entity",
+              "id": "473c7055-07c6-433b-b166-03684ad7a490"
+            },
+            "uiNuevaUbicacion": {
+              "type": "entity",
+              "id": "57300f21-0ba5-4056-bd67-6fd11acbc745"
+            },
+            "imageElement": {
+              "type": "entity",
+              "id": "00dcd921-eff0-463b-89f0-3ea9f9e4ffa7"
+            },
+            "nameElement": {
+              "type": "entity",
+              "id": "02257a0f-f15f-4661-ad15-2f6ea61b47a9"
+            },
+            "titleElement": {
+              "type": "entity",
+              "id": "1bfb98b8-d613-4732-b4c2-1fd6e8df9c60"
+            },
+            "titleText": "Misiones Completadas",
+            "locationName": "Senda de La Licantropía Daedrica",
+            "imageSrc": "assets/Iconos/UI/Wolf.png"
+          }
+        },
+        "uiSoundOnClick_e70adf48-1269-466a-85be-dcb78d87a5b7": {
+          "id": "uiSoundOnClick_e70adf48-1269-466a-85be-dcb78d87a5b7",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/MisionCompletada.mp3"
+          }
+        }
+      },
+      "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 1,
+        "type": "overlay",
+        "width": 135,
+        "height": 55,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 272,
+        "left": 408,
+        "bottom": "",
+        "right": "",
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Boton.png"
+        },
+        "backgroundSize": "contain",
+        "stackingOrder": 0,
+        "ignoreRaycast": false
+      },
+      "name": "Continuar Boton 2 Gruta",
+      "order": 15.78795977362857,
+      "disabled": true
+    },
+    "1108bb9c-5dec-4ef3-853d-a2d05fe3d36d": {
+      "id": "1108bb9c-5dec-4ef3-853d-a2d05fe3d36d",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "c16525ef-cfd9-4891-b0d9-07cee62b0bc5",
+      "components": {},
+      "name": "Text Continuar Boton 2 Gruta",
+      "ui": {
+        "width": 75,
+        "height": 14,
+        "text": "Terminar",
+        "color": "#000000",
+        "fontSize": 11,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "ignoreRaycast": true,
+        "type": "overlay"
+      },
+      "order": -1.484248400351055
+    },
+    "75f5ff34-5b38-49b6-9872-95386d8b323d": {
+      "id": "75f5ff34-5b38-49b6-9872-95386d8b323d",
+      "position": [
+        7.474572354737953,
+        0,
+        -0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "002636fc-4b45-4a39-ab45-31cc2a7fb2c9",
+      "components": {
+        "28a4b2f8-50d7-4271-ad6d-8b7046bcc83a": {
+          "id": "28a4b2f8-50d7-4271-ad6d-8b7046bcc83a",
+          "name": "typewriterText",
+          "parameters": {
+            "enableTarget": {
+              "type": "entity",
+              "id": "c16525ef-cfd9-4891-b0d9-07cee62b0bc5"
+            }
+          }
+        }
+      },
+      "ui": {
+        "width": 158,
+        "height": 138,
+        "text": "La decisión está en tus manos, Sangre de Dragón, ¿eliminaste a la bestia o la ayudaste a eliminar a los cazadores que la atacaban? Sea como sea, Hircine está satisfecho y una grata recompensa te espera...\nQue la bendición de Hircine guíe tus garras y que tu presa nunca escape de tu vista.",
+        "color": "#000000",
+        "fontSize": 11,
+        "type": "overlay",
+        "position": "absolute",
+        "top": 120,
+        "left": 391,
+        "bottom": "",
+        "right": "",
+        "textAlign": "left",
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/Eagle_Lake/EagleLake.json"
+        },
+        "stackingOrder": 1,
+        "ignoreRaycast": true
+      },
+      "name": "RumorText 2 Gruta",
+      "order": 5.119847914992695,
+      "disabled": true
     },
     "6a29e75a-e21e-4cc4-9e29-e0f554237656": {
       "id": "6a29e75a-e21e-4cc4-9e29-e0f554237656",
@@ -8017,16 +10968,15 @@
           "name": "pressHoldFeedback",
           "parameters": {}
         },
-        "openRumorBtn_6cccdb2c-304e-487f-aaeb-8d8e4388aae8": {
-          "id": "openRumorBtn_6cccdb2c-304e-487f-aaeb-8d8e4388aae8",
-          "name": "openRumorBtn",
+        "toggleVisibilityOnClick_47834892-1a2d-40d2-987c-909922ae6a26": {
+          "id": "toggleVisibilityOnClick_47834892-1a2d-40d2-987c-909922ae6a26",
+          "name": "toggleVisibilityOnClick",
           "parameters": {
-            "rumorId": "Gruta",
-            "universalPanel": {
+            "showTarget1": {
               "type": "entity",
-              "id": "17f5fc13-2d5a-4289-be68-7d457fa8dd58"
+              "id": "002636fc-4b45-4a39-ab45-31cc2a7fb2c9"
             },
-            "cityPanelToHide": {
+            "hideTarget1": {
               "type": "entity",
               "id": "6a29e75a-e21e-4cc4-9e29-e0f554237656"
             }
@@ -8272,13 +11222,6 @@
       "name": "Rumores",
       "order": 22.07433591368988
     },
-<<<<<<< HEAD
-    "4f0a18c4-f060-4ce4-b4d9-76fa82e46325": {
-      "id": "4f0a18c4-f060-4ce4-b4d9-76fa82e46325",
-      "position": [
-        14.082941358875386,
-        0.22482050095471906,
-=======
     "47f9e2e3-4b36-41a4-9a60-49272e02beb1": {
       "id": "47f9e2e3-4b36-41a4-9a60-49272e02beb1",
       "position": [
@@ -8316,7 +11259,6 @@
       "ui": {
         "type": "3d"
       },
-      "disabled": true,
       "position": [
         0,
         0,
@@ -8420,7 +11362,6 @@
       "position": [
         0,
         0,
->>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
         0
       ],
       "rotation": [
@@ -8436,31 +11377,6 @@
       ],
       "geometry": null,
       "material": null,
-<<<<<<< HEAD
-      "parentId": "979ed10b-4e87-4608-a7f3-b9932f8ad82e",
-      "components": {},
-      "ui": {
-        "type": "3d",
-        "width": 50,
-        "height": 50,
-        "image": {
-          "type": "asset",
-          "asset": "assets/Iconos/UI/Rumor.png"
-        },
-        "backgroundOpacity": 0.75,
-        "backgroundSize": "contain",
-        "position": "absolute",
-        "top": 475,
-        "left": 70,
-        "bottom": "",
-        "right": ""
-      },
-      "name": "Imagen",
-      "order": 14.742065888965795
-    },
-    "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38": {
-      "id": "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38",
-=======
       "parentId": "390e3186-e7e3-4d9d-b6d6-13bbeacdaa82",
       "components": {
         "toggleVisibilityOnClick_fd558fa9-1a55-41c9-ac4e-ed538f66c61a": {
@@ -8520,7 +11436,6 @@
     },
     "7412a4f8-eaf7-4eef-9e52-e89089c0ed38": {
       "id": "7412a4f8-eaf7-4eef-9e52-e89089c0ed38",
->>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
       "position": [
         0,
         0,
@@ -8539,20 +11454,6 @@
       ],
       "geometry": null,
       "material": null,
-<<<<<<< HEAD
-      "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
-      "components": {
-        "e95a8d3c-b9b5-46cb-9057-e47b55c0124e": {
-          "id": "e95a8d3c-b9b5-46cb-9057-e47b55c0124e",
-          "name": "pressHoldFeedback",
-          "parameters": {}
-        },
-        "uiSoundOnClick_4285b2a4-6c24-45e9-ac22-0fe759ae2e60": {
-          "id": "uiSoundOnClick_4285b2a4-6c24-45e9-ac22-0fe759ae2e60",
-          "name": "uiSoundOnClick",
-          "parameters": {
-            "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
-=======
       "parentId": "89e0090c-5979-4a21-a437-924a97c3b7cd",
       "components": {},
       "name": "Text Continuar Boton Falkreath",
@@ -8601,16 +11502,10 @@
               "type": "entity",
               "id": "5be45b01-118c-4798-9269-a913dcb406a9"
             }
->>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
           }
         }
       },
       "ui": {
-<<<<<<< HEAD
-        "type": "overlay",
-        "width": 100,
-        "height": 36,
-=======
         "width": 158,
         "height": 138,
         "text": "Decides ir a la celda a escuchar a Sinding. Cuando hablas con él sobre el ataque, te menciona un anillo maldito que lo obligó a cometer el crimen. Sinding te entrega el anillo y te pide que lo ayudes a eliminar la maldición...",
@@ -8689,61 +11584,12 @@
         "type": "overlay",
         "width": 135,
         "height": 33,
->>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
         "flexDirection": "row",
         "padding": "10",
         "gap": 4,
         "alignItems": "center",
         "justifyContent": "center",
         "position": "absolute",
-<<<<<<< HEAD
-        "top": 365,
-        "left": 470,
-        "bottom": "",
-        "right": ""
-      },
-      "name": "Sig pag Tumulo",
-      "order": 14.277300937547567,
-      "disabled": true
-    },
-    "239674c6-411b-456f-a24e-079c0f293d94": {
-      "id": "239674c6-411b-456f-a24e-079c0f293d94",
-      "position": [
-        -0.323,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38",
-      "components": {},
-      "name": "Icon (1) Túmulo (1)",
-      "ui": {
-        "width": 25,
-        "height": 25,
-        "image": {
-          "type": "asset",
-          "asset": "assets/Iconos/UI/Arrow Back.png"
-        },
-        "backgroundOpacity": 1,
-        "backgroundSize": "contain"
-      },
-      "order": 0.2460354233958394
-    },
-    "d7148543-8b9a-4a37-83a0-e1d14f9c3311": {
-      "id": "d7148543-8b9a-4a37-83a0-e1d14f9c3311",
-=======
         "top": 278,
         "left": 406,
         "bottom": "",
@@ -8762,7 +11608,6 @@
     },
     "9921ec87-1134-4a3c-b9c0-523cf2ef68db": {
       "id": "9921ec87-1134-4a3c-b9c0-523cf2ef68db",
->>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
       "position": [
         0,
         0,
@@ -8781,30 +11626,6 @@
       ],
       "geometry": null,
       "material": null,
-<<<<<<< HEAD
-      "parentId": "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38",
-      "components": {},
-      "name": "Text (1) Túmulo (1)",
-      "ui": {
-        "width": 50,
-        "height": 14,
-        "text": "Página",
-        "color": "#ffffff",
-        "fontSize": 16,
-        "font": {
-          "type": "font",
-          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
-        }
-      },
-      "order": -1.484248400351055
-    },
-    "8b6aa4a8-1876-48e0-8715-c533df3ca1e8": {
-      "id": "8b6aa4a8-1876-48e0-8715-c533df3ca1e8",
-      "position": [
-        0,
-        0,
-        0
-=======
       "parentId": "5be45b01-118c-4798-9269-a913dcb406a9",
       "components": {},
       "name": "Text Continuar Boton 2 Falkreath",
@@ -8829,7 +11650,6 @@
         7.474572354737953,
         0,
         -0.1
->>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
       ],
       "rotation": [
         0,
@@ -8844,20 +11664,6 @@
       ],
       "geometry": null,
       "material": null,
-<<<<<<< HEAD
-      "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
-      "components": {
-        "e95a8d3c-b9b5-46cb-9057-e47b55c0124e": {
-          "id": "e95a8d3c-b9b5-46cb-9057-e47b55c0124e",
-          "name": "pressHoldFeedback",
-          "parameters": {}
-        },
-        "uiSoundOnClick_4285b2a4-6c24-45e9-ac22-0fe759ae2e60": {
-          "id": "uiSoundOnClick_4285b2a4-6c24-45e9-ac22-0fe759ae2e60",
-          "name": "uiSoundOnClick",
-          "parameters": {
-            "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
-=======
       "parentId": "70c3d62c-bd34-45a2-ba41-4551b6e75aa2",
       "components": {
         "typewriterText_65824526-b667-414e-aacf-2d834e0f020a": {
@@ -8868,16 +11674,10 @@
               "type": "entity",
               "id": "33de456e-174a-496a-bc18-8ef49f373d86"
             }
->>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
           }
         }
       },
       "ui": {
-<<<<<<< HEAD
-        "type": "overlay",
-        "width": 100,
-        "height": 36,
-=======
         "width": 158,
         "height": 138,
         "text": "...pero ten cuidado, ¡el anillo está maldito y podrías transformarte en una bestia en cualquier momento! Al salir de los cuarteles ves un ciervo blanco. Un instinto te pide que lo caces.",
@@ -8955,61 +11755,12 @@
         "type": "overlay",
         "width": 135,
         "height": 33,
->>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
         "flexDirection": "row",
         "padding": "10",
         "gap": 4,
         "alignItems": "center",
         "justifyContent": "center",
         "position": "absolute",
-<<<<<<< HEAD
-        "top": 365,
-        "left": 183,
-        "bottom": "",
-        "right": ""
-      },
-      "name": "Ant pag Tumulo",
-      "order": 15.825519146792006,
-      "disabled": true
-    },
-    "c9a1116b-d171-43e8-a72e-3173fc3da98a": {
-      "id": "c9a1116b-d171-43e8-a72e-3173fc3da98a",
-      "position": [
-        -0.3230000000000004,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        1,
-        -6.123233995736766e-17
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "8b6aa4a8-1876-48e0-8715-c533df3ca1e8",
-      "components": {},
-      "name": "Icon (1) Túmulo (2)",
-      "ui": {
-        "width": 25,
-        "height": 25,
-        "image": {
-          "type": "asset",
-          "asset": "assets/Iconos/UI/Arrow Back Inverse.png"
-        },
-        "backgroundOpacity": 1,
-        "backgroundSize": "contain"
-      },
-      "order": -3.433700892402304
-    },
-    "468a770f-e259-489d-9d33-a45800aa2a15": {
-      "id": "468a770f-e259-489d-9d33-a45800aa2a15",
-=======
         "top": 278,
         "left": 211,
         "bottom": "",
@@ -9028,7 +11779,6 @@
     },
     "b4339c5f-7537-4c3f-bd7e-21728232fdbd": {
       "id": "b4339c5f-7537-4c3f-bd7e-21728232fdbd",
->>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
       "position": [
         0,
         0,
@@ -9047,26 +11797,6 @@
       ],
       "geometry": null,
       "material": null,
-<<<<<<< HEAD
-      "parentId": "8b6aa4a8-1876-48e0-8715-c533df3ca1e8",
-      "components": {},
-      "name": "Text (1) Túmulo (2)",
-      "ui": {
-        "width": 50,
-        "height": 14,
-        "text": "Página",
-        "color": "#ffffff",
-        "fontSize": 16,
-        "font": {
-          "type": "font",
-          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
-        }
-      },
-      "order": -1.484248400351055
-    },
-    "c31147f6-7dcf-4d7c-8ac5-a74be256140b": {
-      "id": "c31147f6-7dcf-4d7c-8ac5-a74be256140b",
-=======
       "parentId": "33de456e-174a-496a-bc18-8ef49f373d86",
       "components": {},
       "name": "Text Continuar Boton 3 Falkreath",
@@ -9144,7 +11874,6 @@
     },
     "8af5f878-fa65-4313-84d9-b333695b42d9": {
       "id": "8af5f878-fa65-4313-84d9-b333695b42d9",
->>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
       "position": [
         0,
         0,
@@ -9163,18 +11892,6 @@
       ],
       "geometry": null,
       "material": null,
-<<<<<<< HEAD
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "components": {
-        "bf6cd447-4c19-47c4-bb89-0ee1be1ed120": {
-          "id": "bf6cd447-4c19-47c4-bb89-0ee1be1ed120",
-          "name": "clearCache",
-          "parameters": {}
-        }
-      },
-      "name": "Cachemanager",
-      "order": 6.662426627639241
-=======
       "parentId": "70c3d62c-bd34-45a2-ba41-4551b6e75aa2",
       "components": {
         "unlockLocationOnClick_cfcedc6e-a324-437b-92b2-3c7776c91125": {
@@ -9291,7 +12008,324 @@
         "type": "overlay"
       },
       "order": -1.484248400351055
->>>>>>> parent of 047d9b6 (Hola, antes de dañar todo)
+    },
+    "4f0a18c4-f060-4ce4-b4d9-76fa82e46325": {
+      "id": "4f0a18c4-f060-4ce4-b4d9-76fa82e46325",
+      "position": [
+        14.082941358875386,
+        0.22482050095471906,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "979ed10b-4e87-4608-a7f3-b9932f8ad82e",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 50,
+        "height": 50,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Rumor.png"
+        },
+        "backgroundOpacity": 0.75,
+        "backgroundSize": "contain",
+        "position": "absolute",
+        "top": 475,
+        "left": 70,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Imagen",
+      "order": 14.742065888965795
+    },
+    "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38": {
+      "id": "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
+      "components": {
+        "e95a8d3c-b9b5-46cb-9057-e47b55c0124e": {
+          "id": "e95a8d3c-b9b5-46cb-9057-e47b55c0124e",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "toggleVisibilityOnClick_c4fffd70-e3a3-45af-aebc-2100f871f268": {
+          "id": "toggleVisibilityOnClick_c4fffd70-e3a3-45af-aebc-2100f871f268",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "7bde7cc5-a221-4120-b748-55364731abcc"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "17f5fc13-2d5a-4289-be68-7d457fa8dd58"
+            }
+          }
+        },
+        "uiSoundOnClick_4285b2a4-6c24-45e9-ac22-0fe759ae2e60": {
+          "id": "uiSoundOnClick_4285b2a4-6c24-45e9-ac22-0fe759ae2e60",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
+          }
+        }
+      },
+      "ui": {
+        "type": "overlay",
+        "width": 100,
+        "height": 36,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 365,
+        "left": 470,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Sig pag Tumulo",
+      "order": 14.277300937547567
+    },
+    "239674c6-411b-456f-a24e-079c0f293d94": {
+      "id": "239674c6-411b-456f-a24e-079c0f293d94",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38",
+      "components": {},
+      "name": "Icon (1) Túmulo (1)",
+      "ui": {
+        "width": 25,
+        "height": 25,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Arrow Back.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "order": 0.2460354233958394
+    },
+    "d7148543-8b9a-4a37-83a0-e1d14f9c3311": {
+      "id": "d7148543-8b9a-4a37-83a0-e1d14f9c3311",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38",
+      "components": {},
+      "name": "Text (1) Túmulo (1)",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Página",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
+        }
+      },
+      "order": -1.484248400351055
+    },
+    "8b6aa4a8-1876-48e0-8715-c533df3ca1e8": {
+      "id": "8b6aa4a8-1876-48e0-8715-c533df3ca1e8",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
+      "components": {
+        "e95a8d3c-b9b5-46cb-9057-e47b55c0124e": {
+          "id": "e95a8d3c-b9b5-46cb-9057-e47b55c0124e",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "toggleVisibilityOnClick_c4fffd70-e3a3-45af-aebc-2100f871f268": {
+          "id": "toggleVisibilityOnClick_c4fffd70-e3a3-45af-aebc-2100f871f268",
+          "name": "toggleVisibilityOnClick",
+          "parameters": {
+            "showTarget1": {
+              "type": "entity",
+              "id": "7bde7cc5-a221-4120-b748-55364731abcc"
+            },
+            "hideTarget1": {
+              "type": "entity",
+              "id": "17f5fc13-2d5a-4289-be68-7d457fa8dd58"
+            }
+          }
+        },
+        "uiSoundOnClick_4285b2a4-6c24-45e9-ac22-0fe759ae2e60": {
+          "id": "uiSoundOnClick_4285b2a4-6c24-45e9-ac22-0fe759ae2e60",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/LibroCerrar.mp3"
+          }
+        }
+      },
+      "ui": {
+        "type": "overlay",
+        "width": 100,
+        "height": 36,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": 4,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "position": "absolute",
+        "top": 365,
+        "left": 183,
+        "bottom": "",
+        "right": ""
+      },
+      "name": "Ant pag Tumulo",
+      "order": 15.825519146792006,
+      "disabled": true
+    },
+    "c9a1116b-d171-43e8-a72e-3173fc3da98a": {
+      "id": "c9a1116b-d171-43e8-a72e-3173fc3da98a",
+      "position": [
+        -0.3230000000000004,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        1,
+        -6.123233995736766e-17
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8b6aa4a8-1876-48e0-8715-c533df3ca1e8",
+      "components": {},
+      "name": "Icon (1) Túmulo (2)",
+      "ui": {
+        "width": 25,
+        "height": 25,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Arrow Back Inverse.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "order": -3.433700892402304
+    },
+    "468a770f-e259-489d-9d33-a45800aa2a15": {
+      "id": "468a770f-e259-489d-9d33-a45800aa2a15",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8b6aa4a8-1876-48e0-8715-c533df3ca1e8",
+      "components": {},
+      "name": "Text (1) Túmulo (2)",
+      "ui": {
+        "width": 50,
+        "height": 14,
+        "text": "Página",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "font": {
+          "type": "font",
+          "font": "assets/Fuentes/MedievalSharp/MedievalSharp.json"
+        }
+      },
+      "order": -1.484248400351055
     }
   },
   "spaces": {

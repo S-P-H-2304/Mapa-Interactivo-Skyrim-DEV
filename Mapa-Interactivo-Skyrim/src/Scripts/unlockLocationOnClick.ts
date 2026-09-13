@@ -1,5 +1,5 @@
-﻿import * as ecs from '@8thwall/ecs'
-
+import * as ecs from '@8thwall/ecs'
+import { dataManager } from './dataManager'
 ecs.registerComponent({
   name: 'unlockLocationOnClick',
   schema: {
@@ -52,6 +52,12 @@ ecs.registerComponent({
     }
 
     const state = ecs.defineState('idle').initial()
+      .onEnter(() => {
+        const { locationName, markerToUnlock } = schemaAttribute.get(eid)
+        if (locationName && markerToUnlock && dataManager.isLocationUnlocked(locationName)) {
+           ecs.Disabled.remove(world, markerToUnlock)
+        }
+      })
 
     const attachRecursiveClickListener = (targetEid: any) => {
       if (!targetEid) return
@@ -86,6 +92,10 @@ ecs.registerComponent({
         // DESBLOQUEAR EL MARCADOR (Habilitarlo para que aparezca en el mapa 3D)
         if (markerToUnlock) {
           ecs.Disabled.remove(world, markerToUnlock)
+        }
+        
+        if (locationName) {
+          dataManager.unlockLocation(locationName)
         }
 
         if (uiNuevaUbicacion) {
