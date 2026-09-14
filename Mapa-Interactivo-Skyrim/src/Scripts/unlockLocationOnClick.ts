@@ -103,9 +103,6 @@ ecs.registerComponent({
           dataManager.unlockLocation(locationName)
         }
 
-        // Liberar el bloqueo de playerInteraction y retornar a la música del mapa
-        world.events.dispatch(world.events.globalId, 'force-location-deactivate', {})
-
         if (uiNuevaUbicacion) {
           ecs.Ui.set(world, uiNuevaUbicacion, { opacity: 0 })
           ecs.Disabled.remove(world, uiNuevaUbicacion)
