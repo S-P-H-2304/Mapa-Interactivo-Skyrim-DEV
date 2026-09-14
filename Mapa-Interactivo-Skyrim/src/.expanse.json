@@ -3446,7 +3446,10 @@
           "depth": 30.800000000000022,
           "height": 26.000000000000007,
           "width": 34.9999999999999
-        }
+        },
+        "mass": 0,
+        "type": "kinematic",
+        "eventOnly": true
       },
       "components": {},
       "gltfModel": {
