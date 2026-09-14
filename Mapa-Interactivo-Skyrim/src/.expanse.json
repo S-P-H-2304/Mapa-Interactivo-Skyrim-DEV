@@ -675,20 +675,25 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
+              "type": "entity"
+            },
+            "rumorPanel": {
+              "id": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
               "type": "entity"
             },
             "songUrl": "assets/Sonido/Música/Cueva.mp3",
@@ -724,9 +729,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "0ff40d73-c438-44fa-a7ed-1ddefdfd0336": {
@@ -882,7 +887,7 @@
       "parentId": "b5eb8b03-e50b-4e9c-aa63-4065736fa920",
       "position": [
         -0.323,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -2038,7 +2043,7 @@
       "parentId": "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38",
       "position": [
         -0.323,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -2131,20 +2136,25 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
+              "type": "entity"
+            },
+            "rumorPanel": {
+              "id": "d2f4b63a-6150-4fb9-bba7-26a520955969",
               "type": "entity"
             },
             "songUrl": "assets/Sonido/Música/Tumba.mp3",
@@ -2180,9 +2190,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "27f7418d-0db6-446f-bc3a-3589cd615c3f": {
@@ -3078,7 +3088,7 @@
       "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
       "position": [
         -0.591488328948293,
-        0,
+        7.6000000000000005,
         0.322153664816181
       ],
       "rotation": [
@@ -3159,18 +3169,19 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
               "type": "entity"
@@ -3207,9 +3218,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "390e3186-e7e3-4d9d-b6d6-13bbeacdaa82": {
@@ -3259,7 +3270,7 @@
       "parentId": "7dfff945-95e7-4fb1-b68a-e508ed2d2c9f",
       "position": [
         7.47457235473795,
-        0,
+        7.6000000000000005,
         -0.1
       ],
       "rotation": [
@@ -3354,7 +3365,7 @@
       "parentId": "7dfff945-95e7-4fb1-b68a-e508ed2d2c9f",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -3432,10 +3443,10 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.4,
+          "height": 0.6,
           "type": "box",
-          "width": 0.5
+          "width": 0.4
         },
         "gravityFactor": 0,
         "highPrecision": false,
@@ -3444,7 +3455,8 @@
         "lockYPosition": true,
         "lockZAxis": true,
         "mass": 0,
-        "type": "kinematic"
+        "type": "kinematic",
+        "offsetY": 0.2
       },
       "components": {},
       "geometry": null,
@@ -3473,9 +3485,9 @@
         0.707106781186548
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "3cf4fceb-963b-43b9-8700-cf7babaa0a87": {
@@ -3766,7 +3778,7 @@
       "parentId": "3b928223-8e7b-4d98-8041-04b9e9e82b38",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -4119,7 +4131,7 @@
       "parentId": "8b6aa4a8-1876-48e0-8715-c533df3ca1e8",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -4385,18 +4397,19 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
               "type": "entity"
@@ -4433,9 +4446,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "47f9e2e3-4b36-41a4-9a60-49272e02beb1": {
@@ -4449,7 +4462,7 @@
       "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
       "position": [
         7.47457235473795,
-        0,
+        7.6000000000000005,
         -0.1
       ],
       "rotation": [
@@ -4588,7 +4601,7 @@
       "parentId": "47f9e2e3-4b36-41a4-9a60-49272e02beb1",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -4663,20 +4676,25 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
+              "type": "entity"
+            },
+            "rumorPanel": {
+              "id": "002636fc-4b45-4a39-ab45-31cc2a7fb2c9",
               "type": "entity"
             },
             "songUrl": "assets/Sonido/Música/Cueva.mp3",
@@ -4712,9 +4730,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "4c8dd05e-6e82-4e8e-8768-0e22bdaed50e": {
@@ -5137,18 +5155,19 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
               "type": "entity"
@@ -5185,9 +5204,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "57300f21-0ba5-4056-bd67-6fd11acbc745": {
@@ -6220,18 +6239,19 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
               "type": "entity"
@@ -6268,9 +6288,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "70293bad-6dc1-4fbf-bc48-c9491561a768": {
@@ -6811,7 +6831,7 @@
       "parentId": "eec94ae1-1cd0-4b1f-8d70-bb26ccc882c1",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -6998,7 +7018,7 @@
       "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -7624,7 +7644,7 @@
       "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -8234,7 +8254,7 @@
       "parentId": "47f9e2e3-4b36-41a4-9a60-49272e02beb1",
       "position": [
         -7.47457235473795,
-        0,
+        7.6000000000000005,
         0.1
       ],
       "rotation": [
@@ -8263,12 +8283,12 @@
           "type": "asset"
         },
         "justifyContent": "center",
-        "left": 211,
+        "left": 205,
         "padding": "10",
         "position": "absolute",
         "right": "",
         "stackingOrder": 0,
-        "top": 278,
+        "top": 289,
         "type": "overlay",
         "width": 144
       }
@@ -8338,20 +8358,25 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
+              "type": "entity"
+            },
+            "rumorPanel": {
+              "id": "535aff49-b614-4229-85e5-251b2d7df5a3",
               "type": "entity"
             },
             "songUrl": "assets/Sonido/Música/Falkreath.mp3",
@@ -8386,9 +8411,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "9921ec87-1134-4a3c-b9c0-523cf2ef68db": {
@@ -8439,7 +8464,7 @@
       "parentId": "b5eb8b03-e50b-4e9c-aa63-4065736fa920",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -8915,7 +8940,7 @@
       "parentId": "98332f69-8468-43b4-8f1d-7758ef349921",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -9466,7 +9491,7 @@
       "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -9588,18 +9613,19 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
               "type": "entity"
@@ -9636,9 +9662,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "b94261b4-e70c-4b2d-b1dd-aa98c1c2ab90": {
@@ -9799,7 +9825,7 @@
       "parentId": "47f9e2e3-4b36-41a4-9a60-49272e02beb1",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -10418,7 +10444,7 @@
       "parentId": "8b6aa4a8-1876-48e0-8715-c533df3ca1e8",
       "position": [
         -0.323,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -10899,7 +10925,7 @@
       "parentId": "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -10929,24 +10955,29 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
               "type": "entity"
             },
             "markerModel": {
               "id": "d815eb8f-ec1c-4b4a-94fe-5351df1910ce",
+              "type": "entity"
+            },
+            "rumorPanel": {
+              "id": "a3828348-7945-4330-9d8a-ba310a783670",
               "type": "entity"
             },
             "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
@@ -10981,9 +11012,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "d81dd51d-00c0-4db3-b65e-d14b92d7f0e9": {
@@ -11031,20 +11062,25 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
+              "type": "entity"
+            },
+            "rumorPanel": {
+              "id": "69f250f7-aea0-4fce-907a-00a8cf5ef657",
               "type": "entity"
             },
             "songUrl": "assets/Sonido/Música/Cueva.mp3",
@@ -11080,9 +11116,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "d9bd6180-22af-48c8-a063-e23314400b0d": {
@@ -11401,7 +11437,7 @@
       "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
       "position": [
         -0.217693826461361,
-        0.290258435281815,
+        7.890258435281815,
         0
       ],
       "rotation": [
@@ -11909,7 +11945,7 @@
       "parentId": "47f9e2e3-4b36-41a4-9a60-49272e02beb1",
       "position": [
         -7.47457235473795,
-        0,
+        7.6000000000000005,
         0.1
       ],
       "rotation": [
@@ -11943,7 +11979,7 @@
         "position": "absolute",
         "right": "",
         "stackingOrder": 0,
-        "top": 278,
+        "top": 284,
         "type": "overlay",
         "width": 123.75
       }
@@ -12086,7 +12122,7 @@
       "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -12281,6 +12317,7 @@
     },
     "f851be6c-7f6b-4fc4-9cf5-7de203845568": {
       "components": {},
+      "disabled": true,
       "geometry": null,
       "hidden": false,
       "id": "f851be6c-7f6b-4fc4-9cf5-7de203845568",
@@ -12312,25 +12349,25 @@
         "stackingOrder": 0,
         "type": "overlay",
         "width": 784
-      },
-      "disabled": true
+      }
     },
     "f8b2faeb-4287-4803-a207-0dd4a3f4ee0c": {
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
               "type": "entity"
@@ -12367,9 +12404,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "f8f97311-cde4-4832-a046-0d2c892f393d": {
@@ -12562,18 +12599,19 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
               "type": "entity"
@@ -12610,9 +12648,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "fcffd025-f3d6-49ae-8a58-720fdf22fbf1": {

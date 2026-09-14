@@ -77,9 +77,59 @@ ecs.registerComponent({
       }
     }
 
+    const completeTyping = (instant: boolean = false) => {
+      const { fullText } = dataAttribute.get(eid)
+      if (!fullText) return
+
+      stopAudio()
+
+      dataAttribute.set(eid, {
+        fullText,
+        visibleChars: fullText.length,
+        msSinceLastChar: 0,
+        hasPlayedOnce: true,
+        isTyping: false,
+      })
+
+      ecs.Ui.set(world, eid, { text: fullText })
+
+      const { enableTarget } = schemaAttribute.get(eid)
+      if (enableTarget) {
+        if (instant) {
+          // Si el texto se saltó mediante clic/toque, retrasamos brevemente la activación del botón
+          // para evitar que este mismo evento active accidentalmente el botón de continuar
+          world.time.setTimeout(() => {
+            if (!ecs.Disabled.has(world, eid)) {
+              ecs.Disabled.remove(world, enableTarget)
+              ecs.Ui.set(world, enableTarget, { opacity: 0 })
+              startFadeIn(enableTarget)
+            }
+          }, 150)
+        } else {
+          ecs.Disabled.remove(world, enableTarget)
+          ecs.Ui.set(world, enableTarget, { opacity: 0 })
+          startFadeIn(enableTarget)
+        }
+      }
+    }
+
+    const handleSkip = () => {
+      if (ecs.Disabled.has(world, eid)) return
+      const data = dataAttribute.get(eid)
+      if (!data || !data.isTyping) return
+      if (!data.fullText || data.visibleChars >= data.fullText.length) return
+
+      completeTyping(true)
+    }
+
     ecs.defineState('default')
       .initial()
       .onEnter(() => {
+        if (typeof window !== 'undefined') {
+          window.removeEventListener('pointerdown', handleSkip, true)
+          window.addEventListener('pointerdown', handleSkip, true)
+        }
+
         const currentData = dataAttribute.get(eid)
         const uiText = ecs.Ui.get(world, eid).text || ''
         const fullText = (currentData.fullText && currentData.fullText.length >= uiText.length)
@@ -123,8 +173,10 @@ ecs.registerComponent({
         }
       })
       .listen(eid, 'start-typing', () => {
-        const {hasPlayedOnce, fullText} = dataAttribute.get(eid)
-        if (hasPlayedOnce) return
+        const {isTyping, fullText} = dataAttribute.get(eid)
+        if (isTyping) return
+        const textId = fullText.slice(0, 30).trim()
+        if (textId && dataManager.isTextCompleted(textId)) return
         const shouldType = fullText.length > 0
         dataAttribute.set(eid, {
           fullText,
@@ -137,6 +189,12 @@ ecs.registerComponent({
         if (shouldType) {
           startAudio()
         }
+      })
+      .listen(eid, ecs.input.UI_CLICK, () => {
+        handleSkip()
+      })
+      .listen(world.events.globalId, ecs.input.SCREEN_TOUCH_START, () => {
+        handleSkip()
       })
       .onTick(() => {
         const {fullText, visibleChars, msSinceLastChar, isTyping} = dataAttribute.get(eid)
@@ -166,12 +224,13 @@ ecs.registerComponent({
           startAudio()
         }
 
-        const {charIntervalMs, enableTarget} = schemaAttribute.get(eid)
+        const {charIntervalMs} = schemaAttribute.get(eid)
+        const interval = Math.max(charIntervalMs || 40, 1)
         let newMs = msSinceLastChar + world.time.delta
         let newVisible = visibleChars
 
-        while (newMs >= charIntervalMs && newVisible < fullText.length) {
-          newMs -= charIntervalMs
+        while (newMs >= interval && newVisible < fullText.length) {
+          newMs -= interval
           newVisible += 1
         }
 
@@ -179,29 +238,23 @@ ecs.registerComponent({
         
         const finished = newVisible >= fullText.length
 
-        dataAttribute.set(eid, {
-          fullText,
-          msSinceLastChar: newMs,
-          visibleChars: newVisible,
-          hasPlayedOnce: true,
-          isTyping: !finished,
-        })
-
-        // Cuando recién terminamos de escribir todo el texto:
         if (finished) {
-          stopAudio()
-
-          if (enableTarget) {
-            // Quitamos el disabled del botón/objetivo
-            ecs.Disabled.remove(world, enableTarget)
-            // Nos aseguramos de iniciar su opacidad en 0 para hacerle un pequeño fade in
-            ecs.Ui.set(world, enableTarget, { opacity: 0 })
-            startFadeIn(enableTarget)
-          }
+          completeTyping(false)
+        } else {
+          dataAttribute.set(eid, {
+            fullText,
+            msSinceLastChar: newMs,
+            visibleChars: newVisible,
+            hasPlayedOnce: true,
+            isTyping: true,
+          })
         }
       })
       .onExit(() => {
         stopAudio()
+        if (typeof window !== 'undefined') {
+          window.removeEventListener('pointerdown', handleSkip, true)
+        }
       })
   },
 })
