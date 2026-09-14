@@ -6429,6 +6429,28 @@
               "type": "entity"
             }
           }
+        },
+        "d5a5bd11-d098-4e45-9b0b-68bdd4ddc09a": {
+          "name": "restoreProgress",
+          "parameters": {
+            "markerTumulo": {
+              "type": "entity",
+              "id": "0f3a3eb0-58f6-417c-a080-0072c55c600f"
+            },
+            "markerAquelarre": {
+              "type": "entity",
+              "id": "d8df7945-6bf4-4160-98fb-b36cbc56eb3f"
+            },
+            "markerTumba": {
+              "type": "entity",
+              "id": "26daa6ab-8949-416d-8c69-e6ee9977eaed"
+            },
+            "markerGruta": {
+              "type": "entity",
+              "id": "4a8454ed-6fbf-47d1-ae61-45889f692798"
+            }
+          },
+          "id": "d5a5bd11-d098-4e45-9b0b-68bdd4ddc09a"
         }
       },
       "geometry": null,
