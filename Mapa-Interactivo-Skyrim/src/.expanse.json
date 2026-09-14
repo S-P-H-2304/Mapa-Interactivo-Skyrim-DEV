@@ -405,11 +405,11 @@
         },
         "fontSize": 30,
         "height": 40,
-        "left": 290,
+        "left": 260,
         "position": "absolute",
         "right": "",
         "text": "Rumor",
-        "top": 35,
+        "top": 15,
         "type": "overlay",
         "verticalTextAlign": "center",
         "width": 230
@@ -466,7 +466,7 @@
         "stackingOrder": 1,
         "text": "Al llegar a la gruta, un aullido y un grito de auxilio te hace estremecer. Al interior de la gruta te espera una cacería de vida o muerte. Te verás cara a cara contra la bestia asesina de Lavinia.",
         "textAlign": "left",
-        "top": 120,
+        "top": 95,
         "type": "overlay",
         "width": 158
       }
@@ -581,14 +581,14 @@
           "type": "asset"
         },
         "justifyContent": "center",
-        "left": 211,
+        "left": 200,
         "padding": "10",
         "position": "absolute",
         "right": "",
         "stackingOrder": 0,
-        "top": 295,
+        "top": 265,
         "type": "overlay",
-        "width": 135
+        "width": 144
       }
     },
     "0d573d81-58af-48a9-b7c9-0f5a72c9ff04": {
@@ -675,20 +675,25 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
+              "type": "entity"
+            },
+            "rumorPanel": {
+              "id": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
               "type": "entity"
             },
             "songUrl": "assets/Sonido/Música/Cueva.mp3",
@@ -724,9 +729,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "0ff40d73-c438-44fa-a7ed-1ddefdfd0336": {
@@ -882,7 +887,7 @@
       "parentId": "b5eb8b03-e50b-4e9c-aa63-4065736fa920",
       "position": [
         -0.323,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -1561,7 +1566,6 @@
     },
     "1b515230-1adf-48c0-b5be-d369965154cf": {
       "components": {},
-      "disabled": true,
       "geometry": null,
       "hidden": false,
       "id": "1b515230-1adf-48c0-b5be-d369965154cf",
@@ -1593,7 +1597,8 @@
         "stackingOrder": 0,
         "type": "overlay",
         "width": 784
-      }
+      },
+      "disabled": true
     },
     "1bfb98b8-d613-4732-b4c2-1fd6e8df9c60": {
       "components": {},
@@ -2038,7 +2043,7 @@
       "parentId": "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38",
       "position": [
         -0.323,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -2131,20 +2136,25 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
+              "type": "entity"
+            },
+            "rumorPanel": {
+              "id": "d2f4b63a-6150-4fb9-bba7-26a520955969",
               "type": "entity"
             },
             "songUrl": "assets/Sonido/Música/Tumba.mp3",
@@ -2171,7 +2181,7 @@
       "position": [
         1.0457980426233,
         0.12883123667901,
-        -1.73413376108485
+        -2.0430080291427766
       ],
       "rotation": [
         0,
@@ -2180,9 +2190,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "27f7418d-0db6-446f-bc3a-3589cd615c3f": {
@@ -2267,21 +2277,21 @@
         "bottom": "",
         "flexDirection": "row",
         "gap": 4,
-        "height": 55,
+        "height": 33,
         "ignoreRaycast": false,
         "image": {
           "asset": "assets/Iconos/UI/Boton.png",
           "type": "asset"
         },
         "justifyContent": "center",
-        "left": 408,
+        "left": 409,
         "padding": "10",
         "position": "absolute",
         "right": "",
         "stackingOrder": 0,
-        "top": 272,
+        "top": 265,
         "type": "overlay",
-        "width": 135
+        "width": 123.75
       }
     },
     "2838d446-34cd-462a-a4f1-4da3d2df34ef": {
@@ -2347,7 +2357,7 @@
         "left": 665,
         "position": "absolute",
         "right": "",
-        "top": 25,
+        "top": 95,
         "type": "3d",
         "width": 60
       }
@@ -2930,7 +2940,7 @@
         "stackingOrder": 1,
         "text": "En las profundidades del salón funerario, invocas al espíritu de Kodlak para cumplir su última voluntad. \nAl quemar la cabeza de una Bruja de Glenmoril en el pedestal, se manifiesta el espíritu de la bestia; derrótalo para curar la maldición y permitir que tu líder descanse al fin en Sovngarde.",
         "textAlign": "left",
-        "top": 120,
+        "top": 95,
         "type": "overlay",
         "width": 158
       }
@@ -3002,14 +3012,14 @@
           "type": "asset"
         },
         "justifyContent": "center",
-        "left": 211,
+        "left": 200,
         "padding": "10",
         "position": "absolute",
         "right": "",
         "stackingOrder": 0,
-        "top": 278,
+        "top": 265,
         "type": "overlay",
-        "width": 135
+        "width": 144
       }
     },
     "35521828-d492-44d7-ac23-87e9e48ba2a1": {
@@ -3078,7 +3088,7 @@
       "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
       "position": [
         -0.591488328948293,
-        0,
+        7.6000000000000005,
         0.322153664816181
       ],
       "rotation": [
@@ -3106,7 +3116,7 @@
         "position": "absolute",
         "right": "",
         "stackingOrder": -1,
-        "top": 90,
+        "top": 65,
         "type": "overlay",
         "width": 435
       }
@@ -3159,18 +3169,19 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
               "type": "entity"
@@ -3207,9 +3218,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "390e3186-e7e3-4d9d-b6d6-13bbeacdaa82": {
@@ -3259,7 +3270,7 @@
       "parentId": "7dfff945-95e7-4fb1-b68a-e508ed2d2c9f",
       "position": [
         7.47457235473795,
-        0,
+        7.6000000000000005,
         -0.1
       ],
       "rotation": [
@@ -3289,7 +3300,7 @@
         "stackingOrder": 1,
         "text": "Tras el descubrimiento sobre Farkas y los compañeros, te adentras más en la tumba hasta que obtienes el fragmento de la legendaria Wuuthrad.",
         "textAlign": "left",
-        "top": 120,
+        "top": 95,
         "type": "overlay",
         "width": 158
       }
@@ -3354,7 +3365,7 @@
       "parentId": "7dfff945-95e7-4fb1-b68a-e508ed2d2c9f",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -3383,14 +3394,14 @@
           "type": "asset"
         },
         "justifyContent": "center",
-        "left": 208,
+        "left": 200,
         "padding": "10",
         "position": "absolute",
         "right": "",
         "stackingOrder": 0,
-        "top": 278,
+        "top": 265,
         "type": "overlay",
-        "width": 135
+        "width": 144
       }
     },
     "3c0d92df-38de-4f5f-a626-d47d0040c7a3": {
@@ -3430,41 +3441,30 @@
     },
     "3c4b401e-1ba9-4f63-9c68-7c50ab1400bf": {
       "collider": {
-        "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
           "type": "box",
-          "width": 0.5
-        },
-        "gravityFactor": 0,
-        "highPrecision": false,
-        "lockXAxis": true,
-        "lockYAxis": true,
-        "lockYPosition": true,
-        "lockZAxis": true,
-        "mass": 0,
-        "type": "kinematic"
-      },
-      "components": {},
-      "geometry": null,
-      "gltfModel": {
-        "animationClip": "",
-        "loop": true,
-        "src": {
-          "asset": "assets/Modelos/Marker_Icon.glb",
-          "type": "asset"
+          "depth": 30.800000000000022,
+          "height": 26.000000000000007,
+          "width": 34.9999999999999
         }
       },
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Modelos/iron_helm.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
       "id": "3c4b401e-1ba9-4f63-9c68-7c50ab1400bf",
-      "material": null,
       "name": "Marker_Icon.glb",
       "order": 13.4537985964286,
       "parentId": "f8f97311-cde4-4832-a046-0d2c892f393d",
       "position": [
         0,
-        0,
-        0
+        3.6084359146523035e-16,
+        0.2500146252402835
       ],
       "rotation": [
         0.707106781186547,
@@ -3473,9 +3473,9 @@
         0.707106781186548
       ],
       "scale": [
-        1,
-        1,
-        1
+        0.02,
+        0.02,
+        0.02
       ]
     },
     "3cf4fceb-963b-43b9-8700-cf7babaa0a87": {
@@ -3634,11 +3634,11 @@
         },
         "fontSize": 30,
         "height": 40,
-        "left": 290,
+        "left": 260,
         "position": "absolute",
         "right": "",
         "text": "Rumor",
-        "top": 35,
+        "top": 15,
         "type": "overlay",
         "verticalTextAlign": "center",
         "width": 230
@@ -3707,7 +3707,7 @@
         "left": 665,
         "position": "absolute",
         "right": "",
-        "top": 25,
+        "top": 95,
         "type": "3d",
         "width": 60
       }
@@ -3766,7 +3766,7 @@
       "parentId": "3b928223-8e7b-4d98-8041-04b9e9e82b38",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -4025,21 +4025,21 @@
         "bottom": "",
         "flexDirection": "row",
         "gap": 4,
-        "height": 35.4444444444444,
+        "height": 33,
         "ignoreRaycast": false,
         "image": {
           "asset": "assets/Iconos/UI/Boton.png",
           "type": "asset"
         },
         "justifyContent": "center",
-        "left": 208,
+        "left": 200,
         "padding": "10",
         "position": "absolute",
         "right": "",
         "stackingOrder": 0,
-        "top": 296,
+        "top": 265,
         "type": "overlay",
-        "width": 145
+        "width": 144
       }
     },
     "4625c0a4-a6e7-4881-8fbe-4821305e723e": {
@@ -4119,7 +4119,7 @@
       "parentId": "8b6aa4a8-1876-48e0-8715-c533df3ca1e8",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -4307,7 +4307,7 @@
         "left": 665,
         "position": "absolute",
         "right": "",
-        "top": 25,
+        "top": 95,
         "type": "3d",
         "width": 60
       }
@@ -4385,18 +4385,19 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
               "type": "entity"
@@ -4433,9 +4434,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "47f9e2e3-4b36-41a4-9a60-49272e02beb1": {
@@ -4449,7 +4450,7 @@
       "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
       "position": [
         7.47457235473795,
-        0,
+        7.6000000000000005,
         -0.1
       ],
       "rotation": [
@@ -4562,7 +4563,7 @@
         "stackingOrder": 1,
         "text": "Mientras caminabas a las afueras de Carrera Blanca escuchaste unos ruidos de lucha provenientes de una granja. \n\nCuando te acercaste viste a un grupo de guerreros derribando a un gigante, ¡ayúdalos!\n",
         "textAlign": "left",
-        "top": 120,
+        "top": 95,
         "type": "overlay",
         "width": 158
       }
@@ -4588,7 +4589,7 @@
       "parentId": "47f9e2e3-4b36-41a4-9a60-49272e02beb1",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -4618,7 +4619,7 @@
         "stackingOrder": 1,
         "text": "Aún no eres un miembro pleno de Los Compañeros. \n\nFuiste enviado a este lugar para recuperar un fragmento de la legendaria hacha Wuuthrad, que perteneció a Ysgramor. Farkas te acompañará en esta misión como tu compañero de escudo.",
         "textAlign": "left",
-        "top": 120,
+        "top": 95,
         "type": "overlay",
         "width": 158
       }
@@ -4663,20 +4664,25 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
+              "type": "entity"
+            },
+            "rumorPanel": {
+              "id": "002636fc-4b45-4a39-ab45-31cc2a7fb2c9",
               "type": "entity"
             },
             "songUrl": "assets/Sonido/Música/Cueva.mp3",
@@ -4712,9 +4718,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "4c8dd05e-6e82-4e8e-8768-0e22bdaed50e": {
@@ -4780,7 +4786,7 @@
         "left": 665,
         "position": "absolute",
         "right": "",
-        "top": 25,
+        "top": 95,
         "type": "3d",
         "width": 60
       }
@@ -4927,7 +4933,7 @@
         "position": "absolute",
         "right": "",
         "stackingOrder": -1,
-        "top": 90,
+        "top": 65,
         "type": "overlay",
         "width": 435
       }
@@ -5137,18 +5143,19 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
               "type": "entity"
@@ -5185,9 +5192,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "57300f21-0ba5-4056-bd67-6fd11acbc745": {
@@ -5543,14 +5550,14 @@
           "type": "asset"
         },
         "justifyContent": "center",
-        "left": 406,
+        "left": 409,
         "padding": "10",
         "position": "absolute",
         "right": "",
         "stackingOrder": 0,
-        "top": 278,
+        "top": 265,
         "type": "overlay",
-        "width": 135
+        "width": 123.75
       }
     },
     "5cdbeefc-5eb7-4258-b7e0-43e8ce8121e2": {
@@ -5731,11 +5738,11 @@
         },
         "fontSize": 30,
         "height": 40,
-        "left": 290,
+        "left": 260,
         "position": "absolute",
         "right": "",
         "text": "Rumor",
-        "top": 35,
+        "top": 15,
         "type": "overlay",
         "verticalTextAlign": "center",
         "width": 230
@@ -5843,14 +5850,14 @@
           "type": "asset"
         },
         "justifyContent": "center",
-        "left": 211,
+        "left": 200,
         "padding": "10",
         "position": "absolute",
         "right": "",
         "stackingOrder": 0,
-        "top": 278,
+        "top": 265,
         "type": "overlay",
-        "width": 135
+        "width": 144
       }
     },
     "688be39e-b551-4ddc-aed0-34c66e7954eb": {
@@ -5916,7 +5923,7 @@
         "left": 665,
         "position": "absolute",
         "right": "",
-        "top": 25,
+        "top": 95,
         "type": "3d",
         "width": 60
       }
@@ -6199,39 +6206,40 @@
         "bottom": "",
         "flexDirection": "row",
         "gap": 4,
-        "height": 55,
+        "height": 33,
         "ignoreRaycast": false,
         "image": {
           "asset": "assets/Iconos/UI/Boton.png",
           "type": "asset"
         },
         "justifyContent": "center",
-        "left": 408,
+        "left": 409,
         "padding": "10",
         "position": "absolute",
         "right": "",
         "stackingOrder": 0,
-        "top": 272,
+        "top": 265,
         "type": "overlay",
-        "width": 135
+        "width": 123.75
       }
     },
     "6e103936-c4d5-4388-a78c-37b69c3fc710": {
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.2,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.2
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
               "type": "entity"
@@ -6268,9 +6276,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "70293bad-6dc1-4fbf-bc48-c9491561a768": {
@@ -6555,7 +6563,7 @@
         "stackingOrder": 1,
         "text": "...pero ten cuidado, ¡el anillo está maldito y podrías transformarte en una bestia en cualquier momento! Al salir de los cuarteles ves un ciervo blanco. Un instinto te pide que lo caces.",
         "textAlign": "left",
-        "top": 120,
+        "top": 95,
         "type": "overlay",
         "width": 158
       }
@@ -6696,14 +6704,14 @@
           "type": "asset"
         },
         "justifyContent": "center",
-        "left": 211,
+        "left": 200,
         "padding": "10",
         "position": "absolute",
         "right": "",
         "stackingOrder": 0,
-        "top": 278,
+        "top": 265,
         "type": "overlay",
-        "width": 135
+        "width": 144
       }
     },
     "7412a4f8-eaf7-4eef-9e52-e89089c0ed38": {
@@ -6796,7 +6804,7 @@
         "stackingOrder": 1,
         "text": "La decisión está en tus manos, Sangre de Dragón, ¿eliminaste a la bestia o la ayudaste a eliminar a los cazadores que la atacaban? Sea como sea, Hircine está satisfecho y una grata recompensa te espera...\nQue la bendición de Hircine guíe tus garras y que tu presa nunca escape de tu vista.",
         "textAlign": "left",
-        "top": 120,
+        "top": 95,
         "type": "overlay",
         "width": 158
       }
@@ -6811,7 +6819,7 @@
       "parentId": "eec94ae1-1cd0-4b1f-8d70-bb26ccc882c1",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -6947,7 +6955,7 @@
         "position": "absolute",
         "right": "",
         "stackingOrder": -1,
-        "top": 90,
+        "top": 65,
         "type": "overlay",
         "width": 435
       }
@@ -6998,7 +7006,7 @@
       "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -7062,13 +7070,13 @@
         "fontSize": 11,
         "height": 138,
         "ignoreRaycast": true,
-        "left": 395,
+        "left": 391,
         "position": "absolute",
         "right": "",
         "stackingOrder": 1,
         "text": "Decides ir a la celda a escuchar a Sinding. Cuando hablas con él sobre el ataque, te menciona un anillo maldito que lo obligó a cometer el crimen. Sinding te entrega el anillo y te pide que lo ayudes a eliminar la maldición...",
         "textAlign": "left",
-        "top": 120,
+        "top": 95,
         "type": "overlay",
         "width": 158
       }
@@ -7203,7 +7211,7 @@
         "stackingOrder": 1,
         "text": "Al regresar descubres que la Mano de Plata ha asesinado a Kodlak, lo que desata un ataque vengativo. \nTras aniquilar a la facción y recuperar el último fragmento de la Wuuthrad, te diriges al lugar de descanso de Ysgramor para cumplir la voluntad final de tu líder y curar su espíritu de la maldición.",
         "textAlign": "left",
-        "top": 120,
+        "top": 95,
         "type": "overlay",
         "width": 158
       }
@@ -7342,7 +7350,7 @@
         "stackingOrder": 1,
         "text": "Al entrar a Falkreath escuchas recitar unos ritos funerarios. Al acercarte, ves a una afligida pareja llorando frente a una tumba. Preguntas qué pasó y te hablan del asesinato de su pequeña hija, Lavinia a manos de Sinding que está encerrado en los cuarteles.",
         "textAlign": "left",
-        "top": 120,
+        "top": 95,
         "type": "overlay",
         "width": 158
       }
@@ -7455,14 +7463,14 @@
           "type": "asset"
         },
         "justifyContent": "center",
-        "left": 211,
+        "left": 200,
         "padding": "10",
         "position": "absolute",
         "right": "",
         "stackingOrder": 0,
-        "top": 285,
+        "top": 265,
         "type": "overlay",
-        "width": 135
+        "width": 144
       }
     },
     "8adc4bb4-200e-42dc-9d66-72457329b5a8": {
@@ -7590,14 +7598,14 @@
           "type": "asset"
         },
         "justifyContent": "center",
-        "left": 410,
+        "left": 409,
         "padding": "10",
         "position": "absolute",
         "right": "",
         "stackingOrder": 0,
-        "top": 278,
+        "top": 265,
         "type": "overlay",
-        "width": 135
+        "width": 123.75
       }
     },
     "8b6aa4a8-1876-48e0-8715-c533df3ca1e8": {
@@ -7624,7 +7632,7 @@
       "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -7649,7 +7657,7 @@
         "padding": "10",
         "position": "absolute",
         "right": "",
-        "top": 365,
+        "top": 335,
         "type": "overlay",
         "width": 100
       }
@@ -7809,7 +7817,7 @@
         "stackingOrder": 1,
         "text": "Lograste sobrevivir a la magia oscura de las brujas. \n\nUsaste tu propia maldición en su contra y las devoraste hasta que solo quedaron sus cabezas. \n\nEs momento de que vuelvas a Jorrvaskr.",
         "textAlign": "left",
-        "top": 120,
+        "top": 95,
         "type": "overlay",
         "width": 158
       }
@@ -8234,7 +8242,7 @@
       "parentId": "47f9e2e3-4b36-41a4-9a60-49272e02beb1",
       "position": [
         -7.47457235473795,
-        0,
+        7.6000000000000005,
         0.1
       ],
       "rotation": [
@@ -8263,12 +8271,12 @@
           "type": "asset"
         },
         "justifyContent": "center",
-        "left": 211,
+        "left": 200,
         "padding": "10",
         "position": "absolute",
         "right": "",
         "stackingOrder": 0,
-        "top": 278,
+        "top": 265,
         "type": "overlay",
         "width": 144
       }
@@ -8338,20 +8346,25 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
+              "type": "entity"
+            },
+            "rumorPanel": {
+              "id": "535aff49-b614-4229-85e5-251b2d7df5a3",
               "type": "entity"
             },
             "songUrl": "assets/Sonido/Música/Falkreath.mp3",
@@ -8386,9 +8399,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "9921ec87-1134-4a3c-b9c0-523cf2ef68db": {
@@ -8439,7 +8452,7 @@
       "parentId": "b5eb8b03-e50b-4e9c-aa63-4065736fa920",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -8541,11 +8554,11 @@
         },
         "fontSize": 30,
         "height": 40,
-        "left": 290,
+        "left": 260,
         "position": "absolute",
         "right": "",
         "text": "Rumor",
-        "top": 35,
+        "top": 15,
         "type": "overlay",
         "verticalTextAlign": "center",
         "width": 230
@@ -8841,7 +8854,7 @@
         "position": "absolute",
         "right": "",
         "stackingOrder": -1,
-        "top": 90,
+        "top": 65,
         "type": "overlay",
         "width": 435
       }
@@ -8915,7 +8928,7 @@
       "parentId": "98332f69-8468-43b4-8f1d-7758ef349921",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -8945,7 +8958,6 @@
     },
     "a54faf48-4607-4acc-b464-34879c8cac78": {
       "components": {},
-      "disabled": true,
       "geometry": null,
       "hidden": false,
       "id": "a54faf48-4607-4acc-b464-34879c8cac78",
@@ -8975,7 +8987,8 @@
         "stackingOrder": 0,
         "type": "overlay",
         "width": 784
-      }
+      },
+      "disabled": true
     },
     "a57ad03c-32f9-461f-851c-11866b735aee": {
       "components": {},
@@ -9466,7 +9479,7 @@
       "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -9535,7 +9548,7 @@
         "position": "absolute",
         "right": "",
         "stackingOrder": -1,
-        "top": 90,
+        "top": 65,
         "type": "overlay",
         "width": 435
       }
@@ -9588,18 +9601,19 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.2,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.2
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
               "type": "entity"
@@ -9636,9 +9650,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "b94261b4-e70c-4b2d-b1dd-aa98c1c2ab90": {
@@ -9693,7 +9707,7 @@
         "stackingOrder": 1,
         "text": "El grupo de guerreros te elogia y te invita a formar parte de Los Compañeros. \n\nDirígete a Jorrvaskr para hablar con Kodlak Melena Blanca, pero ten cuidado, se rumorea que de allí provienen aullidos extraños en las noches con luna.\n",
         "textAlign": "left",
-        "top": 120,
+        "top": 95,
         "type": "overlay",
         "width": 158
       }
@@ -9747,7 +9761,7 @@
         "padding": "10",
         "position": "absolute",
         "right": "",
-        "top": 365,
+        "top": 335,
         "type": "overlay",
         "width": 100
       }
@@ -9799,7 +9813,7 @@
       "parentId": "47f9e2e3-4b36-41a4-9a60-49272e02beb1",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -9829,7 +9843,7 @@
         "stackingOrder": 1,
         "text": "Haces un dueto perfecto con Farkas. \nLlegan a una habitación con una reja cerrada. Te acercas a una palanca. Crees que abrirá el camino, pero en su lugar te encierra y te separa de Farkas. Miembros de la Mano de Plata lo rodean y entonces lo ves: un hombre lobo real.",
         "textAlign": "left",
-        "top": 120,
+        "top": 95,
         "type": "overlay",
         "width": 158
       }
@@ -9913,21 +9927,21 @@
         "bottom": "",
         "flexDirection": "row",
         "gap": 4,
-        "height": 55,
+        "height": 33,
         "ignoreRaycast": false,
         "image": {
           "asset": "assets/Iconos/UI/Boton.png",
           "type": "asset"
         },
         "justifyContent": "center",
-        "left": 408,
+        "left": 409,
         "padding": "10",
         "position": "absolute",
         "right": "",
         "stackingOrder": 0,
-        "top": 280,
+        "top": 265,
         "type": "overlay",
-        "width": 135
+        "width": 123.75
       }
     },
     "c2367aee-5ac4-47e0-aa18-0b666e1a565d": {
@@ -10084,7 +10098,7 @@
         "padding": "10",
         "position": "absolute",
         "right": "",
-        "top": 365,
+        "top": 335,
         "type": "overlay",
         "width": 100
       }
@@ -10418,7 +10432,7 @@
       "parentId": "8b6aa4a8-1876-48e0-8715-c533df3ca1e8",
       "position": [
         -0.323,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -10712,7 +10726,7 @@
         "left": 665,
         "position": "absolute",
         "right": "",
-        "top": 25,
+        "top": 95,
         "type": "3d",
         "width": 60
       }
@@ -10899,7 +10913,7 @@
       "parentId": "f53ae908-4df8-4b48-b1e7-5d1a98ea3a38",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -10929,24 +10943,29 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
               "type": "entity"
             },
             "markerModel": {
               "id": "d815eb8f-ec1c-4b4a-94fe-5351df1910ce",
+              "type": "entity"
+            },
+            "rumorPanel": {
+              "id": "a3828348-7945-4330-9d8a-ba310a783670",
               "type": "entity"
             },
             "songUrl": "assets/Sonido/Música/Carrera blanca.mp3",
@@ -10981,9 +11000,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "d81dd51d-00c0-4db3-b65e-d14b92d7f0e9": {
@@ -11031,20 +11050,25 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
+              "type": "entity"
+            },
+            "rumorPanel": {
+              "id": "69f250f7-aea0-4fce-907a-00a8cf5ef657",
               "type": "entity"
             },
             "songUrl": "assets/Sonido/Música/Cueva.mp3",
@@ -11080,9 +11104,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "d9bd6180-22af-48c8-a063-e23314400b0d": {
@@ -11225,11 +11249,11 @@
         },
         "fontSize": 30,
         "height": 40,
-        "left": 290,
+        "left": 260,
         "position": "absolute",
         "right": "",
         "text": "Rumor",
-        "top": 35,
+        "top": 15,
         "type": "overlay",
         "verticalTextAlign": "center",
         "width": 230
@@ -11401,7 +11425,7 @@
       "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
       "position": [
         -0.217693826461361,
-        0.290258435281815,
+        7.890258435281815,
         0
       ],
       "rotation": [
@@ -11428,7 +11452,7 @@
         "position": "absolute",
         "right": "",
         "text": "Rumor",
-        "top": 35,
+        "top": 15,
         "type": "overlay",
         "verticalTextAlign": "center",
         "width": 230
@@ -11521,7 +11545,7 @@
         "stackingOrder": 1,
         "text": "Cuando lo mates, el espíritu de Hircine se manifestará y te pedirá que cumplas una cacería por él.",
         "textAlign": "left",
-        "top": 120,
+        "top": 95,
         "type": "overlay",
         "width": 158
       }
@@ -11557,7 +11581,8 @@
         1,
         1,
         1
-      ]
+      ],
+      "disabled": true
     },
     "e8379af4-8edf-4940-8d59-9bfdef286e1a": {
       "components": {},
@@ -11669,7 +11694,7 @@
         "position": "absolute",
         "right": "",
         "stackingOrder": -1,
-        "top": 90,
+        "top": 65,
         "type": "overlay",
         "width": 435
       }
@@ -11805,7 +11830,7 @@
         "stackingOrder": 1,
         "text": "Tras unirte al Círculo y contraer la licantropía, Kodlak Melena Blanca acude a ti en busca de ayuda. \nTe cuenta que ha descubierto cómo curar la licantropía. \nTodo se reduce al origen de la maldición. \nDebes encontrar a las Brujas de Glenmoril y tomar sus cabezas.",
         "textAlign": "left",
-        "top": 120,
+        "top": 95,
         "type": "overlay",
         "width": 158
       }
@@ -11909,7 +11934,7 @@
       "parentId": "47f9e2e3-4b36-41a4-9a60-49272e02beb1",
       "position": [
         -7.47457235473795,
-        0,
+        7.6000000000000005,
         0.1
       ],
       "rotation": [
@@ -11943,7 +11968,7 @@
         "position": "absolute",
         "right": "",
         "stackingOrder": 0,
-        "top": 278,
+        "top": 265,
         "type": "overlay",
         "width": 123.75
       }
@@ -12086,7 +12111,7 @@
       "parentId": "17f5fc13-2d5a-4289-be68-7d457fa8dd58",
       "position": [
         0,
-        0,
+        7.6000000000000005,
         0
       ],
       "rotation": [
@@ -12111,7 +12136,7 @@
         "padding": "10",
         "position": "absolute",
         "right": "",
-        "top": 365,
+        "top": 335,
         "type": "overlay",
         "width": 100
       }
@@ -12281,6 +12306,7 @@
     },
     "f851be6c-7f6b-4fc4-9cf5-7de203845568": {
       "components": {},
+      "disabled": true,
       "geometry": null,
       "hidden": false,
       "id": "f851be6c-7f6b-4fc4-9cf5-7de203845568",
@@ -12312,25 +12338,25 @@
         "stackingOrder": 0,
         "type": "overlay",
         "width": 784
-      },
-      "disabled": true
+      }
     },
     "f8b2faeb-4287-4803-a207-0dd4a3f4ee0c": {
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.2,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.2
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
               "type": "entity"
@@ -12367,9 +12393,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "f8f97311-cde4-4832-a046-0d2c892f393d": {
@@ -12562,18 +12588,19 @@
       "collider": {
         "eventOnly": true,
         "geometry": {
-          "depth": 0.5,
-          "height": 1,
+          "depth": 0.3,
+          "height": 0.4,
           "type": "box",
-          "width": 0.5
-        }
+          "width": 0.3
+        },
+        "offsetY": 0.1
       },
       "components": {
         "4daa6951-c8db-4af6-977e-00fee6e537a7": {
           "id": "4daa6951-c8db-4af6-977e-00fee6e537a7",
           "name": "playerInteraction",
           "parameters": {
-            "activationDelay": 2500,
+            "activationDelay": 1000,
             "backgroundFrame": {
               "id": "473c7055-07c6-433b-b166-03684ad7a490",
               "type": "entity"
@@ -12610,9 +12637,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.5,
+        1.5,
+        1.5
       ]
     },
     "fcffd025-f3d6-49ae-8a58-720fdf22fbf1": {
@@ -12761,21 +12788,21 @@
         "bottom": "",
         "flexDirection": "row",
         "gap": 4,
-        "height": 55,
+        "height": 33,
         "ignoreRaycast": false,
         "image": {
           "asset": "assets/Iconos/UI/Boton.png",
           "type": "asset"
         },
         "justifyContent": "center",
-        "left": 408,
+        "left": 409,
         "padding": "10",
         "position": "absolute",
         "right": "",
         "stackingOrder": 0,
-        "top": 290,
+        "top": 265,
         "type": "overlay",
-        "width": 135
+        "width": 123.75
       }
     },
     "ff41c154-5a63-4a44-b30d-a6bdf4b96884": {
@@ -12811,6 +12838,67 @@
           "type": "asset"
         },
         "width": 25
+      }
+    },
+    "65794ae7-c9f1-46ea-b0a4-12689f87cf80": {
+      "components": {
+        "5f2cda33-3d69-484d-a697-87b0402d8be0": {
+          "id": "5f2cda33-3d69-484d-a697-87b0402d8be0",
+          "name": "pressHoldFeedback",
+          "parameters": {}
+        },
+        "uiSoundOnClick_7db5c438-30fe-4414-9f92-14e70fbfc071": {
+          "id": "uiSoundOnClick_7db5c438-30fe-4414-9f92-14e70fbfc071",
+          "name": "uiSoundOnClick",
+          "parameters": {
+            "soundFile": "assets/Sonido/Efectos de Sonido/UISonido.mp3"
+          }
+        },
+        "8f6bf5db-b957-4403-843b-46aa962fd10e": {
+          "id": "8f6bf5db-b957-4403-843b-46aa962fd10e",
+          "name": "toggleFullscreen",
+          "parameters": {}
+        }
+      },
+      "geometry": null,
+      "hidden": false,
+      "id": "65794ae7-c9f1-46ea-b0a4-12689f87cf80",
+      "material": null,
+      "name": "Fullscreen",
+      "order": 5.173861404336948,
+      "parentId": "a54faf48-4607-4acc-b464-34879c8cac78",
+      "position": [
+        -8.88178419700125e-16,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "bottom": "",
+        "height": 40,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Iconos/UI/Fullscreen Off.png"
+        },
+        "left": 670,
+        "position": "absolute",
+        "right": "",
+        "stackingOrder": 100,
+        "top": 22,
+        "type": "overlay",
+        "width": 40
       }
     }
   },
